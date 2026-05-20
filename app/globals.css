@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans:   var(--font-dm-sans), "DM Sans", sans-serif;
+  --font-serif:  var(--font-dm-serif), "DM Serif Display", serif;
+  --color-gold:        #3b82f6;
+  --color-gold-deep:   #1d4ed8;
+  --color-gold-dim:    #bfdbfe;
+  --color-surface:     #ffffff;
+  --color-surface-2:   #f9fafb;
+  --color-surface-3:   #f0f9ff;
+  --color-ink:         #1a1612;
+  --color-border:      rgba(26,22,18,0.07);
+  --color-border-md:   rgba(26,22,18,0.13);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── Keyframes ─────────────────────────────────────────── */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:  #f9fafb;
+  color:       #1a1612;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
+
+/* ── Utility classes ───────────────────────────────────── */
+
+.animate-fade-up    { animation: fade-up 0.65s cubic-bezier(0.22,1,0.36,1) both; }
+.animate-fade-in    { animation: fade-in 0.8s ease both; }
+.animate-float      { animation: float 5s ease-in-out infinite; }
+.animate-delay-100  { animation-delay: 0.1s; }
+.animate-delay-200  { animation-delay: 0.2s; }
+.animate-delay-300  { animation-delay: 0.3s; }
+.animate-delay-400  { animation-delay: 0.4s; }
+.animate-delay-500  { animation-delay: 0.5s; }
+.animate-pulse-dot  { animation: pulse-dot 1.5s ease-in-out infinite; }
+
+.shimmer-badge {
+  background: linear-gradient(
+    90deg,
+    rgba(59,130,246,0.07) 0%,
+    rgba(59,130,246,0.16) 40%,
+    rgba(59,130,246,0.07) 80%
+  );
+  background-size: 400px 100%;
+  animation: shimmer 2.8s linear infinite;
+}
+
+/* ── Selection & scrollbar ─────────────────────────────── */
+
+::selection { background: rgba(59,130,246,0.20); color: #1d4ed8; }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #f9fafb; }
+::-webkit-scrollbar-thumb { background: rgba(26,22,18,0.15); border-radius: 2px; }
