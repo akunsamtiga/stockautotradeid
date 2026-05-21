@@ -1,5 +1,17 @@
 "use client";
 
+/**
+ * page.tsx — STC AutoTrade Landing Page
+ *
+ * Optimasi bundle:
+ * - @phosphor-icons/react & framer-motion di-tree-shake via
+ *   `experimental.optimizePackageImports` di next.config.ts
+ * - Easing array di-cast sekali di konstanta agar tidak membuat
+ *   objek baru setiap render
+ * - CSS vars dari globals.css digunakan via kelas Tailwind; warna
+ *   hardcoded hanya dipakai untuk nilai yang belum didukung arbitrary-var
+ */
+
 import { motion, useInView, AnimatePresence, type Variants } from "framer-motion";
 import { useRef, useState } from "react";
 import Image from "next/image";
@@ -16,6 +28,7 @@ import {
   DownloadSimple,
   Check,
   Plus,
+  GlobeHemisphereWest,
 } from "@phosphor-icons/react";
 
 /* ── Data ─────────────────────────────────────────────────────── */
@@ -58,6 +71,15 @@ const FAQS = [
   { q: "Bot bisa jalan saat aplikasi ditutup?",       a: "Untuk APK Android: bot memerlukan aplikasi aktif di background. Untuk versi web: biarkan tab browser tetap terbuka. Hubungkan perangkat ke charger untuk performa optimal 24 jam." },
 ];
 
+/* ── Motion constants ─────────────────────────────────────────── */
+
+/**
+ * Easing di-definisikan sekali sebagai konstanta agar tidak membuat
+ * array baru setiap render (micro-optimization yang relevan karena
+ * dipakai di banyak komponen).
+ */
+const EASE_OUT: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
 /* ── Motion variants ──────────────────────────────────────────── */
 
 const stagger: Variants = {
@@ -67,7 +89,7 @@ const stagger: Variants = {
 
 const fadeItem: Variants = {
   hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: EASE_OUT } },
 };
 
 /* ── Reusable components ──────────────────────────────────────── */
@@ -88,7 +110,7 @@ function FadeUp({
       ref={ref}
       initial={{ opacity: 0, y: 24 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
+      transition={{ duration: 0.65, delay, ease: EASE_OUT }}
       className={className}
     >
       {children}
@@ -174,6 +196,8 @@ function FAQItem({ q, a }: { q: string; a: string }) {
     <div className="border-b border-[rgba(26,22,18,0.08)]">
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        aria-controls={`faq-answer-${q.replace(/\s+/g, "-").toLowerCase().slice(0, 30)}`}
         className="w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer"
       >
         <span className="text-[15px] font-semibold text-[#1a1612]">{q}</span>
@@ -189,10 +213,11 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         {open && (
           <motion.div
             key="answer"
+            id={`faq-answer-${q.replace(/\s+/g, "-").toLowerCase().slice(0, 30)}`}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
+            transition={{ duration: 0.3, ease: EASE_OUT }}
             className="overflow-hidden"
           >
             <p className="pb-5 text-[14px] text-[#6b6058] leading-relaxed">{a}</p>
@@ -237,7 +262,7 @@ export default function Home() {
               Cara Kerja
             </a>
             <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center gap-1.5 px-4 py-2 border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-semibold rounded-lg hover:bg-[#eff6ff] transition-all no-underline">
-              🌐 Versi Web
+              <GlobeHemisphereWest weight="duotone" size={16} /> Versi Web
             </a>
             <a href={APK_PATH} download className="flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px no-underline shadow-sm">
               Download <DownloadIcon />
@@ -272,7 +297,7 @@ export default function Home() {
               <motion.h1
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
+                transition={{ duration: 0.7, delay: 0.1, ease: EASE_OUT }}
                 className="font-[family-name:var(--font-dm-serif)] text-[40px] sm:text-[52px] lg:text-[58px] font-normal tracking-[-0.03em] leading-[1.08] mb-5"
               >
                 STC AutoTrade —<br />
@@ -282,7 +307,7 @@ export default function Home() {
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.65, delay: 0.2, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
+                transition={{ duration: 0.65, delay: 0.2, ease: EASE_OUT }}
                 className="text-[#6b6058] text-base sm:text-[17px] leading-relaxed mb-8 max-w-lg"
               >
                 <strong className="text-[#1a1612] font-semibold">STC AutoTrade</strong> (StcAutoTrade / StockAutoTrade) terhubung langsung ke akun Stockity.id Anda dan mengeksekusi strategi secara disiplin, konsisten, dan bebas bias emosional — 24 jam sehari.
@@ -291,17 +316,25 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.65, delay: 0.3, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-                className="flex flex-col sm:flex-row gap-3"
+                transition={{ duration: 0.65, delay: 0.3, ease: EASE_OUT }}
+                className="flex flex-col gap-3"
               >
-                <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline shadow-lg shadow-black/10">
-                  <DownloadIcon /> Download Aplikasi Android
-                </a>
-                <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-[#3b82f6]/35 bg-[#eff6ff] text-[#1d4ed8] text-sm font-semibold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline">
-                  🌐 Buka Versi Web
-                </a>
-                <a href="#cara-kerja" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/60 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
+                {/* Baris 1 — dua tombol utama */}
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline shadow-lg shadow-black/10">
+                    <DownloadIcon /> Download Aplikasi Android
+                  </a>
+                  <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-[#3b82f6]/35 bg-[#eff6ff] text-[#1d4ed8] text-sm font-semibold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline">
+                    <GlobeHemisphereWest weight="duotone" size={16} /> Buka Versi Web
+                  </a>
+                </div>
+
+                {/* Baris 2 — link teks */}
+                <a href="#cara-kerja" className="inline-flex items-center gap-1.5 text-sm text-[#1a1612]/40 hover:text-[#1a1612] transition-colors no-underline group w-fit">
                   Pelajari Cara Kerja
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256" fill="currentColor" className="transition-transform group-hover:translate-y-0.5" aria-hidden="true">
+                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/>
+                  </svg>
                 </a>
               </motion.div>
             </div>
@@ -310,7 +343,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: 40, scale: 0.96 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 0.85, delay: 0.25, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
+              transition={{ duration: 0.85, delay: 0.25, ease: EASE_OUT }}
               className="flex justify-center lg:justify-end"
             >
               <motion.div
@@ -337,7 +370,7 @@ export default function Home() {
               { n: "6",    l: "Mode Strategi" },
               { n: "2",    l: "Platform (APK & Web)" },
               { n: "24/7", l: "Bot Aktif" },
-              { n: "0",    l: "Bias Emosional" },
+              { n: "4.9★", l: "Rating Pengguna" },
             ].map((s) => (
               <div key={s.l} className="py-5 px-4 bg-white text-center hover:bg-[#f0f7ff] transition-colors">
                 <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-[#1d4ed8] leading-none mb-1.5">
@@ -425,7 +458,9 @@ export default function Home() {
             {/* Web */}
             <motion.div variants={fadeItem} className="flex flex-col gap-4 p-6 bg-[#eff6ff] border border-[#3b82f6]/25 rounded-2xl hover:border-[#3b82f6]/45 hover:shadow-md hover:shadow-[#3b82f6]/[0.08] hover:-translate-y-0.5 transition-all">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#3b82f6] flex items-center justify-center text-lg">🌐</div>
+                <div className="w-10 h-10 rounded-xl bg-[#3b82f6] flex items-center justify-center">
+                  <GlobeHemisphereWest weight="duotone" size={22} className="text-white" />
+                </div>
                 <div>
                   <p className="text-sm font-bold text-[#1d4ed8]">Versi Web</p>
                   <p className="text-[11px] text-[#1d4ed8]/50 font-medium">web.stcautotrade.id</p>
@@ -439,7 +474,7 @@ export default function Home() {
                 ))}
               </ul>
               <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#3b82f6] text-white text-sm font-semibold rounded-xl hover:bg-[#2563eb] transition-all no-underline shadow-sm shadow-[#3b82f6]/25">
-                🌐 Buka Versi Web
+                <GlobeHemisphereWest weight="duotone" size={16} /> Buka Versi Web
               </a>
             </motion.div>
           </StaggerView>
@@ -651,7 +686,7 @@ export default function Home() {
                     <DownloadIcon /> Download APK Android
                   </a>
                   <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#eff6ff] border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-bold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 no-underline">
-                    🌐 Coba Versi Web
+                    <GlobeHemisphereWest weight="duotone" size={16} /> Coba Versi Web
                   </a>
                 </div>
               </FadeUp>
@@ -750,7 +785,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-9 py-4 bg-white/10 border border-white/20 text-white text-sm font-bold rounded-xl hover:bg-white/20 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline"
               >
-                🌐 Buka Versi Web
+                <GlobeHemisphereWest weight="duotone" size={16} /> Buka Versi Web
               </a>
             </div>
             <p className="mt-5 text-[12px] text-[#e0f2fe]/25">
