@@ -321,10 +321,10 @@ export default function Home() {
               >
                 {/* Baris 1 — dua tombol utama */}
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline shadow-lg shadow-black/10">
+                  <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline shadow-lg shadow-black/10">
                     <DownloadIcon /> Download Aplikasi Android
                   </a>
-                  <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-[#3b82f6]/35 bg-[#eff6ff] text-[#1d4ed8] text-sm font-semibold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline">
+                  <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 border border-[#3b82f6]/35 bg-[#eff6ff] text-[#1d4ed8] text-sm font-semibold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline">
                     <GlobeHemisphereWest weight="duotone" size={16} /> Buka Versi Web
                   </a>
                 </div>
@@ -445,7 +445,7 @@ export default function Home() {
                 </div>
               </div>
               <ul className="flex flex-col gap-2">
-                {["Berjalan di background 24 jam", "Notifikasi order real-time", "Performa optimal di Android 8.0+"].map(f => (
+                {["Berjalan di background 24 jam", "Notifikasi order real-time", "Performa optimal di Android 10.0+"].map(f => (
                   <li key={f} className="flex items-center gap-2 text-[13px] text-[#6b6058]">
                     <Check weight="bold" size={13} className="text-[#1d4ed8] flex-shrink-0" /> {f}
                   </li>
@@ -771,11 +771,11 @@ export default function Home() {
               Download <strong className="text-[#e0f2fe]/70">STC AutoTrade</strong> (StockAutoTrade) sekarang, atau buka langsung versi web — mulai dari mode demo tanpa risiko,
               dan rasakan perbedaan robot trading yang tereksekusi secara disiplin 24/7 di Stockity.id.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
               <a
                 href={APK_PATH}
                 download
-                className="inline-flex items-center gap-2.5 px-9 py-4 bg-[#3b82f6] text-white text-sm font-bold rounded-xl hover:bg-[#2563eb] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline shadow-2xl shadow-[#3b82f6]/20"
+                className="inline-flex items-center justify-center gap-2.5 w-full sm:w-auto px-9 py-4 bg-[#3b82f6] text-white text-sm font-bold rounded-xl hover:bg-[#2563eb] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline shadow-2xl shadow-[#3b82f6]/20"
               >
                 <DownloadIcon /> Download APK Android
               </a>
@@ -783,13 +783,13 @@ export default function Home() {
                 href="https://web.stcautotrade.id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 px-9 py-4 bg-white/10 border border-white/20 text-white text-sm font-bold rounded-xl hover:bg-white/20 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline"
+                className="inline-flex items-center justify-center gap-2.5 w-full sm:w-auto px-9 py-4 bg-white/10 border border-white/20 text-white text-sm font-bold rounded-xl hover:bg-white/20 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline"
               >
                 <GlobeHemisphereWest weight="duotone" size={16} /> Buka Versi Web
               </a>
             </div>
             <p className="mt-5 text-[12px] text-[#e0f2fe]/25">
-              APK Android 8.0+ · Versi Web semua perangkat · Gratis
+              APK Android 10.0+ · Versi Web semua perangkat · Gratis
             </p>
             <p className="mt-3 text-[11px] text-[#e0f2fe]/15">
               STC AutoTrade · StcAutoTrade · StockAutoTrade · Robot Stockity · Auto Stockity · Stockity Auto Trade
