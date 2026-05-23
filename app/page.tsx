@@ -52,23 +52,24 @@ const RISKS = [
 
 const STEPS = [
   { n: "01", title: "Pilih platform Anda",          desc: "Download APK untuk Android, atau buka langsung di browser via web.stcautotrade.id — tanpa instal, siap di perangkat apapun termasuk PC, laptop, dan iPhone." },
-  { n: "02", title: "Login dengan akun Stockity",   desc: "Masuk menggunakan email dan password akun Stockity.id yang sudah Anda miliki. Tidak perlu buat akun baru — di APK maupun versi web." },
-  { n: "03", title: "Mulai dari mode demo",         desc: "Jangan terburu ke mode real. Gunakan demo minimal 7 hari untuk memahami strategi dan memvalidasi pengaturan Anda tanpa risiko finansial." },
-  { n: "04", title: "Beralih ke mode real",         desc: "Setelah strategi teruji, mulai dengan nominal kecil. Tingkatkan bertahap seiring pertumbuhan kepercayaan diri Anda." },
+  { n: "02", title: "Daftar akun baru",             desc: "Belum punya akun? Daftar akun harus melalui aplikasi STC AutoTrade yang telah disediakan — prosesnya cepat dan gratis, tanpa perlu berpindah ke aplikasi lain." },
+  { n: "03", title: "Login dengan akun Stockity",   desc: "Masuk menggunakan email dan password akun Stockity.id yang telah dibuat. selamat sudah bisa menggunakan STC AutoTrade!" },
+  { n: "04", title: "Mulai dari mode demo",         desc: "Jangan terburu ke mode real. Gunakan demo minimal 7 hari untuk memahami strategi dan memvalidasi pengaturan Anda tanpa risiko finansial." },
+  { n: "05", title: "Beralih ke mode real",         desc: "Setelah strategi teruji, mulai dengan nominal kecil. Tingkatkan bertahap seiring pertumbuhan kepercayaan diri Anda." },
 ];
 
 const FAQS = [
   { q: "Apa itu STC AutoTrade / StcAutoTrade?",       a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, StockAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di web.stcautotrade.id." },
-  { q: "Apa bedanya versi APK Android dan versi web?", a: "Versi APK diinstal di perangkat Android dan bisa berjalan di background. Versi web (web.stcautotrade.id) bisa diakses langsung dari browser tanpa instal — cocok untuk PC, laptop, dan iPhone. Kedua versi memiliki fitur yang sama." },
-  { q: "Bagaimana cara menggunakan versi web STC AutoTrade?", a: "Buka browser dan kunjungi web.stcautotrade.id. Login menggunakan akun Stockity.id. Tidak perlu unduh atau instalasi — langsung bisa digunakan di PC, Mac, iPhone, atau perangkat lainnya." },
+  { q: "Apa bedanya versi APK Android dan versi web?", a: "Versi APK diinstal di perangkat Android dan bisa berjalan di background. Versi web (web.stcautotrade.id) tidak perlu instalasi — langsung buka di browser, cocok untuk PC, laptop, dan iPhone. Semua fitur tersedia di kedua versi, tidak ada yang dikurangi." },
+  { q: "Bagaimana cara menggunakan versi web STC AutoTrade?", a: "Buka browser dan kunjungi web.stcautotrade.id. Jika belum punya akun, daftar dulu melalui web tersebut — prosesnya cepat dan gratis. Setelah akun berhasil terbuat lalu login menggunakan akun Stockity.id. Tidak perlu unduh atau instalasi — langsung bisa digunakan di PC, Mac, iPhone, atau perangkat lainnya." },
   { q: "Apa bedanya STC AutoTrade, StcAutoTrade, dan StockAutoTrade?", a: "Ketiganya adalah nama yang merujuk produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'StockAutoTrade', dan 'Stock Auto Trade' adalah variasi penulisan brand yang sama." },
   { q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?", a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (StockAutoTrade), tersedia via APK Android maupun versi web." },
   { q: "Bagaimana cara menginstal STC AutoTrade di Android?",   a: "Download file APK dari tombol di halaman ini. Aktifkan 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan. Buka file APK dan ikuti instruksi. Atau gunakan versi web di web.stcautotrade.id tanpa instalasi." },
   { q: "Apakah perlu pengalaman trading?",            a: "Tidak. STC AutoTrade dirancang agar bisa digunakan pemula sekalipun. Mode demo tersedia di versi APK maupun versi web untuk belajar tanpa risiko finansial." },
   { q: "Modal minimum yang disarankan?",              a: "Tidak ada ketentuan minimum, namun kami sarankan minimal Rp500.000 sebagai buffer aman untuk siklus martingale konservatif (nominal awal Rp14.000, multiplier 2,5x, 3 step)." },
   { q: "Tersedia untuk iOS (iPhone)?",                a: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade langsung melalui versi web di web.stcautotrade.id — buka di Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android." },
-  { q: "Apakah data akun Stockity saya aman?",        a: "Password tidak disimpan di server manapun. Hanya token autentikasi yang tersimpan secara lokal dan terenkripsi di perangkat Anda — baik di APK maupun versi web." },
-  { q: "Bot bisa jalan saat aplikasi ditutup?",       a: "Untuk APK Android: bot memerlukan aplikasi aktif di background. Untuk versi web: biarkan tab browser tetap terbuka. Hubungkan perangkat ke charger untuk performa optimal 24 jam." },
+  { q: "Apakah data akun Stockity saya aman?",        a: "Keamanan data Anda sepenuhnya terlindungi. Password tidak pernah dikirim ke, atau disimpan di server manapun — termasuk server kami. Hanya token autentikasi yang tersimpan, dienkripsi secara lokal langsung di perangkat Anda, baik di APK maupun versi web. Tidak ada pihak ketiga yang bisa mengakses kredensial akun Stockity.id Anda." },
+  { q: "Bot bisa jalan saat aplikasi ditutup?",       a: "Ya. Bot berjalan di server khusus, bukan di perangkat Anda — sehingga tetap aktif 24 jam meski aplikasi ditutup, HP dimatikan, atau koneksi internet Anda terputus. Tidak perlu khawatir soal baterai atau perangkat tetap menyala." },
 ];
 
 /* ── Motion constants ─────────────────────────────────────────── */
@@ -310,7 +311,7 @@ export default function Home() {
                 transition={{ duration: 0.65, delay: 0.2, ease: EASE_OUT }}
                 className="text-[#6b6058] text-base sm:text-[17px] leading-relaxed mb-8 max-w-lg"
               >
-                <strong className="text-[#1a1612] font-semibold">STC AutoTrade</strong> (StcAutoTrade / StockAutoTrade) terhubung langsung ke akun Stockity.id Anda dan mengeksekusi strategi secara disiplin, konsisten, dan bebas bias emosional — 24 jam sehari.
+                <strong className="text-[#1a1612] font-semibold">STC AutoTrade</strong> (StcAutoTrade / StockAutoTrade) terhubung langsung ke akun Stockity.id Anda dan mengeksekusi strategi secara otomatis, konsisten, dan bebas bias emosional — 24 jam non-stop.
               </motion.p>
 
               <motion.div
@@ -534,7 +535,7 @@ export default function Home() {
               Cara Kerja
             </p>
             <h2 className="text-3xl sm:text-4xl font-medium tracking-tight max-w-lg mx-auto leading-tight">
-              Sederhana untuk Digunakan,<br />Kuat dalam Eksekusi
+              Sederhana untuk Digunakan,<br />Presisi dalam Eksekusi
             </h2>
           </FadeUp>
 
@@ -621,7 +622,7 @@ export default function Home() {
                 <div className="border-l-2 border-[#3b82f6]/60 pl-4 bg-[#3b82f6]/[0.04] py-3 pr-4 rounded-r-xl mb-8">
                   <p className="text-[11px] font-bold tracking-widest uppercase text-[#1d4ed8] mb-2">Penting</p>
                   <p className="text-[13px] text-[#1e40af] leading-relaxed">
-                    StockAutoTrade adalah alat bantu eksekusi strategi, bukan jaminan profit.
+                    StockAutoTrade adalah alat bantu eksekusi strategi, bukan jaminan selalu profit.
                     Hasil trading tetap dipengaruhi kondisi pasar yang tidak dapat diprediksi.
                   </p>
                 </div>
@@ -682,10 +683,10 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <a href={APK_PATH} download className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-bold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 no-underline shadow-lg shadow-black/12">
+                  <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-bold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 no-underline shadow-lg shadow-black/12">
                     <DownloadIcon /> Download APK Android
                   </a>
-                  <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#eff6ff] border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-bold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 no-underline">
+                  <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-[#eff6ff] border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-bold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 no-underline">
                     <GlobeHemisphereWest weight="duotone" size={16} /> Coba Versi Web
                   </a>
                 </div>
@@ -769,7 +770,7 @@ export default function Home() {
             </h2>
             <p className="text-[#e0f2fe]/45 text-base sm:text-lg leading-relaxed max-w-md mx-auto mb-10">
               Download <strong className="text-[#e0f2fe]/70">STC AutoTrade</strong> (StockAutoTrade) sekarang, atau buka langsung versi web — mulai dari mode demo tanpa risiko,
-              dan rasakan perbedaan robot trading yang tereksekusi secara disiplin 24/7 di Stockity.id.
+              dan rasakan perbedaan robot trading yang tereksekusi secara otomatis 24/7 di Stockity.id.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
               <a
@@ -817,7 +818,7 @@ export default function Home() {
             </p>
           </div>
           <p className="text-[12px] text-[#1a1612]/30 max-w-sm sm:text-right leading-relaxed">
-            Trading mengandung risiko kerugian finansial. STC AutoTrade (StockAutoTrade) adalah alat bantu, bukan jaminan profit.
+            Trading mengandung risiko kerugian finansial. STC AutoTrade (StockAutoTrade) adalah alat bantu, bukan jaminan selalu profit.
             Pastikan Anda memahami risiko sebelum bertransaksi.
           </p>
         </div>
