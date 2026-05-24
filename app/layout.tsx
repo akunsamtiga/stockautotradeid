@@ -26,17 +26,17 @@ export const metadata: Metadata = {
   },
 
   description:
-    "STC AutoTrade (StcAutoTrade / StockAutoTrade) — robot trading otomatis terpercaya untuk Stockity.id. Tersedia sebagai APK Android & versi web di web.stcautotrade.id. 6 strategi, stop loss & stop profit, AI signal, copy trading. ⭐ 4.9/5",
+    "STC AutoTrade (StcAutoTrade / StockAutoTrade) — robot trading otomatis terpercaya untuk Stockity.id. Tersedia sebagai APK Android & versi web di web.stcautotrade.id. 6 strategi, stop loss & stop profit, AI signal, copy trading. Gratis untuk member.",
 
   keywords: [
-    // Brand exact-match — prioritas utama
+    // ── Brand exact-match ──────────────────────────────────────────
     "stc autotrade",
     "stcautotrade",
     "stc auto trade",
     "stockautotrade",
     "stock auto trade",
     "StockAutoTrade",
-    // Web version keywords
+    // ── Versi web ──────────────────────────────────────────────────
     "stc autotrade web",
     "web stcautotrade",
     "web.stcautotrade.id",
@@ -44,11 +44,10 @@ export const metadata: Metadata = {
     "stockautotrade web browser",
     "robot stockity versi web",
     "bot stockity tanpa instal",
-    "trading bot web browser stockity",
     "stcautotrade iphone",
     "stcautotrade ios",
     "stcautotrade pc laptop",
-    // Product variations
+    // ── Produk utama ───────────────────────────────────────────────
     "stockity auto trade",
     "auto stockity",
     "robot stockity",
@@ -57,21 +56,73 @@ export const metadata: Metadata = {
     "bot trading stockity",
     "bot trading otomatis stockity.id",
     "robot trading stockity indonesia",
-    // Long-tail intent tinggi
+    // ── Gratis ────────────────────────────────────────────────────
+    "auto trade stockity gratis",
+    "robot stockity gratis",
+    "download robot stockity gratis",
+    "bot trading stockity gratis",
+    "stcautotrade gratis",
+    "robot binary stockity gratis",
+    "bot stockity tanpa bayar",
+    "apk robot stockity gratis",
+    // ── Android / APK ──────────────────────────────────────────────
+    "robot stockity android",
+    "download bot stockity android",
+    "apk robot stockity",
+    "auto trade stockity android",
+    "aplikasi trading otomatis stockity android",
     "download stc autotrade apk",
     "cara instal stcautotrade android",
     "stockautotrade apk download",
+    // ── Cara setting & tutorial ────────────────────────────────────
+    "cara setting robot stockity",
+    "cara pakai bot stockity",
+    "setting martingale stockity",
+    "cara trading otomatis stockity",
+    "setting stop loss stockity",
+    "cara aktifkan robot stockity",
+    "panduan bot stockity pemula",
+    // ── Cara daftar ────────────────────────────────────────────────
+    "cara daftar stockity",
+    "cara buat akun stockity",
+    "daftar stockity gratis",
+    "cara registrasi stockity",
+    "cara verifikasi akun stockity",
+    "cara deposit stockity pertama kali",
+    // ── Cara profit & strategi ─────────────────────────────────────
+    "cara profit trading stockity",
+    "strategi trading stockity menang",
+    "tips trading stockity pemula",
+    "cara menang trading stockity",
+    "waktu terbaik trading stockity",
+    "cara konsisten profit di stockity",
+    // ── Modal ─────────────────────────────────────────────────────
+    "modal trading stockity",
+    "modal minimum stockity",
+    "berapa modal untuk trading stockity",
+    "cara mulai stockity modal kecil",
+    "modal deposit stockity",
+    // ── Review & keamanan ──────────────────────────────────────────
+    "stockity aman",
+    "stockity penipuan atau tidak",
+    "apakah stockity aman",
+    "stockity terpercaya",
+    "review stockity jujur",
+    "withdraw stockity berhasil",
+    // ── Perbandingan ───────────────────────────────────────────────
+    "stockity vs binomo",
+    "stockity vs olymp trade",
+    "platform trading terbaik indonesia 2025",
+    "perbandingan platform binary option indonesia",
+    // ── Long-tail intent tinggi ────────────────────────────────────
     "bot auto trade stockity gratis",
     "robot binary option stockity otomatis",
     "copy trading stockity otomatis",
     "AI signal trading stockity",
     "bot trading pemula stockity indonesia",
-    "aplikasi trading otomatis android stockity",
     "stop loss otomatis stockity",
     "martingale trading bot stockity",
     "trading 24 jam otomatis stockity",
-    "bot binary option otomatis",
-    "aplikasi bot trading terpercaya",
   ],
 
   alternates: {
@@ -113,7 +164,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "STC AutoTrade — Bot & Robot Trading Otomatis Stockity.id",
     description:
-      "STC AutoTrade (StockAutoTrade) — 6 strategi, stop loss & profit otomatis, AI signal. Tersedia APK Android & versi web (web.stcautotrade.id). ⭐ 4.9/5",
+      "STC AutoTrade (StockAutoTrade) — 6 strategi, stop loss & profit otomatis, AI signal. Tersedia APK Android & versi web (web.stcautotrade.id). Gratis.",
     images: [`${BASE_URL}/og-image.png`],
   },
 
@@ -131,7 +182,6 @@ const schemaApp = {
   "@type": "SoftwareApplication",
   "@id": `${BASE_URL}/#app`,
   name: "STC AutoTrade",
-  // ↓ Semua variasi nama brand — diindeks Google untuk brand disambiguation
   alternateName: [
     "StcAutoTrade",
     "Stc Auto Trade",
@@ -143,28 +193,34 @@ const schemaApp = {
     "Bot Stockity",
     "Robot Trading Stockity",
     "Bot Trading Stockity Otomatis",
+    "Auto Trade Stockity",
+    "Robot Stockity Android",
+    "Bot Stockity Gratis",
   ],
   url: BASE_URL,
   applicationCategory: "FinanceApplication",
   applicationSubCategory: "Trading Automation",
   operatingSystem: "Android 8.0+, Web Browser (semua platform)",
   applicationUrl: "https://web.stcautotrade.id",
+  downloadUrl: `${BASE_URL}/stcautotrade.apk`,
   inLanguage: "id",
   description:
-    "STC AutoTrade (juga dikenal sebagai StockAutoTrade, Robot Stockity, atau Auto Stockity) adalah aplikasi bot trading otomatis untuk platform Stockity.id. Dilengkapi 6 mode strategi (AI Signal, Copy Trading, Indikator Teknikal, Candlestick, Fastrade, Schedule), manajemen risiko otomatis dengan stop loss & stop profit, serta sistem martingale terkelola.",
+    "STC AutoTrade (juga dikenal sebagai StockAutoTrade, Robot Stockity, atau Auto Stockity) adalah aplikasi bot trading otomatis untuk platform Stockity.id. Dilengkapi 6 mode strategi (AI Signal, Copy Trading, Indikator Teknikal, Candlestick, Fastrade, Schedule), manajemen risiko otomatis dengan stop loss & stop profit, serta sistem martingale terkelola. Gratis untuk member.",
   featureList: [
     "Versi Web — akses langsung di browser tanpa instalasi (web.stcautotrade.id)",
     "Aplikasi Android APK — berjalan di background 24/7",
     "6 Mode Strategi Trading (AI Signal, Copy Trading, Indikator, Candlestick, Fastrade, Schedule)",
     "Stop Loss Otomatis — batas kerugian harian",
     "Stop Profit Otomatis — amankan target keuntungan",
-    "Sistem Martingale Terkelola",
+    "Sistem Martingale Terkelola (MAX STEP + MULTIPLIER kustom)",
     "Mode Demo Tanpa Risiko dengan data pasar nyata",
     "Riwayat Trading Lengkap per order",
-    "Pengaturan tersimpan otomatis",
-    "Bot aktif 24/7 tanpa bias emosional",
+    "100% Gratis untuk member terdaftar",
+    "Kompatibel: Android, iPhone, PC, Mac, iPad",
   ],
   screenshot: `${BASE_URL}/screenshot.png`,
+  datePublished: "2025-05-21",
+  dateModified: "2026-05-24",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
@@ -192,9 +248,15 @@ const schemaOrg = {
     "StockAutoTrade",
     "Stockity Auto Trade",
     "Robot Stockity",
+    "Auto Stockity",
   ],
   url: BASE_URL,
-  logo: `${BASE_URL}/logo.png`,
+  logo: {
+    "@type": "ImageObject",
+    url: `${BASE_URL}/logo.png`,
+    width: 512,
+    height: 512,
+  },
   contactPoint: {
     "@type": "ContactPoint",
     email: "daftar@stockautotrade.id",
@@ -227,6 +289,38 @@ const schemaFAQ = {
     },
     {
       "@type": "Question",
+      name: "Apakah auto trade Stockity gratis?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ya. STC AutoTrade adalah robot trading Stockity yang gratis sepenuhnya untuk member terdaftar — tidak ada biaya langganan, tidak ada komisi dari profit, tidak ada fitur yang dikunci. Akses penuh ke semua 6 strategi dan fitur manajemen risiko tersedia tanpa biaya.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Apakah Stockity aman dan bukan penipuan?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Stockity.id adalah platform trading binary option yang beroperasi untuk pasar Indonesia dan memproses transaksi secara nyata. Tidak ada bukti konkret bahwa platform ini adalah scam. Namun perlu dipahami bahwa trading binary option mengandung risiko kerugian finansial yang signifikan — ini berbeda dari penipuan platform.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Bagaimana cara daftar akun Stockity dan mulai auto trade?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Cara termudah: download STC AutoTrade APK dari stcautotrade.id atau buka web.stcautotrade.id, pilih Daftar Akun Baru, isi email dan password, verifikasi email, lalu login. Akses bot trading langsung aktif setelah mendaftar — gratis tanpa biaya apapun.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Berapa modal minimum untuk trading Stockity otomatis?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Modal minimum yang aman adalah Rp 300.000 untuk profil paling konservatif (nominal Rp 14.000, multiplier 2×, max step 3). Untuk profil standar pemula (multiplier 2,5×), disarankan Rp 500.000. Modal harus mencukupi total eksposur martingale ditambah buffer stop loss.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Apa perbedaan STC AutoTrade APK Android dan versi web?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -235,66 +329,42 @@ const schemaFAQ = {
     },
     {
       "@type": "Question",
-      name: "Apa perbedaan STC AutoTrade, StcAutoTrade, dan StockAutoTrade?",
+      name: "Apa saja mode strategi yang tersedia di robot Stockity?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ketiganya merujuk pada produk yang sama: bot trading otomatis untuk Stockity.id tersedia di stcautotrade.id (APK) dan web.stcautotrade.id (versi web). 'STC AutoTrade', 'StcAutoTrade', 'Stc Auto Trade', 'StockAutoTrade', dan 'Stock Auto Trade' adalah variasi penulisan nama brand yang sama.",
+        text: "STC AutoTrade memiliki 6 mode strategi: (1) AI Signal — sinyal machine learning real-time; (2) CTC Copy Trading — salin sinyal trader berpengalaman; (3) Indicator — berbasis SMA, EMA, dan RSI; (4) Momentum/Candlestick — deteksi pola Hammer, Doji, Engulfing; (5) Schedule — trading terjadwal berdasarkan waktu; (6) Fastrade — frekuensi order tinggi mengikuti momentum.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah STC AutoTrade sama dengan Robot Stockity atau Auto Stockity?",
+      name: "Apakah STC AutoTrade tersedia untuk iPhone (iOS)?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. STC AutoTrade, Robot Stockity, Auto Stockity, dan Stockity Auto Trade adalah sebutan populer untuk bot trading yang sama — tersedia di stcautotrade.id (APK Android) dan web.stcautotrade.id (versi web).",
+        text: "Ya. Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade melalui versi web di web.stcautotrade.id — cukup buka di browser Safari atau Chrome tanpa instalasi dan tanpa App Store. Semua 6 mode strategi tersedia di versi web.",
       },
     },
     {
       "@type": "Question",
-      name: "Bagaimana cara menginstal StockAutoTrade / STC AutoTrade di Android?",
+      name: "Bagaimana cara menginstal robot Stockity di Android?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Download file APK dari stcautotrade.id. Aktifkan izin Instal dari sumber tidak dikenal di Pengaturan Android. Buka file APK dan ikuti instruksi instalasi. Atau, gunakan versi web langsung di web.stcautotrade.id tanpa instalasi.",
+        text: "1) Download APK dari stcautotrade.id. 2) Aktifkan izin Instal dari sumber tidak dikenal di Pengaturan Android. 3) Buka file APK dan tap Instal. 4) Buka aplikasi, pilih Daftar Akun Baru untuk membuat akun Stockity.id gratis. 5) Login dan mulai dari mode demo.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah STC AutoTrade tersedia untuk iOS (iPhone)?",
+      name: "Stockity vs Binomo — mana yang lebih baik untuk robot trading?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade melalui versi web di web.stcautotrade.id — cukup buka di browser Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android.",
+        text: "Untuk trading otomatis dengan robot, Stockity unggul karena kompatibel penuh dengan STC AutoTrade — bot gratis dengan 6 mode strategi, stop loss otomatis, dan martingale terkelola. Binomo tidak memiliki bot trading resmi yang terintegrasi, sehingga trading harus dilakukan secara manual.",
       },
     },
     {
       "@type": "Question",
-      name: "Berapa modal minimum yang disarankan untuk StcAutoTrade?",
+      name: "Bagaimana cara profit konsisten di Stockity?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tidak ada ketentuan minimum, namun kami sarankan minimal Rp500.000 sebagai buffer aman untuk siklus martingale konservatif (nominal awal Rp14.000, multiplier 2,5x, 3 step).",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Apakah data akun Stockity.id saya aman di STC AutoTrade?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Ya, password tidak disimpan di server manapun. Hanya token autentikasi yang tersimpan secara lokal dan terenkripsi di perangkat Anda sendiri — baik di versi APK maupun versi web.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Apakah robot Stockity (STC AutoTrade) bisa berjalan saat aplikasi ditutup?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Untuk APK Android: bot memerlukan aplikasi aktif di background. Untuk versi web (web.stcautotrade.id): biarkan tab browser tetap terbuka. Hubungkan perangkat ke charger untuk performa optimal 24 jam.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Apa saja mode strategi yang tersedia di STC AutoTrade?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "STC AutoTrade memiliki 6 mode strategi — tersedia di APK Android maupun versi web: (1) Schedule, (2) Fastrade, (3) CTC Copy Trading, (4) AI Signal, (5) Indicator berbasis SMA/EMA/RSI, (6) Momentum/Candlestick.",
+        text: "Cara profit konsisten di Stockity membutuhkan tiga hal: (1) strategi tervalidasi di mode demo minimal 7–14 hari dengan win rate di atas 53%; (2) manajemen risiko ketat dengan stop loss dan stop profit otomatis; (3) disiplin tidak mengganti strategi saat rugi dan tidak overtrade. STC AutoTrade menangani konsistensi ini secara otomatis.",
       },
     },
   ],
@@ -313,17 +383,26 @@ const schemaBreadcrumb = {
   ],
 };
 
-// WebSite schema untuk sitelinks searchbox & brand recognition
 const schemaWebSite = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${BASE_URL}/#website`,
   name: "STC AutoTrade",
-  alternateName: ["StcAutoTrade", "StockAutoTrade", "Robot Stockity", "Auto Stockity"],
+  alternateName: [
+    "StcAutoTrade",
+    "StockAutoTrade",
+    "Robot Stockity",
+    "Auto Stockity",
+    "Bot Trading Stockity",
+    "Auto Trade Stockity",
+  ],
   url: BASE_URL,
   description:
-    "Bot & robot trading otomatis untuk Stockity.id — STC AutoTrade (StockAutoTrade) tersedia sebagai APK Android (stcautotrade.id) dan versi web (web.stcautotrade.id).",
+    "Bot & robot trading otomatis untuk Stockity.id — STC AutoTrade (StockAutoTrade) tersedia sebagai APK Android (stcautotrade.id) dan versi web (web.stcautotrade.id). Gratis untuk member.",
   inLanguage: "id-ID",
+  publisher: {
+    "@id": `${BASE_URL}/#organization`,
+  },
   potentialAction: {
     "@type": "SearchAction",
     target: {
