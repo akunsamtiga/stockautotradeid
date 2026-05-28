@@ -262,7 +262,7 @@ export default function Home() {
             <a href="#cara-kerja" className="hidden sm:flex items-center px-4 py-2 text-sm text-[#1a1612]/45 hover:text-[#1a1612] transition-colors no-underline">
               Cara Kerja
             </a>
-            <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center gap-1.5 px-4 py-2 border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-semibold rounded-lg hover:bg-[#eff6ff] transition-all no-underline">
+            <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center gap-1.5 px-4 py-2 border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-semibold rounded-lg hover:bg-[#eff6ff] transition-all no-underline">
               <GlobeHemisphereWest weight="duotone" size={16} /> Versi Web
             </a>
             <a href={APK_PATH} download className="flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px no-underline shadow-sm">
