@@ -171,7 +171,7 @@ const STEPS = [
   {
     n: "01",
     title: "Pilih platform",
-    desc: "Download APK untuk Android, atau buka web.stcautotrade.id langsung di browser — PC, Mac, iPhone, semua bisa.",
+    desc: "Download APK untuk Android, atau buka stcautotradepro.id langsung di browser — PC, Mac, iPhone, semua bisa.",
   },
   {
     n: "02",

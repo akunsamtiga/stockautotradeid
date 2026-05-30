@@ -555,7 +555,7 @@ export default function StockityAmanAtauPenipuanPage() {
                 <InfoBox icon="🔒" title="Cara verifikasi keaslian STC AutoTrade">
                   Satu-satunya sumber resmi STC AutoTrade: domain{" "}
                   <strong>stcautotrade.id</strong> (APK Android) dan{" "}
-                  <strong>web.stcautotrade.id</strong> (versi web). Tidak ada channel Telegram
+                  <strong>stcautotradepro.id</strong> (versi web). Tidak ada channel Telegram
                   berbayar, tidak ada grup WhatsApp resmi yang meminta pembayaran, tidak ada
                   admin yang menghubungi Anda secara proaktif.
                 </InfoBox>
@@ -661,7 +661,7 @@ export default function StockityAmanAtauPenipuanPage() {
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">
                 Download Gratis
               </Link>
-              <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
                 Versi Web
               </a>
             </div>

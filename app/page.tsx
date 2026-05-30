@@ -51,7 +51,7 @@ const RISKS = [
 ];
 
 const STEPS = [
-  { n: "01", title: "Pilih platform Anda",          desc: "Download APK untuk Android, atau buka langsung di browser via web.stcautotrade.id — tanpa instal, siap di perangkat apapun termasuk PC, laptop, dan iPhone." },
+  { n: "01", title: "Pilih platform Anda",          desc: "Download APK untuk Android, atau buka langsung di browser via stcautotradepro.id — tanpa instal, siap di perangkat apapun termasuk PC, laptop, dan iPhone." },
   { n: "02", title: "Daftar akun baru",             desc: "Belum punya akun? Daftar akun harus melalui aplikasi STC AutoTrade yang telah disediakan — prosesnya cepat dan gratis, tanpa perlu berpindah ke aplikasi lain." },
   { n: "03", title: "Login dengan akun Stockity",   desc: "Masuk menggunakan email dan password akun Stockity.id yang telah dibuat. selamat sudah bisa menggunakan STC AutoTrade!" },
   { n: "04", title: "Mulai dari mode demo",         desc: "Jangan terburu ke mode real. Gunakan demo minimal 7 hari untuk memahami strategi dan memvalidasi pengaturan Anda tanpa risiko finansial." },
@@ -59,15 +59,15 @@ const STEPS = [
 ];
 
 const FAQS = [
-  { q: "Apa itu STC AutoTrade / StcAutoTrade?",       a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, StockAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di web.stcautotrade.id." },
-  { q: "Apa bedanya versi APK Android dan versi web?", a: "Versi APK diinstal di perangkat Android dan bisa berjalan di background. Versi web (web.stcautotrade.id) tidak perlu instalasi — langsung buka di browser, cocok untuk PC, laptop, dan iPhone. Semua fitur tersedia di kedua versi, tidak ada yang dikurangi." },
-  { q: "Bagaimana cara menggunakan versi web STC AutoTrade?", a: "Buka browser dan kunjungi web.stcautotrade.id. Jika belum punya akun, daftar dulu melalui web tersebut — prosesnya cepat dan gratis. Setelah akun berhasil terbuat lalu login menggunakan akun Stockity.id. Tidak perlu unduh atau instalasi — langsung bisa digunakan di PC, Mac, iPhone, atau perangkat lainnya." },
+  { q: "Apa itu STC AutoTrade / StcAutoTrade?",       a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, StockAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di stcautotradepro.id." },
+  { q: "Apa bedanya versi APK Android dan versi web?", a: "Versi APK diinstal di perangkat Android dan bisa berjalan di background. Versi web (stcautotradepro.id) tidak perlu instalasi — langsung buka di browser, cocok untuk PC, laptop, dan iPhone. Semua fitur tersedia di kedua versi, tidak ada yang dikurangi." },
+  { q: "Bagaimana cara menggunakan versi web STC AutoTrade?", a: "Buka browser dan kunjungi stcautotradepro.id. Jika belum punya akun, daftar dulu melalui web tersebut — prosesnya cepat dan gratis. Setelah akun berhasil terbuat lalu login menggunakan akun Stockity.id. Tidak perlu unduh atau instalasi — langsung bisa digunakan di PC, Mac, iPhone, atau perangkat lainnya." },
   { q: "Apa bedanya STC AutoTrade, StcAutoTrade, dan StockAutoTrade?", a: "Ketiganya adalah nama yang merujuk produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'StockAutoTrade', dan 'Stock Auto Trade' adalah variasi penulisan brand yang sama." },
   { q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?", a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (StockAutoTrade), tersedia via APK Android maupun versi web." },
-  { q: "Bagaimana cara menginstal STC AutoTrade di Android?",   a: "Download file APK dari tombol di halaman ini. Aktifkan 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan. Buka file APK dan ikuti instruksi. Atau gunakan versi web di web.stcautotrade.id tanpa instalasi." },
+  { q: "Bagaimana cara menginstal STC AutoTrade di Android?",   a: "Download file APK dari tombol di halaman ini. Aktifkan 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan. Buka file APK dan ikuti instruksi. Atau gunakan versi web di stcautotradepro.id tanpa instalasi." },
   { q: "Apakah perlu pengalaman trading?",            a: "Tidak. STC AutoTrade dirancang agar bisa digunakan pemula sekalipun. Mode demo tersedia di versi APK maupun versi web untuk belajar tanpa risiko finansial." },
   { q: "Modal minimum yang disarankan?",              a: "Tidak ada ketentuan minimum, namun kami sarankan minimal Rp500.000 sebagai buffer aman untuk siklus martingale konservatif (nominal awal Rp14.000, multiplier 2,5x, 3 step)." },
-  { q: "Tersedia untuk iOS (iPhone)?",                a: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade langsung melalui versi web di web.stcautotrade.id — buka di Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android." },
+  { q: "Tersedia untuk iOS (iPhone)?",                a: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade langsung melalui versi web di stcautotradepro.id — buka di Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android." },
   { q: "Apakah data akun Stockity saya aman?",        a: "Keamanan data Anda sepenuhnya terlindungi. Password tidak pernah dikirim ke, atau disimpan di server manapun — termasuk server kami. Hanya token autentikasi yang tersimpan, dienkripsi secara lokal langsung di perangkat Anda, baik di APK maupun versi web. Tidak ada pihak ketiga yang bisa mengakses kredensial akun Stockity.id Anda." },
   { q: "Bot bisa jalan saat aplikasi ditutup?",       a: "Ya. Bot berjalan di server khusus, bukan di perangkat Anda — sehingga tetap aktif 24 jam meski aplikasi ditutup, HP dimatikan, atau koneksi internet Anda terputus. Tidak perlu khawatir soal baterai atau perangkat tetap menyala." },
 ];
@@ -325,7 +325,7 @@ export default function Home() {
                   <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline shadow-lg shadow-black/10">
                     <DownloadIcon /> Download Aplikasi Android
                   </a>
-                  <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 border border-[#3b82f6]/35 bg-[#eff6ff] text-[#1d4ed8] text-sm font-semibold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline">
+                  <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 border border-[#3b82f6]/35 bg-[#eff6ff] text-[#1d4ed8] text-sm font-semibold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline">
                     <GlobeHemisphereWest weight="duotone" size={16} /> Buka Versi Web
                   </a>
                 </div>
@@ -417,7 +417,7 @@ export default function Home() {
               <strong className="text-[#1a1612]">STC AutoTrade</strong> (stcautotrade.id),
               bot & robot trading otomatis untuk <strong className="text-[#1a1612]">Stockity.id</strong>.{" "}
               Tersedia sebagai APK Android dan versi web di{" "}
-              <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="text-[#1d4ed8] font-semibold no-underline hover:underline">web.stcautotrade.id</a>.
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="text-[#1d4ed8] font-semibold no-underline hover:underline">stcautotradepro.id</a>.
             </p>
           </FadeUp>
         </div>
@@ -464,7 +464,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-sm font-bold text-[#1d4ed8]">Versi Web</p>
-                  <p className="text-[11px] text-[#1d4ed8]/50 font-medium">web.stcautotrade.id</p>
+                  <p className="text-[11px] text-[#1d4ed8]/50 font-medium">stcautotradepro.id</p>
                 </div>
               </div>
               <ul className="flex flex-col gap-2">
@@ -474,7 +474,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#3b82f6] text-white text-sm font-semibold rounded-xl hover:bg-[#2563eb] transition-all no-underline shadow-sm shadow-[#3b82f6]/25">
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#3b82f6] text-white text-sm font-semibold rounded-xl hover:bg-[#2563eb] transition-all no-underline shadow-sm shadow-[#3b82f6]/25">
                 <GlobeHemisphereWest weight="duotone" size={16} /> Buka Versi Web
               </a>
             </motion.div>
@@ -686,7 +686,7 @@ export default function Home() {
                   <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-bold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 no-underline shadow-lg shadow-black/12">
                     <DownloadIcon /> Download APK Android
                   </a>
-                  <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-[#eff6ff] border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-bold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 no-underline">
+                  <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-[#eff6ff] border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-bold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 no-underline">
                     <GlobeHemisphereWest weight="duotone" size={16} /> Coba Versi Web
                   </a>
                 </div>
@@ -781,7 +781,7 @@ export default function Home() {
                 <DownloadIcon /> Download APK Android
               </a>
               <a
-                href="https://web.stcautotrade.id"
+                href="https://stcautotradepro.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 w-full sm:w-auto px-9 py-4 bg-white/10 border border-white/20 text-white text-sm font-bold rounded-xl hover:bg-white/20 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline"
@@ -814,7 +814,7 @@ export default function Home() {
               <span className="text-sm font-medium text-[#1a1612]/60">STC AutoTrade</span>
             </div>
             <p className="text-[11px] text-[#1a1612]/25 leading-snug">
-              StcAutoTrade · StockAutoTrade · Robot Stockity · web.stcautotrade.id · stcautotrade.id
+              StcAutoTrade · StockAutoTrade · Robot Stockity · stcautotradepro.id · stcautotrade.id
             </p>
           </div>
           <p className="text-[12px] text-[#1a1612]/30 max-w-sm sm:text-right leading-relaxed">

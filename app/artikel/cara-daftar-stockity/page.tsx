@@ -108,7 +108,7 @@ const howToSchema = {
   totalTime: "PT10M",
   estimatedCost: { "@type": "MonetaryAmount", currency: "IDR", value: "0" },
   step: [
-    { "@type": "HowToStep", position: 1, name: "Buka STC AutoTrade", text: "Download APK dari stcautotrade.id atau buka web.stcautotrade.id di browser." },
+    { "@type": "HowToStep", position: 1, name: "Buka STC AutoTrade", text: "Download APK dari stcautotrade.id atau buka stcautotradepro.id di browser." },
     { "@type": "HowToStep", position: 2, name: "Pilih Daftar Akun Baru", text: "Tap atau klik tombol 'Daftar Akun Baru' di halaman utama aplikasi." },
     { "@type": "HowToStep", position: 3, name: "Isi data registrasi", text: "Masukkan nama lengkap, email aktif, nomor HP, dan buat password yang kuat." },
     { "@type": "HowToStep", position: 4, name: "Verifikasi email", text: "Cek kotak masuk email untuk link atau kode verifikasi dari Stockity. Klik link atau masukkan kode." },
@@ -348,7 +348,7 @@ export default function CaraDaftarStockityPage() {
                     </div>
                     <div className="space-y-2.5">
                       {[
-                        { n: "1", t: "Buka browser", d: "Ketik web.stcautotrade.id di Chrome, Safari, atau Firefox." },
+                        { n: "1", t: "Buka browser", d: "Ketik stcautotradepro.id di Chrome, Safari, atau Firefox." },
                         { n: "2", t: "Klik Daftar", d: "Tap tombol 'Daftar Akun Baru' di halaman web." },
                         { n: "3", t: "Isi form registrasi", d: "Nama, email aktif, nomor HP, password → Submit." },
                         { n: "4", t: "Verifikasi email", d: "Buka email → klik link verifikasi dari Stockity." },
@@ -718,7 +718,7 @@ export default function CaraDaftarStockityPage() {
               <div className="space-y-4">
                 <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
                   Daftar akun Stockity sangat mudah dan gratis. Cara tercepat:
-                  download STC AutoTrade APK atau buka web.stcautotrade.id →
+                  download STC AutoTrade APK atau buka stcautotradepro.id →
                   tap "Daftar Akun Baru" → isi email, nomor HP, dan password →
                   verifikasi email → login. Selesai dalam kurang dari 5 menit,
                   langsung bisa trading demo.
@@ -763,7 +763,7 @@ export default function CaraDaftarStockityPage() {
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">
                 Download Gratis
               </Link>
-              <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
                 Versi Web
               </a>
             </div>

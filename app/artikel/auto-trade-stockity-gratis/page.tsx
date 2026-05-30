@@ -109,7 +109,7 @@ const faqSchema = {
       name: "Apakah benar ada robot trading Stockity yang gratis?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. STC AutoTrade (StcAutoTrade / StockAutoTrade) adalah bot trading Stockity yang gratis untuk semua member terdaftar — baik versi APK Android maupun versi web di web.stcautotrade.id. Tidak ada biaya langganan atau biaya tersembunyi.",
+        text: "Ya. STC AutoTrade (StcAutoTrade / StockAutoTrade) adalah bot trading Stockity yang gratis untuk semua member terdaftar — baik versi APK Android maupun versi web di stcautotradepro.id. Tidak ada biaya langganan atau biaya tersembunyi.",
       },
     },
     {
@@ -117,7 +117,7 @@ const faqSchema = {
       name: "Bagaimana cara mendapatkan akses robot Stockity gratis?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Akses diberikan melalui sistem whitelist. Langkahnya: (1) Download APK dari stcautotrade.id atau buka web.stcautotrade.id, (2) Pilih 'Daftar' di dalam aplikasi, (3) Daftar akun Stockity.id gratis melalui aplikasi, (4) Login — akses bot otomatis aktif.",
+        text: "Akses diberikan melalui sistem whitelist. Langkahnya: (1) Download APK dari stcautotrade.id atau buka stcautotradepro.id, (2) Pilih 'Daftar' di dalam aplikasi, (3) Daftar akun Stockity.id gratis melalui aplikasi, (4) Login — akses bot otomatis aktif.",
       },
     },
     {
@@ -141,7 +141,7 @@ const faqSchema = {
       name: "Apakah robot Stockity gratis bisa dipakai di iPhone?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. Pengguna iPhone menggunakan versi web gratis di web.stcautotrade.id melalui browser Safari atau Chrome. Fitur identik dengan versi APK Android — tidak ada yang dikurangi.",
+        text: "Ya. Pengguna iPhone menggunakan versi web gratis di stcautotradepro.id melalui browser Safari atau Chrome. Fitur identik dengan versi APK Android — tidak ada yang dikurangi.",
       },
     },
   ],
@@ -337,7 +337,7 @@ export default function AutoTradeStockityGratisPage() {
                     icon: "📱",
                     items: [
                       "APK Android — instal native, berjalan di background (Android 8.0+)",
-                      "Versi Web — akses di browser tanpa instalasi (web.stcautotrade.id)",
+                      "Versi Web — akses di browser tanpa instalasi (stcautotradepro.id)",
                       "PC & Laptop — Windows, Mac, Linux via Chrome/Firefox/Safari",
                       "iPhone & iPad — Safari/Chrome via versi web, tanpa App Store",
                       "Riwayat trading lengkap per order untuk analisis performa",
@@ -516,7 +516,7 @@ export default function AutoTradeStockityGratisPage() {
                   </div>
                   <div className="space-y-2.5">
                     {[
-                      { n: "1", title: "Buka web.stcautotrade.id", desc: "Tidak perlu download apapun. Langsung buka di browser Chrome, Safari, atau Firefox — di perangkat apapun." },
+                      { n: "1", title: "Buka stcautotradepro.id", desc: "Tidak perlu download apapun. Langsung buka di browser Chrome, Safari, atau Firefox — di perangkat apapun." },
                       { n: "2", title: "Pilih Daftar Akun Baru", desc: "Klik tombol Daftar di halaman web. Sistem akan memandu pembuatan akun Stockity.id — prosesnya sama dengan APK." },
                       { n: "3", title: "Login dan mulai", desc: "Setelah akun aktif, login dan semua 6 strategi beserta fitur manajemen risiko langsung tersedia." },
                     ].map((s) => (
@@ -562,7 +562,7 @@ export default function AutoTradeStockityGratisPage() {
                     badgeColor: "bg-violet-50 text-violet-700 border-violet-200",
                     req: "Safari atau Chrome",
                     features: ["Tanpa instalasi, tanpa App Store", "Buka di browser langsung", "Fitur identik dengan APK", "Gratis tanpa syarat"],
-                    url: "web.stcautotrade.id",
+                    url: "stcautotradepro.id",
                   },
                   {
                     device: "PC & Laptop",
@@ -571,7 +571,7 @@ export default function AutoTradeStockityGratisPage() {
                     badgeColor: "bg-violet-50 text-violet-700 border-violet-200",
                     req: "Windows / Mac / Linux",
                     features: ["Chrome, Edge, Firefox, Safari", "Tampilan optimal di layar besar", "Semua 6 strategi tersedia", "Tidak ada batasan OS"],
-                    url: "web.stcautotrade.id",
+                    url: "stcautotradepro.id",
                   },
                   {
                     device: "Tablet Android",
@@ -580,7 +580,7 @@ export default function AutoTradeStockityGratisPage() {
                     badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
                     req: "Android 8.0+ atau browser",
                     features: ["Bisa pakai APK atau versi web", "Layar lebih besar untuk monitoring", "Background run via APK", "Versi web juga optimal"],
-                    url: "stcautotrade.id / web.stcautotrade.id",
+                    url: "stcautotrade.id / stcautotradepro.id",
                   },
                 ].map((p) => (
                   <div key={p.device} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
@@ -635,7 +635,7 @@ export default function AutoTradeStockityGratisPage() {
                   },
                   {
                     q: "Bisakah download robot Stockity gratis untuk iPhone?",
-                    a: "Ya. Untuk iPhone, gunakan versi web gratis di web.stcautotrade.id — buka di browser Safari atau Chrome tanpa instalasi. Fitur identik dengan APK Android, termasuk semua 6 strategi.",
+                    a: "Ya. Untuk iPhone, gunakan versi web gratis di stcautotradepro.id — buka di browser Safari atau Chrome tanpa instalasi. Fitur identik dengan APK Android, termasuk semua 6 strategi.",
                   },
                   {
                     q: "Apakah robot Stockity gratis sudah termasuk mode demo?",
@@ -718,7 +718,7 @@ export default function AutoTradeStockityGratisPage() {
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">
                 Download Gratis
               </Link>
-              <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
                 Versi Web
               </a>
             </div>
