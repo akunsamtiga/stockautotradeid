@@ -113,7 +113,7 @@ const howToSchema = {
   totalTime: "PT15M",
   estimatedCost: { "@type": "MonetaryAmount", currency: "IDR", value: "0" },
   step: [
-    { "@type": "HowToStep", position: 1, name: "Akses STC AutoTrade", text: "Download APK Android dari stcautotrade.id atau buka stcautotradepro.id di browser." },
+    { "@type": "HowToStep", position: 1, name: "Akses STC AutoTrade", text: "Download APK Android dari stcautotrade.id atau buka web.stcautotrade.id di browser." },
     { "@type": "HowToStep", position: 2, name: "Login akun Stockity.id", text: "Login menggunakan akun Stockity.id Anda. Jika belum punya, daftar gratis melalui aplikasi." },
     { "@type": "HowToStep", position: 3, name: "Pilih mode strategi", text: "Pilih salah satu dari 6 mode: AI Signal, CTC Copy Trading, Indicator, Momentum, Schedule, atau Fastrade." },
     { "@type": "HowToStep", position: 4, name: "Setting nominal dan martingale", text: "Tentukan nominal awal order, multiplier martingale (disarankan 2–2,5×), dan max step (disarankan 3)." },
@@ -384,7 +384,7 @@ export default function CaraSettingRobotStockityPage() {
                       icon: "🌐",
                       title: "Versi Web (PC, Mac, iPhone)",
                       steps: [
-                        "Buka stcautotradepro.id di browser",
+                        "Buka web.stcautotrade.id di browser",
                         "Tidak perlu instal apapun",
                         "Login dengan akun Stockity.id",
                         "Fitur identik dengan APK",
@@ -914,7 +914,7 @@ export default function CaraSettingRobotStockityPage() {
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">
                 Download APK
               </Link>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
+              <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
                 Versi Web
               </a>
             </div>

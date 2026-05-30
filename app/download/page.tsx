@@ -11,7 +11,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Download STC AutoTrade APK Android & Versi Web — StockAutoTrade",
   description:
-    "Download STC AutoTrade APK Android terbaru atau akses langsung versi web di stcautotradepro.id. Gratis untuk member. Panduan instalasi lengkap tersedia. Mendukung Android 8.0+, PC, Mac, iPhone.",
+    "Download STC AutoTrade APK Android terbaru atau akses langsung versi web di web.stcautotrade.id. Gratis untuk member. Panduan instalasi lengkap tersedia. Mendukung Android 8.0+, PC, Mac, iPhone.",
   keywords: [
     "download stcautotrade apk",
     "download stockautotrade",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
 /* ── Constants ────────────────────────────────────────────────── */
 
-const APK_PATH = "/stcautotrade.apk";
+const APK_PATH = "/StcAutoTrade.apk";
 
 /* ── Structured Data ──────────────────────────────────────────── */
 
@@ -213,7 +213,7 @@ export default function DownloadPage() {
                 ))}
               </div>
               <a
-                href="https://stcautotradepro.id"
+                href="https://web.stcautotrade.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 bg-[#3b82f6] text-white text-sm font-bold rounded-xl hover:bg-[#2563eb] active:scale-[0.98] transition-all no-underline shadow-sm shadow-blue-200"
@@ -226,7 +226,7 @@ export default function DownloadPage() {
                 Buka Versi Web
               </a>
               <p className="text-center text-[11px] text-[#1a1612]/30 mt-2.5">
-                stcautotradepro.id · Gratis
+                web.stcautotrade.id · Gratis
               </p>
             </div>
           </div>
@@ -296,7 +296,7 @@ export default function DownloadPage() {
                 {
                   platform: "iPhone & iPad (iOS)",
                   req: "Safari, Chrome, atau browser modern",
-                  note: "Gunakan versi web di stcautotradepro.id. Tidak perlu App Store.",
+                  note: "Gunakan versi web di web.stcautotrade.id. Tidak perlu App Store.",
                   badge: "Web",
                   badgeColor: "bg-violet-50 text-violet-700 border-violet-200",
                 },
@@ -379,7 +379,7 @@ export default function DownloadPage() {
                 <span className="text-[12px] font-medium text-[#1a1612]/50">STC AutoTrade</span>
               </div>
               <p className="text-[11px] text-[#1a1612]/25">
-                StcAutoTrade · StockAutoTrade · Robot Stockity · stcautotradepro.id
+                StcAutoTrade · StockAutoTrade · Robot Stockity · web.stcautotrade.id
               </p>
             </div>
             <p className="text-[11px] text-[#1a1612]/25 max-w-xs sm:text-right leading-relaxed">

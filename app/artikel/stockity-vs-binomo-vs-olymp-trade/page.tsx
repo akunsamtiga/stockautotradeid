@@ -224,7 +224,7 @@ const COMPARISON_ROWS = [
   },
   {
     aspek: "Tersedia di iOS (iPhone)",
-    stockity: { val: "✅ Via stcautotradepro.id", highlight: false },
+    stockity: { val: "✅ Via web.stcautotrade.id", highlight: false },
     binomo: { val: "✅ App Store tersedia", highlight: false },
     olymp: { val: "✅ App Store tersedia", highlight: false },
   },
@@ -559,7 +559,7 @@ export default function StockityVsBinomoPage() {
                   {
                     n: "1",
                     title: "Download STC AutoTrade",
-                    desc: "Download APK dari stcautotrade.id (Android) atau buka stcautotradepro.id (semua perangkat termasuk iPhone dan PC).",
+                    desc: "Download APK dari stcautotrade.id (Android) atau buka web.stcautotrade.id (semua perangkat termasuk iPhone dan PC).",
                   },
                   {
                     n: "2",
@@ -689,7 +689,7 @@ export default function StockityVsBinomoPage() {
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">
                 Download Gratis
               </Link>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
+              <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
                 Versi Web
               </a>
             </div>

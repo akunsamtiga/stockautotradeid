@@ -763,7 +763,7 @@ export default function RobotStockityAndroidPage() {
                 {[
                   {
                     q: "Versi Android berapa yang dibutuhkan untuk robot Stockity?",
-                    a: "Minimal Android 8.0 (Oreo) ke atas. HP Android rilisan 2018 ke atas umumnya sudah memenuhi syarat ini. Jika HP Anda masih Android 7 ke bawah, gunakan versi web di stcautotradepro.id sebagai alternatif.",
+                    a: "Minimal Android 8.0 (Oreo) ke atas. HP Android rilisan 2018 ke atas umumnya sudah memenuhi syarat ini. Jika HP Anda masih Android 7 ke bawah, gunakan versi web di web.stcautotrade.id sebagai alternatif.",
                   },
                   {
                     q: "Apakah robot Stockity APK aman untuk HP saya?",
@@ -851,7 +851,7 @@ export default function RobotStockityAndroidPage() {
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">
                 Download APK
               </Link>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
+              <a href="https://web.stcautotrade.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
                 Versi Web
               </a>
             </div>

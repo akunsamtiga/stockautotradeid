@@ -236,14 +236,23 @@ const DownloadIcon = () => (
 );
 
 /* Path APK di folder public — sesuaikan nama file dengan APK Anda */
-const APK_PATH = "/StockAutoTrade.apk";
+const APK_PATH = "/StcAutoTrade.apk";
 
 export default function Home() {
   return (
     <div className="bg-white text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
 
+      {/* ── SKIP NAV (Aksesibilitas + SEO) ────────────────── */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[200] focus:px-5 focus:py-2.5 focus:bg-white focus:text-[#1a1612] focus:rounded-xl focus:shadow-xl focus:text-sm focus:font-semibold focus:border focus:border-[rgba(26,22,18,0.16)]"
+      >
+        Langsung ke konten utama
+      </a>
+
       {/* ── NAV ─────────────────────────────────────────── */}
-      <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[rgba(26,22,18,0.08)]">
+      {/* FIX: aria-label ditambahkan untuk landmark navigasi yang jelas */}
+      <nav aria-label="Navigasi utama STC AutoTrade" className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[rgba(26,22,18,0.08)]">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2.5 no-underline group">
             <Image
@@ -271,6 +280,10 @@ export default function Home() {
           </div>
         </div>
       </nav>
+
+      {/* ── MAIN CONTENT (semantic HTML) ────────────────── */}
+      {/* FIX: <main> element menandai konten utama untuk crawler & aksesibilitas */}
+      <main id="main-content">
 
       {/* ── HERO ────────────────────────────────────────── */}
       <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden border-b border-[rgba(26,22,18,0.07)]">
@@ -792,12 +805,12 @@ export default function Home() {
             <p className="mt-5 text-[12px] text-[#e0f2fe]/25">
               APK Android 10.0+ · Versi Web semua perangkat · Gratis
             </p>
-            <p className="mt-3 text-[11px] text-[#e0f2fe]/15">
-              STC AutoTrade · StcAutoTrade · StockAutoTrade · Robot Stockity · Auto Stockity · Stockity Auto Trade
-            </p>
+{/* Removed: keyword stuffing teks — digantikan oleh structured data & FAQ di bawah */}
           </FadeUp>
         </div>
       </section>
+
+      </main>{/* /main — penutup konten utama */}
 
       {/* ── FOOTER ──────────────────────────────────────── */}
       <footer className="border-t border-[rgba(26,22,18,0.09)] py-8 bg-white">
@@ -814,7 +827,7 @@ export default function Home() {
               <span className="text-sm font-medium text-[#1a1612]/60">STC AutoTrade</span>
             </div>
             <p className="text-[11px] text-[#1a1612]/25 leading-snug">
-              StcAutoTrade · StockAutoTrade · Robot Stockity · stcautotradepro.id · stcautotrade.id
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
           </div>
           <p className="text-[12px] text-[#1a1612]/30 max-w-sm sm:text-right leading-relaxed">

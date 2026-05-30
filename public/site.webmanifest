@@ -1,0 +1,24 @@
+{
+  "name": "STC AutoTrade",
+  "short_name": "STC AutoTrade",
+  "description": "Robot trading otomatis untuk Stockity.id — 6 strategi, stop loss otomatis, AI signal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["finance"]
+}

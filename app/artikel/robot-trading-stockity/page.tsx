@@ -149,7 +149,7 @@ const faqSchema = {
       name: "Bagaimana cara menggunakan robot trading di Stockity untuk pemula?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pemula disarankan: (1) Download STC AutoTrade APK atau buka stcautotradepro.id, (2) Daftar akun Stockity.id gratis melalui aplikasi, (3) Mulai dengan mode CTC Copy Trading atau AI Signal yang tidak memerlukan analisis manual, (4) Aktifkan stop loss dan stop profit, (5) Latih di mode demo minimal 7 hari sebelum beralih ke real.",
+        text: "Pemula disarankan: (1) Download STC AutoTrade APK atau buka web.stcautotrade.id, (2) Daftar akun Stockity.id gratis melalui aplikasi, (3) Mulai dengan mode CTC Copy Trading atau AI Signal yang tidak memerlukan analisis manual, (4) Aktifkan stop loss dan stop profit, (5) Latih di mode demo minimal 7 hari sebelum beralih ke real.",
       },
     },
     {
@@ -157,7 +157,7 @@ const faqSchema = {
       name: "Apakah ada bot trading Stockity untuk iPhone (iOS)?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. Pengguna iPhone dan iPad bisa menggunakan robot trading Stockity melalui versi web STC AutoTrade di stcautotradepro.id — langsung di browser Safari atau Chrome tanpa instalasi. Fitur lengkap sama dengan versi APK Android.",
+        text: "Ya. Pengguna iPhone dan iPad bisa menggunakan robot trading Stockity melalui versi web STC AutoTrade di web.stcautotrade.id — langsung di browser Safari atau Chrome tanpa instalasi. Fitur lengkap sama dengan versi APK Android.",
       },
     },
     {
@@ -173,7 +173,7 @@ const faqSchema = {
       name: "Apa perbedaan robot trading Stockity versi APK dan web?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "APK Android: diinstal di perangkat, berjalan di background, butuh Android 8.0+. Versi web (stcautotradepro.id): tidak perlu instalasi, kompatibel dengan PC, Mac, iPhone, Android via browser. Kedua versi memiliki 6 mode strategi yang sama.",
+        text: "APK Android: diinstal di perangkat, berjalan di background, butuh Android 8.0+. Versi web (web.stcautotrade.id): tidak perlu instalasi, kompatibel dengan PC, Mac, iPhone, Android via browser. Kedua versi memiliki 6 mode strategi yang sama.",
       },
     },
   ],
@@ -401,7 +401,7 @@ export default function RobotTradingStockityPage() {
                   <strong className="text-[#1a1612]">STC AutoTrade</strong> (StcAutoTrade /
                   StockAutoTrade) adalah aplikasi robot trading Stockity yang paling banyak
                   digunakan oleh trader Indonesia. Tersedia sebagai APK Android (diunduh dari
-                  stcautotrade.id) dan versi web (stcautotradepro.id) yang bisa diakses dari
+                  stcautotrade.id) dan versi web (web.stcautotrade.id) yang bisa diakses dari
                   browser tanpa instalasi.
                 </p>
 
@@ -659,7 +659,7 @@ export default function RobotTradingStockityPage() {
                     {
                       platform: "Versi Web Browser",
                       icon: "🌐",
-                      url: "stcautotradepro.id",
+                      url: "web.stcautotrade.id",
                       features: [
                         "Tidak perlu instalasi apapun",
                         "PC, Mac, iPhone, iPad, Android",
@@ -715,7 +715,7 @@ export default function RobotTradingStockityPage() {
                   {
                     n: "1",
                     title: "Pilih platform dan akses STC AutoTrade",
-                    desc: "Download APK Android dari stcautotrade.id, atau langsung buka stcautotradepro.id di browser. Tidak ada perbedaan fitur antara keduanya.",
+                    desc: "Download APK Android dari stcautotrade.id, atau langsung buka web.stcautotrade.id di browser. Tidak ada perbedaan fitur antara keduanya.",
                   },
                   {
                     n: "2",
@@ -792,7 +792,7 @@ export default function RobotTradingStockityPage() {
                     {
                       icon: "🌐",
                       title: "Domain resmi yang bisa diverifikasi",
-                      desc: "APK hanya dari stcautotrade.id, versi web hanya di stcautotradepro.id. Selalu pastikan Anda mengakses dari domain resmi ini.",
+                      desc: "APK hanya dari stcautotrade.id, versi web hanya di web.stcautotrade.id. Selalu pastikan Anda mengakses dari domain resmi ini.",
                     },
                     {
                       icon: "🚫",
@@ -839,7 +839,7 @@ export default function RobotTradingStockityPage() {
                   },
                   {
                     q: "Apakah ada robot trading Stockity untuk iPhone?",
-                    a: "Ya. Pengguna iPhone dan iPad menggunakan versi web STC AutoTrade di stcautotradepro.id — langsung di browser Safari atau Chrome tanpa perlu instalasi. Semua 6 mode strategi tersedia di versi web.",
+                    a: "Ya. Pengguna iPhone dan iPad menggunakan versi web STC AutoTrade di web.stcautotrade.id — langsung di browser Safari atau Chrome tanpa perlu instalasi. Semua 6 mode strategi tersedia di versi web.",
                   },
                   {
                     q: "Bagaimana cara setting bot Stockity untuk pemula?",
@@ -970,7 +970,7 @@ export default function RobotTradingStockityPage() {
                 Download APK
               </Link>
               <a
-                href="https://stcautotradepro.id"
+                href="https://web.stcautotrade.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline"

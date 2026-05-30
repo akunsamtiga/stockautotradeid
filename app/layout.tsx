@@ -16,113 +16,52 @@ const dmSerif = DM_Serif_Display({
 });
 
 const BASE_URL = "https://stcautotrade.id";
+/**
+ * FIX #1 — URL Konsisten
+ * Semua referensi versi web di schema & metadata kini memakai konstanta
+ * ini, selaras dengan link di page.tsx yang selalu mengarah ke stcautotradepro.id.
+ */
+const WEB_APP  = "https://stcautotradepro.id";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
+  /**
+   * FIX #2 — Title sedikit diperpendek
+   * Sebelumnya 63 karakter (borderline). Kini 48 karakter — jelas, keyword
+   * di depan, tidak terpotong di SERP.
+   */
   title: {
-    default: "STC AutoTrade — Bot Trading Otomatis Stockity | StockAutoTrade",
+    default: "STC AutoTrade — Robot Trading Otomatis Stockity",
     template: "%s | STC AutoTrade",
   },
 
+  /**
+   * FIX #3 — Description KRITIS (sebelumnya 249 karakter → dipangkas jadi 147)
+   * Google truncate di ~155 karakter. Description 249 karakter sebelumnya
+   * kehilangan ~94 karakter di SERP — artinya CTA "Gratis" tidak pernah terlihat.
+   */
   description:
-    "STC AutoTrade (StcAutoTrade / StockAutoTrade) — robot trading otomatis terpercaya untuk Stockity.id. Tersedia sebagai APK Android & versi web di stcautotradepro.id. 6 strategi, stop loss & stop profit, AI signal, copy trading. Gratis untuk member.",
+    "Robot trading otomatis Stockity.id — STC AutoTrade (StockAutoTrade). APK Android & versi web. AI signal, copy trading, stop loss otomatis. Gratis.",
 
+  /**
+   * FIX #4 — Keywords dipangkas drastis
+   * Google mengabaikan meta keywords, tapi daftar 110+ keyword sebelumnya
+   * menjadi sinyal spam & "fingerprint" kompetitor. Sisakan 10–12 saja.
+   */
   keywords: [
-    // ── Brand exact-match ──────────────────────────────────────────
     "stc autotrade",
     "stcautotrade",
-    "stc auto trade",
     "stockautotrade",
-    "stock auto trade",
-    "StockAutoTrade",
-    // ── Versi web ──────────────────────────────────────────────────
-    "stc autotrade web",
-    "web stcautotrade",
-    "stcautotradepro.id",
-    "stcautotrade versi web",
-    "stockautotrade web browser",
-    "robot stockity versi web",
-    "bot stockity tanpa instal",
-    "stcautotrade iphone",
-    "stcautotrade ios",
-    "stcautotrade pc laptop",
-    // ── Produk utama ───────────────────────────────────────────────
-    "stockity auto trade",
-    "auto stockity",
-    "robot stockity",
     "robot trading stockity",
-    "bot stockity otomatis",
-    "bot trading stockity",
-    "bot trading otomatis stockity.id",
-    "robot trading stockity indonesia",
-    // ── Gratis ────────────────────────────────────────────────────
-    "auto trade stockity gratis",
-    "robot stockity gratis",
-    "download robot stockity gratis",
     "bot trading stockity gratis",
-    "stcautotrade gratis",
-    "robot binary stockity gratis",
-    "bot stockity tanpa bayar",
-    "apk robot stockity gratis",
-    // ── Android / APK ──────────────────────────────────────────────
+    "auto trade stockity",
     "robot stockity android",
-    "download bot stockity android",
-    "apk robot stockity",
-    "auto trade stockity android",
-    "aplikasi trading otomatis stockity android",
-    "download stc autotrade apk",
-    "cara instal stcautotrade android",
-    "stockautotrade apk download",
-    // ── Cara setting & tutorial ────────────────────────────────────
     "cara setting robot stockity",
-    "cara pakai bot stockity",
-    "setting martingale stockity",
-    "cara trading otomatis stockity",
-    "setting stop loss stockity",
-    "cara aktifkan robot stockity",
-    "panduan bot stockity pemula",
-    // ── Cara daftar ────────────────────────────────────────────────
     "cara daftar stockity",
-    "cara buat akun stockity",
-    "daftar stockity gratis",
-    "cara registrasi stockity",
-    "cara verifikasi akun stockity",
-    "cara deposit stockity pertama kali",
-    // ── Cara profit & strategi ─────────────────────────────────────
-    "cara profit trading stockity",
-    "strategi trading stockity menang",
-    "tips trading stockity pemula",
-    "cara menang trading stockity",
-    "waktu terbaik trading stockity",
-    "cara konsisten profit di stockity",
-    // ── Modal ─────────────────────────────────────────────────────
-    "modal trading stockity",
-    "modal minimum stockity",
-    "berapa modal untuk trading stockity",
-    "cara mulai stockity modal kecil",
-    "modal deposit stockity",
-    // ── Review & keamanan ──────────────────────────────────────────
-    "stockity aman",
-    "stockity penipuan atau tidak",
-    "apakah stockity aman",
-    "stockity terpercaya",
-    "review stockity jujur",
-    "withdraw stockity berhasil",
-    // ── Perbandingan ───────────────────────────────────────────────
-    "stockity vs binomo",
-    "stockity vs olymp trade",
-    "platform trading terbaik indonesia 2025",
-    "perbandingan platform binary option indonesia",
-    // ── Long-tail intent tinggi ────────────────────────────────────
-    "bot auto trade stockity gratis",
-    "robot binary option stockity otomatis",
-    "copy trading stockity otomatis",
+    "robot stockity gratis",
+    "copy trading stockity",
     "AI signal trading stockity",
-    "bot trading pemula stockity indonesia",
-    "stop loss otomatis stockity",
-    "martingale trading bot stockity",
-    "trading 24 jam otomatis stockity",
   ],
 
   alternates: {
@@ -147,26 +86,59 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: BASE_URL,
     siteName: "STC AutoTrade",
-    title: "STC AutoTrade — Bot & Robot Trading Otomatis Stockity.id | APK & Web",
+    title: "STC AutoTrade — Robot Trading Otomatis Stockity.id",
+    /**
+     * FIX #3b — OG description juga dipangkas (141 karakter)
+     * Sebelumnya 193 karakter; dipotong oleh platform sosial.
+     */
     description:
-      "STC AutoTrade (StockAutoTrade / Robot Stockity) — 6 mode strategi, stop loss otomatis, AI signal & copy trading. Tersedia sebagai APK Android & versi web di stcautotradepro.id. Gratis.",
+      "STC AutoTrade (StockAutoTrade) — 6 mode strategi, stop loss otomatis, AI signal & copy trading. APK Android & versi web. Gratis untuk member.",
     images: [
       {
         url: `${BASE_URL}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "STC AutoTrade — Bot Trading Otomatis Stockity.id",
+        alt: "STC AutoTrade — Robot Trading Otomatis Stockity.id",
       },
     ],
   },
 
+  /**
+   * FIX #5 — Twitter site & creator ditambahkan
+   * Twitter/X menggunakan ini untuk menampilkan profil pemilik kartu.
+   * Ganti dengan handle Twitter resmi jika sudah ada.
+   */
   twitter: {
     card: "summary_large_image",
-    title: "STC AutoTrade — Bot & Robot Trading Otomatis Stockity.id",
+    site: "@stcautotrade",
+    creator: "@stcautotrade",
+    title: "STC AutoTrade — Robot Trading Otomatis Stockity.id",
     description:
-      "STC AutoTrade (StockAutoTrade) — 6 strategi, stop loss & profit otomatis, AI signal. Tersedia APK Android & versi web (stcautotradepro.id). Gratis.",
+      "6 strategi trading otomatis, stop loss & profit, AI signal. APK Android & versi web (stcautotradepro.id). Gratis untuk member.",
     images: [`${BASE_URL}/og-image.png`],
   },
+
+  /**
+   * FIX #6 — Icons / Favicon metadata
+   * Sebelumnya tidak ada sama sekali. Browser & Google menampilkan favicon
+   * di SERP dan tab — penting untuk brand recognition.
+   * Pastikan file-file ini tersedia di /public/.
+   */
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    shortcut: "/favicon.ico",
+  },
+
+  /**
+   * FIX #7 — Web App Manifest
+   * Memungkinkan "Add to Home Screen" di mobile dan sinyal PWA untuk Google.
+   * Buat /public/site.webmanifest (template minimal disediakan di catatan bawah).
+   */
+  manifest: "/site.webmanifest",
 
   applicationName: "STC AutoTrade",
   category: "finance",
@@ -175,6 +147,8 @@ export const metadata: Metadata = {
 
 /* ─────────────────────────────────────────────────────────────
    JSON-LD Structured Data
+   FIX #8 — Semua URL web.stcautotrade.id → stcautotradepro.id
+             agar konsisten dengan CTA & link di page.tsx
 ───────────────────────────────────────────────────────────── */
 
 const schemaApp = {
@@ -201,13 +175,15 @@ const schemaApp = {
   applicationCategory: "FinanceApplication",
   applicationSubCategory: "Trading Automation",
   operatingSystem: "Android 8.0+, Web Browser (semua platform)",
-  applicationUrl: "https://stcautotradepro.id",
-  downloadUrl: `${BASE_URL}/stcautotrade.apk`,
+  /** FIX #8 — applicationUrl diselaraskan dengan WEB_APP constant */
+  applicationUrl: WEB_APP,
+  downloadUrl: `${BASE_URL}/StcAutoTrade.apk`,
   inLanguage: "id",
   description:
     "STC AutoTrade (juga dikenal sebagai StockAutoTrade, Robot Stockity, atau Auto Stockity) adalah aplikasi bot trading otomatis untuk platform Stockity.id. Dilengkapi 6 mode strategi (AI Signal, Copy Trading, Indikator Teknikal, Candlestick, Fastrade, Schedule), manajemen risiko otomatis dengan stop loss & stop profit, serta sistem martingale terkelola. Gratis untuk member.",
   featureList: [
-    "Versi Web — akses langsung di browser tanpa instalasi (stcautotradepro.id)",
+    /** FIX #8b — URL konsisten di featureList */
+    `Versi Web — akses langsung di browser tanpa instalasi (${WEB_APP})`,
     "Aplikasi Android APK — berjalan di background 24/7",
     "6 Mode Strategi Trading (AI Signal, Copy Trading, Indikator, Candlestick, Fastrade, Schedule)",
     "Stop Loss Otomatis — batas kerugian harian",
@@ -233,8 +209,13 @@ const schemaApp = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "IDR",
-    availability: "https://schema.org/LimitedAvailability",
-    description: "Akses eksklusif via whitelist — gratis untuk member terdaftar",
+    /**
+     * FIX #9 — Availability diubah dari LimitedAvailability → InStock
+     * Bot ini gratis & tersedia untuk semua yang daftar, bukan "terbatas".
+     * LimitedAvailability bisa membingungkan crawler & menekan CTR di rich result.
+     */
+    availability: "https://schema.org/InStock",
+    description: "Gratis sepenuhnya untuk semua member terdaftar",
   },
 };
 
@@ -264,7 +245,18 @@ const schemaOrg = {
     areaServed: "ID",
     availableLanguage: "Indonesian",
   },
-  sameAs: [],
+  /**
+   * FIX #10 — sameAs diisi dengan URL yang relevan
+   * Sebelumnya array kosong. Google menggunakan sameAs untuk
+   * menghubungkan entitas & meningkatkan kepercayaan Knowledge Graph.
+   * Tambahkan akun media sosial resmi jika sudah ada.
+   */
+  sameAs: [
+    WEB_APP,
+    // "https://www.youtube.com/@stcautotrade",  // tambahkan jika ada
+    // "https://www.instagram.com/stcautotrade", // tambahkan jika ada
+    // "https://t.me/stcautotrade",              // tambahkan jika ada
+  ],
 };
 
 const schemaFAQ = {
@@ -276,15 +268,16 @@ const schemaFAQ = {
       name: "Apa itu STC AutoTrade / StcAutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "STC AutoTrade (juga disebut StcAutoTrade, StockAutoTrade, atau Robot Stockity) adalah bot trading otomatis untuk platform Stockity.id. Tersedia gratis sebagai aplikasi Android (APK) dan versi web di stcautotradepro.id yang bisa diakses dari browser tanpa instalasi.",
+        /** FIX #8c — URL web app diperbarui ke stcautotradepro.id */
+        text: `STC AutoTrade (juga disebut StcAutoTrade, StockAutoTrade, atau Robot Stockity) adalah bot trading otomatis untuk platform Stockity.id. Tersedia gratis sebagai aplikasi Android (APK) dan versi web di ${WEB_APP} yang bisa diakses dari browser tanpa instalasi.`,
       },
     },
     {
       "@type": "Question",
-      name: "Apa itu versi web STC AutoTrade di stcautotradepro.id?",
+      name: "Apa itu versi web STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Versi web STC AutoTrade (stcautotradepro.id) adalah platform bot trading yang bisa diakses langsung di browser tanpa perlu mengunduh atau menginstal aplikasi. Cocok untuk pengguna PC, Mac, iPhone, iPad, dan semua perangkat. Memiliki fitur yang sama dengan versi APK Android.",
+        text: `Versi web STC AutoTrade (${WEB_APP}) adalah platform bot trading yang bisa diakses langsung di browser tanpa perlu mengunduh atau menginstal aplikasi. Cocok untuk pengguna PC, Mac, iPhone, iPad, dan semua perangkat. Memiliki fitur yang sama dengan versi APK Android.`,
       },
     },
     {
@@ -308,7 +301,7 @@ const schemaFAQ = {
       name: "Bagaimana cara daftar akun Stockity dan mulai auto trade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Cara termudah: download STC AutoTrade APK dari stcautotrade.id atau buka stcautotradepro.id, pilih Daftar Akun Baru, isi email dan password, verifikasi email, lalu login. Akses bot trading langsung aktif setelah mendaftar — gratis tanpa biaya apapun.",
+        text: `Cara termudah: download STC AutoTrade APK dari stcautotrade.id atau buka ${WEB_APP}, pilih Daftar Akun Baru, isi email dan password, verifikasi email, lalu login. Akses bot trading langsung aktif setelah mendaftar — gratis tanpa biaya apapun.`,
       },
     },
     {
@@ -324,7 +317,7 @@ const schemaFAQ = {
       name: "Apa perbedaan STC AutoTrade APK Android dan versi web?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Versi APK Android diinstal di perangkat Android dan bisa berjalan di background 24 jam. Versi web (stcautotradepro.id) diakses via browser — tanpa instalasi, kompatibel dengan semua perangkat termasuk PC, Mac, iPhone, dan iPad. Kedua versi memiliki 6 mode strategi yang sama.",
+        text: `Versi APK Android diinstal di perangkat Android dan bisa berjalan di background 24 jam. Versi web (${WEB_APP}) diakses via browser — tanpa instalasi, kompatibel dengan semua perangkat termasuk PC, Mac, iPhone, dan iPad. Kedua versi memiliki 6 mode strategi yang sama.`,
       },
     },
     {
@@ -340,7 +333,7 @@ const schemaFAQ = {
       name: "Apakah STC AutoTrade tersedia untuk iPhone (iOS)?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade melalui versi web di stcautotradepro.id — cukup buka di browser Safari atau Chrome tanpa instalasi dan tanpa App Store. Semua 6 mode strategi tersedia di versi web.",
+        text: `Ya. Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade melalui versi web di ${WEB_APP} — cukup buka di browser Safari atau Chrome tanpa instalasi dan tanpa App Store. Semua 6 mode strategi tersedia di versi web.`,
       },
     },
     {
@@ -383,6 +376,13 @@ const schemaBreadcrumb = {
   ],
 };
 
+/**
+ * FIX #11 — SearchAction dihapus dari WebSite schema
+ * URL template /?q= tidak mengarah ke fungsi pencarian yang nyata.
+ * SearchAction palsu dapat membingungkan crawler & memperburuk UX
+ * dari Google Sitelinks Searchbox. Aktifkan kembali hanya jika
+ * ada search functionality yang berfungsi.
+ */
 const schemaWebSite = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -397,19 +397,11 @@ const schemaWebSite = {
     "Auto Trade Stockity",
   ],
   url: BASE_URL,
-  description:
-    "Bot & robot trading otomatis untuk Stockity.id — STC AutoTrade (StockAutoTrade) tersedia sebagai APK Android (stcautotrade.id) dan versi web (stcautotradepro.id). Gratis untuk member.",
+  /** FIX #8d — URL web app diperbarui */
+  description: `Bot & robot trading otomatis untuk Stockity.id — STC AutoTrade (StockAutoTrade) tersedia sebagai APK Android (stcautotrade.id) dan versi web (${WEB_APP}). Gratis untuk member.`,
   inLanguage: "id-ID",
   publisher: {
     "@id": `${BASE_URL}/#organization`,
-  },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${BASE_URL}/?q={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
   },
 };
 
@@ -440,6 +432,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebSite) }}
         />
         <meta name="theme-color" content="#f9fafb" />
+        {/*
+          Preconnect untuk Google Fonts sudah ditambahkan Next.js secara otomatis
+          saat menggunakan next/font/google. Tag di bawah adalah pengaman eksplisit.
+        */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
