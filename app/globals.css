@@ -117,3 +117,36 @@ body {
   outline-offset: 2px;
   border-radius: 4px;
 }
+/* ── Reduced Motion — aksesibilitas & performa ─────────────────────
+   Menonaktifkan semua animasi bagi user yang memilih
+   prefers-reduced-motion di sistem operasinya.
+   Ini juga meningkatkan skor aksesibilitas (WCAG 2.3.3 AAA).
+────────────────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration:        0.01ms !important;
+    animation-iteration-count: 1      !important;
+    transition-duration:       0.01ms !important;
+    scroll-behavior:           auto   !important;
+  }
+}
+
+/* ── Print ─────────────────────────────────────────────────────────
+   Hapus background, shadow, dan elemen dekoratif saat dicetak.
+────────────────────────────────────────────────────────────────── */
+
+@media print {
+  nav,
+  footer,
+  .shimmer-badge,
+  [aria-hidden="true"] { display: none !important; }
+
+  body  { background: white; color: black; }
+  a     { color: black; text-decoration: underline; }
+
+  h1, h2, h3 { page-break-after: avoid; }
+  p, li      { orphans: 3; widows: 3; }
+}

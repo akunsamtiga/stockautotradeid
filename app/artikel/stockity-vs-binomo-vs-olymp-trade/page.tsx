@@ -5,7 +5,7 @@
  *   Primary  : stockity vs binomo
  *   Secondary: perbandingan platform binary option indonesia, stockity vs olymp trade,
  *              perbedaan stockity dan binomo, stockity lebih baik dari binomo,
- *              platform trading terbaik indonesia 2025, binary option indonesia terpercaya,
+ *              platform trading terbaik indonesia 2026, binary option indonesia terpercaya,
  *              stockity atau binomo mana yang lebih baik, review platform trading stockity
  */
 
@@ -16,23 +16,23 @@ import Image from "next/image";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Stockity vs Binomo vs Olymp Trade: Perbandingan Platform Trading 2025",
+  title: "Stockity vs Binomo vs Olymp Trade: Perbandingan Platform Trading 2026",
   description:
-    "Perbandingan objektif Stockity vs Binomo vs Olymp Trade — fitur, regulasi, payout, deposit minimum, dan kompatibilitas dengan robot trading otomatis. Mana yang terbaik untuk trader Indonesia 2025?",
+    "Perbandingan objektif Stockity vs Binomo vs Olymp Trade — fitur, regulasi, payout, deposit minimum, dan kompatibilitas dengan robot trading otomatis. Mana yang terbaik untuk trader Indonesia 2026?",
   keywords: [
     "stockity vs binomo",
     "perbandingan platform binary option indonesia",
     "stockity vs olymp trade",
     "perbedaan stockity dan binomo",
     "stockity lebih baik dari binomo",
-    "platform trading terbaik indonesia 2025",
+    "platform trading terbaik indonesia 2026",
     "binary option indonesia terpercaya",
     "stockity atau binomo mana yang lebih baik",
     "review platform trading stockity",
     "kelebihan stockity dibanding binomo",
-    "trading stockity vs binomo 2025",
+    "trading stockity vs binomo 2026",
     "perbandingan stockity olymp trade binomo",
-    "platform binary option indonesia 2025",
+    "platform binary option indonesia 2026",
     "review stockity indonesia",
     "stockity lebih baik",
     "kekurangan binomo dibanding stockity",
@@ -41,20 +41,20 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/stockity-vs-binomo-vs-olymp-trade",
   },
   openGraph: {
-    title: "Stockity vs Binomo vs Olymp Trade: Perbandingan Platform Trading 2025",
+    title: "Stockity vs Binomo vs Olymp Trade: Perbandingan Platform Trading 2026",
     description:
       "Perbandingan objektif tiga platform trading populer di Indonesia — fitur, payout, regulasi, dan kompatibilitas bot otomatis.",
     url: "https://stcautotrade.id/artikel/stockity-vs-binomo-vs-olymp-trade",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
-    modifiedTime: "2025-05-21T00:00:00.000Z",
+    modifiedTime: "2026-05-21T00:00:00.000Z",
     authors: ["STC AutoTrade"],
     images: [
       {
         url: "https://stcautotrade.id/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Stockity vs Binomo vs Olymp Trade — Perbandingan 2025",
+        alt: "Stockity vs Binomo vs Olymp Trade — Perbandingan 2026",
       },
     ],
   },
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Stockity vs Binomo vs Olymp Trade: Perbandingan Platform Trading 2025",
+  headline: "Stockity vs Binomo vs Olymp Trade: Perbandingan Platform Trading 2026",
   description:
     "Perbandingan objektif Stockity, Binomo, dan Olymp Trade — fitur, regulasi, payout, deposit minimum, dan kompatibilitas bot trading.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
@@ -75,14 +75,14 @@ const articleSchema = {
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
   datePublished: "2025-05-21",
-  dateModified: "2025-05-21",
+  dateModified: "2026-05-21",
   image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/stockity-vs-binomo-vs-olymp-trade",
   },
   keywords:
-    "stockity vs binomo, stockity vs olymp trade, perbandingan platform binary option indonesia, platform trading terbaik indonesia 2025",
+    "stockity vs binomo, stockity vs olymp trade, perbandingan platform binary option indonesia, platform trading terbaik indonesia 2026",
 };
 
 const breadcrumbSchema = {
@@ -278,14 +278,14 @@ export default function StockityVsBinomoPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#fef3c7] text-[#92400e] text-[11px] font-semibold rounded-full">Perbandingan</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2025</span>
+            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±13 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
             Stockity vs Binomo vs Olymp Trade:<br className="hidden sm:block" />
-            Perbandingan Platform Trading 2025
+            Perbandingan Platform Trading 2026
           </h1>
 
           <p className="text-[#6b6058] text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -664,7 +664,7 @@ export default function StockityVsBinomoPage() {
             <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">Artikel Terkait</p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
-                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2025" },
+                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
                 { href: "/artikel/auto-trade-stockity-gratis", title: "Auto Trade Stockity Gratis", desc: "Cara dapat akses bot Stockity tanpa biaya" },
                 { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & versi web — gratis" },
               ].map((l) => (
@@ -700,7 +700,7 @@ export default function StockityVsBinomoPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · Stockity vs Binomo · Perbandingan Platform Trading Indonesia
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
           </div>

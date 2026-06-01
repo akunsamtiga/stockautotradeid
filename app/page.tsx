@@ -44,10 +44,9 @@ const HeroHeading = dynamic(
   }
 );
 
-const HeroPhoneFloat = dynamic(
-  () => import("@/components/AnimatedSections").then((m) => m.HeroPhoneFloat),
-  { ssr: false, loading: () => null }
-);
+/* HeroPhoneFloat dihapus — diganti CSS animate-float langsung di JSX
+   agar PhoneImage hero di-render oleh Server Component sejak HTML pertama.
+   Ini memperbaiki bug LCP di mana priority image tidak pernah di-preload. */
 
 const HeroStatBar = dynamic(
   () => import("@/components/AnimatedSections").then((m) => m.HeroStatBar),
@@ -234,7 +233,7 @@ export default function Home() {
       {/* ── NAV ─────────────────────────────────────────── */}
       <nav aria-label="Navigasi utama STC AutoTrade" className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[rgba(26,22,18,0.08)]">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2.5 no-underline group">
+          <a href="/" className="flex items-center gap-2.5 no-underline group">
             {/*
               PERBAIKAN #3: Logo nav tidak butuh priority karena kecil (28×28)
               dan bukan LCP element. alt tetap deskriptif.
@@ -292,20 +291,21 @@ export default function Home() {
               </div>
 
               {/* Right — Phone mockup hero */}
-              {/*
-                PERBAIKAN #3: PhoneImage pertama (hero / above-the-fold) mendapat
-                priority={true}. Ini menghasilkan <link rel="preload"> di <head>
-                dan menandai gambar sebagai LCP element untuk Next.js image optimizer.
-                alt text deskriptif menjelaskan isi layar, bukan nama file.
-              */}
-              <HeroPhoneFloat>
-                <PhoneImage
-                  src="/gambar1.jpeg"
-                  alt="Tampilan layar utama aplikasi STC AutoTrade menampilkan mode AI Signal aktif di akun Stockity.id"
-                  label="Layar utama aplikasi StockAutoTrade"
-                  priority={true}
-                />
-              </HeroPhoneFloat>
+              {/* PERBAIKAN LCP #4 — render langsung sebagai Server Component.
+                  Sebelumnya PhoneImage dibungkus HeroPhoneFloat (ssr:false) sehingga
+                  tidak ada di HTML awal dan priority prop tidak berguna.
+                  Sekarang gambar ada di HTML dari awal → browser langsung preload
+                  → LCP score membaik signifikan. Float & fade via CSS (globals.css). */}
+              <div className="animate-fade-up animate-delay-300 flex justify-center lg:justify-end">
+                <div className="animate-float">
+                  <PhoneImage
+                    src="/gambar1.jpeg"
+                    alt="Tampilan layar utama aplikasi STC AutoTrade menampilkan mode AI Signal aktif di akun Stockity.id"
+                    label="Layar utama aplikasi StockAutoTrade"
+                    priority={true}
+                  />
+                </div>
+              </div>
             </div>
 
             <HeroStatBar />

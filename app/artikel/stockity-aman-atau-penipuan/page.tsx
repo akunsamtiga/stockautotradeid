@@ -16,7 +16,7 @@ import Image from "next/image";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Stockity Aman atau Penipuan? Review Jujur & Faktual 2025",
+  title: "Stockity Aman atau Penipuan? Review Jujur & Faktual 2026",
   description:
     "Apakah Stockity.id aman dan terpercaya? Ulasan jujur dan faktual: keamanan platform, bukti withdraw berhasil, risiko nyata trading binary option, dan cara trading aman di Stockity dengan STC AutoTrade.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "withdraw stockity berhasil",
     "stockity aman untuk trading",
     "keamanan stockity",
-    "stockity review indonesia 2025",
+    "stockity review indonesia 2026",
     "stockity penipuan",
     "apakah stockity bisa dipercaya",
     "stockity aman atau tidak",
@@ -41,20 +41,20 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/stockity-aman-atau-penipuan",
   },
   openGraph: {
-    title: "Stockity Aman atau Penipuan? Review Jujur & Faktual 2025",
+    title: "Stockity Aman atau Penipuan? Review Jujur & Faktual 2026",
     description:
       "Ulasan jujur Stockity.id — keamanan platform, risiko nyata, bukti withdraw, dan cara trading aman dengan manajemen risiko otomatis.",
     url: "https://stcautotrade.id/artikel/stockity-aman-atau-penipuan",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
-    modifiedTime: "2025-05-21T00:00:00.000Z",
+    modifiedTime: "2026-05-21T00:00:00.000Z",
     authors: ["STC AutoTrade"],
     images: [
       {
         url: "https://stcautotrade.id/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Stockity Aman atau Penipuan — Review Jujur 2025",
+        alt: "Stockity Aman atau Penipuan — Review Jujur 2026",
       },
     ],
   },
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Stockity Aman atau Penipuan? Review Jujur & Faktual 2025",
+  headline: "Stockity Aman atau Penipuan? Review Jujur & Faktual 2026",
   description:
     "Ulasan faktual Stockity.id — keamanan platform, risiko trading binary option, dan cara meminimalkan risiko dengan manajemen risiko otomatis.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
@@ -75,7 +75,7 @@ const articleSchema = {
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
   datePublished: "2025-05-21",
-  dateModified: "2025-05-21",
+  dateModified: "2026-05-21",
   image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
@@ -224,14 +224,14 @@ export default function StockityAmanAtauPenipuanPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#fef3c7] text-[#92400e] text-[11px] font-semibold rounded-full">Review Jujur</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2025</span>
+            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±12 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
             Stockity Aman atau Penipuan?<br className="hidden sm:block" />
-            Review Jujur & Faktual 2025
+            Review Jujur & Faktual 2026
           </h1>
 
           <p className="text-[#6b6058] text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -672,7 +672,7 @@ export default function StockityAmanAtauPenipuanPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · Review Stockity Jujur · Stockity Aman · Keamanan Stockity
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
           </div>

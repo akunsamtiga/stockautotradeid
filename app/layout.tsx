@@ -197,7 +197,13 @@ const schemaApp = {
     "100% Gratis untuk member terdaftar",
     "Kompatibel: Android, iPhone, PC, Mac, iPad",
   ],
-  screenshot: `${BASE_URL}/screenshot.png`,
+  screenshot: {
+    "@type": "ImageObject",
+    url: `${BASE_URL}/screenshot.png`,
+    width: 1080,
+    height: 1920,
+    caption: "Layar utama STC AutoTrade — mode AI Signal aktif di Stockity.id",
+  },
   datePublished: "2025-05-21",
   dateModified: "2026-05-24",
   offers: {

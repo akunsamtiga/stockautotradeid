@@ -188,6 +188,15 @@ export function HeroHeading({ apkPath }: { apkPath: string }) {
 }
 
 export function HeroPhoneFloat({ children }: { children: React.ReactNode }) {
+  /**
+   * @deprecated Tidak lagi dipakai di page.tsx sejak perbaikan LCP.
+   * page.tsx kini menggunakan CSS `.animate-float` & `.animate-fade-up`
+   * langsung pada div pembungkus PhoneImage, sehingga PhoneImage tetap
+   * di-render sebagai Server Component dan preload gambar LCP berfungsi.
+   *
+   * Ekspor ini dipertahankan untuk kompatibilitas mundur jika ada halaman
+   * lain yang masih mengimpornya. Hapus setelah semua halaman dimigrasi.
+   */
   return (
     <motion.div
       initial={{ opacity: 0, x: 40, scale: 0.96 }}

@@ -12,7 +12,7 @@ import FAQAccordion from "./FAQAccordion";
 export const metadata: Metadata = {
   title: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
   description:
-    "Jawaban lengkap pertanyaan seputar STC AutoTrade (StcAutoTrade / StockAutoTrade): cara instal APK Android, versi web, keamanan akun, modal minimum, strategi trading, martingale, dan lainnya.",
+    "Jawaban lengkap: cara instal STC AutoTrade APK Android, versi web, keamanan akun, modal minimum, strategi, dan cara kerja martingale.",
   keywords: [
     "faq stcautotrade",
     "pertanyaan stc autotrade",
@@ -289,7 +289,7 @@ export default function FAQPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · StcAutoTrade · StockAutoTrade · Robot Stockity
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">
               ← Beranda

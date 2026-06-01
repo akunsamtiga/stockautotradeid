@@ -17,7 +17,7 @@ import Image from "next/image";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Cara Profit Trading Stockity: Strategi & Tips Konsisten 2025",
+  title: "Cara Profit Trading Stockity: Strategi & Tips Konsisten 2026",
   description:
     "Panduan cara profit trading Stockity — strategi terbaik, tips manajemen risiko, waktu trading optimal, setting bot STC AutoTrade, dan cara konsisten profit jangka panjang di platform Stockity.id.",
   keywords: [
@@ -42,20 +42,20 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/cara-profit-trading-stockity",
   },
   openGraph: {
-    title: "Cara Profit Trading Stockity: Strategi & Tips Konsisten 2025",
+    title: "Cara Profit Trading Stockity: Strategi & Tips Konsisten 2026",
     description:
       "Strategi, tips, dan sistem manajemen risiko untuk trading konsisten profitable di Stockity — menggunakan STC AutoTrade.",
     url: "https://stcautotrade.id/artikel/cara-profit-trading-stockity",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
-    modifiedTime: "2025-05-21T00:00:00.000Z",
+    modifiedTime: "2026-05-21T00:00:00.000Z",
     authors: ["STC AutoTrade"],
     images: [
       {
         url: "https://stcautotrade.id/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Cara Profit Trading Stockity — Strategi & Tips 2025",
+        alt: "Cara Profit Trading Stockity — Strategi & Tips 2026",
       },
     ],
   },
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Cara Profit Trading Stockity: Strategi & Tips Konsisten 2025",
+  headline: "Cara Profit Trading Stockity: Strategi & Tips Konsisten 2026",
   description:
     "Panduan strategi, manajemen risiko, dan tips trading konsisten profitable di Stockity menggunakan STC AutoTrade.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
@@ -76,7 +76,7 @@ const articleSchema = {
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
   datePublished: "2025-05-21",
-  dateModified: "2025-05-21",
+  dateModified: "2026-05-21",
   image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
@@ -223,14 +223,14 @@ export default function CaraProfitTradingStockityPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#dcfce7] text-[#15803d] text-[11px] font-semibold rounded-full">Strategi</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2025</span>
+            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±14 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
             Cara Profit Trading Stockity:<br className="hidden sm:block" />
-            Strategi & Tips Konsisten 2025
+            Strategi & Tips Konsisten 2026
           </h1>
 
           <p className="text-[#6b6058] text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -835,7 +835,7 @@ export default function CaraProfitTradingStockityPage() {
               {[
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot Stockity", desc: "Konfigurasi martingale, stop loss & strategi" },
                 { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Kalkulasi modal aman per profil risiko" },
-                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade 2025" },
+                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade 2026" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
                   <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
@@ -869,7 +869,7 @@ export default function CaraProfitTradingStockityPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · Cara Profit Trading Stockity · Strategi Trading Stockity
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
           </div>

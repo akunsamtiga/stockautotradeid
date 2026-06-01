@@ -16,7 +16,7 @@ import Image from "next/image";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Modal Trading Stockity: Berapa Minimum & Cara Mulai dengan Modal Kecil 2025",
+  title: "Modal Trading Stockity: Berapa Minimum & Cara Mulai dengan Modal Kecil 2026",
   description:
     "Panduan lengkap modal trading Stockity — berapa modal minimum yang dibutuhkan, cara hitung buffer martingale, tabel simulasi modal vs potensi profit, dan strategi mulai dari modal Rp 300.000.",
   keywords: [
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/modal-trading-stockity",
   },
   openGraph: {
-    title: "Modal Trading Stockity: Berapa Minimum & Cara Mulai 2025",
+    title: "Modal Trading Stockity: Berapa Minimum & Cara Mulai 2026",
     description:
       "Berapa modal minimum untuk trading Stockity otomatis? Panduan lengkap kalkulasi martingale, tabel simulasi, dan strategi modal kecil.",
     url: "https://stcautotrade.id/artikel/modal-trading-stockity",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
-    modifiedTime: "2025-05-21T00:00:00.000Z",
+    modifiedTime: "2026-05-21T00:00:00.000Z",
     authors: ["STC AutoTrade"],
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Modal Trading Stockity: Berapa Minimum & Cara Mulai dengan Modal Kecil 2025",
+  headline: "Modal Trading Stockity: Berapa Minimum & Cara Mulai dengan Modal Kecil 2026",
   description:
     "Panduan kalkulasi modal trading Stockity — minimum yang dibutuhkan, buffer martingale, simulasi profit/loss, dan strategi modal kecil.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
@@ -75,7 +75,7 @@ const articleSchema = {
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
   datePublished: "2025-05-21",
-  dateModified: "2025-05-21",
+  dateModified: "2026-05-21",
   image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
@@ -297,7 +297,7 @@ export default function ModalTradingStockityPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#dcfce7] text-[#15803d] text-[11px] font-semibold rounded-full">Panduan Modal</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2025</span>
+            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±14 menit baca</span>
           </div>
@@ -763,7 +763,7 @@ export default function ModalTradingStockityPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · Modal Trading Stockity · Modal Minimum Stockity · Bot Stockity Modal Kecil
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
           </div>

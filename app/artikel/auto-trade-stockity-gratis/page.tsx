@@ -16,7 +16,7 @@ import Image from "next/image";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Auto Trade Stockity Gratis: Download Robot Stockity Terbaik 2025",
+  title: "Auto Trade Stockity Gratis: Download Robot Stockity Terbaik 2026",
   description:
     "Cara mendapatkan robot trading Stockity gratis lewat STC AutoTrade — download APK Android atau akses versi web tanpa biaya. Panduan daftar whitelist, fitur lengkap, dan perbandingan dengan bot berbayar.",
   keywords: [
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/auto-trade-stockity-gratis",
   },
   openGraph: {
-    title: "Auto Trade Stockity Gratis: Download Robot Terbaik 2025",
+    title: "Auto Trade Stockity Gratis: Download Robot Terbaik 2026",
     description:
       "Panduan lengkap mendapatkan robot trading Stockity gratis — STC AutoTrade, cara daftar whitelist, fitur, dan perbandingan.",
     url: "https://stcautotrade.id/artikel/auto-trade-stockity-gratis",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
-    modifiedTime: "2025-05-21T00:00:00.000Z",
+    modifiedTime: "2026-05-21T00:00:00.000Z",
     authors: ["STC AutoTrade"],
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Auto Trade Stockity Gratis: Download Robot Stockity Terbaik 2025",
+  headline: "Auto Trade Stockity Gratis: Download Robot Stockity Terbaik 2026",
   description:
     "Panduan mendapatkan robot trading Stockity gratis melalui STC AutoTrade — cara daftar, fitur lengkap, dan perbandingan platform.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
@@ -75,7 +75,7 @@ const articleSchema = {
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
   datePublished: "2025-05-21",
-  dateModified: "2025-05-21",
+  dateModified: "2026-05-21",
   image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
@@ -221,14 +221,14 @@ export default function AutoTradeStockityGratisPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#dcfce7] text-[#15803d] text-[11px] font-semibold rounded-full">Gratis</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2025</span>
+            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±10 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
             Auto Trade Stockity Gratis:<br className="hidden sm:block" />
-            Download Robot Terbaik 2025
+            Download Robot Terbaik 2026
           </h1>
 
           <p className="text-[#6b6058] text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -665,7 +665,7 @@ export default function AutoTradeStockityGratisPage() {
             <section>
               <SectionLabel>07 · Kesimpulan</SectionLabel>
               <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Kesimpulan: Robot Stockity Gratis Terbaik 2025
+                Kesimpulan: Robot Stockity Gratis Terbaik 2026
               </h2>
               <div className="space-y-4">
                 <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
@@ -693,7 +693,7 @@ export default function AutoTradeStockityGratisPage() {
             <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">Artikel Terkait</p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
-                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2025" },
+                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot Stockity", desc: "Tutorial konfigurasi martingale & manajemen risiko" },
                 { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & panduan instalasi lengkap" },
               ].map((l) => (
@@ -729,7 +729,7 @@ export default function AutoTradeStockityGratisPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · Robot Stockity Gratis · Auto Trade Stockity Gratis · Download Bot Stockity
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
           </div>

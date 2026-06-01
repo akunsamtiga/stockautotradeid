@@ -16,7 +16,7 @@ import Image from "next/image";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Robot Stockity Android: Download APK Bot Trading Terbaik 2025",
+  title: "Robot Stockity Android: Download APK Bot Trading Terbaik 2026",
   description:
     "Download robot Stockity Android gratis — APK STC AutoTrade untuk HP Android. Panduan instalasi lengkap, cara setting pertama kali, dan tips pakai bot trading Stockity di Android agar optimal 24 jam.",
   keywords: [
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/robot-stockity-android",
   },
   openGraph: {
-    title: "Robot Stockity Android: Download APK Bot Trading Terbaik 2025",
+    title: "Robot Stockity Android: Download APK Bot Trading Terbaik 2026",
     description:
       "Panduan download dan instal robot trading Stockity di Android — APK STC AutoTrade gratis, setting pertama kali, dan cara agar bot jalan 24 jam.",
     url: "https://stcautotrade.id/artikel/robot-stockity-android",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
-    modifiedTime: "2025-05-21T00:00:00.000Z",
+    modifiedTime: "2026-05-21T00:00:00.000Z",
     authors: ["STC AutoTrade"],
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Robot Stockity Android: Download APK Bot Trading Terbaik 2025",
+  headline: "Robot Stockity Android: Download APK Bot Trading Terbaik 2026",
   description:
     "Panduan lengkap download dan instalasi robot trading Stockity di Android — STC AutoTrade APK gratis, cara setting, dan optimasi performa.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
@@ -75,7 +75,7 @@ const articleSchema = {
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
   datePublished: "2025-05-21",
-  dateModified: "2025-05-21",
+  dateModified: "2026-05-21",
   image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
@@ -248,14 +248,14 @@ export default function RobotStockityAndroidPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">Android</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2025</span>
+            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±12 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
             Robot Stockity Android:<br className="hidden sm:block" />
-            Download APK & Panduan Lengkap 2025
+            Download APK & Panduan Lengkap 2026
           </h1>
 
           <p className="text-[#6b6058] text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -827,7 +827,7 @@ export default function RobotStockityAndroidPage() {
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/download", title: "Download STC AutoTrade", desc: "Halaman download resmi APK Android terbaru" },
-                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2025" },
+                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot", desc: "Konfigurasi martingale, stop loss & strategi" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
@@ -862,7 +862,7 @@ export default function RobotStockityAndroidPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · Robot Stockity Android · APK Bot Stockity · Auto Trade Stockity Android
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
           </div>

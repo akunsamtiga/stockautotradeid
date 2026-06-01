@@ -16,7 +16,7 @@ import Image from "next/image";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Cara Daftar Stockity: Panduan Registrasi Akun & Mulai Trading 2025",
+  title: "Cara Daftar Stockity: Panduan Registrasi Akun & Mulai Trading 2026",
   description:
     "Panduan lengkap cara daftar Stockity — langkah registrasi akun Stockity.id dari nol, verifikasi, deposit pertama kali, dan cara langsung mulai trading otomatis gratis via STC AutoTrade.",
   keywords: [
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/cara-daftar-stockity",
   },
   openGraph: {
-    title: "Cara Daftar Stockity: Panduan Registrasi Akun & Mulai Trading 2025",
+    title: "Cara Daftar Stockity: Panduan Registrasi Akun & Mulai Trading 2026",
     description:
       "Langkah demi langkah cara daftar akun Stockity.id — dari registrasi, verifikasi, deposit, hingga langsung trading otomatis.",
     url: "https://stcautotrade.id/artikel/cara-daftar-stockity",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
-    modifiedTime: "2025-05-21T00:00:00.000Z",
+    modifiedTime: "2026-05-21T00:00:00.000Z",
     authors: ["STC AutoTrade"],
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Cara Daftar Stockity: Panduan Registrasi Akun & Mulai Trading 2025",
+  headline: "Cara Daftar Stockity: Panduan Registrasi Akun & Mulai Trading 2026",
   description:
     "Panduan lengkap cara daftar akun Stockity.id — registrasi, verifikasi, deposit pertama kali, dan mulai trading otomatis.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
@@ -75,7 +75,7 @@ const articleSchema = {
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
   datePublished: "2025-05-21",
-  dateModified: "2025-05-21",
+  dateModified: "2026-05-21",
   image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
@@ -261,14 +261,14 @@ export default function CaraDaftarStockityPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">Panduan Pemula</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2025</span>
+            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±10 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
             Cara Daftar Stockity:<br className="hidden sm:block" />
-            Panduan Registrasi & Mulai Trading 2025
+            Panduan Registrasi & Mulai Trading 2026
           </h1>
 
           <p className="text-[#6b6058] text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -738,7 +738,7 @@ export default function CaraDaftarStockityPage() {
             <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">Artikel Terkait</p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
-                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2025" },
+                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
                 { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Berapa modal yang dibutuhkan untuk mulai?" },
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot", desc: "Konfigurasi martingale, stop loss & strategi" },
               ].map((l) => (
@@ -774,7 +774,7 @@ export default function CaraDaftarStockityPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · Cara Daftar Stockity · Registrasi Stockity Gratis
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
           </div>

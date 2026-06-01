@@ -17,7 +17,7 @@ import Image from "next/image";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Robot Trading Stockity: Panduan Lengkap Auto Trade Stockity 2025",
+  title: "Robot Trading Stockity: Panduan Lengkap Auto Trade Stockity 2026",
   description:
     "Panduan lengkap robot trading Stockity — cara kerja bot auto trade Stockity, strategi terbaik, setting martingale, stop loss, dan cara mulai gratis. Download STC AutoTrade sekarang.",
   keywords: [
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/robot-trading-stockity",
   },
   openGraph: {
-    title: "Robot Trading Stockity: Panduan Lengkap Auto Trade 2025",
+    title: "Robot Trading Stockity: Panduan Lengkap Auto Trade 2026",
     description:
       "Cara kerja robot trading Stockity, strategi terbaik, dan setting bot otomatis untuk pemula hingga mahir.",
     url: "https://stcautotrade.id/artikel/robot-trading-stockity",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
-    modifiedTime: "2025-05-21T00:00:00.000Z",
+    modifiedTime: "2026-05-21T00:00:00.000Z",
     authors: ["STC AutoTrade"],
     images: [
       {
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Robot Trading Stockity: Panduan Lengkap Auto Trade Stockity 2025",
+  headline: "Robot Trading Stockity: Panduan Lengkap Auto Trade Stockity 2026",
   description:
     "Panduan lengkap robot trading Stockity — cara kerja bot auto trade, strategi terbaik, setting martingale, stop loss, dan cara mulai gratis.",
   author: {
@@ -83,7 +83,7 @@ const articleSchema = {
     },
   },
   datePublished: "2025-05-21",
-  dateModified: "2025-05-21",
+  dateModified: "2026-05-21",
   image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
@@ -332,7 +332,7 @@ export default function RobotTradingStockityPage() {
             <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">
               Panduan
             </span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2025</span>
+            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±12 menit baca</span>
           </div>
@@ -340,7 +340,7 @@ export default function RobotTradingStockityPage() {
           {/* H1 */}
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
             Robot Trading Stockity:<br className="hidden sm:block" />
-            Panduan Lengkap Auto Trade Stockity 2025
+            Panduan Lengkap Auto Trade Stockity 2026
           </h1>
 
           {/* Lead paragraph — primary keyword in first 100 words */}
@@ -985,7 +985,7 @@ export default function RobotTradingStockityPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
-              STC AutoTrade · StcAutoTrade · StockAutoTrade · Robot Stockity · Auto Trade Stockity
+              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id · Auto Trade Stockity
             </p>
             <Link
               href="/"
