@@ -4,39 +4,38 @@
  * Target keyword:
  *   Primary  : trading binary option modal kecil
  *   Secondary: trading stockity modal 100 ribu, trading binary option pemula modal kecil,
- *              mulai trading dengan modal minim, trading stockity 200 ribu
+ *              mulai trading dengan modal minim, STC AutoTrade modal kecil
  */
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Trading Binary Option Modal Kecil: Mulai dari Rp 100 Ribu 2026",
+  title: "Trading Binary Option Modal Kecil: Mulai dari Rp 14.000/Trade 2026",
   description:
-    "Panduan lengkap trading binary option dengan modal kecil — simulasi trading modal Rp 100K dan Rp 300K-500K, strategi yang cocok untuk modal minim, kesalahan fatal yang harus dihindari, dan cara mulai dari demo.",
+    "Panduan trading binary option dengan modal kecil menggunakan STC AutoTrade — simulasi base Rp 14.000 dan 70.000 dengan martingale, mode yang cocok untuk modal minim, cara set SL, dan akun Demo gratis.",
   keywords: [
     "trading binary option modal kecil",
     "trading stockity modal 100 ribu",
     "trading binary option pemula modal kecil",
     "mulai trading dengan modal minim",
-    "trading stockity 200 ribu",
-    "trading binary option modal minimal",
+    "STC AutoTrade modal kecil",
     "modal kecil binary option",
     "trading stockity modal sedikit",
     "binary option 100 ribu",
     "cara trading stockity modal kecil",
     "strategi binary option modal minim",
+    "minimum modal trading stockity",
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/trading-binary-option-modal-kecil",
   },
   openGraph: {
-    title: "Trading Binary Option Modal Kecil: Mulai dari Rp 100 Ribu 2026",
+    title: "Trading Binary Option Modal Kecil: Mulai dari Rp 14.000/Trade 2026",
     description:
-      "Panduan trading binary option modal kecil — simulasi, strategi aman, dan cara memaksimalkan modal minim.",
+      "Simulasi trading modal kecil dengan STC AutoTrade — base Rp 14K, martingale aman, mode yang tepat, dan akun Demo gratis.",
     url: "https://stcautotrade.id/artikel/trading-binary-option-modal-kecil",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
@@ -47,48 +46,41 @@ export const metadata: Metadata = {
         url: "https://stcautotrade.id/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Trading Binary Option Modal Kecil — Panduan 2026",
+        alt: "Trading Binary Option Modal Kecil — STC AutoTrade 2026",
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trading Binary Option Modal Kecil: Mulai dari Rp 14.000/Trade 2026",
+    description: "Trading modal kecil dengan STC AutoTrade — simulasi, mode tepat, dan tips aman.",
+    images: ["https://stcautotrade.id/og-image.png"],
+  },
 };
 
-/* ── Structured Data ──────────────────────────────────────────── */
+/* ── JSON-LD Schemas ──────────────────────────────────────────── */
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Trading Binary Option Modal Kecil: Mulai dari Rp 100 Ribu 2026",
+  headline: "Trading Binary Option Modal Kecil: Mulai dari Rp 14.000/Trade 2026",
   description:
-    "Panduan trading binary option modal kecil — simulasi, strategi, dan kesalahan yang harus dihindari.",
-  author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
-  publisher: {
-    "@type": "Organization",
-    name: "STC AutoTrade",
-    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
-  },
+    "Panduan trading binary option modal kecil dengan STC AutoTrade — simulasi martingale, mode yang tepat, proteksi SL, dan akun Demo gratis.",
+  image: "https://stcautotrade.id/og-image.png",
   datePublished: "2025-05-21",
   dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.png",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://stcautotrade.id/artikel/trading-binary-option-modal-kecil",
-  },
-  keywords: "trading binary option modal kecil, trading stockity modal 100 ribu, modal kecil binary option",
+  author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
+  publisher: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/trading-binary-option-modal-kecil" },
 };
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: "https://stcautotrade.id" },
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://stcautotrade.id" },
     { "@type": "ListItem", position: 2, name: "Artikel", item: "https://stcautotrade.id/artikel" },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Trading Binary Option Modal Kecil",
-      item: "https://stcautotrade.id/artikel/trading-binary-option-modal-kecil",
-    },
+    { "@type": "ListItem", position: 3, name: "Trading Binary Option Modal Kecil", item: "https://stcautotrade.id/artikel/trading-binary-option-modal-kecil" },
   ],
 };
 
@@ -98,48 +90,48 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Berapa modal minimum untuk trading binary option di Stockity?",
+      name: "Apakah modal Rp 100.000 cukup untuk trading dengan STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Secara teknis, Anda bisa mulai trading dengan modal sangat kecil (sesuai minimal deposit platform). Namun untuk trading yang aman dengan manajemen risiko yang benar menggunakan STC AutoTrade, kami rekomendasikan minimal Rp 300.000–500.000 agar bot punya buffer yang cukup.",
+        text: "Secara teknis bisa — dengan base amount Rp 14.000, modal Rp 100.000 cukup untuk 1 siklus martingale 3 step (14K + 28K + 56K = 98K). Namun ini sangat ketat tanpa buffer. Disarankan minimal Rp 200.000-300.000 dengan base 14K agar ada ruang untuk beberapa siklus recovery.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah bisa profit dengan modal Rp 100.000 di Stockity?",
+      name: "Mode apa yang paling cocok untuk modal kecil di STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Secara matematis mungkin, tapi sangat berisiko. Dengan modal Rp 100.000 dan nominal trade Rp 14.000, hanya ada buffer untuk 2–3 trade sebelum stop loss terkena atau akun hangus. Satu seri loss pendek bisa menghabiskan seluruh modal. Sangat tidak direkomendasikan untuk akun real.",
+        text: "Untuk modal kecil, AI Signal atau Fastrade FTT tanpa martingale agresif adalah pilihan yang lebih aman. Kedua mode ini bekerja otomatis dan tidak membutuhkan input manual. Hindari martingale lebih dari 3 step jika modal terbatas.",
       },
     },
     {
       "@type": "Question",
-      name: "Strategi apa yang paling cocok untuk trading binary option modal kecil?",
+      name: "Berapa step martingale yang aman untuk modal kecil?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Untuk modal kecil, strategi terbaik adalah: (1) Fastrade dengan nominal tetap (tanpa martingale), (2) AI Signal dengan filter ketat, (3) trading hanya di jam sesi pasar paling aktif. Hindari martingale dengan modal kecil karena satu seri loss bisa menghabiskan seluruh modal.",
+        text: "Untuk modal kecil (di bawah Rp 500.000 dengan base 14K), maksimal 2-3 step martingale sudah cukup ketat. Dengan base 14K dan multiplier 2×: step 1=14K, step 2=28K, step 3=56K. Total exposure 98K. Lebih dari 3 step sangat berisiko dengan modal terbatas.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah ada cara trading binary option tanpa modal?",
+      name: "Apakah Stop Loss di STC AutoTrade bisa otomatis berhentikan bot?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya — gunakan mode demo di STC AutoTrade. Mode demo menggunakan kondisi pasar nyata dari Stockity.id tanpa risiko uang sungguhan. Ini cara terbaik untuk belajar dan menguji strategi sebelum menggunakan modal nyata.",
+        text: "Ya. Stop Loss (SL) di STC AutoTrade adalah batas loss maksimum harian. Saat total loss hari itu mencapai angka SL yang sudah diset, bot otomatis berhenti trading untuk hari tersebut. Ini adalah fitur perlindungan saldo yang sangat penting — terutama untuk pengguna modal kecil.",
       },
     },
     {
       "@type": "Question",
-      name: "Berapa lama untuk balik modal trading binary option?",
+      name: "Apakah ada cara trading tanpa modal sama sekali di STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tidak ada jaminan atau timeline yang pasti. Trading binary option mengandung risiko kerugian — bukan investasi yang menjamin return. Fokus pada konsistensi dan manajemen risiko, bukan pada 'kapan balik modal'. Trader yang mengkejar balik modal cenderung mengambil risiko berlebihan dan justru rugi lebih besar.",
+        text: "Ya — gunakan akun Demo. Setiap akun STC AutoTrade memiliki mode Demo dengan saldo virtual gratis. Semua fitur bot aktif penuh di Demo — 6 mode, martingale, SL/TP. Tidak perlu deposit apapun. Ini cara terbaik untuk belajar sebelum menggunakan uang nyata.",
       },
     },
   ],
 };
 
-/* ── Komponen Lokal ───────────────────────────────────────────── */
+/* ── Sub-components ───────────────────────────────────────────── */
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -193,7 +185,7 @@ function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: str
   );
 }
 
-/* ── Page ─────────────────────────────────────────────────────── */
+/* ── Page Component ───────────────────────────────────────────── */
 
 export default function TradingBinaryOptionModalKecilPage() {
   return (
@@ -202,618 +194,497 @@ export default function TradingBinaryOptionModalKecilPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
-        {/* ── Nav ─────────────────────────────────────────── */}
-        <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
-          <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.png" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
-              <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
+      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+        {/* NAV */}
+        <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
+          <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
+            <Link href="/" className="flex items-center gap-2 no-underline">
+              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#3b82f6]">AutoTrade</span></span>
             </Link>
-            <div className="flex items-center gap-2">
-              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
-              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
-              <Link href="/download" className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-white text-xs font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-colors no-underline">Download</Link>
+            <div className="flex items-center gap-3">
+              <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
+              <a href="/StcAutoTrade.apk" download className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline">Download APK</a>
             </div>
           </div>
         </nav>
 
-        {/* ── Breadcrumb ──────────────────────────────────── */}
-        <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
-          <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40 flex-wrap">
-              <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
-              <li aria-hidden="true">›</li>
-              <li><Link href="/artikel" className="hover:text-[#1a1612]/70 transition-colors no-underline">Artikel</Link></li>
-              <li aria-hidden="true">›</li>
-              <li className="text-[#1a1612]/70 font-medium">Trading Binary Option Modal Kecil</li>
-            </ol>
-          </nav>
-        </div>
-
-        {/* ── Article Header ──────────────────────────────── */}
-        <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
-          <div className="flex items-center gap-3 mb-4 flex-wrap">
-            <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">Strategi</span>
-            <span className="text-[12px] text-[#1a1612]/35">7 Juni 2026</span>
-            <span className="text-[12px] text-[#1a1612]/35">·</span>
-            <span className="text-[12px] text-[#1a1612]/35">±10 menit baca</span>
-          </div>
-
-          <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
-            Trading Binary Option Modal Kecil:<br className="hidden sm:block" />
-            Mulai dari Rp 100 Ribu 2026
-          </h1>
-
-          <p className="text-[#6b6058] text-base sm:text-lg leading-relaxed max-w-2xl">
-            Artikel ini membahas{" "}
-            <strong className="font-semibold text-[#1a1612]">trading binary option dengan modal kecil</strong>{" "}
-            secara jujur — simulasi nyata dengan modal Rp 100K dan Rp 300K–500K,
-            strategi yang tepat untuk modal minim, dan kesalahan fatal yang harus
-            dihindari agar modal tidak habis sia-sia.
-          </p>
-
-          {/* Quick info */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 mt-8 border border-[rgba(26,22,18,0.09)] rounded-2xl overflow-hidden">
-            {[
-              { v: "Rp 14K", l: "Nominal Min Order" },
-              { v: "Rp 100K+", l: "Modal Awal" },
-              { v: "Demo", l: "Gratis Tanpa Modal" },
-              { v: "Konservatif", l: "Profil Aman" },
-            ].map((s, i) => (
-              <div key={i} className="bg-white py-4 px-3 text-center border-r border-[rgba(26,22,18,0.07)] last:border-0">
-                <p className="font-[family-name:var(--font-dm-serif)] text-xl text-[#1a1612] mb-0.5">{s.v}</p>
-                <p className="text-[11px] text-[#1a1612]/40">{s.l}</p>
-              </div>
-            ))}
-          </div>
-        </header>
-
-        {/* ── Article Body ────────────────────────────────── */}
-        <main className="max-w-4xl mx-auto px-5 sm:px-8 pb-24">
-          <article className="space-y-14">
-
-            {/* ── 01: Realita Modal Minimum ──────────────── */}
-            <section>
-              <SectionLabel>01 · Realita vs Ekspektasi</SectionLabel>
-              <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Berapa Modal Minimum untuk Binary Option? Realita vs Ekspektasi
-              </h2>
-              <div className="space-y-4">
-                <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  Banyak yang bertanya "<strong className="text-[#1a1612]">bisa mulai trading binary option dengan modal kecil</strong>?"
-                  Jawabannya: bisa secara teknis, tapi penting untuk memahami risikonya secara jujur.
-                  Berikut gambaran realistis yang perlu Anda ketahui sebelum memutuskan untuk deposit.
-                </p>
-
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div className="bg-rose-50 border border-rose-200 rounded-xl p-5">
-                    <h3 className="text-[13px] font-semibold text-rose-700 mb-3">❌ Ekspektasi Umum (Salah)</h3>
-                    <ul className="space-y-2">
-                      {[
-                        "Modal Rp 50–100K sudah cukup untuk profit konsisten",
-                        "Dengan modal kecil, risiko juga kecil dan aman",
-                        "Bisa langsung naik profit dari hari pertama",
-                        "Modal kecil cocok untuk 'coba-coba' dulu",
-                        "Jika rugi, tidak masalah karena cuma sedikit",
-                      ].map((item, i) => (
-                        <li key={i} className="flex gap-2 text-[12px] text-rose-800">
-                          <span className="font-bold flex-shrink-0">×</span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl p-5">
-                    <h3 className="text-[13px] font-semibold text-[#14532d] mb-3">✅ Realita (Yang Perlu Diketahui)</h3>
-                    <ul className="space-y-2">
-                      {[
-                        "Modal kecil = buffer sangat tipis untuk volatilitas pasar",
-                        "Satu seri loss pendek bisa menghabiskan seluruh modal",
-                        "Trading binary option butuh kedisiplinan dan strategi",
-                        "Demo adalah cara terbaik untuk 'coba-coba' tanpa risiko",
-                        "Kerugian kecil tetap kerugian — mindset penting untuk dijaga",
-                      ].map((item, i) => (
-                        <li key={i} className="flex gap-2 text-[12px] text-[#6b6058]">
-                          <span className="text-[#15803d] font-bold flex-shrink-0">✓</span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <InfoBox icon="💡" title="Kunci sukses dengan modal kecil">
-                  Modal kecil bukan masalah jika diimbangi dengan disiplin manajemen risiko
-                  yang ketat: nominal per trade yang proporsional, stop loss yang dijaga,
-                  dan tidak trading saat kondisi emosional. Namun yang paling aman tetap
-                  mulai dari mode demo sebelum menggunakan uang nyata.
-                </InfoBox>
-              </div>
-            </section>
-
-            {/* ── 02: Simulasi Modal Rp 100K ───────────── */}
-            <section>
-              <SectionLabel>02 · Simulasi Modal Rp 100K</SectionLabel>
-              <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Simulasi Trading dengan Modal Rp 100.000 di Stockity
-              </h2>
-              <div className="space-y-5">
-                <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  Mari lihat secara matematis apa yang terjadi jika Anda trading dengan modal
-                  Rp 100.000 menggunakan STC AutoTrade. Ini bukan skenario positif-positifan,
-                  tapi gambaran jujur yang perlu Anda pertimbangkan.
-                </p>
-
-                <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl overflow-hidden">
-                  <div className="px-5 py-4 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.06)]">
-                    <h3 className="text-[13px] font-semibold text-[#1a1612]">Skenario: Modal Rp 100.000 | Nominal Rp 14.000 | Martingale 2×</h3>
-                  </div>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-[12px]">
-                      <thead>
-                        <tr className="border-b border-[rgba(26,22,18,0.06)]">
-                          <th className="text-left px-4 py-3 font-semibold text-[#1a1612]/50">Step</th>
-                          <th className="text-center px-4 py-3 font-semibold text-[#1a1612]/50">Nominal Trade</th>
-                          <th className="text-center px-4 py-3 font-semibold text-[#1a1612]/50">Total Terpakai</th>
-                          <th className="text-center px-4 py-3 font-semibold text-[#1a1612]/50">Sisa Modal</th>
-                          <th className="text-center px-4 py-3 font-semibold text-[#1a1612]/50">Status</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-[rgba(26,22,18,0.05)]">
-                        {[
-                          { step: "1 (Awal)", nominal: "Rp 14.000", total: "Rp 14.000", sisa: "Rp 86.000", status: "Cukup", statusColor: "text-emerald-600" },
-                          { step: "2 (Loss ×2)", nominal: "Rp 28.000", total: "Rp 42.000", sisa: "Rp 58.000", status: "Cukup", statusColor: "text-emerald-600" },
-                          { step: "3 (Loss ×4)", nominal: "Rp 56.000", total: "Rp 98.000", sisa: "Rp 2.000", status: "Hampir Habis!", statusColor: "text-rose-600" },
-                          { step: "4 (Loss ×8)", nominal: "Rp 112.000", total: "Rp 210.000", sisa: "—", status: "Modal Tidak Cukup", statusColor: "text-rose-700" },
-                        ].map((row) => (
-                          <tr key={row.step}>
-                            <td className="px-4 py-3 font-medium text-[#1a1612]">{row.step}</td>
-                            <td className="px-4 py-3 text-center text-[#6b6058]">{row.nominal}</td>
-                            <td className="px-4 py-3 text-center text-[#6b6058]">{row.total}</td>
-                            <td className="px-4 py-3 text-center text-[#6b6058]">{row.sisa}</td>
-                            <td className={`px-4 py-3 text-center font-semibold ${row.statusColor}`}>{row.status}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="px-5 py-3 bg-rose-50 border-t border-rose-100">
-                    <p className="text-[12px] text-rose-800">
-                      <strong>Kesimpulan:</strong> Dengan modal Rp 100.000 dan martingale 2×, akun
-                      sudah tidak bisa melanjutkan di step ke-3. Hanya 2 loss berturut-turut yang diperlukan
-                      untuk hampir menguras seluruh modal. Satu seri loss normal di pasar bisa
-                      terjadi kapan saja.
-                    </p>
-                  </div>
-                </div>
-
-                <WarningBox>
-                  <strong>Modal Rp 100.000 untuk akun real TIDAK kami rekomendasikan</strong> jika
-                  menggunakan martingale. Buffer terlalu tipis untuk menampung volatilitas pasar normal.
-                  Gunakan modal Rp 100.000 hanya untuk bereksperimen di mode demo — bukan akun real.
-                </WarningBox>
-              </div>
-            </section>
-
-            {/* ── 03: Simulasi Modal Rp 300K–500K ───────── */}
-            <section>
-              <SectionLabel>03 · Simulasi Modal Rp 300K–500K</SectionLabel>
-              <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Simulasi Trading Modal Rp 300K–500K: Lebih Aman dan Terukur
-              </h2>
-              <div className="space-y-5">
-                <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  Modal Rp 300.000–500.000 memberikan ruang yang jauh lebih aman untuk
-                  trading dengan manajemen risiko yang benar. Berikut simulasi lengkapnya:
-                </p>
-
-                <div className="grid sm:grid-cols-2 gap-5">
-                  {/* Simulasi Rp 300K */}
-                  <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl overflow-hidden">
-                    <div className="px-4 py-3 bg-emerald-50 border-b border-emerald-100">
-                      <h3 className="text-[13px] font-semibold text-emerald-800">Modal Rp 300.000</h3>
-                      <p className="text-[11px] text-emerald-700">Nominal Rp 14K | Max 3 Step | Multiplier 2×</p>
-                    </div>
-                    <table className="w-full text-[12px]">
-                      <thead>
-                        <tr className="border-b border-[rgba(26,22,18,0.06)]">
-                          <th className="text-left px-3 py-2 font-semibold text-[#1a1612]/50">Step Loss</th>
-                          <th className="text-center px-3 py-2 font-semibold text-[#1a1612]/50">Nominal</th>
-                          <th className="text-center px-3 py-2 font-semibold text-[#1a1612]/50">Sisa</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-[rgba(26,22,18,0.05)]">
-                        {[
-                          { step: "Loss ke-1", nominal: "Rp 14.000", sisa: "Rp 286.000" },
-                          { step: "Loss ke-2", nominal: "Rp 28.000", sisa: "Rp 258.000" },
-                          { step: "Loss ke-3", nominal: "Rp 56.000", sisa: "Rp 202.000" },
-                          { step: "Stop (SL)", nominal: "—", sisa: "Rp 200.000+" },
-                        ].map((row) => (
-                          <tr key={row.step}>
-                            <td className="px-3 py-2 text-[#1a1612]">{row.step}</td>
-                            <td className="px-3 py-2 text-center text-[#6b6058]">{row.nominal}</td>
-                            <td className="px-3 py-2 text-center font-medium text-[#1a1612]">{row.sisa}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                    <div className="px-4 py-2 bg-[#f9fafb] border-t border-[rgba(26,22,18,0.06)]">
-                      <p className="text-[11px] text-[#6b6058]">Bisa bertahan 1 seri full loss (3 step) dan masih punya 67% modal untuk esok hari.</p>
-                    </div>
-                  </div>
-
-                  {/* Simulasi Rp 500K */}
-                  <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl overflow-hidden">
-                    <div className="px-4 py-3 bg-blue-50 border-b border-blue-100">
-                      <h3 className="text-[13px] font-semibold text-blue-800">Modal Rp 500.000</h3>
-                      <p className="text-[11px] text-blue-700">Nominal Rp 14K | Max 3 Step | Multiplier 2,5×</p>
-                    </div>
-                    <table className="w-full text-[12px]">
-                      <thead>
-                        <tr className="border-b border-[rgba(26,22,18,0.06)]">
-                          <th className="text-left px-3 py-2 font-semibold text-[#1a1612]/50">Step Loss</th>
-                          <th className="text-center px-3 py-2 font-semibold text-[#1a1612]/50">Nominal</th>
-                          <th className="text-center px-3 py-2 font-semibold text-[#1a1612]/50">Sisa</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-[rgba(26,22,18,0.05)]">
-                        {[
-                          { step: "Loss ke-1", nominal: "Rp 14.000", sisa: "Rp 486.000" },
-                          { step: "Loss ke-2", nominal: "Rp 35.000", sisa: "Rp 451.000" },
-                          { step: "Loss ke-3", nominal: "Rp 87.500", sisa: "Rp 363.500" },
-                          { step: "Stop (SL)", nominal: "—", sisa: "Rp 350.000+" },
-                        ].map((row) => (
-                          <tr key={row.step}>
-                            <td className="px-3 py-2 text-[#1a1612]">{row.step}</td>
-                            <td className="px-3 py-2 text-center text-[#6b6058]">{row.nominal}</td>
-                            <td className="px-3 py-2 text-center font-medium text-[#1a1612]">{row.sisa}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                    <div className="px-4 py-2 bg-[#f9fafb] border-t border-[rgba(26,22,18,0.06)]">
-                      <p className="text-[11px] text-[#6b6058]">Bisa bertahan 1 seri full loss dan masih punya 70%+ modal. Buffer lebih kuat.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <TipBox>
-                  <strong>Pelajaran dari simulasi:</strong> Modal Rp 300K–500K memberikan buffer
-                  yang jauh lebih baik daripada Rp 100K. Satu seri loss penuh (3 step martingale)
-                  masih bisa ditampung tanpa akun hangus, dan Anda punya modal cukup untuk esok hari.
-                </TipBox>
-              </div>
-            </section>
-
-            {/* ── 04: Strategi untuk Modal Kecil ───────── */}
-            <section>
-              <SectionLabel>04 · Strategi Modal Kecil</SectionLabel>
-              <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Strategi yang Cocok untuk Trading Binary Option Modal Kecil
-              </h2>
-              <div className="space-y-5">
-                <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  Tidak semua strategi cocok untuk modal kecil. Berikut strategi yang paling
-                  sesuai untuk trader yang baru mulai dengan dana terbatas:
-                </p>
-
-                <div className="space-y-4">
-                  {[
-                    {
-                      strategi: "Fastrade Tanpa Martingale",
-                      tag: "Paling Aman untuk Modal Kecil",
-                      tagColor: "bg-emerald-100 text-emerald-700",
-                      icon: "⚡",
-                      desc: "Fastrade dengan nominal tetap (tanpa martingale) adalah strategi paling aman untuk modal kecil. Setiap trade menggunakan nominal yang sama — jika loss, tidak ada eskalasi. Risiko per trade terbatas dan modal terkuras lebih lambat.",
-                      pros: ["Tidak ada eskalasi risiko saat loss berturut-turut", "Mudah diprediksi dan dikontrol", "Cocok untuk belajar tanpa tekanan"],
-                      cons: ["Profit per siklus lebih kecil", "Butuh win rate lebih tinggi untuk profit"],
-                    },
-                    {
-                      strategi: "AI Signal dengan Filter Ketat",
-                      tag: "Direkomendasikan untuk Pemula",
-                      tagColor: "bg-blue-100 text-blue-700",
-                      icon: "🤖",
-                      desc: "Gunakan mode AI Signal dengan filter jam trading ketat (hanya jam sesi pasar aktif) dan nominal fixed tanpa martingale. AI Signal membantu memfilter kondisi pasar yang lebih menguntungkan.",
-                      pros: ["Sinyal terfilter oleh algoritma", "Bisa dikombinasikan dengan stop loss ketat", "Tidak perlu analisis manual"],
-                      cons: ["Win rate tidak dijamin", "Perlu evaluasi berkala"],
-                    },
-                    {
-                      strategi: "Martingale Konservatif (Max 2 Step)",
-                      tag: "Untuk Modal Rp 300K+",
-                      tagColor: "bg-amber-100 text-amber-700",
-                      icon: "📊",
-                      desc: "Jika ingin menggunakan martingale, batasi hanya sampai 2 step dengan multiplier 2×. Dengan modal Rp 300K: step 1 Rp 14K, step 2 Rp 28K — total risiko per seri hanya Rp 42K, masih sangat tertampung.",
-                      pros: ["Masih punya recovery dari loss", "Risiko lebih terkontrol dari martingale penuh", "Bisa digunakan dengan modal Rp 300K"],
-                      cons: ["Tidak ada recovery jika loss 3 berturut-turut", "Butuh disiplin untuk tidak naik step lebih tinggi"],
-                    },
-                  ].map((s) => (
-                    <div key={s.strategi} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
-                      <div className="flex items-start gap-3 mb-3 flex-wrap">
-                        <span className="text-2xl">{s.icon}</span>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 flex-wrap mb-1">
-                            <h3 className="text-[14px] font-semibold text-[#1a1612]">{s.strategi}</h3>
-                            <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${s.tagColor}`}>{s.tag}</span>
-                          </div>
-                          <p className="text-[13px] text-[#6b6058] leading-relaxed">{s.desc}</p>
-                        </div>
-                      </div>
-                      <div className="grid sm:grid-cols-2 gap-3 mt-3">
-                        <div className="bg-[#f0fdf4] rounded-lg px-3 py-2.5">
-                          <p className="text-[11px] font-semibold text-[#14532d] mb-1.5">Kelebihan:</p>
-                          <ul className="space-y-1">
-                            {s.pros.map((p, i) => (
-                              <li key={i} className="text-[11px] text-[#6b6058] flex gap-1.5"><span className="text-[#15803d]">+</span>{p}</li>
-                            ))}
-                          </ul>
-                        </div>
-                        <div className="bg-rose-50 rounded-lg px-3 py-2.5">
-                          <p className="text-[11px] font-semibold text-rose-700 mb-1.5">Perlu diperhatikan:</p>
-                          <ul className="space-y-1">
-                            {s.cons.map((c, i) => (
-                              <li key={i} className="text-[11px] text-[#6b6058] flex gap-1.5"><span className="text-rose-600">-</span>{c}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            {/* ── 05: Kesalahan Fatal Modal Kecil ──────── */}
-            <section>
-              <SectionLabel>05 · Kesalahan Fatal</SectionLabel>
-              <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Kesalahan Fatal Trader Modal Kecil & Cara Menghindarinya
-              </h2>
-              <div className="space-y-3">
+        <main>
+          {/* ARTICLE HEADER */}
+          <div className="pt-28 pb-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
+            <div className="max-w-3xl mx-auto px-5">
+              <nav aria-label="breadcrumb" className="mb-6">
+                <ol className="flex items-center gap-2 text-[12px] text-[#6b6058]">
+                  <li><Link href="/" className="hover:text-[#1a1612] no-underline transition-colors">Beranda</Link></li>
+                  <li>/</li>
+                  <li><Link href="/artikel" className="hover:text-[#1a1612] no-underline transition-colors">Artikel</Link></li>
+                  <li>/</li>
+                  <li className="text-[#1a1612] font-medium">Trading Modal Kecil</li>
+                </ol>
+              </nav>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eff6ff] text-[#1d4ed8] text-[11px] font-semibold mb-4">Strategi & Modal</span>
+              <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-[1.2] mb-4">
+                Trading Binary Option Modal Kecil: Panduan Lengkap dengan STC AutoTrade
+              </h1>
+              <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
+                Modal terbatas bukan halangan untuk mulai trading dengan bot. Minimum order di STC AutoTrade hanya Rp 14.000/trade. Artikel ini membahas simulasi nyata, mode yang tepat, dan cara trading aman dengan modal kecil.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {[
-                  {
-                    kesalahan: "Menggunakan martingale agresif dengan modal mini",
-                    icon: "💥",
-                    dampak: "Modal habis dalam hitungan seri loss pendek. 3–4 loss berturut-turut cukup untuk menguras akun.",
-                    solusi: "Batasi martingale max 2 step dengan modal kecil, atau gunakan mode fixed (tanpa martingale) sampai modal bertambah.",
-                  },
-                  {
-                    kesalahan: "Top up terus menerus setelah rugi (revenge deposit)",
-                    icon: "🔄",
-                    dampak: "Dana yang dikeluarkan semakin besar, kerugian total membengkak, dan kondisi psikologis memburuk.",
-                    solusi: "Stop setelah stop loss tercapai. Evaluasi strategi minimal 1–2 hari sebelum top up lagi. Jangan trading dalam kondisi emosional.",
-                  },
-                  {
-                    kesalahan: "Trading tanpa stop loss",
-                    icon: "🚫",
-                    dampak: "Bot terus berjalan bahkan saat pasar sedang sangat tidak menguntungkan, menguras modal tanpa batas.",
-                    solusi: "WAJIB pasang stop loss sebelum mengaktifkan bot. Untuk modal Rp 300K, stop loss Rp 75.000–100.000 sudah cukup.",
-                  },
-                  {
-                    kesalahan: "Menaikkan nominal secara drastis saat profit",
-                    icon: "📈",
-                    dampak: "Satu seri loss dengan nominal besar bisa menghapus semua profit yang dikumpulkan dalam berhari-hari.",
-                    solusi: "Naikkan nominal secara bertahap — maksimal 20–30% dari nominal awal per kenaikan. Stabilkan dulu selama 1 minggu sebelum naik lagi.",
-                  },
-                  {
-                    kesalahan: "Trading di semua jam tanpa memperhatikan sesi",
-                    icon: "🕐",
-                    dampak: "Jam pasar sepi menghasilkan pergerakan tidak menentu dan random — win rate menurun drastis.",
-                    solusi: "Aktifkan bot hanya di jam sesi pasar aktif: London (14:00–17:00 WIB) dan New York (19:00–22:00 WIB).",
-                  },
-                ].map((item, i) => (
-                  <div key={i} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-5 py-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-xl flex-shrink-0 mt-0.5">{item.icon}</span>
-                      <div className="flex-1">
-                        <p className="text-[13px] font-semibold text-[#1a1612] mb-2">{item.kesalahan}</p>
-                        <div className="grid sm:grid-cols-2 gap-3">
-                          <div className="bg-rose-50 border border-rose-100 rounded-lg px-3 py-2">
-                            <p className="text-[11px] font-semibold text-rose-700 mb-0.5">Dampak:</p>
-                            <p className="text-[12px] text-rose-800">{item.dampak}</p>
-                          </div>
-                          <div className="bg-[#f0fdf4] border border-[#bbf7d0] rounded-lg px-3 py-2">
-                            <p className="text-[11px] font-semibold text-[#14532d] mb-0.5">Solusi:</p>
-                            <p className="text-[12px] text-[#6b6058]">{item.solusi}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  { v: "Rp 14.000", l: "Min. Order/Trade" },
+                  { v: "Demo Gratis", l: "Tanpa Modal" },
+                  { v: "SL Otomatis", l: "Proteksi Saldo" },
+                  { v: "6 Mode", l: "Pilih Sesuai Modal" },
+                ].map((s) => (
+                  <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
+                    <p className="text-[15px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
+                    <p className="text-[11px] text-[#6b6058]">{s.l}</p>
                   </div>
                 ))}
               </div>
-            </section>
-
-            {/* ── 06: Mulai dari Demo ───────────────────── */}
-            <section>
-              <SectionLabel>06 · Mulai dari Demo</SectionLabel>
-              <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Cara Mulai dari Demo Sebelum Pakai Modal Nyata
-              </h2>
-              <div className="space-y-4">
-                <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  Mode demo adalah cara terbaik untuk "<strong className="text-[#1a1612]">coba-coba trading binary option</strong>"
-                  tanpa risiko finansial apapun. Ini bukan sekadar formalitas — ini adalah
-                  investasi waktu yang melindungi modal Anda di akun real.
-                </p>
-
-                <div className="max-w-2xl space-y-3">
-                  <StepCard
-                    n="1"
-                    title="Download STC AutoTrade (gratis)"
-                    desc="Download APK dari stcautotrade.id (Android) atau akses stcautotradepro.id (PC/semua perangkat). Tidak ada biaya apapun untuk download atau registrasi."
-                    sub="Mode demo gratis — tidak perlu deposit."
-                  />
-                  <StepCard
-                    n="2"
-                    title="Aktifkan mode demo"
-                    desc="Di STC AutoTrade, pilih mode 'Demo'. Anda mendapatkan saldo virtual untuk berlatih trading dengan kondisi pasar nyata dari Stockity.id."
-                  />
-                  <StepCard
-                    n="3"
-                    title="Setting persis seperti yang akan dipakai di real"
-                    desc="Gunakan setting yang sama persis dengan yang ingin Anda pakai di akun real — nominal, mode martingale, stop loss. Demo yang tidak realistis tidak memberikan data berguna."
-                    sub="Misalnya: nominal Rp 14K, max 3 step martingale, stop loss Rp 75K."
-                  />
-                  <StepCard
-                    n="4"
-                    title="Jalankan minimal 7–14 hari"
-                    desc="Catat win rate harian, drawdown maksimal, dan performa di berbagai kondisi pasar. Minimal 7 hari data diperlukan untuk mendapatkan gambaran yang representatif."
-                    sub="Target: win rate konsisten di atas 50% selama 7 hari berturut-turut."
-                  />
-                  <StepCard
-                    n="5"
-                    title="Evaluasi sebelum pindah ke real"
-                    desc="Analisis hasil demo. Jika win rate bagus dan konsisten, baru pertimbangkan deposit ke akun real — mulai dengan profil konservatif (Rp 300K–500K)."
-                    sub="Jika hasil demo buruk, perbaiki strategi dulu — jangan langsung deposit."
-                  />
-                </div>
-
-                <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
-                  <h3 className="text-[13px] font-semibold text-[#1a1612] mb-3">Apa yang Harus Dicatat Selama Demo</h3>
-                  <div className="grid sm:grid-cols-2 gap-3 text-[12px]">
-                    {[
-                      "Win rate harian (berapa % trade menang)",
-                      "Drawdown maksimal dalam satu hari",
-                      "Jam trading dengan win rate terbaik",
-                      "Pasangan mata uang yang paling konsisten",
-                      "Berapa seri loss berturut-turut yang terjadi",
-                      "Total profit/loss dalam 7 hari",
-                    ].map((item, i) => (
-                      <div key={i} className="flex gap-2 text-[#6b6058]">
-                        <span className="text-[#1d4ed8] font-bold flex-shrink-0">•</span>
-                        {item}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <TipBox>
-                  <strong>Demo bukan formalitas:</strong> Banyak trader yang gagal bukan karena
-                  strategi salah, tapi karena skip fase demo dan tidak memahami perilaku bot
-                  di kondisi pasar nyata. Demo adalah data — semakin banyak data, semakin
-                  baik keputusan Anda.
-                </TipBox>
-              </div>
-            </section>
-
-            {/* ── FAQ ───────────────────────────────────── */}
-            <section>
-              <SectionLabel>07 · FAQ</SectionLabel>
-              <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-6 leading-snug">
-                Pertanyaan Umum: Trading Binary Option Modal Kecil
-              </h2>
-              <div className="space-y-3">
-                {[
-                  {
-                    q: "Berapa modal minimum untuk trading binary option di Stockity?",
-                    a: "Secara teknis, Anda bisa mulai trading dengan modal sangat kecil (sesuai minimal deposit platform). Namun untuk trading yang aman dengan manajemen risiko yang benar menggunakan STC AutoTrade, kami rekomendasikan minimal Rp 300.000–500.000 agar bot punya buffer yang cukup.",
-                  },
-                  {
-                    q: "Apakah bisa profit dengan modal Rp 100.000 di Stockity?",
-                    a: "Secara matematis mungkin, tapi sangat berisiko. Dengan modal Rp 100.000 dan nominal trade Rp 14.000, hanya ada buffer untuk 2–3 trade sebelum stop loss terkena atau akun hangus. Satu seri loss pendek bisa menghabiskan seluruh modal. Sangat tidak direkomendasikan untuk akun real.",
-                  },
-                  {
-                    q: "Strategi apa yang paling cocok untuk trading binary option modal kecil?",
-                    a: "Untuk modal kecil, strategi terbaik adalah: (1) Fastrade dengan nominal tetap tanpa martingale, (2) AI Signal dengan filter ketat, (3) trading hanya di jam sesi pasar paling aktif. Hindari martingale agresif dengan modal kecil karena satu seri loss bisa menghabiskan seluruh modal.",
-                  },
-                  {
-                    q: "Apakah ada cara trading binary option tanpa modal?",
-                    a: "Ya — gunakan mode demo di STC AutoTrade. Mode demo menggunakan kondisi pasar nyata dari Stockity.id tanpa risiko uang sungguhan. Ini cara terbaik untuk belajar dan menguji strategi sebelum menggunakan modal nyata.",
-                  },
-                  {
-                    q: "Berapa lama untuk balik modal trading binary option?",
-                    a: "Tidak ada jaminan atau timeline yang pasti. Trading binary option mengandung risiko kerugian — bukan investasi yang menjamin return. Fokus pada konsistensi dan manajemen risiko, bukan pada 'kapan balik modal'. Trader yang mengejar balik modal cenderung mengambil risiko berlebihan dan justru rugi lebih besar.",
-                  },
-                ].map((item, i) => (
-                  <div key={i} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-5 py-4">
-                    <h3 className="text-[13px] sm:text-[14px] font-semibold text-[#1a1612] mb-2 leading-snug">{item.q}</h3>
-                    <p className="text-[13px] text-[#6b6058] leading-relaxed">{item.a}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* ── Kesimpulan ────────────────────────────── */}
-            <section>
-              <SectionLabel>08 · Kesimpulan</SectionLabel>
-              <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Trading Binary Option Modal Kecil: Bisa, tapi Harus Cerdas
-              </h2>
-              <div className="space-y-4">
-                <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  Trading binary option dengan modal kecil bisa dilakukan, tapi membutuhkan
-                  disiplin yang lebih tinggi daripada trading dengan modal besar. Semakin kecil
-                  modal, semakin ketat manajemen risiko yang diperlukan. Kuncinya: mulai dari demo,
-                  gunakan strategi konservatif, pasang stop loss yang tidak bisa ditawar, dan
-                  deposit hanya dengan dana yang memang Anda siap tanggung risikonya.
-                </p>
-                <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
-                  <h3 className="text-[13px] font-semibold text-[#1a1612] mb-3">Rekomendasi Jalur Aman untuk Pemula Modal Kecil</h3>
-                  <div className="space-y-2 text-[13px] text-[#6b6058]">
-                    <div className="flex gap-2"><span className="text-[#15803d] font-bold">1.</span> Mulai dari mode demo gratis — tidak perlu deposit apapun</div>
-                    <div className="flex gap-2"><span className="text-[#15803d] font-bold">2.</span> Jalankan demo minimal 7–14 hari, catat win rate dan drawdown</div>
-                    <div className="flex gap-2"><span className="text-[#15803d] font-bold">3.</span> Jika hasil demo konsisten, deposit Rp 300K–500K (bukan Rp 100K)</div>
-                    <div className="flex gap-2"><span className="text-[#15803d] font-bold">4.</span> Gunakan strategi Fastrade atau martingale max 2 step</div>
-                    <div className="flex gap-2"><span className="text-[#15803d] font-bold">5.</span> Pasang stop loss ketat — patuhi tanpa terkecuali</div>
-                    <div className="flex gap-2"><span className="text-[#15803d] font-bold">6.</span> Evaluasi mingguan — naikkan modal hanya setelah terbukti profit</div>
-                  </div>
-                </div>
-                <WarningBox>
-                  <strong>Disclaimer:</strong> Trading binary option mengandung risiko kerugian
-                  finansial yang signifikan. Tidak ada strategi yang menjamin profit. Selalu
-                  gunakan dana yang memang siap Anda tanggung risikonya, mulai dari mode demo,
-                  dan jangan pernah trading dengan dana pinjaman atau dana darurat.
-                </WarningBox>
-              </div>
-            </section>
-
-          </article>
-
-          {/* ── Internal Links ────────────────────────────── */}
-          <div className="mt-14 pt-10 border-t border-[rgba(26,22,18,0.08)]">
-            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">Artikel Terkait</p>
-            <div className="grid sm:grid-cols-3 gap-3">
-              {[
-                { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Panduan lengkap modal yang ideal untuk trading" },
-                { href: "/artikel/strategi-martingale-stockity", title: "Strategi Martingale", desc: "Cara pakai martingale yang aman di Stockity" },
-                { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading", desc: "Strategi profit konsisten di Stockity" },
-              ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
-                  <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
-                </Link>
-              ))}
             </div>
           </div>
+
+          {/* SECTION 1 — Berapa Modal Minimum */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Modal Minimum</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Berapa Modal Minimum untuk Pakai STC AutoTrade?</h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Pertanyaan yang paling sering ditanyakan trader pemula. Jawabannya simpel — tapi ada nuansanya:
+              </p>
+              <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl p-4 mb-5">
+                <div className="text-center py-4">
+                  <p className="text-[13px] text-[#6b6058] mb-1">Minimum nominal order per trade</p>
+                  <p className="text-[42px] font-bold text-[#1a1612]">Rp 14.000</p>
+                  <p className="text-[12px] text-[#6b6058]">per satu order yang dieksekusi bot</p>
+                </div>
+              </div>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Namun angka Rp 14.000 adalah <strong className="text-[#1a1612]">nominal satu order</strong> — bukan modal total yang aman. Jika menggunakan martingale, bot bisa menaikkan nominal ke step berikutnya saat loss. Artinya Anda butuh buffer lebih dari sekedar Rp 14.000 di akun.
+              </p>
+              <InfoBox icon="💡" title="Pakai Demo Dulu — Gratis Tanpa Deposit">
+                Sebelum deposit uang nyata, gunakan akun Demo gratis di STC AutoTrade. Semua fitur aktif penuh — 6 mode, martingale, SL/TP — dengan saldo virtual. Tidak ada minimum modal untuk mulai di Demo.
+              </InfoBox>
+            </div>
+          </section>
+
+          {/* SECTION 2 — Simulasi Base Rp 14.000 */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Simulasi Martingale</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Simulasi Trading Base Rp 14.000 dengan Martingale</h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Berikut simulasi worst-case scenario — semua step loss, multiplier 2×, dari base Rp 14.000. Ini membantu Anda menghitung berapa modal minimum yang dibutuhkan:
+              </p>
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl overflow-hidden mb-5">
+                <div className="grid grid-cols-5 gap-0 bg-[#1a1612] px-4 py-2.5 text-[10px] sm:text-[11px] font-semibold text-white">
+                  <span>Step</span>
+                  <span>Nominal</span>
+                  <span>Kumulatif Loss</span>
+                  <span>Modal Minimum</span>
+                  <span>Rekomendasi</span>
+                </div>
+                {[
+                  { step: "K1", nominal: "Rp 14.000", kum: "Rp 14.000", modal: "Rp 14.000", rec: "Rp 50K+", color: "bg-[#f0fdf4]", recColor: "text-[#14532d]" },
+                  { step: "K2", nominal: "Rp 28.000", kum: "Rp 42.000", modal: "Rp 42.000", rec: "Rp 100K+", color: "bg-white", recColor: "text-[#14532d]" },
+                  { step: "K3", nominal: "Rp 56.000", kum: "Rp 98.000", modal: "Rp 98.000", rec: "Rp 200K+", color: "bg-white", recColor: "text-[#92400e]" },
+                  { step: "K4", nominal: "Rp 112.000", kum: "Rp 210.000", modal: "Rp 210.000", rec: "Rp 500K+", color: "bg-[#fffbeb]", recColor: "text-[#92400e]" },
+                  { step: "K5", nominal: "Rp 224.000", kum: "Rp 434.000", modal: "Rp 434.000", rec: "Rp 1jt+", color: "bg-[#fef2f2]", recColor: "text-[#dc2626]" },
+                ].map((row) => (
+                  <div
+                    key={row.step}
+                    className={`grid grid-cols-5 gap-0 px-4 py-2.5 text-[11px] border-t border-[rgba(26,22,18,0.06)] ${row.color}`}
+                  >
+                    <span className="font-bold text-[#1a1612]">{row.step}</span>
+                    <span className="text-[#1a1612]">{row.nominal}</span>
+                    <span className="text-[#6b6058]">{row.kum}</span>
+                    <span className="font-semibold text-[#1a1612]">{row.modal}</span>
+                    <span className={`font-semibold ${row.recColor}`}>{row.rec}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-[12px] text-[#6b6058] mb-4">Multiplier 2× dari base Rp 14.000. Kolom &ldquo;Rekomendasi&rdquo; adalah modal total yang disarankan agar ada buffer untuk beberapa siklus.</p>
+              <WarningBox>
+                Semakin banyak step martingale yang Anda aktifkan, semakin besar modal yang dibutuhkan. Untuk modal kecil (di bawah Rp 300.000), batasi martingale maksimal 2-3 step saja.
+              </WarningBox>
+            </div>
+          </section>
+
+          {/* SECTION 3 — Simulasi Base Rp 70.000 */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Simulasi Standar</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Simulasi Base Rp 70.000 — Rekomendasi Standar</h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Base amount Rp 70.000 adalah pilihan yang lebih seimbang — profit per trade lebih berarti, tapi masih terjangkau untuk pemula yang mau mulai dengan modal sedang:
+              </p>
+              <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden mb-5">
+                <div className="grid grid-cols-4 gap-0 bg-[#1a1612] px-4 py-2.5 text-[11px] font-semibold text-white">
+                  <span>Step</span>
+                  <span>Nominal</span>
+                  <span>Total Exposure</span>
+                  <span>Modal Buffer</span>
+                </div>
+                {[
+                  { step: "K1", nominal: "Rp 70.000", total: "Rp 70.000", buffer: "Rp 700K – 1jt", color: "bg-white" },
+                  { step: "K2", nominal: "Rp 140.000", total: "Rp 210.000", buffer: "Rp 700K – 1jt", color: "bg-white" },
+                  { step: "K3", nominal: "Rp 280.000", total: "Rp 490.000", buffer: "Rp 700K – 1jt", color: "bg-[#fffbeb]" },
+                  { step: "K4", nominal: "Rp 560.000", total: "Rp 1.050.000", buffer: "Rp 2jt+", color: "bg-[#fef2f2]" },
+                ].map((row) => (
+                  <div
+                    key={row.step}
+                    className={`grid grid-cols-4 gap-0 px-4 py-2.5 text-[12px] border-t border-[rgba(26,22,18,0.06)] ${row.color}`}
+                  >
+                    <span className="font-bold text-[#1a1612]">{row.step}</span>
+                    <span className="text-[#1a1612]">{row.nominal}</span>
+                    <span className="text-[#6b6058]">{row.total}</span>
+                    <span className="font-semibold text-[#1a1612]">{row.buffer}</span>
+                  </div>
+                ))}
+              </div>
+              <TipBox>
+                Dengan base Rp 70.000, siapkan modal Rp 700.000 – 1.000.000 untuk trading yang nyaman dengan martingale 2-3 step. Ini memberikan buffer yang cukup untuk beberapa siklus recovery sebelum SL terpicu.
+              </TipBox>
+            </div>
+          </section>
+
+          {/* SECTION 4 — Mode yang Cocok untuk Modal Kecil */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Pilih Mode</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Mode yang Cocok untuk Modal Kecil</h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Dari 6 mode di STC AutoTrade, tidak semua sama-sama cocok untuk modal kecil. Berikut rekomendasi berdasarkan karakteristik masing-masing mode:
+              </p>
+              <div className="space-y-3 mb-5">
+                {[
+                  {
+                    mode: "AI Signal",
+                    kode: "aisignal",
+                    cocok: true,
+                    alasan: "Sinyal dari sistem AI — bekerja otomatis tanpa perlu konfigurasi timeframe. Tidak ada input manual. Cocok untuk pemula yang mau mulai dengan setting minimal.",
+                    tips: "Aktifkan dengan martingale 2-3 step saja. Set SL ketat.",
+                    badge: "Direkomendasikan",
+                    badgeColor: "bg-[#dcfce7] text-[#14532d]",
+                  },
+                  {
+                    mode: "Fastrade FTT",
+                    kode: "fastrade",
+                    cocok: true,
+                    alasan: "Bot mendeteksi arah secara mandiri via analisis real-time. Punya pilihan timeframe (1m-1h). Cocok untuk modal kecil dengan timeframe lebih panjang (15m atau 30m) agar tidak terlalu sering trading.",
+                    tips: "Gunakan timeframe 15m atau 30m untuk frekuensi order lebih terkontrol.",
+                    badge: "Cocok",
+                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                  },
+                  {
+                    mode: "Indicator",
+                    kode: "indicator",
+                    cocok: true,
+                    alasan: "Analisis teknikal menggunakan SMA, EMA, atau RSI. Bisa dikonfigurasi untuk hanya trading saat sinyal kuat — cocok untuk modal kecil yang tidak mau terlalu sering trading.",
+                    tips: "Set sensitivity rendah (lebih selektif) untuk mengurangi frekuensi order.",
+                    badge: "Cocok",
+                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                  },
+                  {
+                    mode: "Fastrade CTC",
+                    kode: "ctc",
+                    cocok: false,
+                    alasan: "Mengikuti order master trader. Frekuensi order tergantung seberapa aktif master — bisa sangat sering. Ini bisa menjadi masalah untuk modal kecil jika master trading agresif.",
+                    tips: "Gunakan SL ketat. Monitor frekuensi trading master sebelum aktifkan di Real.",
+                    badge: "Perhatikan SL",
+                    badgeColor: "bg-[#fef3c7] text-[#92400e]",
+                  },
+                  {
+                    mode: "Signal Mode",
+                    kode: "schedule",
+                    cocok: true,
+                    alasan: "Input sinyal manual dengan jadwal eksekusi. Karena Anda yang menentukan kapan bot trading, frekuensinya bisa sangat terkontrol. Cocok jika Anda punya sumber sinyal yang dipercaya.",
+                    tips: "Pilih hanya sinyal berkualitas tinggi. Jangan trading terlalu sering.",
+                    badge: "Terkontrol",
+                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                  },
+                  {
+                    mode: "Momentum",
+                    kode: "momentum",
+                    cocok: true,
+                    alasan: "Deteksi 4 pola candlestick: CandleSabit, DojiTerjepit, DojiPembatalan, BBSARBreak. Bisa aktifkan hanya pola tertentu yang win rate-nya lebih tinggi. Cocok untuk yang paham pola candlestick.",
+                    tips: "Aktifkan hanya pola yang paling Anda percaya — jangan aktifkan semua sekaligus.",
+                    badge: "Selektif",
+                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                  },
+                ].map((item) => (
+                  <div key={item.mode} className={`bg-white border rounded-xl p-4 ${item.cocok ? "border-[rgba(26,22,18,0.07)]" : "border-[#fde68a]"}`}>
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <div className="flex items-center gap-2">
+                        <p className="text-[13px] font-bold text-[#1a1612]">{item.mode}</p>
+                        <code className="text-[10px] font-mono text-[#6b6058] bg-[#f1f5f9] px-1.5 py-0.5 rounded">{item.kode}</code>
+                      </div>
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${item.badgeColor}`}>{item.badge}</span>
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed mb-1.5">{item.alasan}</p>
+                    <p className="text-[11px] text-[#3b82f6] font-medium">Tips: {item.tips}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* SECTION 5 — Stop Loss Wajib */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Proteksi Modal</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Setting SL (Stop Loss) Harian: Wajib Aktif untuk Modal Kecil</h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Stop Loss adalah fitur paling penting untuk trader modal kecil di STC AutoTrade. Ini bukan opsional — ini <strong className="text-[#1a1612]">wajib diaktifkan</strong> sebelum bot mulai trading.
+              </p>
+              <div className="bg-[#fffbeb] border border-[#fde68a] rounded-xl p-4 mb-5">
+                <p className="text-[12px] font-bold text-[#92400e] mb-2">Cara Kerja Stop Loss di STC AutoTrade:</p>
+                <p className="text-[13px] text-[#92400e] leading-relaxed">
+                  SL adalah batas loss maksimum harian. Contoh: jika Anda set SL = Rp 50.000, maka saat total loss hari itu mencapai Rp 50.000, bot secara otomatis berhenti dan tidak akan membuka order baru — bahkan jika martingale belum selesai satu siklus. Bot baru bisa aktif lagi keesokan harinya.
+                </p>
+              </div>
+              <div className="space-y-3 mb-5">
+                <p className="text-[13px] font-semibold text-[#1a1612]">Cara Setting Stop Loss:</p>
+                <StepCard
+                  n="1"
+                  title="Buka Dashboard STC AutoTrade"
+                  desc="Login ke aplikasi. SL bisa diatur dari panel setting di dashboard sebelum mengaktifkan bot."
+                />
+                <StepCard
+                  n="2"
+                  title="Temukan Field Stop Loss"
+                  desc="Di panel parameter bot, ada field 'Stop Loss' atau 'SL'. Masukkan nominal dalam Rupiah — ini adalah batas loss maksimum harian Anda."
+                  sub="Contoh: ketik 50000 untuk SL Rp 50.000"
+                />
+                <StepCard
+                  n="3"
+                  title="Set Nilai SL yang Realistis"
+                  desc="Untuk modal kecil: set SL sekitar 20-30% dari total modal. Modal Rp 300K → SL Rp 60.000-90.000. Jangan set SL terlalu kecil (bot berhenti terlalu cepat) atau terlalu besar (terlambat berhenti)."
+                  sub="20-30% dari modal adalah panduan umum manajemen risiko"
+                />
+                <StepCard
+                  n="4"
+                  title="Aktifkan Bot"
+                  desc="Setelah SL diset, aktifkan bot. Jika SL terpicu hari ini, bot otomatis berhenti. Besok SL reset dan bot bisa aktif kembali."
+                />
+              </div>
+              <TipBox>
+                Kombinasikan SL dengan Stop Profit (TP). TP berhentikan bot saat profit harian tercapai — mengunci keuntungan dan mencegah overtrade. Contoh: TP = Rp 50.000 dan SL = Rp 40.000. Bot berhenti saat salah satu terpicu duluan.
+              </TipBox>
+            </div>
+          </section>
+
+          {/* SECTION 6 — Demo Account */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Latihan Gratis</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Akun Demo: Latihan Gratis Sebelum Pakai Modal Nyata</h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Sebelum deposit uang nyata sepeser pun, manfaatkan akun Demo yang sudah tersedia gratis di setiap akun STC AutoTrade. Ini bukan versi terbatas — semua fitur aktif penuh.
+              </p>
+              <div className="grid sm:grid-cols-3 gap-3 mb-5">
+                {[
+                  { icon: "🆓", title: "100% Gratis", desc: "Tidak perlu deposit apapun. Saldo virtual disediakan langsung." },
+                  { icon: "🤖", title: "Fitur Penuh", desc: "Semua 6 mode aktif, martingale jalan, SL/TP berfungsi persis seperti Real." },
+                  { icon: "📊", title: "Data History", desc: "Semua order tercatat di History — bisa dievaluasi untuk optimasi setting." },
+                ].map((item) => (
+                  <div key={item.title} className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4 text-center">
+                    <div className="text-2xl mb-2">{item.icon}</div>
+                    <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{item.title}</p>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="space-y-3 mb-5">
+                <p className="text-[13px] font-semibold text-[#1a1612]">Cara Aktifkan Mode Demo:</p>
+                <StepCard
+                  n="1"
+                  title="Login ke STC AutoTrade"
+                  desc="Masuk dengan akun Stockity.id Anda. Mode Demo tersedia otomatis — tidak ada pendaftaran tambahan."
+                />
+                <StepCard
+                  n="2"
+                  title="Lihat Header Dashboard"
+                  desc="Di bagian atas dashboard, ada toggle atau label yang menunjukkan 'Real' atau 'Demo'. Tap untuk switch."
+                  sub="Switch kapan saja — bahkan saat bot tidak aktif"
+                />
+                <StepCard
+                  n="3"
+                  title="Mulai Trading Demo"
+                  desc="Pilih mode, atur parameter, dan aktifkan bot di mode Demo. Hasilnya dicatat di History — bisa dievaluasi untuk mencari setting terbaik sebelum pindah ke Real."
+                />
+              </div>
+              <InfoBox icon="🎯" title="Tanda Siap Pindah ke Akun Real">
+                Pindah ke Real setelah Demo Anda menunjukkan: (1) konsisten profit selama 1-2 minggu, (2) sudah menemukan mode dan setting yang tepat, (3) sudah memahami perilaku martingale dan cara kerja SL/TP.
+              </InfoBox>
+            </div>
+          </section>
+
+          {/* SECTION 7 — Kesalahan yang Harus Dihindari */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Hindari Kesalahan</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kesalahan Trader Modal Kecil yang Harus Dihindari</h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Trader modal kecil paling rentan terhadap kesalahan berikut. Pelajari dan hindari dari awal:
+              </p>
+              <div className="space-y-3 mb-5">
+                {[
+                  {
+                    kesalahan: "Mengaktifkan martingale 5-7 step dengan modal kecil",
+                    dampak: "Satu siklus loss bisa menghabiskan seluruh modal sebelum ada recovery",
+                    hindari: "Batasi maksimal 2-3 step martingale jika modal di bawah Rp 500.000",
+                  },
+                  {
+                    kesalahan: "Tidak mengaktifkan Stop Loss",
+                    dampak: "Bot terus trading bahkan saat serangkaian loss — saldo bisa nol",
+                    hindari: "SELALU aktifkan SL sebelum nyalakan bot di akun Real",
+                  },
+                  {
+                    kesalahan: "Langsung deposit ke Real tanpa testing Demo",
+                    dampak: "Kehilangan modal karena belum paham cara kerja bot dan cara konfigurasi yang tepat",
+                    hindari: "Minimal 1-2 minggu di Demo dulu dengan setting yang akan dipakai di Real",
+                  },
+                  {
+                    kesalahan: "Base amount terlalu besar relatif terhadap modal",
+                    dampak: "Martingale step pertama saja sudah 30-50% dari modal — tidak ada buffer",
+                    hindari: "Base amount idealnya 5-10% dari total modal. Modal 200K → base maksimal 14K-20K",
+                  },
+                  {
+                    kesalahan: "Trading di banyak aset sekaligus",
+                    dampak: "Sulit monitoring dan kalkulasi modal yang dibutuhkan untuk martingale di setiap aset",
+                    hindari: "Mulai dengan 1 aset yang dipahami — fokus adalah kunci saat modal terbatas",
+                  },
+                  {
+                    kesalahan: "Panik dan matikan bot di tengah siklus martingale",
+                    dampak: "Loss yang sudah terjadi tidak ter-recovery — siklus martingale harus selesai untuk profit kembali",
+                    hindari: "Biarkan bot selesaikan siklus, atau set SL dari awal agar bot yang memutuskan kapan berhenti",
+                  },
+                ].map((item) => (
+                  <div key={item.kesalahan} className="bg-[#fef2f2] border border-[#fecaca] rounded-xl p-4">
+                    <div className="flex items-start gap-2 mb-2">
+                      <span className="text-red-500 text-sm flex-shrink-0 mt-0.5">✗</span>
+                      <p className="text-[13px] font-semibold text-[#1a1612]">{item.kesalahan}</p>
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] mb-1.5 pl-5">Dampak: {item.dampak}</p>
+                    <p className="text-[11px] text-[#14532d] font-semibold pl-5">Solusi: {item.hindari}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* SECTION 8 — Kesimpulan */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Ringkasan</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kesimpulan</h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Trading binary option dengan modal kecil adalah mungkin dengan STC AutoTrade — tapi perlu strategi yang tepat:
+              </p>
+              <div className="space-y-3">
+                {[
+                  "Minimum order per trade adalah Rp 14.000 — bisa mulai dari angka ini.",
+                  "Untuk martingale aman dengan base 14K, siapkan modal minimal Rp 200K-300K.",
+                  "Mode paling aman untuk modal kecil: AI Signal atau Fastrade FTT dengan martingale terbatas (2-3 step).",
+                  "WAJIB aktifkan Stop Loss sebelum bot jalan di akun Real.",
+                  "Selalu mulai dari akun Demo — gratis, semua fitur aktif, tanpa risiko finansial apapun.",
+                  "Sabar dan konsisten lebih penting dari strategi agresif — apalagi saat modal terbatas.",
+                ].map((point) => (
+                  <div key={point} className="flex gap-3 items-start">
+                    <span className="text-[#3b82f6] font-bold text-sm flex-shrink-0">✓</span>
+                    <p className="text-[13px] text-[#6b6058] leading-relaxed">{point}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>FAQ</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Pertanyaan yang Sering Ditanyakan</h2>
+              <div className="divide-y divide-[rgba(26,22,18,0.06)] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden">
+                {[
+                  {
+                    q: "Apakah modal Rp 100.000 cukup untuk trading dengan STC AutoTrade?",
+                    a: "Secara teknis bisa — dengan base amount Rp 14.000, modal Rp 100.000 cukup untuk 1 siklus martingale 3 step (14K + 28K + 56K = 98K). Namun ini sangat ketat tanpa buffer. Disarankan minimal Rp 200.000-300.000 dengan base 14K agar ada ruang untuk beberapa siklus recovery.",
+                  },
+                  {
+                    q: "Mode apa yang paling cocok untuk modal kecil di STC AutoTrade?",
+                    a: "Untuk modal kecil, AI Signal atau Fastrade FTT tanpa martingale agresif adalah pilihan yang lebih aman. Kedua mode ini bekerja otomatis dan tidak membutuhkan input manual. Hindari martingale lebih dari 3 step jika modal terbatas.",
+                  },
+                  {
+                    q: "Berapa step martingale yang aman untuk modal kecil?",
+                    a: "Untuk modal kecil (di bawah Rp 500.000 dengan base 14K), maksimal 2-3 step martingale sudah cukup ketat. Dengan base 14K dan multiplier 2×: step 1=14K, step 2=28K, step 3=56K. Total exposure 98K. Lebih dari 3 step sangat berisiko dengan modal terbatas.",
+                  },
+                  {
+                    q: "Apakah Stop Loss di STC AutoTrade bisa otomatis berhentikan bot?",
+                    a: "Ya. Stop Loss (SL) di STC AutoTrade adalah batas loss maksimum harian. Saat total loss hari itu mencapai angka SL yang sudah diset, bot otomatis berhenti trading untuk hari tersebut. Ini adalah fitur perlindungan saldo yang sangat penting — terutama untuk pengguna modal kecil.",
+                  },
+                  {
+                    q: "Apakah ada cara trading tanpa modal sama sekali di STC AutoTrade?",
+                    a: "Ya — gunakan akun Demo. Setiap akun STC AutoTrade memiliki mode Demo dengan saldo virtual gratis. Semua fitur bot aktif penuh di Demo — 6 mode, martingale, SL/TP. Tidak perlu deposit apapun. Ini cara terbaik untuk belajar sebelum menggunakan uang nyata.",
+                  },
+                ].map((faq) => (
+                  <div key={faq.q} className="px-5 py-4">
+                    <p className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{faq.q}</p>
+                    <p className="text-[13px] text-[#6b6058] leading-relaxed">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* INTERNAL LINKS */}
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+            <div className="max-w-3xl mx-auto px-5">
+              <SectionLabel>Artikel Terkait</SectionLabel>
+              <h2 className="text-[18px] font-bold text-[#1a1612] mb-4">Baca Juga</h2>
+              <div className="grid gap-3 sm:grid-cols-3">
+                {[
+                  { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Panduan lengkap berapa modal ideal berdasarkan profil risiko dan gaya trading." },
+                  { href: "/artikel/strategi-martingale-stockity", title: "Strategi Martingale Stockity", desc: "Cara menggunakan martingale dengan bijak — kalkulasi, tips, dan batasan aman." },
+                  { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading Stockity", desc: "Strategi dan tips memaksimalkan profit trading otomatis dengan STC AutoTrade." },
+                ].map((r) => (
+                  <Link
+                    key={r.href}
+                    href={r.href}
+                    className="block p-4 bg-white border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#3b82f6]/30 transition-colors"
+                  >
+                    <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
+                    <p className="text-[11px] text-[#6b6058]">{r.desc}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* CTA */}
+          <section className="py-14 bg-[#1a1612]">
+            <div className="max-w-3xl mx-auto px-5 text-center">
+              <p className="text-[11px] font-semibold tracking-widest uppercase text-white/40 mb-4">Mulai Sekarang</p>
+              <h2 className="text-[24px] sm:text-[28px] font-bold text-white mb-3">Coba STC AutoTrade Gratis</h2>
+              <p className="text-[14px] text-white/60 mb-8 max-w-md mx-auto leading-relaxed">
+                Download aplikasinya dan trading otomatis langsung dari Android. Atau akses versi web tanpa install. Mode Demo tersedia gratis — tanpa deposit.
+              </p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <a href="/StcAutoTrade.apk" download className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline">Download APK Android</a>
+                <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 border border-white/20 text-white text-sm font-semibold rounded-xl no-underline">Buka Versi Web</a>
+              </div>
+            </div>
+          </section>
         </main>
 
-        {/* ── CTA ─────────────────────────────────────────── */}
-        <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
-          <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-            <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#15803d] mb-1.5">Mulai Demo · 100% Gratis</p>
-              <p className="text-base font-semibold text-[#1a1612] mb-1">Coba Trading Binary Option Tanpa Modal Dulu</p>
-              <p className="text-[13px] text-[#6b6058]">Download STC AutoTrade dan aktifkan mode demo — uji strategi dengan modal virtual, tanpa risiko.</p>
+        {/* FOOTER */}
+        <footer className="py-8 bg-[#1a1612] border-t border-white/5">
+          <div className="max-w-3xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-[13px] text-white/40">© 2026 STC AutoTrade. Hak cipta dilindungi.</p>
+            <div className="flex gap-5">
+              <Link href="/" className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors">Beranda</Link>
+              <Link href="/artikel" className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors">Artikel</Link>
             </div>
-            <div className="flex gap-2.5 flex-shrink-0">
-              <a href="/StcAutoTrade.apk" download className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">
-                Download Gratis
-              </a>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">
-                Versi Web
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
-          <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p className="text-[11px] text-[#1a1612]/25">
-              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
-            </p>
-            <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
           </div>
         </footer>
       </div>

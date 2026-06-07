@@ -1,85 +1,75 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-
-/* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Timeframe Trading Binary Option: Pilih Durasi yang Tepat 2026",
+  title: "Timeframe Trading Binary Option di STC AutoTrade: Panduan Lengkap",
   description:
-    "Panduan memilih timeframe trading binary option yang tepat. Pelajari perbedaan 1 menit vs 5 menit vs 15 menit dan cara pakainya di Stockity.",
+    "Panduan timeframe di STC AutoTrade v4.4. Timeframe 1m-1h hanya di mode Fastrade (FTT & CTC). Mode Signal pakai duration 60-300 detik. AI Signal, Indicator, Momentum tidak punya pilihan timeframe.",
   keywords: [
     "timeframe trading binary option",
-    "timeframe binary option terbaik",
-    "1 menit binary option",
-    "5 menit binary option",
-    "durasi binary option stockity",
-    "timeframe stockity",
-    "scalping binary option",
-    "durasi kontrak binary option",
-    "cara pilih timeframe binary option",
-    "timeframe optimal stockity",
+    "timeframe STC AutoTrade",
+    "timeframe fastrade stockity",
+    "duration signal mode binary option",
+    "1m 5m 15m 30m 1h binary option",
+    "cara pilih timeframe bot trading",
+    "timeframe terbaik binary option",
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/timeframe-trading-binary-option",
   },
   openGraph: {
-    title: "Timeframe Trading Binary Option: Pilih Durasi yang Tepat 2026",
+    title: "Timeframe di STC AutoTrade: Fastrade 1m-1h & Duration Signal 2026",
     description:
-      "Panduan memilih timeframe trading binary option yang tepat. Pelajari perbedaan 1 menit vs 5 menit vs 15 menit dan cara pakainya di Stockity.",
+      "Timeframe 1m, 5m, 15m, 30m, 1h hanya tersedia di mode Fastrade FTT dan CTC. Mode Signal pakai duration 60-300 detik. AI Signal, Indicator, Momentum tidak ada pilihan timeframe.",
     url: "https://stcautotrade.id/artikel/timeframe-trading-binary-option",
+    siteName: "STC AutoTrade",
+    locale: "id_ID",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [
-      {
-        url: "https://stcautotrade.id/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Timeframe Trading Binary Option 2026",
-      },
-    ],
+    images: [{ url: "https://stcautotrade.id/og-image.png", width: 1200, height: 630, alt: "Timeframe STC AutoTrade — Fastrade 1m 5m 15m 30m 1h" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Timeframe Trading Binary Option: Pilih Durasi yang Tepat 2026",
+    title: "Timeframe di STC AutoTrade: Fastrade 1m-1h, Signal 60-300 detik 2026",
     description:
-      "Panduan memilih timeframe trading binary option yang tepat. Pelajari perbedaan 1 menit vs 5 menit vs 15 menit dan cara pakainya di Stockity.",
+      "Timeframe 1m-1h hanya di mode Fastrade. Signal mode pakai duration 60-300 detik. AI Signal, Indicator, Momentum tidak ada pilihan timeframe.",
     images: ["https://stcautotrade.id/og-image.png"],
   },
 };
 
-/* ── Structured Data ──────────────────────────────────────────── */
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Timeframe Trading Binary Option: Pilih Durasi yang Tepat 2026",
+  headline: "Timeframe Trading Binary Option di STC AutoTrade: Panduan Lengkap",
   description:
-    "Panduan memilih timeframe trading binary option yang tepat. Pelajari perbedaan 1 menit vs 5 menit vs 15 menit dan cara pakainya di Stockity.",
-  author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
+    "Panduan lengkap pengaturan timeframe dan duration di berbagai mode STC AutoTrade v4.4.",
+  datePublished: "2025-05-21",
+  dateModified: "2026-06-07",
+  author: { "@type": "Organization", name: "STC AutoTrade" },
   publisher: {
     "@type": "Organization",
     name: "STC AutoTrade",
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
-  datePublished: "2025-05-21",
-  dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/timeframe-trading-binary-option",
   },
-  keywords: "timeframe trading binary option, timeframe binary option terbaik, 1 menit binary option, 5 menit binary option",
 };
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: "https://stcautotrade.id" },
-    { "@type": "ListItem", position: 2, name: "Artikel", item: "https://stcautotrade.id/artikel" },
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://stcautotrade.id" },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Artikel",
+      item: "https://stcautotrade.id/artikel",
+    },
     {
       "@type": "ListItem",
       position: 3,
@@ -95,48 +85,38 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Timeframe mana yang paling akurat untuk binary option?",
+      name: "Timeframe apa yang paling akurat untuk binary option di STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tidak ada satu timeframe yang selalu paling akurat — bergantung pada gaya trading dan kondisi pasar. Secara umum, timeframe lebih panjang (M5, M15) menghasilkan sinyal lebih akurat karena noise lebih sedikit. Namun untuk frekuensi trading lebih tinggi, M1 dengan bot otomatis bisa efektif.",
+        text: "Tidak ada satu timeframe yang selalu paling akurat. Timeframe 5m di mode Fastrade FTT adalah titik awal yang direkomendasikan untuk pemula — cukup memberikan waktu analisis tanpa terlalu lama menunggu hasil. Timeframe terbaik bergantung pada kondisi pasar dan aset yang ditrading.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah bisa ganti timeframe di tengah sesi trading?",
+      name: "Kenapa AI Signal dan mode Indicator tidak ada pilihan timeframe?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Secara teknis bisa, tapi tidak disarankan. Mengganti timeframe di tengah sesi trading adalah tanda ketidakdisiplinan strategi. Tetapkan timeframe sebelum sesi mulai dan patuhi strategi Anda. Ganti timeframe hanya di awal sesi berikutnya jika ada alasan yang valid.",
+        text: "AI Signal menggunakan model kecerdasan buatan yang menentukan durasi optimal sendiri berdasarkan sinyal yang dideteksi. Mode Indicator bekerja berdasarkan nilai indikator (SMA/EMA/RSI) bukan durasi candle. Mode Momentum bekerja berdasarkan pola candlestick yang terdeteksi. Ketiga mode ini memiliki logika timing sendiri tanpa perlu input timeframe dari pengguna.",
       },
     },
     {
       "@type": "Question",
-      name: "Berapa timeframe terbaik untuk pemula binary option?",
+      name: "Bisa ganti timeframe saat bot Fastrade sedang berjalan?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Untuk pemula, M5 (5 menit) adalah pilihan terbaik. Memberikan waktu yang cukup untuk menganalisis sinyal dengan tenang tanpa terburu-buru, namun tidak terlalu lama sehingga peluang datang dengan frekuensi yang wajar. Hindari M1 sampai Anda memiliki strategi yang teruji.",
+        text: "Tidak disarankan mengubah timeframe saat bot sedang berjalan. Hentikan bot terlebih dahulu, ubah timeframe sesuai keinginan, lalu restart bot. Mengubah timeframe di tengah sesi bisa mengganggu konsistensi analisis bot.",
       },
     },
     {
       "@type": "Question",
-      name: "Timeframe M1 atau M5, mana yang lebih menguntungkan?",
+      name: "Apakah timeframe 1m menghasilkan lebih banyak order dari timeframe 5m?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "M1 menawarkan lebih banyak peluang per sesi tapi akurasi lebih rendah karena noise tinggi. M5 menawarkan sinyal lebih akurat tapi peluang lebih sedikit. Profit total bergantung pada win rate dikalikan frekuensi — keduanya bisa setara hasilnya jika strategi tepat.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Berapa timeframe optimal untuk bot STC AutoTrade?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "STC AutoTrade bekerja optimal di timeframe M1 hingga M5 (kontrak 1-5 menit). Timeframe ini memberikan keseimbangan ideal antara frekuensi trading dan akurasi sinyal. Setting default bot sudah dioptimasi untuk range ini, namun bisa disesuaikan sesuai preferensi Anda.",
+        text: "Ya. Timeframe 1m menghasilkan lebih banyak sinyal dan order per jam karena setiap candle hanya berlangsung 1 menit. Namun lebih banyak order juga berarti lebih banyak noise dan potensi false signal. Timeframe 5m lebih seimbang antara frekuensi order dan kualitas sinyal.",
       },
     },
   ],
 };
-
-/* ── Komponen Lokal ───────────────────────────────────────────── */
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -147,7 +127,15 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
+function InfoBox({
+  icon,
+  title,
+  children,
+}: {
+  icon: string;
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
@@ -177,10 +165,22 @@ function WarningBox({ children }: { children: React.ReactNode }) {
   );
 }
 
-function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: string; sub?: string }) {
+function StepCard({
+  n,
+  title,
+  desc,
+  sub,
+}: {
+  n: string;
+  title: string;
+  desc: string;
+  sub?: string;
+}) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{n}</div>
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">
+        {n}
+      </div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
@@ -190,443 +190,616 @@ function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: str
   );
 }
 
-/* ── Page ─────────────────────────────────────────────────────── */
-
 export default function TimeframeTradingBinaryOptionPage() {
+  const faqs = [
+    {
+      q: "Timeframe apa yang paling akurat untuk binary option di STC AutoTrade?",
+      a: "Tidak ada satu timeframe yang selalu paling akurat. Timeframe 5m di mode Fastrade FTT adalah titik awal yang direkomendasikan untuk pemula — cukup memberikan waktu analisis tanpa terlalu lama menunggu hasil. Timeframe terbaik bergantung pada kondisi pasar dan aset yang ditrading.",
+    },
+    {
+      q: "Kenapa AI Signal dan mode Indicator tidak ada pilihan timeframe?",
+      a: "AI Signal menggunakan model kecerdasan buatan yang menentukan durasi optimal sendiri. Mode Indicator bekerja berdasarkan nilai indikator (SMA/EMA/RSI) bukan durasi candle. Mode Momentum bekerja berdasarkan pola candlestick yang terdeteksi. Ketiga mode ini memiliki logika timing sendiri tanpa perlu input timeframe dari pengguna.",
+    },
+    {
+      q: "Bisa ganti timeframe saat bot Fastrade sedang berjalan?",
+      a: "Tidak disarankan. Hentikan bot terlebih dahulu, ubah timeframe, lalu restart bot. Mengubah timeframe di tengah sesi bisa mengganggu konsistensi analisis bot.",
+    },
+    {
+      q: "Apakah timeframe 1m menghasilkan lebih banyak order dari timeframe 5m?",
+      a: "Ya. Timeframe 1m menghasilkan lebih banyak sinyal dan order per jam karena setiap siklus hanya berlangsung 1 menit. Namun lebih banyak order juga berarti lebih banyak noise dan potensi false signal. Timeframe 5m lebih seimbang antara frekuensi order dan kualitas sinyal.",
+    },
+  ];
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-      <main className="min-h-screen bg-[#f9fafb]">
-        {/* ── Nav ─────────────────────────────────────────── */}
+      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+        {/* Navbar */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#3b82f6]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">
+                STC <span className="text-[#3b82f6]">AutoTrade</span>
+              </span>
             </Link>
             <div className="flex items-center gap-3">
-              <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
-              <a href="/StcAutoTrade.apk" download className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline">Download APK</a>
+              <Link
+                href="/artikel"
+                className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline"
+              >
+                Semua Artikel
+              </Link>
+              <a
+                href="/StcAutoTrade.apk"
+                download
+                className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline"
+              >
+                Download APK
+              </a>
             </div>
           </div>
         </nav>
 
-        {/* ── Article Header ──────────────────────────────── */}
-        <div className="pt-28 pb-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            {/* Breadcrumb */}
-            <nav aria-label="breadcrumb" className="mb-6">
-              <ol className="flex items-center gap-2 text-[12px] text-[#6b6058]">
-                <li><Link href="/" className="hover:text-[#1a1612] no-underline transition-colors">Beranda</Link></li>
-                <li className="text-[#1a1612]/20">/</li>
-                <li><Link href="/artikel" className="hover:text-[#1a1612] no-underline transition-colors">Artikel</Link></li>
-                <li className="text-[#1a1612]/20">/</li>
-                <li className="text-[#1a1612] font-medium" aria-current="page">Timeframe Trading Binary Option</li>
-              </ol>
-            </nav>
-            {/* Badge */}
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eff6ff] text-[#1d4ed8] text-[11px] font-semibold mb-4">Edukasi Trading</span>
-            {/* H1 */}
-            <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-[1.2] mb-4">
-              Timeframe Trading Binary Option: Pilih Durasi yang Tepat 2026
-            </h1>
-            {/* Description */}
-            <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
-              Panduan lengkap memilih timeframe trading binary option yang tepat. Pelajari perbedaan 1 menit vs 5 menit vs 15 menit, cara memilih sesuai modal dan gaya trading, serta timeframe optimal untuk bot STC AutoTrade.
-            </p>
-            {/* Stats grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[
-                { v: "1-5 mnt", l: "Rekomendasi" },
-                { v: "Scalping", l: "Gaya Trading" },
-                { v: "Fleksibel", l: "di STC Bot" },
-                { v: "Lebih Aman", l: "Timeframe Panjang" },
-              ].map((s) => (
-                <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-3 py-3 text-center">
-                  <p className="text-[18px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
-                  <p className="text-[11px] text-[#6b6058]">{s.l}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* ── Section 01: Apa Itu Timeframe ───────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>01 · Dasar Timeframe</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Apa Itu Timeframe di Binary Option?</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Di binary option, <strong>timeframe</strong> (juga disebut durasi kontrak atau expiry time) adalah lamanya waktu antara saat Anda membuka posisi dan saat posisi tersebut diselesaikan (expire). Misalnya, jika Anda memilih timeframe 5 menit, artinya prediksi Anda (CALL atau PUT) akan diverifikasi tepat 5 menit setelah order dibuka.
-            </p>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Memilih timeframe yang tepat adalah salah satu keputusan paling krusial dalam binary option. Timeframe yang salah bisa membuat strategi terbaik sekalipun menghasilkan banyak kerugian — bukan karena analisisnya salah, tapi karena durasi yang dipilih tidak sesuai dengan karakteristik sinyal yang digunakan.
-            </p>
-            <InfoBox icon="⏱️" title="Timeframe vs Timeframe Chart — Apa Bedanya?">
-              Jangan bingung antara timeframe kontrak (durasi posisi) dan timeframe chart (periode setiap candlestick). Untuk binary option 5 menit, Anda biasanya menganalisis chart M1 atau M5. Timeframe chart lebih rendah memberikan lebih banyak detail, timeframe lebih tinggi memberikan gambaran tren yang lebih bersih.
-            </InfoBox>
-          </div>
-        </section>
-
-        {/* ── Section 02: Timeframe 1 Menit ───────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>02 · Timeframe 1 Menit</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Timeframe 1 Menit: Scalping dengan Risiko Tinggi</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Timeframe 1 menit adalah durasi kontrak paling pendek yang tersedia di kebanyakan platform binary option termasuk Stockity. Dengan M1, Anda bisa mengeksekusi puluhan bahkan ratusan trade dalam satu sesi — gaya trading ini disebut scalping.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl px-4 py-4">
-                <p className="text-[12px] font-semibold text-[#14532d] mb-2">Keunggulan M1</p>
-                <ul className="space-y-1.5">
-                  {[
-                    "Frekuensi trading sangat tinggi",
-                    "Hasil (profit/loss) terlihat cepat",
-                    "Bisa mengumpulkan banyak data",
-                    "Modal bekerja lebih dinamis",
-                    "Cocok untuk bot otomatis",
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px] text-[#14532d]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e] flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="bg-[#fef2f2] border border-[#fecaca] rounded-xl px-4 py-4">
-                <p className="text-[12px] font-semibold text-[#991b1b] mb-2">Kelemahan M1</p>
-                <ul className="space-y-1.5">
-                  {[
-                    "Noise sangat tinggi (banyak false signal)",
-                    "Analisis manual hampir mustahil",
-                    "Tekanan psikologi sangat intens",
-                    "Drawdown bisa cepat dan dalam",
-                    "Membutuhkan eksekusi sangat cepat",
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px] text-[#991b1b]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <WarningBox>
-              Timeframe 1 menit sangat tidak disarankan untuk pemula yang trading manual. Noise harga pada M1 sangat tinggi — sinyal sering palsu dan keputusan harus diambil dalam hitungan detik. Namun untuk bot otomatis seperti STC AutoTrade, M1 bisa efektif karena bot tidak terpengaruh tekanan psikologis.
-            </WarningBox>
-          </div>
-        </section>
-
-        {/* ── Section 03: Timeframe 5 Menit ───────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>03 · Timeframe 5 Menit</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Timeframe 5 Menit: Titik Manis Binary Option</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Timeframe 5 menit (M5) adalah "sweet spot" untuk kebanyakan trader binary option — kombinasi terbaik antara frekuensi trading yang cukup tinggi dan akurasi sinyal yang jauh lebih baik dari M1. Inilah mengapa M5 menjadi timeframe paling populer di Stockity.
-            </p>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Pada M5, noise harga sudah jauh berkurang dibanding M1, sehingga pola candlestick lebih dapat diandalkan dan sinyal indikator teknikal (RSI, MA) lebih akurat. Anda masih punya waktu 5 menit untuk menganalisis setiap situasi dengan lebih tenang sebelum posisi expire.
-            </p>
-            <div className="space-y-3 mb-4">
-              <StepCard
-                n="1"
-                title="Cocok untuk Pemula dan Menengah"
-                desc="M5 memberikan waktu yang cukup untuk menganalisis chart dan sinyal indikator tanpa terburu-buru. Ini mengurangi keputusan impulsif yang sering merugikan pemula."
-                sub="Rekomendasi utama untuk pemula yang baru mulai trading di Stockity."
-              />
-              <StepCard
-                n="2"
-                title="Frekuensi Memadai — 10-20 Trade per Sesi"
-                desc="Dalam sesi 2 jam, M5 memungkinkan sekitar 20-24 peluang trade. Ini cukup untuk menguji strategi dan mengumpulkan data performa yang bermakna dalam satu hari trading."
-                sub="Frekuensi cukup untuk membangun statistik performa yang reliable."
-              />
-              <StepCard
-                n="3"
-                title="Sinyal Lebih Bersih dan Akurat"
-                desc="RSI, MA, dan pola candlestick di M5 jauh lebih reliabel dibanding M1. Sinyal overbought/oversold RSI di M5 memiliki follow-through yang lebih konsisten."
-                sub="Win rate strategy yang sama biasanya 5-15% lebih tinggi di M5 vs M1."
-              />
-            </div>
-            <TipBox>
-              Jika Anda belum yakin harus memilih timeframe berapa, mulailah dengan M5. Pelajari karakteristiknya selama beberapa minggu di mode demo, lalu pertimbangkan apakah perlu beralih ke M1 atau M15 berdasarkan hasil aktual.
-            </TipBox>
-          </div>
-        </section>
-
-        {/* ── Section 04: Timeframe 15 & 30 Menit ─────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>04 · Timeframe 15-30 Menit</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Timeframe 15 & 30 Menit: Akurat tapi Sabar</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Timeframe M15 dan M30 menghasilkan sinyal yang jauh lebih akurat dibanding M1 atau M5 karena noise pasar sudah hampir tidak ada di level ini. Namun konsekuensinya, peluang trade jauh lebih sedikit — mungkin hanya 4-8 trade per sesi 2 jam.
-            </p>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Trader yang menggunakan M15 atau M30 biasanya juga mempertimbangkan faktor fundamental — data ekonomi, berita penting, dan sentimen pasar keseluruhan — karena pergerakan di timeframe ini lebih dipengaruhi oleh fundamental dibanding noise teknikal semata.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-4">
-                <p className="text-[12px] font-semibold text-[#1a1612] mb-2">Cocok untuk Siapa?</p>
-                <ul className="space-y-1.5">
-                  {[
-                    "Trader yang sabar dan tidak terburu-buru",
-                    "Trader yang memahami analisis fundamental",
-                    "Trader dengan modal lebih besar",
-                    "Trading sebagai aktivitas sampingan (tidak full-time)",
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px] text-[#6b6058]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-4">
-                <p className="text-[12px] font-semibold text-[#1a1612] mb-2">Perlu Diperhatikan</p>
-                <ul className="space-y-1.5">
-                  {[
-                    "Peluang trade sangat sedikit per sesi",
-                    "Perlu modal lebih besar untuk efisiensi",
-                    "Hasil trading terlihat lebih lama",
-                    "Martingale berisiko lebih besar per langkah",
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px] text-[#6b6058]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#f59e0b] flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <InfoBox icon="📊" title="Perbandingan Timeframe Secara Singkat">
-              M1: risiko tinggi, frekuensi sangat tinggi, untuk bot. M5: keseimbangan terbaik, direkomendasikan pemula. M15: akurasi tinggi, frekuensi rendah, butuh kesabaran. M30+: hampir seperti forex swing trading, lebih cocok untuk investor aktif.
-            </InfoBox>
-          </div>
-        </section>
-
-        {/* ── Section 05: Pilih Timeframe Sesuai Modal ──────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>05 · Sesuaikan Modal</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Cara Memilih Timeframe Sesuai Modal Anda</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Banyak trader pemula tidak menyadari bahwa pilihan timeframe seharusnya disesuaikan dengan besarnya modal yang dimiliki. Ini bukan soal "timeframe mana yang lebih bagus" — tapi soal manajemen risiko yang proporsional.
-            </p>
-            <div className="space-y-3 mb-4">
-              {[
-                {
-                  modal: "Modal Kecil (Rp 300K - 500K)",
-                  timeframe: "M5 atau M15",
-                  nominal: "Rp 14.000 - Rp 25.000 per trade",
-                  alasan: "Modal kecil membutuhkan manajemen risiko ketat. Timeframe lebih panjang menghasilkan sinyal lebih akurat sehingga win rate lebih tinggi — mengurangi frekuensi loss yang bisa dengan cepat menguras modal kecil.",
-                  color: "bg-[#eff6ff] border-[#bfdbfe]",
-                },
-                {
-                  modal: "Modal Menengah (Rp 500K - 2 Juta)",
-                  timeframe: "M5 (Rekomendasi Utama)",
-                  nominal: "Rp 25.000 - Rp 50.000 per trade",
-                  alasan: "Modal menengah memberikan buffer yang cukup untuk menjalankan strategi M5 dengan martingale hingga 3-4 step. Keseimbangan antara frekuensi trading dan akurasi paling optimal.",
-                  color: "bg-[#f0fdf4] border-[#bbf7d0]",
-                },
-                {
-                  modal: "Modal Besar (Rp 2 Juta ke atas)",
-                  timeframe: "M1 hingga M15 (fleksibel)",
-                  nominal: "Rp 50.000+ per trade",
-                  alasan: "Modal besar memberikan fleksibilitas memilih timeframe apapun. M1 dengan bot bisa menghasilkan banyak trade per sesi. M15 memberikan akurasi tinggi dengan nominal trade lebih besar.",
-                  color: "bg-[#fef9c3] border-[#fde68a]",
-                },
-              ].map((item) => (
-                <div key={item.modal} className={`${item.color} border rounded-xl px-4 py-4`}>
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <p className="text-[13px] font-bold text-[#1a1612]">{item.modal}</p>
-                    <span className="text-[11px] font-semibold bg-white border border-[rgba(26,22,18,0.08)] rounded-md px-2 py-0.5 text-[#1d4ed8]">{item.timeframe}</span>
-                  </div>
-                  <p className="text-[11px] text-[#6b6058] mb-2">Nominal trade: <strong>{item.nominal}</strong></p>
-                  <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.alasan}</p>
-                </div>
-              ))}
-            </div>
-            <TipBox>
-              Aturan sederhana: semakin kecil modal, semakin panjang timeframe yang sebaiknya dipilih. Timeframe panjang = win rate lebih tinggi = modal lebih terlindungi dari serangkaian loss berturut-turut.
-            </TipBox>
-          </div>
-        </section>
-
-        {/* ── Section 06: STC AutoTrade & Timeframe ────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>06 · STC AutoTrade</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Timeframe di STC AutoTrade: Bot Optimal di M1-M5</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              STC AutoTrade dirancang dan dioptimasi untuk bekerja terbaik di timeframe 1 hingga 5 menit. Range ini memberikan keseimbangan ideal: frekuensi trading yang cukup tinggi untuk strategi martingale bekerja efektif, namun sinyal yang cukup akurat untuk meminimalkan serangkaian loss panjang.
-            </p>
-            <div className="space-y-3 mb-4">
-              <StepCard
-                n="1"
-                title="Setting Timeframe di STC AutoTrade"
-                desc="Buka STC AutoTrade → pilih mode bot (Indikator, Momentum, dll) → atur durasi kontrak di menu setting. Pilih antara 1 menit, 2 menit, 3 menit, atau 5 menit sesuai strategi Anda."
-                sub="Default setting: 2 menit untuk keseimbangan optimal antara frekuensi dan akurasi."
-              />
-              <StepCard
-                n="2"
-                title="Mengapa M1-M5 Optimal untuk Bot?"
-                desc="Bot tidak mengalami kelelahan atau tekanan psikologis, sehingga M1 yang tidak cocok untuk manusia menjadi pilihan yang efektif untuk bot. Di M1-M5, bot bisa mengeksekusi 20-100+ trade per sesi dengan konsistensi penuh."
-                sub="Bot STC AutoTrade bisa menjalankan M1 dengan win rate yang tidak mungkin dicapai trader manual."
-              />
-              <StepCard
-                n="3"
-                title="Adaptasi Otomatis Berdasarkan Kondisi Pasar"
-                desc="Dalam beberapa mode, STC AutoTrade dapat menyesuaikan timing entry berdasarkan kondisi pasar real-time — memilih momen entry terbaik dalam window timeframe yang Anda setting."
-                sub="Konsultasikan dengan panduan setting bot untuk konfigurasi optimal."
-              />
-            </div>
-            <InfoBox icon="🤖" title="Tips Setting Timeframe di STC AutoTrade">
-              Untuk pemula, mulai dengan durasi kontrak 5 menit (M5) dan modal konservatif. Setelah win rate konsisten di atas 55% selama 2 minggu demo, pertimbangkan beralih ke M2 atau M3 untuk meningkatkan frekuensi tanpa mengorbankan terlalu banyak akurasi.
-            </InfoBox>
-          </div>
-        </section>
-
-        {/* ── Section 07: Kesalahan Ganti Timeframe ───────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>07 · Hindari Ini</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kesalahan Umum: Ganti Timeframe Terlalu Sering</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Salah satu kebiasaan paling merusak yang dilakukan trader pemula adalah mengganti timeframe terlalu sering — biasanya sebagai respons emosional terhadap serangkaian loss. Ini disebut "timeframe hopping" dan hampir selalu memperburuk situasi.
-            </p>
-            <div className="space-y-3 mb-4">
-              {[
-                {
-                  skenario: "Loss 3x berturut-turut di M5 → Ganti ke M1",
-                  masalah: "Anda mengganti timeframe bukan karena strategi, tapi karena frustrasi. M1 memiliki noise lebih tinggi yang kemungkinan besar mempercepat kerugian.",
-                  solusi: "Setelah serangkaian loss, berhenti trading selama 30-60 menit. Evaluasi apakah loss disebabkan kondisi pasar yang tidak mendukung, bukan masalah timeframe.",
-                },
-                {
-                  skenario: "Profit di M1 demo → Langsung M1 di real dengan modal besar",
-                  masalah: "Demo tidak memiliki tekanan psikologis yang sama dengan real. Kemampuan eksekusi M1 secara manual di real sangat berbeda dari demo.",
-                  solusi: "Mulai real dengan timeframe lebih panjang (M5) dan nominal kecil. Tingkatkan secara bertahap setelah konsisten profit minimal 2 minggu.",
-                },
-                {
-                  skenario: "Ganti timeframe setiap hari karena 'mencari yang terbaik'",
-                  masalah: "Tidak ada data yang cukup untuk mengevaluasi performa di timeframe manapun. Setiap strategi membutuhkan minimal 50-100 trade untuk dinilai akurasi sesungguhnya.",
-                  solusi: "Tetapkan timeframe selama minimal 2 minggu (atau 100 trade) sebelum mengevaluasi dan mempertimbangkan pergantian.",
-                },
-              ].map((item, i) => (
-                <div key={i} className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-4">
-                  <p className="text-[12px] font-semibold text-[#6b4226] mb-2 bg-[#fffbeb] border border-[#fde68a] rounded-lg px-3 py-1.5">{item.skenario}</p>
-                  <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2"><strong className="text-[#dc2626]">Masalah:</strong> {item.masalah}</p>
-                  <p className="text-[12px] text-[#6b6058] leading-relaxed"><strong className="text-[#15803d]">Solusi:</strong> {item.solusi}</p>
-                </div>
-              ))}
-            </div>
-            <WarningBox>
-              Konsistensi adalah kunci. Pilih satu timeframe, pelajari karakteristiknya secara mendalam, dan gunakan secara konsisten minimal selama 2-4 minggu sebelum membuat perubahan. Data dari 50+ trade diperlukan untuk menilai performa strategi secara akurat.
-            </WarningBox>
-          </div>
-        </section>
-
-        {/* ── Section 08: FAQ ─────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>FAQ</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-6">Pertanyaan yang Sering Diajukan</h2>
-            <div className="divide-y divide-[rgba(26,22,18,0.06)] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden">
-              {[
-                {
-                  q: "Timeframe mana yang paling akurat untuk binary option?",
-                  a: "Tidak ada satu timeframe yang selalu paling akurat — bergantung pada gaya trading dan kondisi pasar. Secara umum, timeframe lebih panjang (M5, M15) menghasilkan sinyal lebih akurat karena noise lebih sedikit. Untuk frekuensi tinggi, M1 dengan bot otomatis bisa efektif.",
-                },
-                {
-                  q: "Apakah bisa ganti timeframe di tengah sesi trading?",
-                  a: "Secara teknis bisa, tapi tidak disarankan. Mengganti timeframe di tengah sesi adalah tanda ketidakdisiplinan strategi. Tetapkan timeframe sebelum sesi mulai dan patuhi. Ganti timeframe hanya di awal sesi berikutnya jika ada alasan yang valid.",
-                },
-                {
-                  q: "Berapa timeframe terbaik untuk pemula binary option?",
-                  a: "Untuk pemula, M5 (5 menit) adalah pilihan terbaik. Memberikan waktu cukup untuk menganalisis sinyal dengan tenang tanpa terburu-buru, namun tidak terlalu lama sehingga peluang datang dengan frekuensi yang wajar.",
-                },
-                {
-                  q: "Timeframe M1 atau M5, mana yang lebih menguntungkan?",
-                  a: "M1 menawarkan lebih banyak peluang per sesi tapi akurasi lebih rendah karena noise tinggi. M5 menawarkan sinyal lebih akurat tapi peluang lebih sedikit. Profit total bergantung pada win rate dikalikan frekuensi — keduanya bisa setara jika strategi tepat.",
-                },
-                {
-                  q: "Berapa timeframe optimal untuk bot STC AutoTrade?",
-                  a: "STC AutoTrade bekerja optimal di timeframe M1 hingga M5 (kontrak 1-5 menit). Setting ini memberikan keseimbangan ideal antara frekuensi trading dan akurasi sinyal. Default bot sudah dioptimasi untuk range ini.",
-                },
-              ].map((faq) => (
-                <div key={faq.q} className="px-5 py-4">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{faq.q}</p>
-                  <p className="text-[13px] text-[#6b6058] leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Section 09: Kesimpulan ──────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Kesimpulan</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Ringkasan: Pilih Timeframe yang Tepat</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Tidak ada timeframe yang sempurna untuk semua orang. Pilihan terbaik bergantung pada modal Anda, gaya trading, pengalaman, dan apakah Anda menggunakan bot atau trading manual. Sebagai panduan umum: pemula mulai dengan M5, pengguna bot bisa eksplorasi M1-M2, dan trader yang sabar bisa mencoba M15.
-            </p>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Yang paling penting adalah konsistensi — pilih timeframe, pelajari karakteristiknya, dan gunakan secara disiplin minimal beberapa minggu sebelum membuat perubahan. Flipping timeframe secara impulsif adalah salah satu penyebab utama kerugian trader pemula.
-            </p>
-            <TipBox>
-              Mulai uji timeframe pilihan Anda di mode demo STC AutoTrade selama minimal 2 minggu. Catat win rate dan drawdown untuk setiap timeframe, baru tentukan timeframe mana yang paling cocok dengan modal dan gaya trading Anda.
-            </TipBox>
-          </div>
-        </section>
-
-        {/* ── Internal Links ──────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Baca Juga</SectionLabel>
-            <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">Artikel Terkait</h2>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {[
-                { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot Stockity", desc: "Panduan konfigurasi martingale dan stop loss" },
-                { href: "/artikel/strategi-martingale-stockity", title: "Strategi Martingale", desc: "Cara kerja martingale dan cara setting yang aman" },
-                { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading", desc: "Strategi profit konsisten di Stockity" },
-              ].map((r) => (
-                <Link key={r.href} href={r.href} className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#3b82f6]/30 transition-colors">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
-                  <p className="text-[11px] text-[#6b6058]">{r.desc}</p>
+        <main className="pt-14">
+          {/* Hero */}
+          <div className="bg-white border-b border-[rgba(26,22,18,0.06)]">
+            <div className="max-w-3xl mx-auto px-5 py-10">
+              <nav className="flex items-center gap-2 text-[12px] text-[#6b6058] mb-6">
+                <Link href="/" className="hover:text-[#1a1612] no-underline transition-colors">
+                  Beranda
                 </Link>
-              ))}
+                <span className="text-[#1a1612]/20">/</span>
+                <Link
+                  href="/artikel"
+                  className="hover:text-[#1a1612] no-underline transition-colors"
+                >
+                  Artikel
+                </Link>
+                <span className="text-[#1a1612]/20">/</span>
+                <span className="text-[#1a1612]/60">Timeframe Trading Binary Option</span>
+              </nav>
+
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#eff6ff] border border-[#bfdbfe] rounded-full mb-5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6]" />
+                <span className="text-[11px] font-semibold text-[#1d4ed8] tracking-wide uppercase">
+                  Timeframe & Duration
+                </span>
+              </div>
+
+              <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-tight mb-4">
+                Timeframe Trading Binary Option di STC AutoTrade:{" "}
+                <span className="text-[#3b82f6]">Tidak Sama di Setiap Mode</span>
+              </h1>
+              <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
+                Di STC AutoTrade v4.4, pengaturan timeframe berbeda-beda tergantung mode yang
+                digunakan. Timeframe 1m, 5m, 15m, 30m, 1h hanya tersedia di mode Fastrade (FTT dan
+                CTC). Mode Signal menggunakan "duration" 60-300 detik. Mode AI Signal, Indicator, dan
+                Momentum tidak memiliki pilihan timeframe sama sekali.
+              </p>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {[
+                  { v: "1m - 1h", l: "Fastrade Mode" },
+                  { v: "60-300 det", l: "Signal Mode" },
+                  { v: "Otomatis", l: "AI/Indicator/Momentum" },
+                  { v: "5m", l: "Rekomendasi Awal" },
+                ].map((s) => (
+                  <div
+                    key={s.l}
+                    className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center"
+                  >
+                    <p className="text-[16px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
+                    <p className="text-[11px] text-[#6b6058]">{s.l}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </section>
 
-        {/* ── CTA ─────────────────────────────────────────── */}
-        <section className="py-14 bg-[#1a1612]">
-          <div className="max-w-3xl mx-auto px-5 text-center">
-            <p className="text-[11px] font-semibold tracking-widest uppercase text-white/40 mb-4">Mulai Sekarang</p>
-            <h2 className="text-[24px] sm:text-[28px] font-bold text-white mb-3">Coba STC AutoTrade Gratis</h2>
-            <p className="text-[14px] text-white/60 mb-8 max-w-md mx-auto leading-relaxed">Download aplikasinya dan trading otomatis langsung dari Android. Atau akses versi web tanpa install.</p>
-            <div className="flex flex-wrap gap-3 justify-center">
-              <a href="/StcAutoTrade.apk" download className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline hover:bg-white/90 transition-colors">Download APK Android</a>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 border border-white/20 text-white text-sm font-semibold rounded-xl no-underline hover:bg-white/10 transition-colors">Buka Versi Web</a>
+          <div className="max-w-3xl mx-auto px-5 py-10 space-y-14">
+            {/* Section 1 */}
+            <section>
+              <SectionLabel>Konsep Dasar</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Apa Itu Timeframe di STC AutoTrade — Tidak Sama di Semua Mode
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Banyak trader baru mengira semua mode di STC AutoTrade menggunakan konsep timeframe
+                yang sama. Ini adalah kesalahpahaman yang perlu diluruskan sejak awal, karena setiap
+                mode memiliki cara yang berbeda dalam menentukan durasi dan timing order.
+              </p>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Timeframe di STC AutoTrade merujuk pada berapa lama setiap order berlangsung setelah
+                dieksekusi. Namun tidak semua mode memiliki setting ini — beberapa mode menentukan
+                timing secara otomatis berdasarkan analisis internalnya.
+              </p>
+
+              {/* Overview Table */}
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl overflow-hidden mb-5">
+                <div className="grid grid-cols-3 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.06)] px-4 py-2.5">
+                  <p className="text-[11px] font-semibold text-[#6b6058] uppercase tracking-wide">Mode</p>
+                  <p className="text-[11px] font-semibold text-[#6b6058] uppercase tracking-wide">Setting Waktu</p>
+                  <p className="text-[11px] font-semibold text-[#6b6058] uppercase tracking-wide">Konfigurasi</p>
+                </div>
+                {[
+                  { mode: "Fastrade FTT", setting: "Timeframe", config: "1m, 5m, 15m, 30m, 1h" },
+                  { mode: "Fastrade CTC", setting: "Timeframe", config: "1m, 5m, 15m, 30m, 1h" },
+                  { mode: "Signal", setting: "Duration", config: "60 - 300 detik" },
+                  { mode: "AI Signal", setting: "Otomatis", config: "Tidak ada pilihan" },
+                  { mode: "Indicator", setting: "Otomatis", config: "Tidak ada pilihan" },
+                  { mode: "Momentum", setting: "Otomatis", config: "Tidak ada pilihan" },
+                ].map((row, i) => (
+                  <div
+                    key={row.mode}
+                    className={`grid grid-cols-3 px-4 py-3 ${i < 5 ? "border-b border-[rgba(26,22,18,0.04)]" : ""}`}
+                  >
+                    <p className="text-[12px] font-semibold text-[#1a1612]">{row.mode}</p>
+                    <p className="text-[12px] text-[#6b6058]">{row.setting}</p>
+                    <p className="text-[12px] text-[#3b82f6] font-medium">{row.config}</p>
+                  </div>
+                ))}
+              </div>
+
+              <InfoBox icon="📋" title="Ringkasan Penting">
+                Hanya 2 dari 6 mode yang memiliki pilihan timeframe eksplisit: Fastrade FTT dan Fastrade
+                CTC. Mode Signal menggunakan "duration" yang konsepnya mirip tapi berbeda. Tiga mode
+                lainnya (AI Signal, Indicator, Momentum) menentukan timing order secara otomatis.
+              </InfoBox>
+            </section>
+
+            {/* Section 2 */}
+            <section>
+              <SectionLabel>Fastrade FTT & CTC</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Timeframe di Mode Fastrade (FTT & CTC): 1m, 5m, 15m, 30m, 1h
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Mode Fastrade FTT (Fast Trade — deteksi arah otomatis) dan Fastrade CTC (Copy Trading
+                dari master trader) keduanya menggunakan pilihan timeframe yang sama: 1m, 5m, 15m,
+                30m, atau 1h. Timeframe di sini menentukan durasi setiap order yang dieksekusi.
+              </p>
+
+              <div className="space-y-3 mb-6">
+                {[
+                  {
+                    tf: "1m (1 Menit)",
+                    desc: "Order berlangsung selama 1 menit. Bot menghasilkan sinyal dan order paling sering. Cocok untuk scalping dengan banyak trade kecil. Namun noise lebih tinggi dan false signal lebih banyak. Butuh reaksi martingale yang cepat.",
+                    risk: "Risiko Tinggi",
+                    riskColor: "text-[#ef4444] bg-[#fef2f2] border-[#fecaca]",
+                  },
+                  {
+                    tf: "5m (5 Menit)",
+                    desc: "Order berlangsung 5 menit. Keseimbangan baik antara frekuensi sinyal dan kualitas analisis. Cukup waktu untuk melihat momentum, tidak terlalu lama menunggu hasil. Rekomendasi untuk pemula mode Fastrade.",
+                    risk: "Direkomendasikan",
+                    riskColor: "text-[#166534] bg-[#dcfce7] border-[#bbf7d0]",
+                  },
+                  {
+                    tf: "15m (15 Menit)",
+                    desc: "Order berlangsung 15 menit. Sinyal lebih jarang tapi lebih terfilter. Cocok untuk kondisi pasar yang sedang trending dengan momentum jelas. Setiap order perlu modal yang cukup untuk martingale jika loss.",
+                    risk: "Menengah",
+                    riskColor: "text-[#92400e] bg-[#fffbeb] border-[#fde68a]",
+                  },
+                  {
+                    tf: "30m (30 Menit)",
+                    desc: "Order berlangsung 30 menit. Sinyal sangat jarang — hanya cocok untuk aset yang trending sangat kuat. Perlu modal lebih besar karena bot lebih sedikit order per jam. Kurang cocok untuk akun modal kecil.",
+                    risk: "Konservatif",
+                    riskColor: "text-[#1d4ed8] bg-[#eff6ff] border-[#bfdbfe]",
+                  },
+                  {
+                    tf: "1h (1 Jam)",
+                    desc: "Order berlangsung 1 jam penuh. Sinyal paling jarang, paling sedikit order per sesi. Cocok untuk trader yang mau set dan tinggal tanpa monitoring aktif. Butuh kesabaran dan modal yang cukup.",
+                    risk: "Sangat Konservatif",
+                    riskColor: "text-[#1d4ed8] bg-[#eff6ff] border-[#bfdbfe]",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.tf}
+                    className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[13px] font-bold text-[#1a1612]">{item.tf}</h3>
+                      <span
+                        className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${item.riskColor}`}
+                      >
+                        {item.risk}
+                      </span>
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <TipBox>
+                Mode Fastrade CTC (Copy Trading) menggunakan timeframe yang sama dengan FTT. Bedanya, di
+                CTC arah order mengikuti master trader real-time, bukan analisis bot sendiri. Timeframe
+                yang dipilih tetap menentukan durasi setiap order yang dicopy.
+              </TipBox>
+            </section>
+
+            {/* Section 3 */}
+            <section>
+              <SectionLabel>Mode Signal</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Duration di Mode Signal: Cara Mengatur 60-300 Detik
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Mode Signal berbeda dari Fastrade karena Anda memasukkan arah order (CALL atau PUT)
+                secara manual beserta waktu eksekusinya. Di mode ini, tidak ada "timeframe" dalam arti
+                durasi analisis candle — melainkan ada parameter "duration" yang menentukan berapa lama
+                order berlangsung setelah dieksekusi.
+              </p>
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5 mb-5">
+                <h3 className="text-[14px] font-bold text-[#1a1612] mb-3">
+                  Cara Kerja Duration di Mode Signal
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex gap-3">
+                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8]">
+                      1
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed pt-0.5">
+                      Anda masukkan sinyal: arah (CALL/PUT), waktu eksekusi, dan nominal order
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8]">
+                      2
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed pt-0.5">
+                      Bot menunggu hingga waktu eksekusi yang ditentukan tiba
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8]">
+                      3
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed pt-0.5">
+                      Saat waktu tiba, bot eksekusi order dengan duration yang Anda set (60-300 detik)
+                    </p>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8]">
+                      4
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed pt-0.5">
+                      Order berlangsung selama duration yang dipilih, lalu hasil (win/loss) diketahui
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid sm:grid-cols-3 gap-3 mb-5">
+                {[
+                  {
+                    dur: "60 detik",
+                    desc: "Paling cepat. Hasil diketahui dalam 1 menit. Cocok untuk sinyal yang sangat time-sensitive.",
+                  },
+                  {
+                    dur: "120-180 detik",
+                    desc: "Durasi menengah. Memberikan sedikit ruang untuk pergerakan harga yang lebih natural.",
+                  },
+                  {
+                    dur: "300 detik",
+                    desc: "Durasi 5 menit. Memberikan waktu lebih untuk harga bergerak ke arah yang diprediksi.",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.dur}
+                    className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4 text-center"
+                  >
+                    <p className="text-[14px] font-bold text-[#1a1612] mb-1">{item.dur}</p>
+                    <p className="text-[11px] text-[#6b6058] leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <InfoBox icon="📅" title="Kapan Menggunakan Mode Signal?">
+                Mode Signal ideal jika Anda mendapatkan sinyal dari sumber eksternal (grup sinyal, analisis
+                sendiri) yang menyebutkan arah dan waktu spesifik untuk masuk. Bot akan eksekusi secara
+                tepat waktu sesuai jadwal yang Anda set, menghilangkan keterlambatan human execution.
+              </InfoBox>
+            </section>
+
+            {/* Section 4 */}
+            <section>
+              <SectionLabel>Mode Tanpa Timeframe</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Mode AI Signal, Indicator, Momentum: Tidak Ada Pilihan Timeframe
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Tiga mode ini sengaja dirancang tanpa pilihan timeframe eksplisit. Bukan karena
+                keterbatasan, melainkan karena masing-masing memiliki logika timing internal yang lebih
+                kompleks dari sekadar memilih durasi candle.
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[14px] font-bold text-[#1a1612] mb-2">
+                    AI Signal — Bot Tentukan Sendiri
+                  </h3>
+                  <p className="text-[13px] text-[#6b6058] leading-relaxed">
+                    Mode AI Signal menggunakan model kecerdasan buatan yang menganalisis kondisi pasar
+                    secara menyeluruh. Model ini menentukan tidak hanya arah (CALL/PUT) tapi juga durasi
+                    optimal berdasarkan pattern yang dideteksi. Anda tidak perlu dan tidak bisa mengubah
+                    timeframe karena AI memilih durasi terbaik berdasarkan kondisi saat itu.
+                  </p>
+                </div>
+
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[14px] font-bold text-[#1a1612] mb-2">
+                    Mode Indicator — Period Bukan Timeframe
+                  </h3>
+                  <p className="text-[13px] text-[#6b6058] leading-relaxed">
+                    Di mode Indicator, yang Anda atur adalah "Period" (jumlah candle untuk menghitung
+                    indikator) dan "Sensitivity" — bukan timeframe order. Bot mengeksekusi order saat
+                    nilai SMA/EMA/RSI menembus threshold yang ditetapkan, dengan durasi order yang
+                    ditentukan secara internal oleh sistem.
+                  </p>
+                </div>
+
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[14px] font-bold text-[#1a1612] mb-2">
+                    Mode Momentum — Dipicu Pola, Bukan Interval
+                  </h3>
+                  <p className="text-[13px] text-[#6b6058] leading-relaxed">
+                    Mode Momentum mendeteksi 4 pola candlestick (CandleSabit, DojiTerjepit,
+                    DojiPembatalan, BBSARBreak). Tidak ada interval analisis tetap — bot memantau setiap
+                    candle dan eksekusi order segera saat pola yang diaktifkan terdeteksi. Durasi order
+                    ditentukan internal oleh sistem.
+                  </p>
+                </div>
+              </div>
+
+              <WarningBox>
+                Jangan mencari setting timeframe di mode AI Signal, Indicator, atau Momentum — memang
+                tidak ada. Jika Anda ingin kontrol penuh atas durasi order, gunakan mode Fastrade FTT
+                atau mode Signal yang memiliki pilihan timeframe/duration eksplisit.
+              </WarningBox>
+            </section>
+
+            {/* Section 5 */}
+            <section>
+              <SectionLabel>Memilih Timeframe Fastrade</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Cara Memilih Timeframe yang Tepat di Mode Fastrade
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Memilih timeframe di mode Fastrade bukan sekadar selera — ada faktor objektif yang
+                perlu dipertimbangkan untuk memaksimalkan win rate dan mengelola risiko.
+              </p>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl overflow-hidden mb-6">
+                <div className="grid grid-cols-4 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.06)] px-4 py-2.5 gap-2">
+                  {["Timeframe", "Order/Jam", "Noise", "Cocok Untuk"].map((h) => (
+                    <p
+                      key={h}
+                      className="text-[10px] font-semibold text-[#6b6058] uppercase tracking-wide"
+                    >
+                      {h}
+                    </p>
+                  ))}
+                </div>
+                {[
+                  { tf: "1m", order: "Sangat Banyak", noise: "Tinggi", cocok: "Scalper aktif" },
+                  { tf: "5m", order: "Banyak", noise: "Menengah", cocok: "Pemula / Umum" },
+                  { tf: "15m", order: "Sedang", noise: "Rendah", cocok: "Trending market" },
+                  { tf: "30m", order: "Sedikit", noise: "Sangat rendah", cocok: "Modal lebih besar" },
+                  { tf: "1h", order: "Sangat Sedikit", noise: "Minimal", cocok: "Long-term bot" },
+                ].map((row, i) => (
+                  <div
+                    key={row.tf}
+                    className={`grid grid-cols-4 px-4 py-3 gap-2 ${row.tf === "5m" ? "bg-[#f0fdf4]" : ""} ${i < 4 ? "border-b border-[rgba(26,22,18,0.04)]" : ""}`}
+                  >
+                    <p
+                      className={`text-[12px] font-bold ${row.tf === "5m" ? "text-[#166534]" : "text-[#1a1612]"}`}
+                    >
+                      {row.tf} {row.tf === "5m" ? "★" : ""}
+                    </p>
+                    <p className="text-[11px] text-[#6b6058]">{row.order}</p>
+                    <p className="text-[11px] text-[#6b6058]">{row.noise}</p>
+                    <p className="text-[11px] text-[#6b6058]">{row.cocok}</p>
+                  </div>
+                ))}
+              </div>
+
+              <TipBox>
+                Untuk pemula, mulai dengan timeframe 5m di mode Fastrade FTT pada aset EUR/USD. Ini
+                memberikan keseimbangan terbaik: cukup banyak order untuk melihat performa bot, tapi
+                tidak terlalu banyak noise seperti timeframe 1m.
+              </TipBox>
+            </section>
+
+            {/* Section 6 */}
+            <section>
+              <SectionLabel>Timeframe dan Martingale</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Hubungan Timeframe dengan Martingale dan Risiko
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Pilihan timeframe di mode Fastrade berdampak langsung pada cara martingale bekerja dan
+                kecepatan risiko modal terkuras.
+              </p>
+
+              <div className="space-y-4 mb-5">
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[13px] font-bold text-[#1a1612] mb-2">
+                    Timeframe Kecil (1m) + Martingale
+                  </h3>
+                  <p className="text-[12px] text-[#6b6058] leading-relaxed">
+                    Dengan timeframe 1m, bot bisa mengeksekusi banyak order per jam. Jika terjadi
+                    loss beruntun, martingale akan eskalasi sangat cepat. Dalam 10 menit, bisa sudah
+                    ada 5-7 order martingale. Modal bisa habis jauh lebih cepat dibanding timeframe
+                    yang lebih panjang. Butuh modal yang cukup besar dan Stop Loss harian yang ketat.
+                  </p>
+                </div>
+
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[13px] font-bold text-[#1a1612] mb-2">
+                    Timeframe Besar (15m-1h) + Martingale
+                  </h3>
+                  <p className="text-[12px] text-[#6b6058] leading-relaxed">
+                    Dengan timeframe 15m atau lebih, loss beruntun prosesnya lebih lambat. Anda punya
+                    lebih banyak waktu untuk memantau dan menghentikan bot secara manual jika situasi
+                    memburuk. Namun ini juga berarti recovery dari loss membutuhkan waktu lebih lama.
+                    Cocok untuk trader yang tidak bisa monitor aktif.
+                  </p>
+                </div>
+              </div>
+
+              <WarningBox>
+                Kombinasi timeframe 1m dengan martingale Max Steps 7 adalah kombinasi risiko sangat
+                tinggi. Dalam kondisi pasar buruk, 7 loss berturut-turut bisa terjadi dalam waktu
+                kurang dari 10 menit dan menguras sebagian besar modal. Selalu set Stop Loss harian
+                sebelum menjalankan kombinasi agresif ini.
+              </WarningBox>
+            </section>
+
+            {/* Section 7 */}
+            <section>
+              <SectionLabel>Rekomendasi Berdasarkan Modal</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Rekomendasi Timeframe Berdasarkan Modal dan Profil Risiko
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Pilihan timeframe yang ideal tidak lepas dari berapa modal yang Anda miliki dan
+                seberapa tinggi toleransi risiko Anda.
+              </p>
+
+              <div className="space-y-3">
+                <StepCard
+                  n="A"
+                  title="Modal Kecil (Rp 100.000 - Rp 300.000)"
+                  desc="Gunakan timeframe 5m atau 15m. Hindari 1m karena martingale eskalasi terlalu cepat. Base amount Rp 14.000, max steps 3-4, tanpa martingale lebih aman."
+                  sub="Rekomendasi: 5m, Fastrade FTT, Martingale max 3 steps"
+                />
+                <StepCard
+                  n="B"
+                  title="Modal Menengah (Rp 300.000 - Rp 1.000.000)"
+                  desc="Fleksibel antara 5m atau 15m. Bisa aktifkan martingale hingga 5 steps dengan multiplier 1.5x. Monitor aktif masih dianjurkan terutama di 5m."
+                  sub="Rekomendasi: 5m-15m, Fastrade FTT, Martingale 4-5 steps"
+                />
+                <StepCard
+                  n="C"
+                  title="Modal Lebih Besar (di atas Rp 1.000.000)"
+                  desc="Bisa eksplorasi timeframe 1m dengan martingale lebih banyak steps, atau timeframe 30m-1h untuk trading yang lebih santai. Modal mencukupi untuk menyerap loss beruntun."
+                  sub="Rekomendasi: Sesuaikan dengan gaya trading dan target profit harian"
+                />
+              </div>
+            </section>
+
+            {/* Section 8 — FAQ */}
+            <section>
+              <SectionLabel>FAQ</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Pertanyaan Umum tentang Timeframe di STC AutoTrade
+              </h2>
+              <div className="divide-y divide-[rgba(26,22,18,0.06)] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden">
+                {faqs.map((faq) => (
+                  <div key={faq.q} className="px-5 py-4">
+                    <p className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{faq.q}</p>
+                    <p className="text-[13px] text-[#6b6058] leading-relaxed">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Section 9 — Kesimpulan */}
+            <section>
+              <SectionLabel>Kesimpulan</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Pahami Timeframe Setiap Mode Sebelum Memulai Bot
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Timeframe di STC AutoTrade v4.4 tidak bersifat universal. Hanya mode Fastrade FTT dan
+                CTC yang memiliki pilihan timeframe 1m-1h. Mode Signal menggunakan duration 60-300
+                detik. Mode AI Signal, Indicator, dan Momentum mengelola timing order secara otomatis
+                sesuai logika internalnya masing-masing.
+              </p>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-6">
+                Untuk pemula, mulai dengan mode Fastrade FTT timeframe 5m pada aset EUR/USD. Ini
+                memberikan titik belajar yang baik sebelum mengeksplorasi timeframe lebih kecil atau
+                lebih besar sesuai dengan perkembangan pemahaman dan modal trading Anda.
+              </p>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Artikel Terkait</p>
+                <div className="space-y-2">
+                  {[
+                    {
+                      href: "/artikel/cara-setting-robot-stockity",
+                      label: "Cara Setting Robot Stockity — Panduan Lengkap Dashboard",
+                    },
+                    {
+                      href: "/artikel/strategi-martingale-stockity",
+                      label: "Strategi Martingale di Stockity: Cara Kerja dan Risikonya",
+                    },
+                    {
+                      href: "/artikel/cara-profit-trading-stockity",
+                      label: "Cara Profit Trading Stockity dengan Bot STC AutoTrade",
+                    },
+                  ].map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="flex items-center gap-2 text-[13px] text-[#3b82f6] hover:text-[#1d4ed8] no-underline transition-colors"
+                    >
+                      <span className="text-[10px]">→</span>
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* CTA */}
+            <div className="bg-[#1a1612] rounded-2xl p-6 text-center">
+              <p className="text-[13px] text-white/60 mb-2">Siap eksplorasi timeframe yang tepat?</p>
+              <h3 className="text-[18px] font-bold text-white mb-4">
+                Download STC AutoTrade dan Coba di Akun Demo
+              </h3>
+              <a
+                href="/StcAutoTrade.apk"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#3b82f6] text-white text-[13px] font-semibold rounded-xl no-underline hover:bg-[#2563eb] transition-colors"
+              >
+                Download APK Gratis
+              </a>
             </div>
           </div>
-        </section>
+        </main>
 
-        {/* ── Footer ──────────────────────────────────────── */}
         <footer className="py-8 bg-[#1a1612] border-t border-white/5">
           <div className="max-w-3xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-[13px] text-white/40">© 2026 STC AutoTrade. Hak cipta dilindungi.</p>
             <div className="flex gap-5">
-              <Link href="/" className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors">Beranda</Link>
-              <Link href="/artikel" className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors">Artikel</Link>
+              <Link
+                href="/"
+                className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors"
+              >
+                Beranda
+              </Link>
+              <Link
+                href="/artikel"
+                className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors"
+              >
+                Artikel
+              </Link>
             </div>
           </div>
         </footer>
-      </main>
+      </div>
     </>
   );
 }

@@ -1,85 +1,75 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-
-/* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Aset Terbaik untuk Trading di Stockity: Pilihan Pair & OTC 2026",
+  title: "Aset Terbaik Trading Stockity di STC AutoTrade: Forex, Gold, Crypto",
   description:
-    "Panduan memilih aset terbaik untuk trading di Stockity. Temukan pair forex, crypto, dan OTC yang paling cocok untuk binary option.",
+    "Panduan memilih aset trading terbaik di Stockity untuk STC AutoTrade. Forex (EUR/USD, USD/IDR), Gold, Oil, Crypto — semua real-time dari API Stockity. Tips pilih aset per mode bot.",
   keywords: [
     "aset terbaik trading stockity",
-    "aset stockity",
-    "pair trading stockity",
-    "OTC stockity",
-    "forex binary option stockity",
-    "aset binary option terbaik",
-    "EUR USD stockity",
+    "aset binary option stockity",
+    "EUR USD trading binary option",
+    "gold trading binary option",
     "crypto binary option stockity",
-    "aset OTC terbaik",
-    "pair forex terbaik binary option",
+    "cara pilih aset STC AutoTrade",
+    "aset forex stockity",
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/aset-terbaik-trading-stockity",
   },
   openGraph: {
-    title: "Aset Terbaik untuk Trading di Stockity: Pilihan Pair & OTC 2026",
+    title: "Aset Terbaik Trading Stockity: Forex, Gold & Crypto di STC AutoTrade 2026",
     description:
-      "Panduan memilih aset terbaik untuk trading di Stockity. Temukan pair forex, crypto, dan OTC yang paling cocok untuk binary option.",
+      "Aset di STC AutoTrade diambil real-time dari API Stockity. Forex (EUR/USD, USD/IDR), Gold, Oil, Crypto — pilih dari dropdown di dashboard. Tips memilih aset per mode bot.",
     url: "https://stcautotrade.id/artikel/aset-terbaik-trading-stockity",
+    siteName: "STC AutoTrade",
+    locale: "id_ID",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [
-      {
-        url: "https://stcautotrade.id/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Aset Terbaik Trading Stockity 2026",
-      },
-    ],
+    images: [{ url: "https://stcautotrade.id/og-image.png", width: 1200, height: 630, alt: "Aset Trading Stockity — Forex Gold Crypto" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aset Terbaik untuk Trading di Stockity: Pilihan Pair & OTC 2026",
+    title: "Aset Terbaik Trading Stockity: Forex, Gold & Crypto 2026",
     description:
-      "Panduan memilih aset terbaik untuk trading di Stockity. Temukan pair forex, crypto, dan OTC yang paling cocok untuk binary option.",
+      "Panduan memilih aset di STC AutoTrade — EUR/USD, USD/IDR, Gold, Crypto. Diambil real-time dari API Stockity, dipilih dari dropdown dashboard.",
     images: ["https://stcautotrade.id/og-image.png"],
   },
 };
 
-/* ── Structured Data ──────────────────────────────────────────── */
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Aset Terbaik untuk Trading di Stockity: Pilihan Pair & OTC 2026",
+  headline: "Aset Terbaik Trading Stockity di STC AutoTrade: Forex, Gold, Crypto",
   description:
-    "Panduan memilih aset terbaik untuk trading di Stockity. Temukan pair forex, crypto, dan OTC yang paling cocok untuk binary option.",
-  author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
+    "Panduan memilih aset terbaik di Stockity untuk STC AutoTrade v4.4.",
+  datePublished: "2025-05-21",
+  dateModified: "2026-06-07",
+  author: { "@type": "Organization", name: "STC AutoTrade" },
   publisher: {
     "@type": "Organization",
     name: "STC AutoTrade",
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
-  datePublished: "2025-05-21",
-  dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/aset-terbaik-trading-stockity",
   },
-  keywords: "aset terbaik trading stockity, pair trading stockity, OTC stockity, forex binary option stockity",
 };
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: "https://stcautotrade.id" },
-    { "@type": "ListItem", position: 2, name: "Artikel", item: "https://stcautotrade.id/artikel" },
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://stcautotrade.id" },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Artikel",
+      item: "https://stcautotrade.id/artikel",
+    },
     {
       "@type": "ListItem",
       position: 3,
@@ -95,48 +85,38 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Aset apa yang paling menguntungkan di Stockity?",
+      name: "Bisa ganti aset saat bot sedang berjalan?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tidak ada satu aset yang selalu paling menguntungkan — bergantung pada kondisi pasar. Namun EUR/USD dan GBP/USD secara umum menawarkan payout tertinggi dengan spread paling ketat di jam sesi London dan New York. Untuk pemula, EUR/USD atau aset OTC populer adalah pilihan paling konsisten.",
+        text: "Tidak disarankan. Untuk mengganti aset, hentikan bot terlebih dahulu, pilih aset baru di dropdown, lalu jalankan bot kembali. Mengganti aset di tengah sesi bisa menyebabkan inkonsistensi dalam strategi bot.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah bisa ganti aset di tengah sesi trading?",
+      name: "Aset mana yang paling profit di Stockity?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Bisa, tapi tidak disarankan tanpa alasan yang kuat. Mengganti aset terlalu sering (asset hopping) adalah kebiasaan berbahaya yang menunjukkan ketidakdisiplinan strategi. Pilih 1-2 aset utama, pelajari karakteristiknya, dan fokus pada aset tersebut.",
+        text: "Tidak ada aset yang 'selalu paling profit'. EUR/USD populer karena likuiditas tinggi dan spread kecil. Gold cocok untuk mode Momentum karena volatilitasnya. Crypto lebih volatile tapi lebih berisiko. Pilih aset sesuai mode bot dan kondisi pasar saat itu.",
       },
     },
     {
       "@type": "Question",
-      name: "Apa perbedaan aset OTC dan reguler di Stockity?",
+      name: "Apakah ada kategori OTC di Stockity atau STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Aset reguler (forex, crypto, saham) mengikuti jam pasar internasional dan volume trading sesungguhnya. Aset OTC (Over-The-Counter) adalah simulasi platform yang aktif 24/7 termasuk saat pasar global tutup di akhir pekan. Payout OTC bisa sedikit lebih rendah dari aset reguler.",
+        text: "Tidak ada kategori OTC terpisah di STC AutoTrade. Semua aset ditampilkan dari satu dropdown yang sama, diambil dari API Stockity secara real-time. Anda memilih aset langsung dari daftar yang tersedia tanpa pembagian kategori OTC/non-OTC.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah crypto lebih menguntungkan dari forex di Stockity?",
+      name: "Mana yang lebih baik: USD/IDR atau EUR/USD?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Crypto menawarkan volatilitas lebih tinggi yang berarti potensi profit lebih besar — tapi juga risiko lebih besar. Untuk pemula, forex (terutama EUR/USD) lebih disarankan karena pergerakan lebih dapat diprediksi dengan analisis teknikal standar.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Bagaimana STC AutoTrade memilih aset terbaik?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Mode AI di STC AutoTrade melakukan scan real-time terhadap semua aset yang tersedia di Stockity, menganalisis volatilitas, payout ratio, dan kondisi pasar saat ini, lalu secara otomatis memilih aset dengan peluang terbaik berdasarkan parameter yang Anda setting.",
+        text: "EUR/USD umumnya lebih stabil, memiliki spread lebih kecil, dan pergerakannya lebih bisa diprediksi secara teknikal. USD/IDR bisa lebih volatile karena faktor lokal Indonesia. Untuk pemula, EUR/USD lebih direkomendasikan sebagai aset utama.",
       },
     },
   ],
 };
-
-/* ── Komponen Lokal ───────────────────────────────────────────── */
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -147,7 +127,15 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
+function InfoBox({
+  icon,
+  title,
+  children,
+}: {
+  icon: string;
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
@@ -177,10 +165,22 @@ function WarningBox({ children }: { children: React.ReactNode }) {
   );
 }
 
-function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: string; sub?: string }) {
+function StepCard({
+  n,
+  title,
+  desc,
+  sub,
+}: {
+  n: string;
+  title: string;
+  desc: string;
+  sub?: string;
+}) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{n}</div>
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">
+        {n}
+      </div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
@@ -190,499 +190,646 @@ function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: str
   );
 }
 
-/* ── Page ─────────────────────────────────────────────────────── */
-
 export default function AsetTerbaikTradingStockityPage() {
+  const faqs = [
+    {
+      q: "Bisa ganti aset saat bot sedang berjalan?",
+      a: "Tidak disarankan. Untuk mengganti aset, hentikan bot terlebih dahulu, pilih aset baru di dropdown, lalu jalankan bot kembali. Mengganti aset di tengah sesi bisa menyebabkan inkonsistensi dalam strategi bot.",
+    },
+    {
+      q: "Aset mana yang paling profit di Stockity?",
+      a: "Tidak ada aset yang selalu paling profit. EUR/USD populer karena likuiditas tinggi dan spread kecil. Gold cocok untuk mode Momentum karena volatilitasnya. Crypto lebih volatile tapi lebih berisiko. Pilih aset sesuai mode bot dan kondisi pasar saat itu.",
+    },
+    {
+      q: "Apakah ada kategori OTC di Stockity atau STC AutoTrade?",
+      a: "Tidak ada kategori OTC terpisah di STC AutoTrade. Semua aset ditampilkan dari satu dropdown yang sama, diambil dari API Stockity secara real-time. Anda memilih aset langsung dari daftar yang tersedia tanpa pembagian kategori OTC atau non-OTC.",
+    },
+    {
+      q: "Mana yang lebih baik: USD/IDR atau EUR/USD?",
+      a: "EUR/USD umumnya lebih stabil, memiliki spread lebih kecil, dan pergerakannya lebih bisa diprediksi secara teknikal. USD/IDR bisa lebih volatile karena faktor lokal Indonesia. Untuk pemula, EUR/USD lebih direkomendasikan sebagai aset utama.",
+    },
+  ];
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-      <main className="min-h-screen bg-[#f9fafb]">
-        {/* ── Nav ─────────────────────────────────────────── */}
+      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+        {/* Navbar */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#3b82f6]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">
+                STC <span className="text-[#3b82f6]">AutoTrade</span>
+              </span>
             </Link>
             <div className="flex items-center gap-3">
-              <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
-              <a href="/StcAutoTrade.apk" download className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline">Download APK</a>
+              <Link
+                href="/artikel"
+                className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline"
+              >
+                Semua Artikel
+              </Link>
+              <a
+                href="/StcAutoTrade.apk"
+                download
+                className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline"
+              >
+                Download APK
+              </a>
             </div>
           </div>
         </nav>
 
-        {/* ── Article Header ──────────────────────────────── */}
-        <div className="pt-28 pb-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            {/* Breadcrumb */}
-            <nav aria-label="breadcrumb" className="mb-6">
-              <ol className="flex items-center gap-2 text-[12px] text-[#6b6058]">
-                <li><Link href="/" className="hover:text-[#1a1612] no-underline transition-colors">Beranda</Link></li>
-                <li className="text-[#1a1612]/20">/</li>
-                <li><Link href="/artikel" className="hover:text-[#1a1612] no-underline transition-colors">Artikel</Link></li>
-                <li className="text-[#1a1612]/20">/</li>
-                <li className="text-[#1a1612] font-medium" aria-current="page">Aset Terbaik Trading Stockity</li>
-              </ol>
-            </nav>
-            {/* Badge */}
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eff6ff] text-[#1d4ed8] text-[11px] font-semibold mb-4">Panduan</span>
-            {/* H1 */}
-            <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-[1.2] mb-4">
-              Aset Terbaik untuk Trading di Stockity: Pilihan Pair & OTC 2026
-            </h1>
-            {/* Description */}
-            <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
-              Panduan lengkap memilih aset terbaik untuk trading di Stockity. Temukan pair forex, crypto, dan OTC yang paling cocok untuk binary option — termasuk cara bot STC AutoTrade memilih aset optimal secara otomatis.
-            </p>
-            {/* Stats grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[
-                { v: "100+", l: "Total Aset" },
-                { v: "OTC", l: "Tersedia 24/7" },
-                { v: "Forex", l: "Paling Populer" },
-                { v: "Crypto", l: "Volatilitas Tinggi" },
-              ].map((s) => (
-                <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-3 py-3 text-center">
-                  <p className="text-[18px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
-                  <p className="text-[11px] text-[#6b6058]">{s.l}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <main className="pt-14">
+          {/* Hero */}
+          <div className="bg-white border-b border-[rgba(26,22,18,0.06)]">
+            <div className="max-w-3xl mx-auto px-5 py-10">
+              <nav className="flex items-center gap-2 text-[12px] text-[#6b6058] mb-6">
+                <Link href="/" className="hover:text-[#1a1612] no-underline transition-colors">
+                  Beranda
+                </Link>
+                <span className="text-[#1a1612]/20">/</span>
+                <Link
+                  href="/artikel"
+                  className="hover:text-[#1a1612] no-underline transition-colors"
+                >
+                  Artikel
+                </Link>
+                <span className="text-[#1a1612]/20">/</span>
+                <span className="text-[#1a1612]/60">Aset Terbaik Trading Stockity</span>
+              </nav>
 
-        {/* ── Section 01: Kategori Aset ───────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>01 · Kategori Aset</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kategori Aset yang Tersedia di Stockity</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Stockity menyediakan lebih dari 100 aset trading yang dikategorikan dalam beberapa kelompok besar. Setiap kategori memiliki karakteristik volatilitas, jam aktif, dan tingkat risiko yang berbeda. Memilih kategori aset yang tepat adalah langkah pertama menuju strategi trading yang solid.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-3 mb-4">
-              {[
-                {
-                  kategori: "Forex (Mata Uang)",
-                  icon: "💱",
-                  desc: "Pasangan mata uang seperti EUR/USD, GBP/USD, USD/JPY. Likuiditas tertinggi, spread paling ketat, paling mudah dianalisis secara teknikal.",
-                  level: "Pemula - Menengah",
-                  color: "bg-[#eff6ff] border-[#bfdbfe]",
-                },
-                {
-                  kategori: "Cryptocurrency",
-                  icon: "₿",
-                  desc: "Bitcoin, Ethereum, Litecoin, dan altcoin lainnya. Volatilitas sangat tinggi, pergerakan besar dalam waktu singkat.",
-                  level: "Menengah - Mahir",
-                  color: "bg-[#fef9c3] border-[#fde68a]",
-                },
-                {
-                  kategori: "Komoditas",
-                  icon: "🥇",
-                  desc: "Emas (XAU/USD), minyak (WTI), perak. Terpengaruh sentimen geopolitik dan data ekonomi global.",
-                  level: "Menengah",
-                  color: "bg-[#fef3c7] border-[#fcd34d]",
-                },
-                {
-                  kategori: "Saham & Indeks",
-                  icon: "📈",
-                  desc: "Saham perusahaan besar (Apple, Google) dan indeks saham (S&P 500, Nasdaq). Aktif hanya saat jam pasar saham.",
-                  level: "Menengah - Mahir",
-                  color: "bg-[#f0fdf4] border-[#bbf7d0]",
-                },
-                {
-                  kategori: "Aset OTC",
-                  icon: "🕐",
-                  desc: "Over-The-Counter assets — tersedia 24/7 termasuk akhir pekan saat pasar global tutup. Ideal saat pasar reguler tidak aktif.",
-                  level: "Semua Level",
-                  color: "bg-[#f5f3ff] border-[#ddd6fe]",
-                },
-              ].map((item) => (
-                <div key={item.kategori} className={`${item.color} border rounded-xl px-4 py-4`}>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xl">{item.icon}</span>
-                    <p className="text-[13px] font-semibold text-[#1a1612]">{item.kategori}</p>
-                  </div>
-                  <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{item.desc}</p>
-                  <p className="text-[11px] font-medium text-[#3b82f6]">Level: {item.level}</p>
-                </div>
-              ))}
-            </div>
-            <InfoBox icon="💡" title="Tips Memilih Kategori Aset">
-              Untuk pemula, mulailah dengan forex (EUR/USD atau USD/JPY) atau aset OTC populer. Hindari crypto sebelum memahami manajemen risiko dengan baik — volatilitas crypto bisa sangat tidak terprediksi untuk pemula.
-            </InfoBox>
-          </div>
-        </section>
-
-        {/* ── Section 02: Forex Terbaik ───────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>02 · Aset Forex</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Aset Forex Terbaik untuk Binary Option di Stockity</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Pair forex adalah kategori aset paling populer di binary option karena likuiditasnya sangat tinggi, spread ketat, dan pergerakan harga lebih dapat diprediksi dengan analisis teknikal standar. Berikut pair forex yang direkomendasikan untuk trading di Stockity:
-            </p>
-            <div className="space-y-3 mb-4">
-              {[
-                {
-                  pair: "EUR/USD",
-                  label: "Paling Direkomendasikan",
-                  desc: "Pasangan mata uang paling liquid di dunia. Volume trading terbesar, spread paling ketat, pergerakan stabil dan bisa diprediksi. Aktif optimal saat sesi London (15:00-18:00 WIB) dan New York (20:00-24:00 WIB) overlap.",
-                  jam: "15:00 - 24:00 WIB",
-                  color: "bg-[#eff6ff] border-[#bfdbfe]",
-                },
-                {
-                  pair: "GBP/USD",
-                  label: "Volatilitas Sedang-Tinggi",
-                  desc: "Dikenal sebagai 'Cable', GBP/USD memiliki volatilitas lebih tinggi dari EUR/USD yang berarti peluang profit lebih besar — tapi juga risiko lebih tinggi. Sangat aktif saat sesi London.",
-                  jam: "14:00 - 20:00 WIB",
-                  color: "bg-[#f0fdf4] border-[#bbf7d0]",
-                },
-                {
-                  pair: "USD/JPY",
-                  label: "Gerakan Smooth & Stabil",
-                  desc: "USD/JPY dikenal dengan pergerakan yang relatif smooth dan trending. Lebih mudah dianalisis dengan Moving Average. Aktif optimal saat sesi Tokyo (06:00-09:00 WIB) dan New York.",
-                  jam: "06:00 - 10:00 WIB",
-                  color: "bg-[#fef9c3] border-[#fde68a]",
-                },
-                {
-                  pair: "EUR/JPY",
-                  label: "Alternatif Solid",
-                  desc: "Cross pair yang menggabungkan volatilitas EUR dan JPY. Pergerakan cukup besar dan trennya jelas. Cocok untuk trader yang mencari alternatif dari major pair.",
-                  jam: "14:00 - 20:00 WIB",
-                  color: "bg-[#f5f3ff] border-[#ddd6fe]",
-                },
-              ].map((item) => (
-                <div key={item.pair} className={`${item.color} border rounded-xl px-4 py-4`}>
-                  <div className="flex items-center justify-between mb-2">
-                    <p className="text-[14px] font-bold text-[#1a1612]">{item.pair}</p>
-                    <span className="text-[10px] font-semibold px-2 py-0.5 bg-white rounded-full text-[#1d4ed8] border border-[#bfdbfe]">{item.label}</span>
-                  </div>
-                  <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{item.desc}</p>
-                  <p className="text-[11px] font-medium text-[#6b6058]">Jam optimal: <span className="text-[#1d4ed8] font-semibold">{item.jam}</span></p>
-                </div>
-              ))}
-            </div>
-            <TipBox>
-              Pilih aset forex sesuai jam aktif Anda. Jika trading malam hari, EUR/USD atau GBP/USD adalah pilihan terbaik. Jika trading pagi hari, USD/JPY lebih aktif dan liquid saat sesi Asia berlangsung.
-            </TipBox>
-          </div>
-        </section>
-
-        {/* ── Section 03: Aset OTC ─────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>03 · Aset OTC</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Aset OTC: Apa Itu dan Kapan Menggunakannya</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              OTC (Over-The-Counter) adalah aset yang diperdagangkan langsung antara dua pihak tanpa melalui bursa resmi. Di Stockity, aset OTC adalah aset simulasi platform yang tersedia <strong>24 jam sehari, 7 hari seminggu</strong> — termasuk saat pasar forex, saham, dan komoditas global tutup di akhir pekan.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-4">
-                <p className="text-[12px] font-semibold text-[#1a1612] mb-2">Kapan Gunakan Aset OTC?</p>
-                <ul className="space-y-1.5">
-                  {[
-                    "Sabtu dan Minggu (pasar global tutup)",
-                    "Saat sesi trading sepi/low volume",
-                    "Saat ingin trading 24/7 tanpa jeda",
-                    "Saat aset reguler spread terlalu lebar",
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px] text-[#6b6058]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#eff6ff] border border-[#bfdbfe] rounded-full mb-5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6]" />
+                <span className="text-[11px] font-semibold text-[#1d4ed8] tracking-wide uppercase">
+                  Panduan Aset
+                </span>
               </div>
-              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-4">
-                <p className="text-[12px] font-semibold text-[#1a1612] mb-2">Karakteristik OTC</p>
-                <ul className="space-y-1.5">
-                  {[
-                    "Tersedia 24/7 tanpa gangguan",
-                    "Tidak terpengaruh berita ekonomi",
-                    "Volatilitas lebih terkontrol",
-                    "Payout bisa sedikit lebih rendah",
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px] text-[#6b6058]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e] flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+
+              <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-tight mb-4">
+                Aset Terbaik Trading Stockity di STC AutoTrade:{" "}
+                <span className="text-[#3b82f6]">Forex, Gold, dan Crypto</span>
+              </h1>
+              <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
+                Di STC AutoTrade v4.4, semua aset trading diambil secara real-time dari API Stockity.
+                Forex, komoditas, crypto, dan indices — semuanya tersedia dari satu dropdown di
+                dashboard. Memilih aset yang tepat untuk setiap mode bot adalah kunci performa yang
+                optimal.
+              </p>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {[
+                  { v: "Real-time", l: "Update Aset" },
+                  { v: "Forex/Crypto", l: "Berbagai Kategori" },
+                  { v: "1 Aset/Sesi", l: "Focus Trading" },
+                  { v: "Profit Rate", l: "Tampil di App" },
+                ].map((s) => (
+                  <div
+                    key={s.l}
+                    className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center"
+                  >
+                    <p className="text-[16px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
+                    <p className="text-[11px] text-[#6b6058]">{s.l}</p>
+                  </div>
+                ))}
               </div>
             </div>
-            <InfoBox icon="🕐" title="OTC Populer di Stockity">
-              Aset OTC yang paling sering digunakan trader di Stockity antara lain: EUR/USD OTC, GBP/USD OTC, USD/JPY OTC, dan beberapa pasangan OTC eksklusif. Pilih OTC dengan volatilitas yang tidak terlalu ekstrem untuk trading yang lebih terprediksi.
-            </InfoBox>
-            <div className="mt-4">
-              <WarningBox>
-                OTC bukan aset yang diperdagangkan di pasar nyata — harganya ditentukan oleh platform. Ini berarti pergerakannya tidak selalu bisa dianalisis dengan cara yang sama seperti aset reguler. Uji strategi Anda di mode demo sebelum trading OTC dengan modal nyata.
-              </WarningBox>
-            </div>
           </div>
-        </section>
 
-        {/* ── Section 04: Crypto ──────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>04 · Cryptocurrency</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Aset Crypto: Volatilitas Tinggi, Risiko Lebih Besar</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Cryptocurrency seperti Bitcoin (BTC/USD), Ethereum (ETH/USD), dan Litecoin (LTC/USD) tersedia di Stockity dan menawarkan peluang trading yang menarik karena volatilitasnya yang sangat tinggi. Pergerakan harga crypto bisa 3-10x lebih besar dari forex dalam periode yang sama.
-            </p>
-            <div className="space-y-3 mb-4">
-              <StepCard
-                n="BTC"
-                title="Bitcoin (BTC/USD) — Raja Crypto"
-                desc="Aset crypto paling liquid dan paling banyak diperdagangkan. Pergerakan besar (bisa ratusan dolar dalam menit) memberikan peluang profit besar — tapi juga risiko besar. Sangat sensitif terhadap berita dan sentimen pasar crypto secara keseluruhan."
-                sub="Disarankan hanya untuk trader yang sudah memahami manajemen risiko dengan baik."
-              />
-              <StepCard
-                n="ETH"
-                title="Ethereum (ETH/USD) — Alternatif Populer"
-                desc="Volatilitas serupa dengan Bitcoin tapi dengan harga unit yang lebih rendah. Pergerakan ETH sering mengikuti BTC namun dengan karakteristiknya sendiri. Aktif hampir 24 jam sehari."
-                sub="Cocok sebagai diversifikasi dari BTC untuk trader crypto."
-              />
-              <StepCard
-                n="LTC"
-                title="Litecoin & Altcoin — Peluang Niche"
-                desc="Altcoin seperti LTC, XRP, atau DOGE memiliki volatilitas lebih tinggi dari BTC/ETH — peluang besar tapi risiko sangat tinggi. Likuiditas lebih rendah bisa menyebabkan spread lebih lebar."
-                sub="Tidak direkomendasikan untuk pemula."
-              />
-            </div>
-            <WarningBox>
-              Crypto binary option bukan untuk pemula. Volatilitas ekstrem crypto bisa menguras modal dengan cepat jika tidak ada manajemen risiko yang ketat. Kuasai trading forex terlebih dahulu sebelum mencoba crypto.
-            </WarningBox>
-          </div>
-        </section>
+          <div className="max-w-3xl mx-auto px-5 py-10 space-y-14">
+            {/* Section 1 */}
+            <section>
+              <SectionLabel>Cara Memilih Aset</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Cara Memilih Aset di STC AutoTrade
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Berbeda dari platform lain yang memisahkan aset berdasarkan kategori OTC atau
+                non-OTC, STC AutoTrade menampilkan semua aset yang tersedia di Stockity dalam satu
+                dropdown terpadu. Daftar aset ini diperbarui secara real-time dari API Stockity —
+                artinya Anda selalu melihat aset yang sedang aktif dan tersedia untuk trading saat itu.
+              </p>
+              <div className="space-y-3 mb-6">
+                <StepCard
+                  n="1"
+                  title="Buka Dashboard STC AutoTrade"
+                  desc="Di halaman utama dashboard, Anda akan melihat header dengan selector akun (Demo/Real) dan dropdown pemilihan aset trading."
+                  sub="Pastikan sudah switch ke akun yang diinginkan (Demo atau Real)"
+                />
+                <StepCard
+                  n="2"
+                  title="Klik Dropdown Asset"
+                  desc="Klik dropdown 'Asset' untuk melihat semua aset yang tersedia dari API Stockity. Daftar berisi Forex, Komoditas, Crypto, dan Stock Indices."
+                  sub="Aset diperbarui real-time — daftar bisa berubah sesuai ketersediaan"
+                />
+                <StepCard
+                  n="3"
+                  title="Lihat Profit Rate Setiap Aset"
+                  desc="Setiap aset menampilkan profit rate (%) yang akan Anda dapatkan jika prediksi benar. Profit rate berbeda-beda antar aset dan bisa berubah."
+                  sub="Pilih aset dengan profit rate kompetitif dan yang familiar dengan Anda"
+                />
+                <StepCard
+                  n="4"
+                  title="Pilih Aset dan Konfigurasikan Bot"
+                  desc="Setelah memilih aset, atur mode bot, parameter, SL/TP, lalu klik Start. Bot akan trading pada aset yang dipilih selama sesi berlangsung."
+                  sub="Satu bot fokus pada 1 aset per sesi"
+                />
+              </div>
+              <InfoBox icon="💡" title="Tidak Ada Kategori OTC Terpisah">
+                Di STC AutoTrade v4.4 tidak ada pemisahan khusus antara aset OTC dan reguler. Semua
+                aset tampil dalam satu dropdown yang sama. Anda cukup memilih dari daftar yang
+                tersedia tanpa perlu memikirkan kategori OTC atau non-OTC.
+              </InfoBox>
+            </section>
 
-        {/* ── Section 05: Rekomendasi Pemula ──────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>05 · Rekomendasi Pemula</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Aset yang Direkomendasikan untuk Pemula</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Sebagai pemula, memilih aset yang salah bisa membuat pengalaman trading Anda sangat frustasi. Berikut adalah panduan aset berdasarkan profil trader:
-            </p>
-            <div className="space-y-3 mb-4">
-              {[
-                {
-                  profil: "Pemula Mutlak (Baru Mulai)",
-                  aset: ["EUR/USD OTC (akhir pekan)", "EUR/USD Reguler (jam London/NY)", "USD/JPY (jam Asia/pagi hari)"],
-                  alasan: "Pergerakan paling stabil dan dapat diprediksi. Spread ketat, liquiditas tinggi, banyak sumber analisis tersedia.",
-                  icon: "🌱",
-                  color: "bg-[#f0fdf4] border-[#bbf7d0]",
-                },
-                {
-                  profil: "Pemula Menengah (1-3 Bulan Pengalaman)",
-                  aset: ["GBP/USD (volatilitas lebih tinggi)", "EUR/JPY (cross pair)", "GBP/JPY (lebih agresif)"],
-                  alasan: "Setelah memahami dasar, coba pair dengan volatilitas lebih tinggi untuk potensi profit lebih besar. Tetap gunakan stop loss.",
-                  icon: "📈",
-                  color: "bg-[#eff6ff] border-[#bfdbfe]",
-                },
-                {
-                  profil: "Trader Menengah (3+ Bulan Pengalaman)",
-                  aset: ["Emas (XAU/USD)", "BTC/USD (dengan modal terbatas)", "Indeks saham (Nasdaq, S&P 500)"],
-                  alasan: "Dengan pengalaman manajemen risiko yang solid, mulai eksplorasi aset dengan volatilitas lebih tinggi dan karakteristik berbeda.",
-                  icon: "🏆",
-                  color: "bg-[#fef9c3] border-[#fde68a]",
-                },
-              ].map((item) => (
-                <div key={item.profil} className={`${item.color} border rounded-xl px-4 py-4`}>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xl">{item.icon}</span>
-                    <p className="text-[13px] font-semibold text-[#1a1612]">{item.profil}</p>
+            {/* Section 2 */}
+            <section>
+              <SectionLabel>Aset Forex</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Aset Forex: Paling Populer untuk Bot Trading
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Aset forex adalah kategori yang paling sering dipilih oleh pengguna STC AutoTrade.
+                Pasangan mata uang memiliki likuiditas tertinggi di dunia, spread yang relatif kecil,
+                dan pergerakan yang lebih bisa diprediksi secara teknikal dibanding aset lain.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-4 mb-5">
+                {[
+                  {
+                    pair: "EUR/USD",
+                    desc: "Pasangan paling liquid di dunia. Spread sangat kecil, pergerakan stabil dan terprediksi. Cocok untuk semua mode bot, terutama mode Indicator (SMA/EMA/RSI) dan mode Fastrade.",
+                    tag: "Sangat Direkomendasikan",
+                    tagColor: "bg-[#dcfce7] text-[#166534]",
+                  },
+                  {
+                    pair: "USD/IDR",
+                    desc: "Pasangan mata uang Dolar AS vs Rupiah Indonesia. Lebih volatile karena faktor ekonomi lokal. Cocok untuk trader yang memahami dinamika pasar Indonesia.",
+                    tag: "Moderate",
+                    tagColor: "bg-[#fef9c3] text-[#854d0e]",
+                  },
+                  {
+                    pair: "GBP/USD",
+                    desc: "Pasangan Pounds vs Dolar. Volatilitas lebih tinggi dari EUR/USD, pergerakan cukup besar terutama di sesi London. Cocok untuk mode Momentum dan Fastrade FTT.",
+                    tag: "Cocok Trader Aktif",
+                    tagColor: "bg-[#eff6ff] text-[#1d4ed8]",
+                  },
+                  {
+                    pair: "Pasangan Lainnya",
+                    desc: "Stockity menyediakan berbagai pasangan forex lain yang ditampilkan di dropdown secara real-time. Daftar lengkap tersedia di dashboard saat bot aktif.",
+                    tag: "Cek di Dashboard",
+                    tagColor: "bg-[#f3f4f6] text-[#374151]",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.pair}
+                    className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[14px] font-bold text-[#1a1612]">{item.pair}</h3>
+                      <span
+                        className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${item.tagColor}`}
+                      >
+                        {item.tag}
+                      </span>
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.desc}</p>
                   </div>
-                  <div className="flex flex-wrap gap-1.5 mb-2">
-                    {item.aset.map((a) => (
-                      <span key={a} className="text-[11px] bg-white border border-[rgba(26,22,18,0.08)] rounded-md px-2 py-0.5 text-[#1a1612] font-medium">{a}</span>
+                ))}
+              </div>
+              <TipBox>
+                Untuk pemula, mulai dengan EUR/USD. Pasangan ini paling banyak dianalisis oleh trader
+                profesional, memiliki spread terkecil di Stockity, dan pergerakannya paling stabil
+                untuk diuji coba di akun Demo terlebih dahulu.
+              </TipBox>
+            </section>
+
+            {/* Section 3 */}
+            <section>
+              <SectionLabel>Aset Komoditas</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Aset Komoditas: Gold dan Oil
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Komoditas — terutama Gold (emas) dan Oil (minyak) — adalah aset dengan karakteristik
+                unik yang berbeda dari forex. Volatilitasnya lebih tinggi, terutama saat ada berita
+                geopolitik atau data ekonomi global yang signifikan.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-4 mb-5">
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[14px] font-bold text-[#1a1612] mb-2">Gold (Emas/XAU/USD)</h3>
+                  <ul className="space-y-2 mb-3">
+                    {[
+                      "Volatilitas menengah-tinggi, pergerakan bisa signifikan",
+                      "Sangat sensitif terhadap geopolitik dan data ekonomi AS",
+                      "Cocok untuk mode Momentum (pola CandleSabit, BBSARBreak)",
+                      "Profit rate di Stockity biasanya kompetitif",
+                      "Aktif 23 jam sehari (kecuali saat pasar tutup)",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
+                        <span className="text-[#f59e0b] mt-0.5 flex-shrink-0">•</span>
+                        {item}
+                      </li>
                     ))}
-                  </div>
-                  <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.alasan}</p>
+                  </ul>
+                  <p className="text-[11px] text-[#3b82f6] font-medium">
+                    Cocok: Mode Momentum, Fastrade FTT
+                  </p>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[14px] font-bold text-[#1a1612] mb-2">Oil (Minyak/WTI)</h3>
+                  <ul className="space-y-2 mb-3">
+                    {[
+                      "Volatilitas tinggi, pergerakan bisa sangat besar",
+                      "Dipengaruhi kebijakan OPEC dan stok minyak AS mingguan",
+                      "Kurang cocok untuk pemula karena sulit diprediksi",
+                      "Bagus untuk trader berpengalaman dengan mode Fastrade",
+                      "Perlu pemahaman faktor fundamental minyak global",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
+                        <span className="text-[#f59e0b] mt-0.5 flex-shrink-0">•</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-[11px] text-[#f59e0b] font-medium">
+                    Untuk: Trader Berpengalaman
+                  </p>
+                </div>
+              </div>
+              <WarningBox>
+                Saat ada rilis data inventory minyak mingguan (biasanya Rabu malam WIB) atau pengumuman
+                OPEC, volatilitas Oil bisa sangat ekstrem. Pertimbangkan untuk menghentikan bot sementara
+                selama periode high-impact news tersebut.
+              </WarningBox>
+            </section>
 
-        {/* ── Section 06: STC AutoTrade & Aset ────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>06 · STC AutoTrade</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Cara STC AutoTrade Memilih Aset Optimal Secara Otomatis</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Memilih aset terbaik secara manual membutuhkan pemantauan puluhan pair sekaligus — pekerjaan yang melelahkan dan rentan kesalahan. Mode AI di STC AutoTrade menyelesaikan masalah ini dengan melakukan scan otomatis terhadap semua aset yang tersedia di akun Stockity Anda.
-            </p>
-            <div className="space-y-3 mb-4">
-              <StepCard
-                n="1"
-                title="Scan Real-Time Semua Aset"
-                desc="Bot STC AutoTrade memindai semua aset yang tersedia di Stockity secara real-time, menganalisis volatilitas saat ini, kondisi tren, dan payout ratio masing-masing aset."
-                sub="Proses scan berlangsung setiap detik tanpa henti."
-              />
-              <StepCard
-                n="2"
-                title="Pilih Aset dengan Peluang Terbaik"
-                desc="Berdasarkan parameter yang Anda setting (profil risiko, modal, strategi), bot memilih aset dengan kombinasi volatilitas optimal, payout tertinggi, dan sinyal paling kuat saat ini."
-                sub="Tidak perlu Anda pantau chart puluhan pasang mata uang secara bersamaan."
-              />
-              <StepCard
-                n="3"
-                title="Eksekusi Otomatis di Aset Terpilih"
-                desc="Setelah aset terbaik dipilih dan sinyal entry terkonfirmasi, bot mengeksekusi order secara otomatis. Jika kondisi aset berubah, bot beralih ke aset lain yang lebih optimal."
-                sub="Adaptif terhadap kondisi pasar yang berubah sepanjang hari."
-              />
-            </div>
-            <InfoBox icon="🤖" title="Keunggulan Pemilihan Aset Otomatis">
-              Mode AI STC AutoTrade bisa memantau 50+ aset secara bersamaan — sesuatu yang mustahil dilakukan manusia secara konsisten. Ini memastikan Anda tidak melewatkan peluang terbaik di aset manapun, kapanpun sesi trading berlangsung.
-            </InfoBox>
-          </div>
-        </section>
+            {/* Section 4 */}
+            <section>
+              <SectionLabel>Aset Crypto</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Aset Crypto di Stockity
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Crypto seperti Bitcoin (BTC) dan Ethereum (ETH) tersedia di Stockity dan bisa
+                ditrading menggunakan STC AutoTrade. Namun karakteristiknya sangat berbeda dari forex
+                atau komoditas — perlu pendekatan yang berbeda pula.
+              </p>
 
-        {/* ── Section 07: Kesalahan Umum ───────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>07 · Hindari Kesalahan Ini</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kesalahan Umum dalam Memilih Aset Trading</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Beberapa kesalahan dalam pemilihan aset yang sering merugikan trader pemula:
-            </p>
-            <div className="space-y-3">
-              {[
-                {
-                  no: "1",
-                  kesalahan: "Asset Hopping — Ganti Aset Terus",
-                  solusi: "Tetapkan 1-2 aset utama dan pelajari karakteristiknya secara mendalam. Ganti aset hanya saat ada alasan fundamental yang kuat, bukan karena setelah loss.",
-                },
-                {
-                  no: "2",
-                  kesalahan: "Trading Crypto tanpa Pengalaman",
-                  solusi: "Mulai dari forex major yang lebih stabil. Pindah ke crypto hanya setelah win rate konsisten di forex dan manajemen risiko sudah solid.",
-                },
-                {
-                  no: "3",
-                  kesalahan: "Trading Aset di Luar Jam Aktifnya",
-                  solusi: "EUR/USD paling aktif saat sesi London dan New York. Trading EUR/USD di jam sepi pagi hari akan menghasilkan pergerakan kecil dan spread lebih lebar — kurang menguntungkan.",
-                },
-                {
-                  no: "4",
-                  kesalahan: "Memilih Aset Hanya karena Payout Tertinggi",
-                  solusi: "Payout tinggi biasanya berarti volatilitas lebih tinggi dan risiko lebih besar. Pilih aset berdasarkan kemampuan analisis Anda, bukan semata-mata payout-nya.",
-                },
-              ].map((item) => (
-                <div key={item.no} className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-4">
-                  <div className="flex gap-3">
-                    <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#fee2e2] flex items-center justify-center text-[11px] font-bold text-[#dc2626]">{item.no}</div>
-                    <div>
-                      <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{item.kesalahan}</p>
-                      <p className="text-[12px] text-[#6b6058] leading-relaxed"><strong className="text-[#15803d]">Solusi:</strong> {item.solusi}</p>
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5 mb-5">
+                <h3 className="text-[14px] font-bold text-[#1a1612] mb-3">
+                  Karakteristik Crypto untuk Binary Option
+                </h3>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-[12px] font-semibold text-[#1a1612] mb-2">Kelebihan</p>
+                    <ul className="space-y-1.5">
+                      {[
+                        "Volatilitas tinggi = peluang profit besar",
+                        "Aktif 24/7 tanpa jam buka/tutup pasar",
+                        "Bisa trending kuat selama berhari-hari",
+                        "Cocok untuk mode Fastrade FTT saat trending",
+                      ].map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2 text-[12px] text-[#6b6058]"
+                        >
+                          <span className="text-[#22c55e] flex-shrink-0">+</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-[12px] font-semibold text-[#1a1612] mb-2">Kekurangan</p>
+                    <ul className="space-y-1.5">
+                      {[
+                        "Volatilitas tinggi = risiko loss juga besar",
+                        "Sangat sensitif berita/regulasi crypto global",
+                        "Spread bisa lebih besar saat volatilitas ekstrem",
+                        "Lebih sulit diprediksi secara teknikal",
+                      ].map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2 text-[12px] text-[#6b6058]"
+                        >
+                          <span className="text-[#ef4444] flex-shrink-0">−</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <InfoBox icon="⚡" title="Rekomendasi untuk Crypto">
+                Jika ingin mencoba crypto, gunakan mode Fastrade FTT dengan timeframe 5m atau 15m pada
+                kondisi pasar yang sedang trending jelas (bukan sideways). Selalu set Stop Loss harian
+                yang lebih ketat dibanding saat trading forex, karena pergerakan crypto bisa sangat
+                mendadak dan besar.
+              </InfoBox>
+            </section>
+
+            {/* Section 5 */}
+            <section>
+              <SectionLabel>Interaksi Mode Bot dengan Aset</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Bagaimana Setiap Mode Bot Berinteraksi dengan Pilihan Aset
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Tidak semua mode bot cocok untuk semua jenis aset. Memahami hubungan antara mode bot
+                dan karakteristik aset akan meningkatkan performa trading secara signifikan.
+              </p>
+
+              <div className="space-y-3 mb-6">
+                {[
+                  {
+                    mode: "Mode Indicator (SMA/EMA/RSI)",
+                    aset: "EUR/USD, GBP/USD, USD/IDR",
+                    why: "Indikator teknikal bekerja paling baik di aset dengan pergerakan yang relatif stabil dan mengikuti pola teknikal. Forex major memenuhi kriteria ini. Crypto terlalu volatile untuk indikator sederhana.",
+                    color: "border-[#bfdbfe] bg-[#eff6ff]",
+                    labelColor: "text-[#1d4ed8]",
+                  },
+                  {
+                    mode: "Mode Momentum (4 Pola Candlestick)",
+                    aset: "Gold, EUR/USD, GBP/USD",
+                    why: "Mode Momentum membutuhkan pola candlestick yang terbentuk jelas. Gold dan forex major membentuk pola yang cukup bersih. Crypto terkadang terlalu choppy untuk pola candlestick yang valid.",
+                    color: "border-[#bbf7d0] bg-[#f0fdf4]",
+                    labelColor: "text-[#166534]",
+                  },
+                  {
+                    mode: "Mode Fastrade FTT & CTC",
+                    aset: "EUR/USD, Gold, Crypto (saat trending)",
+                    why: "Fastrade lebih fleksibel karena menganalisis momentum langsung. Bisa digunakan di berbagai aset selama ada tren yang jelas. Hindari aset yang sangat sepi di luar jam aktifnya.",
+                    color: "border-[#fde68a] bg-[#fffbeb]",
+                    labelColor: "text-[#92400e]",
+                  },
+                  {
+                    mode: "Mode AI Signal",
+                    aset: "Semua aset tersedia",
+                    why: "AI Signal menentukan aset dan sinyal sendiri. Namun Anda tetap memilih aset mana yang akan dieksekusi di dashboard. Ikuti rekomendasi sinyal untuk aset yang sedang aktif.",
+                    color: "border-[rgba(26,22,18,0.07)] bg-white",
+                    labelColor: "text-[#6b6058]",
+                  },
+                  {
+                    mode: "Mode Signal (Manual)",
+                    aset: "Semua aset, tergantung sinyal yang Anda terima",
+                    why: "Mode Signal mengeksekusi berdasarkan input CALL/PUT manual pada waktu yang dijadwalkan. Pilih aset sesuai sinyal yang Anda dapatkan dari sumber referensi.",
+                    color: "border-[rgba(26,22,18,0.07)] bg-white",
+                    labelColor: "text-[#6b6058]",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.mode}
+                    className={`border rounded-xl p-4 ${item.color}`}
+                  >
+                    <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                      <p className={`text-[12px] font-bold ${item.labelColor}`}>{item.mode}</p>
+                      <span className="text-[10px] font-semibold text-[#6b6058] bg-white/70 px-2 py-0.5 rounded-full border border-[rgba(26,22,18,0.06)]">
+                        {item.aset}
+                      </span>
+                    </div>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.why}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Section 6 */}
+            <section>
+              <SectionLabel>Tips Memilih Aset</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Tips Memilih Aset yang Tepat untuk Setiap Mode Bot
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Ada beberapa prinsip praktis yang bisa membantu Anda memilih aset yang tepat sebelum
+                menjalankan bot STC AutoTrade.
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[13px] font-bold text-[#1a1612] mb-2">
+                    1. Perhatikan Jam Trading Aktif
+                  </h3>
+                  <p className="text-[12px] text-[#6b6058] leading-relaxed">
+                    EUR/USD paling aktif saat sesi London dan New York overlap (20:00-23:00 WIB). Gold
+                    aktif sepanjang hari tapi paling bergerak saat New York buka. Crypto aktif 24 jam.
+                    Hindari trading aset forex di luar jam aktifnya karena spread melebar dan pergerakan
+                    sangat minimal.
+                  </p>
+                </div>
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[13px] font-bold text-[#1a1612] mb-2">
+                    2. Cek Profit Rate Sebelum Start
+                  </h3>
+                  <p className="text-[12px] text-[#6b6058] leading-relaxed">
+                    Profit rate ditampilkan di sebelah nama aset di dropdown. Pilih aset dengan profit
+                    rate yang masuk akal — terlalu rendah akan membuat susah profit meski win rate
+                    tinggi. Perhatikan bahwa profit rate bisa berubah sesuai kondisi pasar.
+                  </p>
+                </div>
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[13px] font-bold text-[#1a1612] mb-2">
+                    3. Mulai dengan 1 Aset, Kuasai Dulu
+                  </h3>
+                  <p className="text-[12px] text-[#6b6058] leading-relaxed">
+                    Jangan loncat-loncat antara banyak aset. Pilih satu aset (misalnya EUR/USD), pelajari
+                    polanya, coba berbagai mode bot di aset tersebut, dan catat hasilnya. Setelah
+                    konsisten profit, barulah eksplorasi ke aset lain. Fokus menghasilkan performa lebih
+                    baik dari diversifikasi aset yang prematur.
+                  </p>
+                </div>
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[13px] font-bold text-[#1a1612] mb-2">
+                    4. Hindari Aset Saat High-Impact News
+                  </h3>
+                  <p className="text-[12px] text-[#6b6058] leading-relaxed">
+                    Pengumuman NFP, keputusan suku bunga Fed, atau data CPI bisa membuat harga bergerak
+                    sangat drastis dalam hitungan detik. Dalam kondisi ini, hampir semua mode bot bisa
+                    menghasilkan sinyal yang salah. Hentikan bot sebelum news besar dan restart setelah
+                    volatilitas mereda (15-30 menit setelah rilis).
+                  </p>
+                </div>
+              </div>
+
+              <TipBox>
+                Gunakan fitur akun Demo untuk menguji kombinasi mode bot + aset tanpa risiko modal nyata.
+                Catat hasil sesi Demo di halaman History, analisis aset mana yang memberikan win rate
+                terbaik, lalu terapkan di akun Real.
+              </TipBox>
+            </section>
+
+            {/* Section 7 */}
+            <section>
+              <SectionLabel>Kesalahan Umum</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Kesalahan Umum dalam Memilih Aset dan Cara Menghindarinya
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Banyak trader pemula melakukan kesalahan yang sama berulang kali dalam memilih aset.
+                Kenali dan hindari pola ini sejak awal.
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    kesalahan: "Memilih aset berdasarkan 'feeling' atau saran random",
+                    solusi:
+                      "Pilih aset berdasarkan karakteristik yang sesuai dengan mode bot yang digunakan. EUR/USD untuk mode Indicator, Gold untuk Momentum, bukan berdasarkan rumor atau saran tanpa dasar.",
+                  },
+                  {
+                    kesalahan: "Trading aset forex saat pasar sepi tengah malam",
+                    solusi:
+                      "Perhatikan jam aktif setiap aset. Forex major paling optimal saat sesi London atau New York aktif. Trading saat sepi menghasilkan banyak false signal dan spread yang melebar.",
+                  },
+                  {
+                    kesalahan: "Ganti-ganti aset setiap sesi tanpa pola yang jelas",
+                    solusi:
+                      "Konsisten dengan 1-2 aset yang sudah Anda pelajari. Ganti aset hanya jika ada alasan jelas, bukan karena bosan atau frustrasi setelah loss.",
+                  },
+                  {
+                    kesalahan: "Trading crypto dengan modal yang sama seperti forex",
+                    solusi:
+                      "Alokasikan modal lebih kecil untuk crypto karena volatilitasnya lebih tinggi. Jika Anda trade EUR/USD dengan Rp 50.000 per order, pertimbangkan Rp 20.000-30.000 untuk crypto.",
+                  },
+                  {
+                    kesalahan: "Tidak memperhatikan profit rate sebelum mulai",
+                    solusi:
+                      "Selalu cek profit rate di dropdown sebelum memulai sesi. Profit rate berbeda tiap aset dan bisa berubah. Aset dengan profit rate terlalu rendah membuat strategi martingale lebih berisiko.",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.kesalahan}
+                    className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5"
+                  >
+                    <div className="flex gap-2 mb-2">
+                      <span className="text-[#ef4444] font-bold text-[13px] flex-shrink-0">✗</span>
+                      <p className="text-[13px] font-semibold text-[#1a1612]">{item.kesalahan}</p>
+                    </div>
+                    <div className="flex gap-2">
+                      <span className="text-[#22c55e] font-bold text-[13px] flex-shrink-0">✓</span>
+                      <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.solusi}</p>
                     </div>
                   </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Section 8 — FAQ */}
+            <section>
+              <SectionLabel>FAQ</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Pertanyaan Umum tentang Aset Trading di Stockity
+              </h2>
+              <div className="divide-y divide-[rgba(26,22,18,0.06)] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden">
+                {faqs.map((faq) => (
+                  <div key={faq.q} className="px-5 py-4">
+                    <p className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{faq.q}</p>
+                    <p className="text-[13px] text-[#6b6058] leading-relaxed">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Section 9 — Kesimpulan */}
+            <section>
+              <SectionLabel>Kesimpulan</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Pilih Aset yang Tepat, Optimalkan Performa Bot
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Semua aset di STC AutoTrade diambil real-time dari API Stockity — Forex, Komoditas,
+                Crypto, hingga Stock Indices. Tidak ada kategori OTC terpisah; semua tersedia dalam
+                satu dropdown yang sama. Kunci performa optimal adalah mencocokkan aset dengan mode
+                bot yang tepat dan memperhatikan jam aktif pasar.
+              </p>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-6">
+                Mulai dengan EUR/USD jika Anda pemula — paling stabil, spread kecil, dan paling banyak
+                dibahas secara teknikal. Gunakan akun Demo untuk menguji kombinasi aset dan mode bot
+                sebelum beralih ke akun Real dengan modal nyata.
+              </p>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Artikel Terkait</p>
+                <div className="space-y-2">
+                  {[
+                    {
+                      href: "/artikel/cara-setting-robot-stockity",
+                      label: "Cara Setting Robot Stockity — Panduan Lengkap Dashboard",
+                    },
+                    {
+                      href: "/artikel/cara-profit-trading-stockity",
+                      label: "Cara Profit Trading Stockity dengan Bot STC AutoTrade",
+                    },
+                    {
+                      href: "/artikel/modal-trading-stockity",
+                      label: "Modal Trading Stockity: Berapa yang Dibutuhkan?",
+                    },
+                  ].map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="flex items-center gap-2 text-[13px] text-[#3b82f6] hover:text-[#1d4ed8] no-underline transition-colors"
+                    >
+                      <span className="text-[10px]">→</span>
+                      {link.label}
+                    </Link>
+                  ))}
                 </div>
-              ))}
+              </div>
+            </section>
+
+            {/* CTA */}
+            <div className="bg-[#1a1612] rounded-2xl p-6 text-center">
+              <p className="text-[13px] text-white/60 mb-2">
+                Mulai trading dengan aset pilihan terbaik Anda
+              </p>
+              <h3 className="text-[18px] font-bold text-white mb-4">
+                Download STC AutoTrade — Coba Demo Gratis
+              </h3>
+              <a
+                href="/StcAutoTrade.apk"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#3b82f6] text-white text-[13px] font-semibold rounded-xl no-underline hover:bg-[#2563eb] transition-colors"
+              >
+                Download APK Gratis
+              </a>
             </div>
           </div>
-        </section>
+        </main>
 
-        {/* ── Section 08: FAQ ─────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>FAQ</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-6">Pertanyaan yang Sering Diajukan</h2>
-            <div className="divide-y divide-[rgba(26,22,18,0.06)] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden">
-              {[
-                {
-                  q: "Aset apa yang paling menguntungkan di Stockity?",
-                  a: "Tidak ada satu aset yang selalu paling menguntungkan. EUR/USD dan GBP/USD umumnya menawarkan payout tertinggi dengan spread ketat di jam sesi London dan New York. Untuk pemula, EUR/USD atau aset OTC populer adalah pilihan paling konsisten.",
-                },
-                {
-                  q: "Apakah bisa ganti aset di tengah sesi trading?",
-                  a: "Bisa, tapi tidak disarankan tanpa alasan kuat. Mengganti aset terlalu sering (asset hopping) menunjukkan ketidakdisiplinan strategi. Pilih 1-2 aset utama, pelajari karakteristiknya, dan fokus pada aset tersebut.",
-                },
-                {
-                  q: "Apa perbedaan aset OTC dan reguler di Stockity?",
-                  a: "Aset reguler mengikuti jam pasar internasional dan volume trading nyata. Aset OTC adalah simulasi platform yang aktif 24/7 termasuk akhir pekan. Payout OTC bisa sedikit lebih rendah dari aset reguler.",
-                },
-                {
-                  q: "Apakah crypto lebih menguntungkan dari forex di Stockity?",
-                  a: "Crypto menawarkan volatilitas lebih tinggi berarti potensi profit lebih besar — tapi juga risiko lebih besar. Untuk pemula, forex (EUR/USD) lebih disarankan karena pergerakan lebih dapat diprediksi.",
-                },
-                {
-                  q: "Bagaimana STC AutoTrade memilih aset terbaik?",
-                  a: "Mode AI di STC AutoTrade melakukan scan real-time terhadap semua aset di Stockity, menganalisis volatilitas, payout ratio, dan kondisi pasar saat ini, lalu otomatis memilih aset dengan peluang terbaik berdasarkan parameter yang Anda setting.",
-                },
-              ].map((faq) => (
-                <div key={faq.q} className="px-5 py-4">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{faq.q}</p>
-                  <p className="text-[13px] text-[#6b6058] leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Section 09: Kesimpulan ──────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Kesimpulan</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Ringkasan: Pilih Aset yang Tepat di Stockity</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Pemilihan aset yang tepat adalah fondasi strategi trading binary option yang sukses. Untuk pemula, EUR/USD atau USD/JPY di jam aktifnya adalah pilihan paling aman dan konsisten. Aset OTC ideal untuk trading di akhir pekan. Crypto hanya untuk trader yang sudah berpengalaman dengan manajemen risiko yang matang.
-            </p>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Yang paling penting: pilih satu atau dua aset, pelajari karakteristiknya secara mendalam, dan trading konsisten di aset tersebut. Kedalaman pemahaman satu aset jauh lebih berharga daripada trading semua aset secara superfisial.
-            </p>
-            <TipBox>
-              Gunakan mode demo STC AutoTrade untuk menguji performa di berbagai aset sebelum trading real. Catat win rate per aset, jam terbaik, dan kondisi pasar optimal untuk setiap aset pilihan Anda.
-            </TipBox>
-          </div>
-        </section>
-
-        {/* ── Internal Links ──────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Baca Juga</SectionLabel>
-            <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">Artikel Terkait</h2>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {[
-                { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot Stockity", desc: "Panduan konfigurasi martingale dan stop loss" },
-                { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading", desc: "Strategi profit konsisten di Stockity" },
-                { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Berapa modal yang dibutuhkan untuk mulai?" },
-              ].map((r) => (
-                <Link key={r.href} href={r.href} className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#3b82f6]/30 transition-colors">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
-                  <p className="text-[11px] text-[#6b6058]">{r.desc}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── CTA ─────────────────────────────────────────── */}
-        <section className="py-14 bg-[#1a1612]">
-          <div className="max-w-3xl mx-auto px-5 text-center">
-            <p className="text-[11px] font-semibold tracking-widest uppercase text-white/40 mb-4">Mulai Sekarang</p>
-            <h2 className="text-[24px] sm:text-[28px] font-bold text-white mb-3">Coba STC AutoTrade Gratis</h2>
-            <p className="text-[14px] text-white/60 mb-8 max-w-md mx-auto leading-relaxed">Download aplikasinya dan trading otomatis langsung dari Android. Atau akses versi web tanpa install.</p>
-            <div className="flex flex-wrap gap-3 justify-center">
-              <a href="/StcAutoTrade.apk" download className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline hover:bg-white/90 transition-colors">Download APK Android</a>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 border border-white/20 text-white text-sm font-semibold rounded-xl no-underline hover:bg-white/10 transition-colors">Buka Versi Web</a>
-            </div>
-          </div>
-        </section>
-
-        {/* ── Footer ──────────────────────────────────────── */}
         <footer className="py-8 bg-[#1a1612] border-t border-white/5">
           <div className="max-w-3xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-[13px] text-white/40">© 2026 STC AutoTrade. Hak cipta dilindungi.</p>
             <div className="flex gap-5">
-              <Link href="/" className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors">Beranda</Link>
-              <Link href="/artikel" className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors">Artikel</Link>
+              <Link
+                href="/"
+                className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors"
+              >
+                Beranda
+              </Link>
+              <Link
+                href="/artikel"
+                className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors"
+              >
+                Artikel
+              </Link>
             </div>
           </div>
         </footer>
-      </main>
+      </div>
     </>
   );
 }

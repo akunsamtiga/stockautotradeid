@@ -1,89 +1,80 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-
-/* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Cara Menghindari Loss di Stockity: Tips Anti Rugi Trading 2026",
+  title: "Cara Menghindari Loss di Stockity: Fitur SL, TP, Demo & Manajemen Risiko",
   description:
-    "Panduan cara menghindari loss di Stockity dengan manajemen risiko yang benar. Tips anti rugi binary option untuk trader pemula hingga menengah.",
+    "Panduan lengkap menghindari loss trading di Stockity dengan STC AutoTrade. Fitur Stop Loss harian, Stop Profit, Always Signal, akun Demo, History page, dan setting martingale yang tepat.",
   keywords: [
     "cara menghindari loss stockity",
-    "cara tidak loss di stockity",
-    "tips anti rugi binary option",
-    "manajemen risiko stockity",
-    "cara kelola kerugian stockity",
     "stop loss stockity",
-    "cara mengurangi loss trading",
-    "strategi anti rugi binary option",
-    "manajemen modal stockity",
-    "cara profit konsisten stockity",
+    "manajemen risiko trading binary option",
+    "always signal STC AutoTrade",
+    "akun demo stockity",
+    "cara cek win rate stockity",
+    "stop profit harian stockity",
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/cara-menghindari-loss-stockity",
   },
   openGraph: {
-    title: "Cara Menghindari Loss di Stockity: Tips Anti Rugi Trading 2026",
+    title: "Cara Menghindari Loss: SL Harian, Always Signal & Demo di STC AutoTrade 2026",
     description:
-      "Panduan cara menghindari loss di Stockity dengan manajemen risiko yang benar. Tips anti rugi binary option untuk trader pemula hingga menengah.",
+      "STC AutoTrade punya Stop Loss harian otomatis, Stop Profit, fitur Always Signal untuk recovery martingale, dan History page untuk analisis win rate per mode dan aset.",
     url: "https://stcautotrade.id/artikel/cara-menghindari-loss-stockity",
+    siteName: "STC AutoTrade",
+    locale: "id_ID",
     type: "article",
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [
-      {
-        url: "https://stcautotrade.id/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Cara Menghindari Loss di Stockity 2026",
-      },
-    ],
+    images: [{ url: "https://stcautotrade.id/og-image.png", width: 1200, height: 630, alt: "Manajemen Risiko STC AutoTrade — Stop Loss Always Signal" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cara Menghindari Loss di Stockity: Tips Anti Rugi Trading 2026",
+    title: "Cara Menghindari Loss di STC AutoTrade: SL Harian & Always Signal 2026",
     description:
-      "Panduan cara menghindari loss di Stockity dengan manajemen risiko yang benar. Tips anti rugi binary option untuk trader pemula hingga menengah.",
+      "Stop Loss harian otomatis, Stop Profit, Always Signal recovery martingale, Demo account, dan History page di STC AutoTrade untuk kelola risiko.",
     images: ["https://stcautotrade.id/og-image.png"],
   },
 };
 
-/* ── Structured Data ──────────────────────────────────────────── */
-
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Cara Menghindari Loss di Stockity: Tips Anti Rugi Trading 2026",
+  headline:
+    "Cara Menghindari Loss di Stockity: Fitur SL, TP, Demo & Manajemen Risiko",
   description:
-    "Panduan cara menghindari loss di Stockity dengan manajemen risiko yang benar. Tips anti rugi binary option untuk trader pemula hingga menengah.",
-  author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
+    "Panduan lengkap menghindari loss trading di Stockity menggunakan fitur-fitur STC AutoTrade v4.4.",
+  datePublished: "2025-05-21",
+  dateModified: "2026-06-07",
+  author: { "@type": "Organization", name: "STC AutoTrade" },
   publisher: {
     "@type": "Organization",
     name: "STC AutoTrade",
     logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
   },
-  datePublished: "2025-05-21",
-  dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/cara-menghindari-loss-stockity",
   },
-  keywords: "cara menghindari loss stockity, tips anti rugi binary option, manajemen risiko stockity, stop loss stockity",
 };
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: "https://stcautotrade.id" },
-    { "@type": "ListItem", position: 2, name: "Artikel", item: "https://stcautotrade.id/artikel" },
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://stcautotrade.id" },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Artikel",
+      item: "https://stcautotrade.id/artikel",
+    },
     {
       "@type": "ListItem",
       position: 3,
-      name: "Cara Menghindari Loss di Stockity",
+      name: "Cara Menghindari Loss Stockity",
       item: "https://stcautotrade.id/artikel/cara-menghindari-loss-stockity",
     },
   ],
@@ -95,48 +86,38 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Apakah normal loss saat trading binary option di Stockity?",
+      name: "Apakah Stop Loss harian di STC AutoTrade aktif otomatis?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya, sangat normal. Bahkan trader profesional mengalami loss 30-45% dari total trade mereka. Yang membedakan trader sukses bukan nol loss — tapi manajemen risiko yang memastikan profit kumulatif lebih besar dari loss kumulatif. Target win rate di atas 55% sudah cukup untuk profit jangka panjang.",
+        text: "Tidak otomatis aktif — Anda harus mengisi nilai Stop Loss saat mengkonfigurasi bot sebelum klik Start. Setelah diisi, bot akan berhenti otomatis saat total loss harian mencapai nilai SL yang diset. Jika SL dibiarkan kosong atau nol, bot tidak akan berhenti otomatis karena loss.",
       },
     },
     {
       "@type": "Question",
-      name: "Berapa loss harian yang masih wajar di Stockity?",
+      name: "Berapa nilai Stop Loss harian yang wajar?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Umumnya, loss harian di bawah 20-30% dari modal sesi dianggap masih wajar dan bisa di-recover. Loss lebih dari 30% dalam satu hari adalah sinyal untuk berhenti dan evaluasi. Gunakan fitur Stop Loss Harian di STC AutoTrade untuk otomatis membatasi kerugian harian.",
+        text: "Aturan umum: jangan set SL lebih dari 20-30% dari total modal yang dialokasikan untuk sesi itu. Misalnya jika Anda mengalokasikan Rp 200.000 untuk satu sesi, SL yang wajar adalah Rp 40.000-60.000. Ini melindungi modal utama dari kerugian besar dalam satu hari buruk.",
       },
     },
     {
       "@type": "Question",
-      name: "Cara recover cepat setelah loss besar di Stockity?",
+      name: "Bagaimana cara cek win rate di STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Cara paling berbahaya adalah mencoba recover dengan meningkatkan nominal secara drastis — ini hampir selalu memperburuk situasi. Cara yang benar: istirahat 24 jam minimum setelah loss besar, evaluasi penyebab loss, kembali dengan nominal lebih kecil dari biasanya, dan bangun kembali kepercayaan diri secara bertahap.",
+        text: "Buka halaman History di STC AutoTrade. Di sana tersedia statistik lengkap termasuk win rate keseluruhan, breakdown per mode strategi, dan breakdown per aset. Anda bisa menganalisis mana mode dan aset yang memberikan win rate terbaik berdasarkan riwayat trading aktual Anda.",
       },
     },
     {
       "@type": "Question",
-      name: "Apakah martingale aman untuk menghindari loss?",
+      name: "Apa itu fitur Always Signal di STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Martingale bukan strategi 'anti loss' — ini strategi recovery yang meningkatkan nominal setelah loss untuk menutup kerugian. Martingale efektif jika digunakan dengan setting yang tepat (multiplier tidak terlalu tinggi, max step dibatasi, stop loss aktif). Tanpa kontrol yang benar, martingale justru bisa mempercepat kerugian besar.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Bagaimana cara menggunakan Stop Loss di STC AutoTrade?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Buka STC AutoTrade → masuk ke menu Setting bot → aktifkan fitur Stop Loss Harian → masukkan nominal atau persentase loss maksimal yang Anda toleransi per hari. Saat total loss mencapai batas tersebut, bot otomatis berhenti dan tidak akan membuka order baru sampai Anda me-reset secara manual.",
+        text: "Always Signal adalah fitur martingale recovery otomatis yang memungkinkan bot langsung lanjut ke step berikutnya setelah loss tanpa menunggu sinyal baru. Bot terus recovery hingga win atau mencapai max steps yang dikonfigurasi. Fitur ini cocok untuk strategi martingale agresif tapi meningkatkan risiko bila loss beruntun panjang.",
       },
     },
   ],
 };
-
-/* ── Komponen Lokal ───────────────────────────────────────────── */
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -147,7 +128,15 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
+function InfoBox({
+  icon,
+  title,
+  children,
+}: {
+  icon: string;
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
@@ -177,10 +166,22 @@ function WarningBox({ children }: { children: React.ReactNode }) {
   );
 }
 
-function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: string; sub?: string }) {
+function StepCard({
+  n,
+  title,
+  desc,
+  sub,
+}: {
+  n: string;
+  title: string;
+  desc: string;
+  sub?: string;
+}) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{n}</div>
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">
+        {n}
+      </div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
@@ -190,494 +191,659 @@ function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: str
   );
 }
 
-/* ── Page ─────────────────────────────────────────────────────── */
-
 export default function CaraMenghindariLossStockityPage() {
+  const faqs = [
+    {
+      q: "Apakah Stop Loss harian di STC AutoTrade aktif otomatis?",
+      a: "Tidak otomatis aktif — Anda harus mengisi nilai Stop Loss saat mengkonfigurasi bot sebelum klik Start. Setelah diisi, bot akan berhenti otomatis saat total loss harian mencapai nilai SL. Jika SL dibiarkan kosong atau nol, bot tidak akan berhenti otomatis karena loss.",
+    },
+    {
+      q: "Berapa nilai Stop Loss harian yang wajar?",
+      a: "Aturan umum: jangan set SL lebih dari 20-30% dari total modal yang dialokasikan untuk sesi itu. Misalnya jika Anda mengalokasikan Rp 200.000, SL yang wajar adalah Rp 40.000-60.000. Ini melindungi modal utama dari kerugian besar dalam satu hari buruk.",
+    },
+    {
+      q: "Bagaimana cara cek win rate di STC AutoTrade?",
+      a: "Buka halaman History di STC AutoTrade. Di sana tersedia statistik lengkap termasuk win rate keseluruhan, breakdown per mode strategi, dan breakdown per aset. Anda bisa menganalisis mana mode dan aset yang memberikan win rate terbaik berdasarkan riwayat trading aktual.",
+    },
+    {
+      q: "Apa itu fitur Always Signal di STC AutoTrade?",
+      a: "Always Signal adalah fitur martingale recovery otomatis yang memungkinkan bot langsung lanjut ke step berikutnya setelah loss tanpa menunggu sinyal baru. Bot terus recovery hingga win atau mencapai max steps yang dikonfigurasi. Fitur ini meningkatkan risiko bila loss beruntun panjang.",
+    },
+  ];
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-      <main className="min-h-screen bg-[#f9fafb]">
-        {/* ── Nav ─────────────────────────────────────────── */}
+      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+        {/* Navbar */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#3b82f6]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">
+                STC <span className="text-[#3b82f6]">AutoTrade</span>
+              </span>
             </Link>
             <div className="flex items-center gap-3">
-              <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
-              <a href="/StcAutoTrade.apk" download className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline">Download APK</a>
+              <Link
+                href="/artikel"
+                className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline"
+              >
+                Semua Artikel
+              </Link>
+              <a
+                href="/StcAutoTrade.apk"
+                download
+                className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline"
+              >
+                Download APK
+              </a>
             </div>
           </div>
         </nav>
 
-        {/* ── Article Header ──────────────────────────────── */}
-        <div className="pt-28 pb-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            {/* Breadcrumb */}
-            <nav aria-label="breadcrumb" className="mb-6">
-              <ol className="flex items-center gap-2 text-[12px] text-[#6b6058]">
-                <li><Link href="/" className="hover:text-[#1a1612] no-underline transition-colors">Beranda</Link></li>
-                <li className="text-[#1a1612]/20">/</li>
-                <li><Link href="/artikel" className="hover:text-[#1a1612] no-underline transition-colors">Artikel</Link></li>
-                <li className="text-[#1a1612]/20">/</li>
-                <li className="text-[#1a1612] font-medium" aria-current="page">Cara Menghindari Loss Stockity</li>
-              </ol>
-            </nav>
-            {/* Badge */}
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eff6ff] text-[#1d4ed8] text-[11px] font-semibold mb-4">Manajemen Risiko</span>
-            {/* H1 */}
-            <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-[1.2] mb-4">
-              Cara Menghindari Loss di Stockity: Tips Anti Rugi Trading 2026
-            </h1>
-            {/* Description */}
-            <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
-              Panduan cara menghindari loss di Stockity dengan manajemen risiko yang benar. Tips anti rugi binary option untuk trader pemula hingga menengah — termasuk cara setting stop loss otomatis di STC AutoTrade.
-            </p>
-            {/* Stats grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[
-                { v: "Stop Loss", l: "Fitur Wajib" },
-                { v: "2-5%", l: "Risiko Per Trade" },
-                { v: "7", l: "Tips Kunci" },
-                { v: "Auto", l: "Stop di Bot" },
-              ].map((s) => (
-                <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-3 py-3 text-center">
-                  <p className="text-[18px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
-                  <p className="text-[11px] text-[#6b6058]">{s.l}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* ── Section 01: Mengapa Trader Loss ─────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>01 · Akar Masalah</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Mengapa Trader Bisa Loss Terus di Stockity?</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Sebelum bisa menghindari loss, Anda perlu memahami <em>mengapa</em> loss terjadi. Kebanyakan trader yang loss secara konsisten bukan karena pasar yang tidak adil atau nasib buruk — tapi karena tiga penyebab utama yang bisa dicegah.
-            </p>
-            <div className="space-y-3 mb-4">
-              {[
-                {
-                  no: "1",
-                  judul: "Psikologi Trading yang Buruk",
-                  deskripsi: "Fear of missing out (FOMO) mendorong entry terburu-buru. Greed mendorong trading dengan nominal terlalu besar. Tilt (frustrasi setelah loss) mendorong revenge trading. Semua ini menghasilkan keputusan irrasional yang merugikan.",
-                  icon: "🧠",
-                  color: "bg-[#fef2f2] border-[#fecaca]",
-                },
-                {
-                  no: "2",
-                  judul: "Tidak Punya Sistem Trading yang Jelas",
-                  deskripsi: "Trading tanpa strategi yang terdefinisi jelas sama dengan berjudi. Tanpa aturan entry, exit, manajemen modal, dan stop loss yang tertulis — keputusan trading menjadi subjektif dan tidak konsisten.",
-                  icon: "📋",
-                  color: "bg-[#fffbeb] border-[#fde68a]",
-                },
-                {
-                  no: "3",
-                  judul: "Overtrading",
-                  deskripsi: "Membuka terlalu banyak posisi dalam waktu singkat, meningkatkan nominal setelah loss secara emosional, atau terus trading meski kondisi pasar tidak mendukung. Overtrading menguras modal lebih cepat dari seharusnya.",
-                  icon: "⚡",
-                  color: "bg-[#f5f3ff] border-[#ddd6fe]",
-                },
-              ].map((item) => (
-                <div key={item.no} className={`${item.color} border rounded-xl px-4 py-4`}>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xl">{item.icon}</span>
-                    <p className="text-[13px] font-semibold text-[#1a1612]">{item.judul}</p>
-                  </div>
-                  <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.deskripsi}</p>
-                </div>
-              ))}
-            </div>
-            <InfoBox icon="💡" title="Loss itu normal — yang tidak normal adalah loss tanpa sistem">
-              Bahkan trader profesional mengalami loss 35-45% dari total trade. Perbedaannya: mereka punya sistem yang memastikan profit kumulatif lebih besar dari loss kumulatif. Tujuan bukan zero loss — tujuannya adalah memaksimalkan profit dan meminimalkan dampak loss.
-            </InfoBox>
-          </div>
-        </section>
-
-        {/* ── Section 02: Manajemen Modal ──────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>02 · Manajemen Modal</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Manajemen Modal: Aturan 1-5% Per Trade</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Aturan paling fundamental dalam manajemen risiko binary option adalah: <strong>jangan pernah mempertaruhkan lebih dari 1-5% total modal Anda dalam satu trade tunggal.</strong> Ini bukan aturan yang membatasi profit — ini adalah aturan yang memastikan Anda bisa bertahan cukup lama untuk menghasilkan profit.
-            </p>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Logikanya sederhana: jika Anda trading dengan 1% per trade dan mengalami 10 loss berturut-turut (yang sangat tidak umum), Anda masih memiliki 90% modal. Jika Anda trading dengan 20% per trade dan loss 5x berturut-turut, modal sudah hampir habis.
-            </p>
-            <div className="space-y-3 mb-4">
-              {[
-                { modal: "Rp 500.000", persen: "2%", nominal: "Rp 10.000", max_loss: "Anda bisa bertahan 50 loss berturut-turut" },
-                { modal: "Rp 500.000", persen: "5%", nominal: "Rp 25.000", max_loss: "Anda bisa bertahan 20 loss berturut-turut" },
-                { modal: "Rp 500.000", persen: "20%", nominal: "Rp 100.000", max_loss: "Hanya butuh 5 loss berturut-turut untuk habis" },
-              ].map((item, i) => (
-                <div key={i} className={`flex items-center gap-3 p-3 rounded-xl border ${i === 2 ? "bg-[#fef2f2] border-[#fecaca]" : "bg-white border-[rgba(26,22,18,0.07)]"}`}>
-                  <div className="flex-1">
-                    <div className="flex gap-2 flex-wrap mb-1">
-                      <span className="text-[12px] font-semibold text-[#1a1612]">Modal: {item.modal}</span>
-                      <span className="text-[12px] text-[#6b6058]">|</span>
-                      <span className="text-[12px] font-semibold text-[#1d4ed8]">{item.persen} = {item.nominal}/trade</span>
-                    </div>
-                    <p className={`text-[11px] font-medium ${i === 2 ? "text-[#dc2626]" : "text-[#15803d]"}`}>{item.max_loss}</p>
-                  </div>
-                  <span className="text-xl">{i === 2 ? "❌" : "✅"}</span>
-                </div>
-              ))}
-            </div>
-            <TipBox>
-              Untuk pemula, gunakan 1-3% per trade. Untuk martingale, hitung total exposure maksimal semua step — bukan hanya langkah pertama. Pastikan total maksimal martingale tidak lebih dari 15-20% total modal dalam satu sesi.
-            </TipBox>
-          </div>
-        </section>
-
-        {/* ── Section 03: Stop Loss di STC AutoTrade ──────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>03 · Stop Loss Otomatis</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Fitur Stop Loss Harian di STC AutoTrade: Wajib Aktif</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              STC AutoTrade memiliki fitur <strong>Stop Loss Harian</strong> yang secara otomatis menghentikan semua aktivitas bot ketika total kerugian harian Anda mencapai batas yang sudah Anda tentukan sebelumnya. Ini adalah fitur paling penting dalam aplikasi — dan harus selalu diaktifkan sebelum bot mulai beroperasi.
-            </p>
-            <div className="space-y-3 mb-4">
-              <StepCard
-                n="1"
-                title="Cara Mengaktifkan Stop Loss Harian"
-                desc="Buka STC AutoTrade → masuk menu Setting → cari opsi Stop Loss Harian → aktifkan toggle → masukkan nominal atau persentase loss maksimal per hari. Simpan setting sebelum menjalankan bot."
-                sub="Setting yang disarankan: 20-25% dari modal sesi harian."
-              />
-              <StepCard
-                n="2"
-                title="Cara Menentukan Nilai Stop Loss yang Tepat"
-                desc="Stop loss terlalu ketat (5-10%) bisa menyebabkan bot berhenti terlalu cepat saat drawdown normal. Stop loss terlalu longgar (50%+) tidak memberikan proteksi bermakna. 20-25% adalah sweet spot untuk mayoritas strategi."
-                sub="Contoh: modal sesi Rp 500K → stop loss Rp 100K-125K."
-              />
-              <StepCard
-                n="3"
-                title="Apa yang Terjadi Saat Stop Loss Tercapai?"
-                desc="Bot otomatis berhenti membuka order baru. Bot tidak akan melanjutkan trading sampai Anda me-reset secara manual di hari berikutnya. Ini mencegah bot terus trading saat kondisi pasar sedang tidak mendukung strategi."
-                sub="Jangan override stop loss! Biarkan bot berhenti dan evaluasi hari itu."
-              />
-            </div>
-            <WarningBox>
-              Jangan pernah menonaktifkan atau menaikkan stop loss di tengah sesi trading karena ingin terus trading setelah batas tercapai. Ini adalah bentuk revenge trading dengan bot — dan hampir selalu memperburuk kerugian hari itu.
-            </WarningBox>
-          </div>
-        </section>
-
-        {/* ── Section 04: Kapan Harus Berhenti ────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>04 · Tanda Harus Berhenti</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kapan Harus Berhenti Trading? Kenali Tanda-Tandanya</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Mengetahui kapan harus berhenti trading adalah skill yang sama pentingnya dengan mengetahui kapan harus masuk. Banyak kerugian besar terjadi bukan di awal sesi — tapi saat trader memaksakan diri untuk terus trading meski kondisi tidak mendukung.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-3 mb-4">
-              {[
-                {
-                  tanda: "Stop Loss harian sudah tercapai",
-                  aksi: "Berhenti trading hari itu. Tanpa kecuali.",
-                  level: "KRITIS",
-                  color: "bg-[#fef2f2] border-[#fecaca] text-[#dc2626]",
-                },
-                {
-                  tanda: "Win rate drop drastis dalam 1 jam",
-                  aksi: "Istirahat 30-60 menit. Evaluasi kondisi pasar.",
-                  level: "PERLU PERHATIAN",
-                  color: "bg-[#fffbeb] border-[#fde68a] text-[#d97706]",
-                },
-                {
-                  tanda: "Merasa emosional / frustrasi",
-                  aksi: "Berhenti trading. Tidak ada yang lebih mahal dari trading saat emosi.",
-                  level: "KRITIS",
-                  color: "bg-[#fef2f2] border-[#fecaca] text-[#dc2626]",
-                },
-                {
-                  tanda: "Pasar sangat choppy / tidak ada tren",
-                  aksi: "Tunda trading. Tunggu sesi yang lebih jelas.",
-                  level: "DISARANKAN BERHENTI",
-                  color: "bg-[#fffbeb] border-[#fde68a] text-[#d97706]",
-                },
-                {
-                  tanda: "Target profit harian sudah tercapai",
-                  aksi: "Berhenti. Rakus adalah musuh terbesar trader.",
-                  level: "WAJIB BERHENTI",
-                  color: "bg-[#f0fdf4] border-[#bbf7d0] text-[#15803d]",
-                },
-                {
-                  tanda: "Sudah trading lebih dari 3-4 jam",
-                  aksi: "Kelelahan menurunkan kualitas keputusan. Istirahat.",
-                  level: "DISARANKAN",
-                  color: "bg-[#eff6ff] border-[#bfdbfe] text-[#1d4ed8]",
-                },
-              ].map((item) => (
-                <div key={item.tanda} className={`${item.color} border rounded-xl px-4 py-3`}>
-                  <span className={`text-[10px] font-bold mb-1 block`}>{item.level}</span>
-                  <p className="text-[12px] font-semibold text-[#1a1612] mb-1">{item.tanda}</p>
-                  <p className="text-[12px] text-[#6b6058]">{item.aksi}</p>
-                </div>
-              ))}
-            </div>
-            <InfoBox icon="🛑" title="Jadwal Istirahat adalah Bagian dari Strategi">
-              Trader profesional punya jadwal trading yang terstruktur — misalnya trading 2 jam, istirahat 1 jam, trading 2 jam lagi. Jeda ini membantu menjaga fokus dan mencegah keputusan impulsif akibat kelelahan mental.
-            </InfoBox>
-          </div>
-        </section>
-
-        {/* ── Section 05: Review Riwayat Trading ──────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>05 · Analisis Penyebab Loss</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Analisis Penyebab Loss: Review Riwayat Trading di STC AutoTrade</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Trader yang tidak belajar dari loss akan terus mengulang pola yang sama. STC AutoTrade menyimpan riwayat semua trade yang telah dieksekusi — manfaatkan data ini untuk mengidentifikasi pola loss dan mengoptimalkan strategi Anda.
-            </p>
-            <div className="space-y-3 mb-4">
-              <StepCard
-                n="1"
-                title="Review Riwayat Trade Harian"
-                desc="Setiap akhir sesi trading, buka riwayat trade di STC AutoTrade. Lihat: berapa trade yang menang vs kalah, jam berapa loss terbanyak terjadi, dan di aset mana win rate paling rendah."
-                sub="Lakukan ini setiap hari — konsistensi review sama pentingnya dengan konsistensi trading."
-              />
-              <StepCard
-                n="2"
-                title="Identifikasi Pola Loss"
-                desc="Cari pola: apakah loss terbanyak di jam tertentu (mungkin sesi pasar sepi)? Di aset tertentu? Di kondisi pasar tertentu? Pola yang teridentifikasi bisa diatasi dengan penyesuaian setting bot."
-                sub="Contoh: jika loss banyak di jam 10-12 WIB, pertimbangkan tidak mengaktifkan bot di jam tersebut."
-              />
-              <StepCard
-                n="3"
-                title="Catat di Trading Journal"
-                desc="Simpan catatan harian: tanggal, total trade, win/loss, nominal, kondisi pasar, dan observasi Anda. Trading journal adalah alat pengembangan diri paling efektif yang jarang digunakan trader pemula."
-                sub="Bahkan catatan sederhana di Notes HP sudah sangat membantu."
-              />
-            </div>
-            <TipBox>
-              Data dari 100+ trade memberikan gambaran yang akurat tentang performa strategi Anda. Jangan mengubah strategi hanya berdasarkan 10-20 trade — itu terlalu sedikit untuk mengambil kesimpulan yang valid secara statistik.
-            </TipBox>
-          </div>
-        </section>
-
-        {/* ── Section 06: Recovery setelah Loss ───────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>06 · Strategi Recovery</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Strategi Recovery setelah Loss: Martingale vs Flat Bet</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Setelah mengalami loss besar, banyak trader ingin "recover" secepat mungkin. Ada dua pendekatan utama — masing-masing dengan kelebihan dan risiko tersendiri:
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-4">
-                <p className="text-[12px] font-bold text-[#1a1612] mb-2">Strategi Martingale</p>
-                <p className="text-[12px] text-[#6b6058] leading-relaxed mb-3">Meningkatkan nominal trade setelah setiap loss untuk memulihkan kerugian dalam satu trade win. Efektif jika dikontrol ketat — berbahaya jika tanpa batas.</p>
-                <div className="space-y-1">
-                  <p className="text-[11px] text-[#15803d]">+ Recovery cepat saat win</p>
-                  <p className="text-[11px] text-[#15803d]">+ Secara matematis efisien</p>
-                  <p className="text-[11px] text-[#dc2626]">- Risiko tinggi jika loss streak panjang</p>
-                  <p className="text-[11px] text-[#dc2626]">- Membutuhkan modal buffer yang cukup</p>
-                </div>
-              </div>
-              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-4">
-                <p className="text-[12px] font-bold text-[#1a1612] mb-2">Strategi Flat Bet</p>
-                <p className="text-[12px] text-[#6b6058] leading-relaxed mb-3">Tetap menggunakan nominal sama di setiap trade, tanpa peduli hasil sebelumnya. Recovery lebih lambat tapi risiko terkontrol penuh — cocok setelah loss besar.</p>
-                <div className="space-y-1">
-                  <p className="text-[11px] text-[#15803d]">+ Risiko per sesi sangat terkontrol</p>
-                  <p className="text-[11px] text-[#15803d]">+ Tidak membutuhkan modal besar</p>
-                  <p className="text-[11px] text-[#dc2626]">- Recovery lebih lambat</p>
-                  <p className="text-[11px] text-[#dc2626]">- Membutuhkan win rate lebih tinggi</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-4 mb-4">
-              <p className="text-[12px] font-semibold text-[#1a1612] mb-2">Rekomendasi Setelah Loss Besar:</p>
-              <ol className="space-y-1.5">
-                {[
-                  "Istirahat minimal 24 jam setelah loss besar",
-                  "Kembali dengan nominal 50% dari biasanya",
-                  "Gunakan flat bet selama 3-5 hari pertama",
-                  "Kembali ke martingale hanya setelah win rate stabil",
-                  "Evaluasi penyebab loss sebelum kembali trading",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-[12px] text-[#6b6058]">
-                    <span className="w-5 h-5 rounded-full bg-[#dbeafe] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8] flex-shrink-0">{i + 1}</span>
-                    {item}
-                  </li>
-                ))}
-              </ol>
-            </div>
-            <WarningBox>
-              Jangan mencoba recover kerugian besar dalam satu hari dengan melipatgandakan nominal secara drastis. Ini adalah bentuk gambling, bukan trading. "Revenge trading" adalah penyebab nomor satu loss besar yang menguras akun.
-            </WarningBox>
-          </div>
-        </section>
-
-        {/* ── Section 07: 7 Kebiasaan Trader Profit ───────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>07 · Kebiasaan Trader Sukses</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">7 Kebiasaan Trader yang Selalu Profit di Stockity</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Berikut adalah tujuh kebiasaan konkret yang membedakan trader yang konsisten profit dari yang terus rugi:
-            </p>
-            <div className="space-y-3">
-              {[
-                {
-                  no: "1",
-                  kebiasaan: "Punya Target Profit Harian yang Realistis",
-                  detail: "Tetapkan target profit harian sebelum mulai trading — misalnya 3-5% dari modal. Saat target tercapai, berhenti dan tidak boleh lanjut. Disiplin ini mencegah overtrading saat sedang 'panas'.",
-                },
-                {
-                  no: "2",
-                  kebiasaan: "Selalu Aktifkan Stop Loss Sebelum Bot Mulai",
-                  detail: "Ini bukan opsional. Stop loss harian adalah jaring pengaman yang melindungi modal dari kerusakan parah. Trader sukses selalu setting stop loss sebelum bot mulai, bukan setelah mulai loss.",
-                },
-                {
-                  no: "3",
-                  kebiasaan: "Konsisten di Satu Strategi, Tidak Melompat-lompat",
-                  detail: "Trader sukses memilih satu strategi, mengujinya dengan disiplin selama berminggu-minggu, dan mengoptimalkannya secara bertahap. Bukan mencoba strategi baru setiap hari.",
-                },
-                {
-                  no: "4",
-                  kebiasaan: "Trading di Jam yang Sama Setiap Hari",
-                  detail: "Pasar memiliki karakter berbeda di jam berbeda. Dengan trading di jam yang sama, Anda membangun pemahaman mendalam tentang karakteristik pasar di jam tersebut dan bisa beradaptasi lebih cepat.",
-                },
-                {
-                  no: "5",
-                  kebiasaan: "Review Trading Journal Setiap Malam",
-                  detail: "Catat semua trade, evaluasi apa yang berjalan baik dan apa yang buruk. Identifikasi pola dan lakukan penyesuaian kecil secara bertahap. Trader tanpa trading journal belajar jauh lebih lambat.",
-                },
-                {
-                  no: "6",
-                  kebiasaan: "Tidak Trading Saat Kondisi Emosional",
-                  detail: "Setelah pertengkaran, stres pekerjaan, kelelahan fisik, atau euforia berlebihan setelah profit besar — jangan trading. Emosi adalah musuh terbesar keputusan rasional dalam trading.",
-                },
-                {
-                  no: "7",
-                  kebiasaan: "Selalu Mulai dengan Demo untuk Strategi Baru",
-                  detail: "Setiap kali ingin mencoba strategi baru, setting baru, atau aset baru — uji dulu di mode demo selama minimal 1-2 minggu. Jangan pernah langsung ujicoba di akun real.",
-                },
-              ].map((item) => (
-                <div key={item.no} className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-                  <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{item.no}</div>
-                  <div className="pt-0.5">
-                    <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{item.kebiasaan}</p>
-                    <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.detail}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Section 08: FAQ ─────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>FAQ</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-6">Pertanyaan yang Sering Diajukan</h2>
-            <div className="divide-y divide-[rgba(26,22,18,0.06)] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden">
-              {[
-                {
-                  q: "Apakah normal loss saat trading binary option di Stockity?",
-                  a: "Ya, sangat normal. Bahkan trader profesional mengalami loss 30-45% dari total trade. Yang membedakan trader sukses bukan nol loss — tapi manajemen risiko yang memastikan profit kumulatif lebih besar dari loss kumulatif. Target win rate di atas 55% sudah cukup untuk profit jangka panjang.",
-                },
-                {
-                  q: "Berapa loss harian yang masih wajar di Stockity?",
-                  a: "Umumnya, loss harian di bawah 20-30% dari modal sesi dianggap masih wajar dan bisa di-recover. Loss lebih dari 30% dalam satu hari adalah sinyal untuk berhenti dan evaluasi. Gunakan fitur Stop Loss Harian di STC AutoTrade untuk otomatis membatasi kerugian harian.",
-                },
-                {
-                  q: "Cara recover cepat setelah loss besar di Stockity?",
-                  a: "Cara paling berbahaya adalah mencoba recover dengan meningkatkan nominal secara drastis. Cara yang benar: istirahat 24 jam minimum, evaluasi penyebab loss, kembali dengan nominal lebih kecil dari biasanya, dan bangun kembali kepercayaan diri secara bertahap.",
-                },
-                {
-                  q: "Apakah martingale aman untuk menghindari loss?",
-                  a: "Martingale bukan strategi 'anti loss' — ini strategi recovery yang efektif jika digunakan dengan setting tepat (multiplier tidak terlalu tinggi, max step dibatasi, stop loss aktif). Tanpa kontrol yang benar, martingale justru bisa mempercepat kerugian besar.",
-                },
-                {
-                  q: "Bagaimana cara menggunakan Stop Loss di STC AutoTrade?",
-                  a: "Buka STC AutoTrade → masuk menu Setting bot → aktifkan fitur Stop Loss Harian → masukkan nominal atau persentase loss maksimal per hari. Saat total loss mencapai batas tersebut, bot otomatis berhenti dan tidak akan membuka order baru sampai Anda me-reset secara manual.",
-                },
-              ].map((faq) => (
-                <div key={faq.q} className="px-5 py-4">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{faq.q}</p>
-                  <p className="text-[13px] text-[#6b6058] leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Section 09: Kesimpulan ──────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Kesimpulan</SectionLabel>
-            <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Ringkasan: Cara Menghindari Loss di Stockity</h2>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Menghindari loss secara total di binary option adalah hal yang tidak mungkin — dan bukan tujuan yang tepat. Tujuan yang tepat adalah mengelola loss agar tidak menghancurkan modal, dan memastikan profit kumulatif selalu lebih besar dari loss kumulatif dalam jangka panjang.
-            </p>
-            <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
-              Tiga kunci utama: manajemen modal yang ketat (1-5% per trade), stop loss harian yang selalu aktif di STC AutoTrade, dan disiplin psikologi untuk berhenti saat kondisi tidak mendukung. Ketiga elemen ini, jika diterapkan secara konsisten, sudah cukup untuk mengubah performa trading Anda secara dramatis.
-            </p>
-            <TipBox>
-              Mulai terapkan stop loss harian di STC AutoTrade mulai sesi trading Anda berikutnya. Tetapkan batas 20-25% dari modal sesi dan patuhi tanpa pengecualian. Disiplin ini saja bisa menyelamatkan modal Anda dari banyak situasi merugikan.
-            </TipBox>
-            <div className="mt-4">
-              <WarningBox>
-                Disclaimer: Trading binary option mengandung risiko kerugian finansial yang signifikan. Artikel ini bersifat edukatif dan tidak merupakan saran investasi. Gunakan hanya dana yang siap Anda tanggung risikonya dan selalu mulai dari mode demo.
-              </WarningBox>
-            </div>
-          </div>
-        </section>
-
-        {/* ── Internal Links ──────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Baca Juga</SectionLabel>
-            <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">Artikel Terkait</h2>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {[
-                { href: "/artikel/strategi-martingale-stockity", title: "Strategi Martingale Stockity", desc: "Cara kerja martingale dan setting yang aman" },
-                { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Berapa modal yang dibutuhkan untuk mulai?" },
-                { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading", desc: "Strategi profit konsisten di Stockity" },
-              ].map((r) => (
-                <Link key={r.href} href={r.href} className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#3b82f6]/30 transition-colors">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
-                  <p className="text-[11px] text-[#6b6058]">{r.desc}</p>
+        <main className="pt-14">
+          {/* Hero */}
+          <div className="bg-white border-b border-[rgba(26,22,18,0.06)]">
+            <div className="max-w-3xl mx-auto px-5 py-10">
+              <nav className="flex items-center gap-2 text-[12px] text-[#6b6058] mb-6">
+                <Link href="/" className="hover:text-[#1a1612] no-underline transition-colors">
+                  Beranda
                 </Link>
-              ))}
+                <span className="text-[#1a1612]/20">/</span>
+                <Link
+                  href="/artikel"
+                  className="hover:text-[#1a1612] no-underline transition-colors"
+                >
+                  Artikel
+                </Link>
+                <span className="text-[#1a1612]/20">/</span>
+                <span className="text-[#1a1612]/60">Cara Menghindari Loss Stockity</span>
+              </nav>
+
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#eff6ff] border border-[#bfdbfe] rounded-full mb-5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6]" />
+                <span className="text-[11px] font-semibold text-[#1d4ed8] tracking-wide uppercase">
+                  Manajemen Risiko
+                </span>
+              </div>
+
+              <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-tight mb-4">
+                Cara Menghindari Loss di Stockity:{" "}
+                <span className="text-[#3b82f6]">SL, TP, Demo, dan Fitur Proteksi STC AutoTrade</span>
+              </h1>
+              <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
+                Tidak ada bot yang 100% profit — loss adalah bagian dari trading. Yang membedakan
+                trader sukses adalah kemampuan mengelola loss, bukan menghindarinya sepenuhnya. STC
+                AutoTrade v4.4 menyediakan beberapa fitur penting untuk membantu Anda mengelola risiko:
+                Stop Loss harian, Stop Profit, Always Signal, akun Demo, dan History page.
+              </p>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {[
+                  { v: "SL/TP", l: "Stop Otomatis" },
+                  { v: "Demo", l: "Tanpa Risiko" },
+                  { v: "History", l: "Analisis Mandiri" },
+                  { v: "Always Signal", l: "Recovery Martingale" },
+                ].map((s) => (
+                  <div
+                    key={s.l}
+                    className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center"
+                  >
+                    <p className="text-[16px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
+                    <p className="text-[11px] text-[#6b6058]">{s.l}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </section>
 
-        {/* ── CTA ─────────────────────────────────────────── */}
-        <section className="py-14 bg-[#1a1612]">
-          <div className="max-w-3xl mx-auto px-5 text-center">
-            <p className="text-[11px] font-semibold tracking-widest uppercase text-white/40 mb-4">Mulai Sekarang</p>
-            <h2 className="text-[24px] sm:text-[28px] font-bold text-white mb-3">Coba STC AutoTrade Gratis</h2>
-            <p className="text-[14px] text-white/60 mb-8 max-w-md mx-auto leading-relaxed">Download aplikasinya dan trading otomatis langsung dari Android. Atau akses versi web tanpa install.</p>
-            <div className="flex flex-wrap gap-3 justify-center">
-              <a href="/StcAutoTrade.apk" download className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline hover:bg-white/90 transition-colors">Download APK Android</a>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 border border-white/20 text-white text-sm font-semibold rounded-xl no-underline hover:bg-white/10 transition-colors">Buka Versi Web</a>
+          <div className="max-w-3xl mx-auto px-5 py-10 space-y-14">
+            {/* Section 1 */}
+            <section>
+              <SectionLabel>Realita Bot Trading</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Mengapa Bot Pun Bisa Loss? Ekspektasi yang Realistis
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Banyak pengguna baru STC AutoTrade berharap bot akan selalu profit. Ini adalah
+                ekspektasi yang perlu diluruskan sejak awal. Bot trading — sekompleks apapun
+                algoritmanya — beroperasi berdasarkan pola historis dan indikator teknikal. Pasar
+                tidak selalu mengikuti pola yang diprediksi.
+              </p>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Ada hari-hari di mana kondisi pasar sangat tidak mendukung analisis bot: volatilitas
+                ekstrem mendadak, berita besar yang mengubah sentimen tiba-tiba, atau pasar yang
+                bergerak acak tanpa tren. Dalam kondisi ini, bahkan bot dengan win rate 60% bisa
+                mengalami loss streak yang signifikan.
+              </p>
+
+              <div className="grid sm:grid-cols-3 gap-4 mb-5">
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4 text-center">
+                  <p className="text-[20px] font-bold text-[#3b82f6] mb-1">55-65%</p>
+                  <p className="text-[11px] text-[#6b6058]">Win rate wajar untuk bot binary option</p>
+                </div>
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4 text-center">
+                  <p className="text-[20px] font-bold text-[#f59e0b] mb-1">5-10</p>
+                  <p className="text-[11px] text-[#6b6058]">Loss beruntun bisa terjadi di hari buruk</p>
+                </div>
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4 text-center">
+                  <p className="text-[20px] font-bold text-[#22c55e] mb-1">SL/TP</p>
+                  <p className="text-[11px] text-[#6b6058]">Satu-satunya proteksi yang bisa Anda kontrol</p>
+                </div>
+              </div>
+
+              <InfoBox icon="🧠" title="Mindset yang Benar untuk Trading Bot">
+                Fokus bukan pada menghindari semua loss, tapi pada memastikan total profit dalam jangka
+                panjang lebih besar dari total loss. SL/TP harian adalah alat utama untuk mencapai ini —
+                batasi kerugian hari buruk dan kunci profit hari baik.
+              </InfoBox>
+            </section>
+
+            {/* Section 2 */}
+            <section>
+              <SectionLabel>Stop Loss Harian</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Fitur Stop Loss Harian di STC AutoTrade: Cara Setting dan Manfaatnya
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Stop Loss (SL) harian adalah fitur paling penting untuk manajemen risiko di STC
+                AutoTrade. Ini menentukan batas maksimum kerugian dalam satu sesi — ketika tercapai,
+                bot berhenti otomatis tanpa perlu Anda pantau secara manual.
+              </p>
+
+              <div className="space-y-3 mb-6">
+                <StepCard
+                  n="1"
+                  title="Buka Dashboard dan Konfigurasi Bot"
+                  desc="Sebelum menekan Start, Anda akan melihat field 'Stop Loss' di bagian pengaturan bot. Ini adalah tempat Anda mengisi nilai SL dalam Rupiah."
+                  sub="SL harus diisi SEBELUM bot dijalankan"
+                />
+                <StepCard
+                  n="2"
+                  title="Isi Nilai Stop Loss"
+                  desc="Masukkan angka maksimum kerugian yang Anda toleransi untuk sesi ini. Misalnya: Rp 50.000 artinya bot akan berhenti otomatis setelah total loss mencapai Rp 50.000."
+                  sub="Rekomendasi: 20-30% dari modal yang dialokasikan sesi ini"
+                />
+                <StepCard
+                  n="3"
+                  title="Bot Berhenti Otomatis Saat SL Tercapai"
+                  desc="Ketika akumulasi loss harian menyentuh nilai SL yang diset, bot langsung berhenti tanpa eksekusi order baru. Anda mendapat notifikasi bahwa SL telah tercapai."
+                  sub="Tidak perlu monitor manual — bot handle sendiri"
+                />
+                <StepCard
+                  n="4"
+                  title="Evaluasi Sebelum Restart"
+                  desc="Setelah SL tercapai, jangan langsung restart bot. Evaluasi kondisi pasar, cek History untuk memahami mengapa loss beruntun terjadi, baru putuskan apakah lanjut atau istirahat hari ini."
+                  sub="Hari buruk = istirahat hari itu, lebih aman"
+                />
+              </div>
+
+              <TipBox>
+                Stop Loss harian adalah satu-satunya jaring pengaman yang benar-benar bisa Anda kontrol.
+                Jangan pernah menjalankan bot tanpa mengisi SL — tanpa SL, satu hari buruk bisa
+                menguras sebagian besar modal Anda.
+              </TipBox>
+            </section>
+
+            {/* Section 3 */}
+            <section>
+              <SectionLabel>Stop Profit Harian</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Fitur Stop Profit Harian: Kunci Menjaga Profit yang Sudah Diraih
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Stop Profit (TP) harian adalah pasangan dari Stop Loss — bot berhenti otomatis ketika
+                target profit harian tercapai. Ini terdengar kontra-intuitif (mengapa menghentikan bot
+                saat sedang profit?), tapi ada alasan kuat di baliknya.
+              </p>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Pasar bisa berbalik kapan saja. Sesi yang awalnya sangat menguntungkan bisa berubah
+                menjadi loss jika bot terus berjalan saat kondisi pasar memburuk. Stop Profit memastikan
+                keuntungan yang sudah diraih tidak dikembalikan ke pasar.
+              </p>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5 mb-5">
+                <h3 className="text-[14px] font-bold text-[#1a1612] mb-3">
+                  Cara Menentukan Nilai Stop Profit yang Realistis
+                </h3>
+                <div className="space-y-3">
+                  {[
+                    {
+                      label: "Target TP Konservatif",
+                      val: "5-10% dari modal",
+                      desc: "Mudah dicapai, bot sering berhenti karena TP. Profit kecil tapi konsisten. Cocok untuk pemula yang masih belajar.",
+                      color: "text-[#22c55e]",
+                    },
+                    {
+                      label: "Target TP Menengah",
+                      val: "10-20% dari modal",
+                      desc: "Keseimbangan antara ambisi dan realitas pasar. Masih bisa dicapai di hari-hari market yang baik.",
+                      color: "text-[#f59e0b]",
+                    },
+                    {
+                      label: "Target TP Agresif",
+                      val: "20-50% dari modal",
+                      desc: "Sulit dicapai secara konsisten. Hanya pas di hari pasar sangat bagus. Risiko bot jalan terus tanpa TP tercapai.",
+                      color: "text-[#ef4444]",
+                    },
+                  ].map((item) => (
+                    <div key={item.label} className="flex items-start gap-3">
+                      <span className={`text-[12px] font-bold flex-shrink-0 ${item.color}`}>
+                        {item.val}
+                      </span>
+                      <div>
+                        <p className="text-[12px] font-semibold text-[#1a1612]">{item.label}</p>
+                        <p className="text-[11px] text-[#6b6058]">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <InfoBox icon="🎯" title="Rasio SL dan TP yang Sehat">
+                Idealnya, target TP Anda setidaknya sama dengan atau lebih besar dari SL. Misalnya SL
+                Rp 50.000 dan TP Rp 75.000. Dengan rasio ini, Anda hanya perlu profit 2 dari 3 hari
+                untuk tetap net profit secara keseluruhan.
+              </InfoBox>
+            </section>
+
+            {/* Section 4 */}
+            <section>
+              <SectionLabel>Always Signal</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Memahami Always Signal: Martingale Recovery Otomatis
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                Always Signal adalah fitur di STC AutoTrade yang memungkinkan bot melakukan recovery
+                martingale secara otomatis tanpa menunggu sinyal baru dari analisis bot. Setelah loss,
+                bot langsung masuk ke step martingale berikutnya dengan nominal lebih besar.
+              </p>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5 mb-5">
+                <h3 className="text-[14px] font-bold text-[#1a1612] mb-3">
+                  Cara Kerja Always Signal
+                </h3>
+                <div className="space-y-3">
+                  <div className="bg-[#fef2f2] rounded-lg p-3">
+                    <p className="text-[11px] font-semibold text-[#991b1b] mb-1">
+                      Tanpa Always Signal (Martingale Biasa)
+                    </p>
+                    <p className="text-[11px] text-[#6b6058]">
+                      Loss → Bot tunggu sinyal baru → Jika sinyal muncul → Order step berikutnya dengan
+                      nominal lebih besar → Dst. Bot hanya eskalasi martingale saat ada sinyal baru.
+                    </p>
+                  </div>
+                  <div className="bg-[#f0fdf4] rounded-lg p-3">
+                    <p className="text-[11px] font-semibold text-[#166534] mb-1">
+                      Dengan Always Signal Aktif
+                    </p>
+                    <p className="text-[11px] text-[#6b6058]">
+                      Loss → Bot LANGSUNG masuk step berikutnya tanpa tunggu sinyal → Nominal lebih besar
+                      → Dst hingga win atau max steps tercapai. Recovery lebih agresif dan cepat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5 mb-5">
+                <h3 className="text-[13px] font-bold text-[#1a1612] mb-3">
+                  Contoh Skenario Always Signal (Max Steps 5, Multiplier 2x, Base Rp 14.000)
+                </h3>
+                <div className="space-y-2">
+                  {[
+                    { step: "Step 1", amount: "Rp 14.000", result: "LOSS → lanjut" },
+                    { step: "Step 2", amount: "Rp 28.000", result: "LOSS → lanjut" },
+                    { step: "Step 3", amount: "Rp 56.000", result: "WIN ← recovery" },
+                    { step: "Step 4", amount: "Rp 112.000", result: "Tidak terjadi" },
+                    { step: "Step 5", amount: "Rp 224.000", result: "Tidak terjadi" },
+                  ].map((row, i) => (
+                    <div
+                      key={row.step}
+                      className={`flex items-center justify-between px-3 py-2 rounded-lg text-[12px] ${
+                        i === 2
+                          ? "bg-[#f0fdf4] border border-[#bbf7d0]"
+                          : i < 2
+                          ? "bg-[#fef2f2] border border-[#fecaca]"
+                          : "bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] opacity-50"
+                      }`}
+                    >
+                      <span className="font-semibold text-[#1a1612]">{row.step}</span>
+                      <span className="text-[#6b6058]">{row.amount}</span>
+                      <span
+                        className={`font-medium ${
+                          i === 2
+                            ? "text-[#166534]"
+                            : i < 2
+                            ? "text-[#991b1b]"
+                            : "text-[#6b6058]"
+                        }`}
+                      >
+                        {row.result}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-[11px] text-[#6b6058] mt-3">
+                  Total loss step 1-2: Rp 42.000. WIN di step 3 (Rp 56.000) mengcover semua loss
+                  sebelumnya dan menghasilkan net profit.
+                </p>
+              </div>
+
+              <WarningBox>
+                Always Signal meningkatkan risiko jika loss streak sangat panjang. Dengan Max Steps 5
+                dan multiplier 2x, loss 5 kali berturut-turut berarti order terakhir Rp 224.000 dari
+                base Rp 14.000. Pastikan Stop Loss harian sudah diset untuk mencegah kondisi terburuk
+                ini menguras seluruh modal.
+              </WarningBox>
+            </section>
+
+            {/* Section 5 */}
+            <section>
+              <SectionLabel>Akun Demo</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Cara Menggunakan Akun Demo untuk Menghindari Loss di Real
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                STC AutoTrade menyediakan mode Demo yang bisa diakses langsung dari header dashboard
+                dengan switch sederhana. Di mode Demo, Anda menggunakan saldo virtual gratis — trading
+                berlangsung dengan kondisi pasar real tapi tidak menggunakan uang nyata.
+              </p>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5 mb-5">
+                <h3 className="text-[14px] font-bold text-[#1a1612] mb-3">
+                  Cara Switch ke Akun Demo
+                </h3>
+                <p className="text-[13px] text-[#6b6058] leading-relaxed mb-3">
+                  Di header dashboard STC AutoTrade, ada toggle/selector yang menampilkan akun aktif
+                  saat ini — Real atau Demo. Klik untuk beralih antara keduanya. Saldo Demo adalah
+                  saldo virtual yang tidak berpengaruh pada saldo Real Anda di Stockity.
+                </p>
+                <p className="text-[13px] text-[#6b6058] leading-relaxed">
+                  Semua fitur bot — semua 6 mode, martingale, SL/TP — bekerja identik di akun Demo
+                  dan Real. Satu-satunya perbedaan: di Demo Anda tidak bisa profit atau loss uang
+                  nyata.
+                </p>
+              </div>
+
+              <div className="space-y-4 mb-5">
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                  <h3 className="text-[13px] font-bold text-[#1a1612] mb-2">
+                    Apa yang Perlu Diuji di Demo Sebelum Real
+                  </h3>
+                  <ul className="space-y-2">
+                    {[
+                      "Coba setiap mode bot (Fastrade FTT, Indicator, Momentum, dll) untuk memahami perilakunya",
+                      "Uji berbagai kombinasi timeframe dan mode pada aset yang ingin Anda trade",
+                      "Amati bagaimana martingale bekerja dalam skenario loss beruntun",
+                      "Cari tahu mode dan aset mana yang memberikan win rate terbaik untuk gaya Anda",
+                      "Praktikkan setting SL dan TP yang tepat sebelum implementasi di Real",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
+                        <span className="text-[#3b82f6] mt-0.5 flex-shrink-0">•</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <TipBox>
+                Jalankan akun Demo minimal 2-3 hari penuh sebelum beralih ke Real. Catat semua hasil di
+                History, analisis win rate per mode dan per aset, dan baru pindah ke Real ketika sudah
+                konsisten profit di Demo selama beberapa sesi berturut-turut.
+              </TipBox>
+            </section>
+
+            {/* Section 6 */}
+            <section>
+              <SectionLabel>History Page</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Analisis Riwayat Trading di History Page
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Halaman History di STC AutoTrade adalah alat analisis mandiri yang sangat berguna.
+                Di sini tersimpan semua riwayat order yang pernah dieksekusi, berikut statistik
+                yang membantu Anda memahami performa trading secara objektif.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-4 mb-5">
+                {[
+                  {
+                    title: "Win Rate Keseluruhan",
+                    desc: "Persentase order yang win dari total order. Ini baseline untuk mengevaluasi apakah strategi Anda profitabel secara matematis.",
+                  },
+                  {
+                    title: "Breakdown per Mode Bot",
+                    desc: "Win rate dipisah per mode (Fastrade FTT, Indicator, Momentum, dll). Identifikasi mode mana yang paling efektif untuk gaya trading Anda.",
+                  },
+                  {
+                    title: "Breakdown per Aset",
+                    desc: "Win rate dipisah per aset yang ditrading. Mungkin EUR/USD lebih baik dari Gold, atau sebaliknya — data History akan memberitahu Anda.",
+                  },
+                  {
+                    title: "Total P&L (Profit & Loss)",
+                    desc: "Total keuntungan atau kerugian kumulatif. Bisa dilihat per hari, per minggu, atau keseluruhan untuk evaluasi performa jangka panjang.",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4"
+                  >
+                    <p className="text-[12px] font-bold text-[#1a1612] mb-1.5">{item.title}</p>
+                    <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5 mb-5">
+                <h3 className="text-[13px] font-bold text-[#1a1612] mb-2">
+                  Cara Membaca Data History untuk Identifikasi Pola Loss
+                </h3>
+                <p className="text-[12px] text-[#6b6058] leading-relaxed mb-3">
+                  Perhatikan pola berikut di History Anda:
+                </p>
+                <ul className="space-y-2">
+                  {[
+                    "Jam berapa loss rate tinggi? Hindari trading di jam tersebut.",
+                    "Mode mana yang win rate-nya di bawah 50%? Pertimbangkan untuk tidak menggunakannya.",
+                    "Aset mana yang selalu loss? Coba aset lain.",
+                    "Apakah loss terjadi setelah jam tertentu? Mungkin kondisi pasar berubah.",
+                    "Apakah martingale sering sampai step tertinggi? Max steps mungkin perlu dikurangi.",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
+                      <span className="text-[#3b82f6] mt-0.5 flex-shrink-0">→</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <InfoBox icon="📊" title="Data adalah Teman Terbaik Anda">
+                Jangan abaikan History page. Trader yang secara rutin menganalisis riwayat tradingnya
+                memiliki kemampuan adaptasi jauh lebih baik dibanding yang hanya menjalankan bot tanpa
+                evaluasi. Data history Anda adalah peta untuk menghindari kesalahan yang sama di masa
+                depan.
+              </InfoBox>
+            </section>
+
+            {/* Section 7 */}
+            <section>
+              <SectionLabel>Mengatur Martingale</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Mengatur Martingale Max Steps Sesuai Modal
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
+                Salah satu faktor terbesar yang mempengaruhi risiko loss adalah konfigurasi martingale,
+                khususnya Max Steps (1-7). Lebih banyak steps berarti potensi recovery yang lebih
+                panjang, tapi juga eksposur risiko yang jauh lebih besar.
+              </p>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl overflow-hidden mb-5">
+                <div className="grid grid-cols-4 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.06)] px-4 py-2.5">
+                  {["Max Steps", "Multiplier 1.5x", "Multiplier 2x", "Profil Risiko"].map((h) => (
+                    <p
+                      key={h}
+                      className="text-[10px] font-semibold text-[#6b6058] uppercase tracking-wide"
+                    >
+                      {h}
+                    </p>
+                  ))}
+                </div>
+                {[
+                  { steps: "3 Steps", m15: "~3x base", m2: "~7x base", risk: "Konservatif", riskColor: "text-[#166534]" },
+                  { steps: "4 Steps", m15: "~5x base", m2: "~15x base", risk: "Menengah", riskColor: "text-[#92400e]" },
+                  { steps: "5 Steps", m15: "~7.5x base", m2: "~31x base", risk: "Agresif", riskColor: "text-[#ef4444]" },
+                  { steps: "7 Steps", m15: "~17x base", m2: "~127x base", risk: "Sangat Agresif", riskColor: "text-[#991b1b]" },
+                ].map((row, i) => (
+                  <div
+                    key={row.steps}
+                    className={`grid grid-cols-4 px-4 py-3 ${i < 3 ? "border-b border-[rgba(26,22,18,0.04)]" : ""}`}
+                  >
+                    <p className="text-[12px] font-semibold text-[#1a1612]">{row.steps}</p>
+                    <p className="text-[11px] text-[#6b6058]">{row.m15}</p>
+                    <p className="text-[11px] text-[#6b6058]">{row.m2}</p>
+                    <p className={`text-[11px] font-semibold ${row.riskColor}`}>{row.risk}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="space-y-3">
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3">
+                  <p className="text-[12px] font-semibold text-[#1a1612] mb-1">
+                    Untuk Modal Kecil (di bawah Rp 300.000)
+                  </p>
+                  <p className="text-[12px] text-[#6b6058]">
+                    Gunakan Max Steps 3-4 dengan multiplier 1.5x. Ini membatasi eksposur maksimum
+                    sekitar 5x base amount — masih manageable untuk modal kecil.
+                  </p>
+                </div>
+                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3">
+                  <p className="text-[12px] font-semibold text-[#1a1612] mb-1">
+                    Untuk Modal Menengah (Rp 300.000 - Rp 1.000.000)
+                  </p>
+                  <p className="text-[12px] text-[#6b6058]">
+                    Max Steps 4-5, multiplier 1.5x-2x bisa dipertimbangkan. Pastikan SL harian
+                    mencukupi untuk cover seluruh skenario martingale yang mungkin terjadi.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Section 8 — FAQ */}
+            <section>
+              <SectionLabel>FAQ</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Pertanyaan Umum tentang Manajemen Risiko di STC AutoTrade
+              </h2>
+              <div className="divide-y divide-[rgba(26,22,18,0.06)] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden">
+                {faqs.map((faq) => (
+                  <div key={faq.q} className="px-5 py-4">
+                    <p className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{faq.q}</p>
+                    <p className="text-[13px] text-[#6b6058] leading-relaxed">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Section 9 — Kesimpulan */}
+            <section>
+              <SectionLabel>Kesimpulan</SectionLabel>
+              <h2 className="text-[20px] font-bold text-[#1a1612] mb-4">
+                Kelola Risiko dengan Fitur yang Sudah Ada di STC AutoTrade
+              </h2>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-4">
+                STC AutoTrade v4.4 sudah menyediakan semua alat yang dibutuhkan untuk manajemen risiko
+                yang efektif: Stop Loss harian yang menghentikan bot otomatis saat batas kerugian
+                tercapai, Stop Profit yang mengunci keuntungan, Always Signal untuk recovery martingale,
+                akun Demo untuk berlatih tanpa risiko, dan History page untuk analisis mandiri.
+              </p>
+              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-6">
+                Kunci utama: selalu isi Stop Loss sebelum menjalankan bot, mulai dengan akun Demo,
+                analisis History secara rutin, dan sesuaikan Max Steps martingale dengan modal yang
+                benar-benar Anda siap risiko. Loss tidak bisa dihindari, tapi bisa dikelola.
+              </p>
+
+              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
+                <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Artikel Terkait</p>
+                <div className="space-y-2">
+                  {[
+                    {
+                      href: "/artikel/strategi-martingale-stockity",
+                      label: "Strategi Martingale di Stockity: Cara Kerja dan Risikonya",
+                    },
+                    {
+                      href: "/artikel/modal-trading-stockity",
+                      label: "Modal Trading Stockity: Berapa yang Dibutuhkan?",
+                    },
+                    {
+                      href: "/artikel/cara-profit-trading-stockity",
+                      label: "Cara Profit Trading Stockity dengan Bot STC AutoTrade",
+                    },
+                  ].map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="flex items-center gap-2 text-[13px] text-[#3b82f6] hover:text-[#1d4ed8] no-underline transition-colors"
+                    >
+                      <span className="text-[10px]">→</span>
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* CTA */}
+            <div className="bg-[#1a1612] rounded-2xl p-6 text-center">
+              <p className="text-[13px] text-white/60 mb-2">
+                Mulai trading dengan manajemen risiko yang benar
+              </p>
+              <h3 className="text-[18px] font-bold text-white mb-4">
+                Download STC AutoTrade — Set SL/TP dan Mulai Demo
+              </h3>
+              <a
+                href="/StcAutoTrade.apk"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#3b82f6] text-white text-[13px] font-semibold rounded-xl no-underline hover:bg-[#2563eb] transition-colors"
+              >
+                Download APK Gratis
+              </a>
             </div>
           </div>
-        </section>
+        </main>
 
-        {/* ── Footer ──────────────────────────────────────── */}
         <footer className="py-8 bg-[#1a1612] border-t border-white/5">
           <div className="max-w-3xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-[13px] text-white/40">© 2026 STC AutoTrade. Hak cipta dilindungi.</p>
             <div className="flex gap-5">
-              <Link href="/" className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors">Beranda</Link>
-              <Link href="/artikel" className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors">Artikel</Link>
+              <Link
+                href="/"
+                className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors"
+              >
+                Beranda
+              </Link>
+              <Link
+                href="/artikel"
+                className="text-[12px] text-white/40 hover:text-white/70 no-underline transition-colors"
+              >
+                Artikel
+              </Link>
             </div>
           </div>
         </footer>
-      </main>
+      </div>
     </>
   );
 }
