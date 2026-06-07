@@ -205,7 +205,7 @@ const schemaApp = {
     caption: "Layar utama STC AutoTrade — mode AI Signal aktif di Stockity.id",
   },
   datePublished: "2025-05-21",
-  dateModified: "2026-05-24",
+  dateModified: "2026-06-07",
   offers: {
     "@type": "Offer",
     price: "0",

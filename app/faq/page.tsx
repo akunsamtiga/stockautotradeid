@@ -32,6 +32,21 @@ export const metadata: Metadata = {
       "Jawaban lengkap: cara instal, versi web, keamanan akun, modal minimum, dan cara kerja STC AutoTrade.",
     url: "https://stcautotrade.id/faq",
     type: "website",
+    images: [
+      {
+        url: "https://stcautotrade.id/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
+    description:
+      "Jawaban lengkap: cara instal, versi web, keamanan akun, modal minimum, dan cara kerja STC AutoTrade.",
+    images: ["https://stcautotrade.id/og-image.png"],
   },
 };
 

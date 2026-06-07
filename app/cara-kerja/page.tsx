@@ -36,6 +36,21 @@ export const metadata: Metadata = {
       "Penjelasan lengkap 6 mode strategi, sistem martingale, stop loss/profit otomatis, dan panduan memulai STC AutoTrade.",
     url: "https://stcautotrade.id/cara-kerja",
     type: "website",
+    images: [
+      {
+        url: "https://stcautotrade.id/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cara Kerja STC AutoTrade — 6 Strategi Trading Otomatis Stockity",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cara Kerja STC AutoTrade — 6 Strategi & Manajemen Risiko Stockity",
+    description:
+      "Penjelasan lengkap 6 mode strategi, sistem martingale, stop loss/profit otomatis, dan panduan memulai STC AutoTrade.",
+    images: ["https://stcautotrade.id/og-image.png"],
   },
 };
 

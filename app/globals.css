@@ -66,8 +66,8 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background:  var(--color-surface-2);
-  color:       var(--color-ink);
+  background:  #ffffff;
+  color:       #09090b;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;

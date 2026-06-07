@@ -34,6 +34,21 @@ export const metadata: Metadata = {
       "Download STC AutoTrade APK Android atau buka versi web langsung di browser. Gratis. Panduan instalasi tersedia.",
     url: "https://stcautotrade.id/download",
     type: "website",
+    images: [
+      {
+        url: "https://stcautotrade.id/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Download STC AutoTrade — APK Android & Versi Web Robot Trading Stockity",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Download STC AutoTrade APK & Versi Web — Robot Trading Stockity Gratis",
+    description:
+      "Download STC AutoTrade APK Android atau buka versi web di browser. Gratis untuk member.",
+    images: ["https://stcautotrade.id/og-image.png"],
   },
 };
 
@@ -49,6 +64,59 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: "https://stcautotrade.id" },
     { "@type": "ListItem", position: 2, name: "Download", item: "https://stcautotrade.id/download" },
+  ],
+};
+
+const softwareDownloadSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://stcautotrade.id/#app-download",
+  name: "STC AutoTrade",
+  alternateName: ["StcAutoTrade", "StockAutoTrade", "Robot Trading Stockity"],
+  operatingSystem: ["Android 8.0+", "Web Browser (iOS, Windows, macOS, Linux)"],
+  applicationCategory: "FinanceApplication",
+  applicationSubCategory: "Trading Automation",
+  downloadUrl: "https://stcautotrade.id/StcAutoTrade.apk",
+  installUrl: "https://stcautotrade.id/StcAutoTrade.apk",
+  inLanguage: "id",
+  description:
+    "Robot trading otomatis untuk Stockity.id — 6 mode strategi, stop loss otomatis, AI signal, CTC copy trading. APK Android & versi web. Gratis untuk member.",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "IDR",
+    availability: "https://schema.org/InStock",
+    description: "Gratis untuk semua member terdaftar",
+  },
+  potentialAction: [
+    {
+      "@type": "InstallAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://stcautotrade.id/StcAutoTrade.apk",
+        actionPlatform: "http://schema.org/AndroidPlatform",
+      },
+    },
+    {
+      "@type": "ViewAction",
+      target: "https://stcautotradepro.id",
+      name: "Buka Versi Web",
+    },
+  ],
+  screenshot: {
+    "@type": "ImageObject",
+    url: "https://stcautotrade.id/screenshot.png",
+    width: 1080,
+    height: 1920,
+  },
+  featureList: [
+    "AI Signal — sinyal berbasis machine learning",
+    "CTC Copy Trading — salin sinyal trader berpengalaman",
+    "Stop Loss Otomatis — batas kerugian harian",
+    "Stop Profit Otomatis — amankan target keuntungan",
+    "Sistem Martingale Terkelola",
+    "Mode Demo Tanpa Risiko",
+    "Kompatibel Android, iPhone, PC, Mac, iPad",
   ],
 };
 
@@ -74,6 +142,10 @@ export default function DownloadPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareDownloadSchema) }}
       />
       <script
         type="application/ld+json"

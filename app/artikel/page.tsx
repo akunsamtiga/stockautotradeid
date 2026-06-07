@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 
 /* ── Data Artikel ──────────────────────────────────────────────── */
 
-type Kategori = "Panduan" | "Strategi" | "Review";
+type Kategori = "Panduan" | "Strategi" | "Review" | "Edukasi";
 
 interface Artikel {
   slug:      string;
@@ -119,6 +119,30 @@ const ARTIKEL: Artikel[] = [
     menit:     6,
   },
   {
+    slug:      "sinyal-trading-stockity-gratis",
+    judul:     "Sinyal Trading Stockity Gratis: CTC, AI Signal & Bot 2026",
+    ringkasan: "Panduan mendapatkan sinyal trading Stockity gratis — cara kerja CTC Copy Trading, AI Signal, sinyal indikator, dan cara menggunakannya dengan robot otomatis.",
+    kategori:  "Panduan",
+    tanggal:   "1 Jun 2025",
+    menit:     7,
+  },
+  {
+    slug:      "cara-withdraw-stockity",
+    judul:     "Cara Withdraw Stockity: Panduan Tarik Dana ke Rekening 2026",
+    ringkasan: "Panduan lengkap cara withdraw Stockity — metode penarikan, minimum saldo, durasi proses, penyebab withdraw gagal, dan tips agar tarik dana berjalan lancar.",
+    kategori:  "Panduan",
+    tanggal:   "1 Jun 2025",
+    menit:     8,
+  },
+  {
+    slug:      "robot-trading-ios-iphone",
+    judul:     "Robot Trading iPhone Stockity: Auto Trade di iOS Tanpa Instalasi 2026",
+    ringkasan: "Panduan menggunakan robot trading Stockity di iPhone dan iPad — akses STC AutoTrade versi web di Safari tanpa instalasi APK, dengan fitur lengkap dan tips optimasi iOS.",
+    kategori:  "Panduan",
+    tanggal:   "1 Jun 2025",
+    menit:     6,
+  },
+  {
     slug:      "cara-profit-trading-stockity",
     judul:     "Cara Profit Trading Stockity: Strategi & Tips Konsisten 2026",
     ringkasan: "Strategi, tips, dan sistem manajemen risiko untuk trading konsisten dan profitable di Stockity.id menggunakan robot STC AutoTrade.",
@@ -133,6 +157,22 @@ const ARTIKEL: Artikel[] = [
     kategori:  "Strategi",
     tanggal:   "21 Mei 2025",
     menit:     7,
+  },
+  {
+    slug:      "strategi-martingale-stockity",
+    judul:     "Strategi Martingale Stockity: Panduan Setting Aman & Efektif 2026",
+    ringkasan: "Panduan lengkap strategi martingale di Stockity — cara kerja, tabel kalkulator step & modal, multiplier aman, risiko, dan alternatif anti-martingale.",
+    kategori:  "Strategi",
+    tanggal:   "1 Jun 2025",
+    menit:     10,
+  },
+  {
+    slug:      "trading-binary-option-indonesia",
+    judul:     "Trading Binary Option Indonesia: Panduan Lengkap untuk Pemula 2026",
+    ringkasan: "Panduan lengkap trading binary option di Indonesia — apa itu binary option, cara kerja, platform terbaik, risiko nyata, dan cara mulai dengan robot trading otomatis.",
+    kategori:  "Panduan",
+    tanggal:   "1 Jun 2025",
+    menit:     10,
   },
   {
     slug:      "stockity-aman-atau-penipuan",
@@ -150,12 +190,96 @@ const ARTIKEL: Artikel[] = [
     tanggal:   "21 Mei 2025",
     menit:     12,
   },
+
+  // ── Artikel Baru — 7 Juni 2026 ───────────────────────────────
+
+  {
+    slug:      "cara-deposit-stockity",
+    judul:     "Cara Deposit Stockity: Panduan Isi Saldo & Metode Pembayaran 2026",
+    ringkasan: "Panduan lengkap cara deposit di Stockity — transfer bank lokal, e-wallet (OVO, DANA, GoPay), minimal deposit, dan solusi masalah deposit yang umum terjadi.",
+    kategori:  "Panduan",
+    tanggal:   "7 Jun 2026",
+    menit:     7,
+  },
+  {
+    slug:      "copy-trading-stockity",
+    judul:     "Copy Trading Stockity: Panduan CTC & Cara Setting Sinyal 2026",
+    ringkasan: "Panduan lengkap copy trading Stockity dengan fitur CTC (Copy Trade Channel) di STC AutoTrade — cara aktivasi, memilih sumber sinyal, dan tips memaksimalkan hasilnya.",
+    kategori:  "Panduan",
+    tanggal:   "7 Jun 2026",
+    menit:     7,
+  },
+  {
+    slug:      "minimal-deposit-stockity",
+    judul:     "Minimal Deposit Stockity: Berapa Syarat Awal & Rekomendasi Modal 2026",
+    ringkasan: "Berapa minimal deposit Stockity dan rekomendasi modal awal yang aman? Panduan memilih nominal deposit sesuai profil risiko dan cara mulai dari akun demo gratis.",
+    kategori:  "Panduan",
+    tanggal:   "7 Jun 2026",
+    menit:     6,
+  },
+  {
+    slug:      "robot-trading-pc-laptop",
+    judul:     "Robot Trading PC & Laptop: Pakai STC AutoTrade Versi Web 2026",
+    ringkasan: "Cara menggunakan STC AutoTrade di PC dan laptop lewat versi web — tanpa download, kompatibel semua browser, fitur lengkap sama seperti APK Android.",
+    kategori:  "Panduan",
+    tanggal:   "7 Jun 2026",
+    menit:     6,
+  },
+  {
+    slug:      "trading-binary-option-modal-kecil",
+    judul:     "Trading Binary Option Modal Kecil: Mulai dari Rp 100 Ribu 2026",
+    ringkasan: "Strategi trading binary option dengan modal kecil mulai Rp 100 ribu — simulasi step martingale, strategi yang cocok untuk modal minim, dan tips mengelola risiko.",
+    kategori:  "Strategi",
+    tanggal:   "7 Jun 2026",
+    menit:     8,
+  },
+  {
+    slug:      "indikator-trading-binary-option",
+    judul:     "Indikator Trading Binary Option Terbaik untuk Pemula 2026",
+    ringkasan: "Panduan indikator trading binary option paling akurat — RSI, Moving Average, Bollinger Bands, cara kombinasi indikator, dan hubungannya dengan mode bot STC AutoTrade.",
+    kategori:  "Edukasi",
+    tanggal:   "7 Jun 2026",
+    menit:     9,
+  },
+  {
+    slug:      "cara-baca-candlestick-binary-option",
+    judul:     "Cara Baca Candlestick Binary Option: Panduan Pola untuk Pemula 2026",
+    ringkasan: "Pelajari cara membaca candlestick binary option — anatomi candle, pola Doji, Engulfing, Pin Bar, dan cara menerapkannya di trading Stockity dengan bot STC AutoTrade.",
+    kategori:  "Edukasi",
+    tanggal:   "7 Jun 2026",
+    menit:     9,
+  },
+  {
+    slug:      "aset-terbaik-trading-stockity",
+    judul:     "Aset Terbaik untuk Trading di Stockity: Pilihan Pair & OTC 2026",
+    ringkasan: "Panduan memilih aset terbaik di Stockity — perbandingan forex, OTC, crypto, rekomendasi pair untuk pemula, dan cara bot STC AutoTrade memilih aset optimal secara otomatis.",
+    kategori:  "Panduan",
+    tanggal:   "7 Jun 2026",
+    menit:     7,
+  },
+  {
+    slug:      "timeframe-trading-binary-option",
+    judul:     "Timeframe Trading Binary Option: Pilih Durasi yang Tepat 2026",
+    ringkasan: "Panduan memilih timeframe trading binary option yang tepat — perbedaan 1 menit vs 5 menit vs 15 menit, cara memilih sesuai modal, dan setting optimal di bot STC AutoTrade.",
+    kategori:  "Edukasi",
+    tanggal:   "7 Jun 2026",
+    menit:     7,
+  },
+  {
+    slug:      "cara-menghindari-loss-stockity",
+    judul:     "Cara Menghindari Loss di Stockity: Tips Anti Rugi Trading 2026",
+    ringkasan: "Panduan menghindari loss di Stockity dengan manajemen risiko yang benar — aturan 1-3% per trade, fitur stop loss otomatis di bot, strategi recovery, dan kebiasaan trader profit.",
+    kategori:  "Strategi",
+    tanggal:   "7 Jun 2026",
+    menit:     8,
+  },
 ];
 
 const KATEGORI_META: Record<Kategori, { warna: string; bg: string }> = {
   Panduan:  { warna: "#1d4ed8", bg: "#eff6ff" },
   Strategi: { warna: "#0f766e", bg: "#f0fdfa" },
   Review:   { warna: "#7c3aed", bg: "#f5f3ff" },
+  Edukasi:  { warna: "#b45309", bg: "#fffbeb" },
 };
 
 /* ── JSON-LD Schemas ───────────────────────────────────────────── */
@@ -241,6 +365,7 @@ export default function ArtikelPage() {
   const panduan  = ARTIKEL.filter((a) => a.kategori === "Panduan");
   const strategi = ARTIKEL.filter((a) => a.kategori === "Strategi");
   const review   = ARTIKEL.filter((a) => a.kategori === "Review");
+  const edukasi  = ARTIKEL.filter((a) => a.kategori === "Edukasi");
 
   return (
     <>
@@ -407,8 +532,34 @@ export default function ArtikelPage() {
             </div>
           </section>
 
+          {/* ── ARTIKEL EDUKASI ────────────────────────────── */}
+          <section className="py-14 sm:py-20" aria-labelledby="heading-edukasi">
+            <div className="max-w-6xl mx-auto px-5 sm:px-8">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-1 h-6 rounded-full bg-[#b45309]" aria-hidden="true" />
+                <h2
+                  id="heading-edukasi"
+                  className="text-xl font-semibold tracking-tight text-[#1a1612]"
+                >
+                  Edukasi Trading
+                </h2>
+                <span className="text-[12px] text-[#1a1612]/30 ml-1">
+                  {edukasi.length} artikel
+                </span>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {edukasi.map((a) => (
+                  <ArtikelCard key={a.slug} artikel={a} />
+                ))}
+              </div>
+            </div>
+          </section>
+
           {/* ── ARTIKEL REVIEW ─────────────────────────────── */}
-          <section className="py-14 sm:py-20" aria-labelledby="heading-review">
+          <section
+            className="py-14 sm:py-20 bg-white border-y border-[rgba(26,22,18,0.07)]"
+            aria-labelledby="heading-review"
+          >
             <div className="max-w-6xl mx-auto px-5 sm:px-8">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-1 h-6 rounded-full bg-[#7c3aed]" aria-hidden="true" />

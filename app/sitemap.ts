@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://stcautotrade.id";
-const LAST_MODIFIED = new Date("2026-06-01");
+const LAST_MODIFIED = new Date("2026-06-07");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -93,6 +93,100 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.8,
+    },
+
+    // ── Artikel: Baru Ditambahkan Jun 2026 ───────────────────────
+    {
+      url: `${BASE_URL}/artikel/trading-binary-option-indonesia`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.87,
+    },
+    {
+      url: `${BASE_URL}/artikel/cara-withdraw-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.86,
+    },
+    {
+      url: `${BASE_URL}/artikel/strategi-martingale-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/artikel/sinyal-trading-stockity-gratis`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${BASE_URL}/artikel/robot-trading-ios-iphone`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.83,
+    },
+
+    // ── Artikel Baru — 7 Juni 2026 ───────────────────────────────
+    {
+      url: `${BASE_URL}/artikel/cara-deposit-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.87,
+    },
+    {
+      url: `${BASE_URL}/artikel/copy-trading-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/artikel/minimal-deposit-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${BASE_URL}/artikel/robot-trading-pc-laptop`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.83,
+    },
+    {
+      url: `${BASE_URL}/artikel/trading-binary-option-modal-kecil`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/artikel/indikator-trading-binary-option`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${BASE_URL}/artikel/cara-baca-candlestick-binary-option`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.83,
+    },
+    {
+      url: `${BASE_URL}/artikel/aset-terbaik-trading-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.82,
+    },
+    {
+      url: `${BASE_URL}/artikel/timeframe-trading-binary-option`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.82,
+    },
+    {
+      url: `${BASE_URL}/artikel/cara-menghindari-loss-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.84,
     },
   ];
 }

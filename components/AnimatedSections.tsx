@@ -1,23 +1,7 @@
 "use client";
 
-/**
- * components/AnimatedSections.tsx
- *
- * PERBAIKAN KRITIS #1 + #2:
- * Semua logika animasi (framer-motion, useState, useRef) diisolasi di sini.
- * page.tsx menjadi Server Component murni — konten langsung ada di HTML saat
- * Googlebot crawl, tanpa menunggu JavaScript bundle.
- *
- * Strategi:
- * - Komponen ini di-lazy-load di page.tsx dengan next/dynamic + ssr:false
- *   sehingga framer-motion TIDAK masuk ke bundle SSR / HTML awal.
- * - Konten semantik (h1, h2, p, teks FAQ) sudah ada di Server Component
- *   sebagai fallback, lalu komponen ini "mengambil alih" untuk animasi.
- */
-
-import dynamic from "next/dynamic";
 import { motion, useInView, AnimatePresence, type Variants } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import {
   Eye,
   Brain,
@@ -28,7 +12,6 @@ import {
   TrendUp,
   FloppyDisk,
   ClipboardText,
-  Check,
   Plus,
   GlobeHemisphereWest,
   DownloadSimple,
@@ -118,10 +101,10 @@ export function HeroBadge() {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55 }}
-      className="shimmer-badge inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#3b82f6]/25 text-[#1d4ed8] text-[11px] font-semibold tracking-widest uppercase mb-7"
+      className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-[11px] font-semibold tracking-widest uppercase mb-8"
     >
-      <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] animate-pulse-dot" />
-      STC AutoTrade · Android &amp; Web · Stockity.id
+      <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse-dot" />
+      Android &amp; Web · Stockity.id
     </motion.div>
   );
 }
@@ -133,21 +116,23 @@ export function HeroHeading({ apkPath }: { apkPath: string }) {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1, ease: EASE_OUT }}
-        className="font-[family-name:var(--font-dm-serif)] text-[40px] sm:text-[52px] lg:text-[58px] font-normal tracking-[-0.03em] leading-[1.08] mb-5"
+        className="font-[family-name:var(--font-dm-serif)] text-5xl sm:text-[56px] lg:text-[64px] font-normal tracking-tight leading-[1.06] mb-6 text-zinc-900"
       >
         STC AutoTrade —<br />
-        <span className="text-[#1d4ed8]">Robot Trading<br />Otomatis Stockity</span>
+        <span className="bg-gradient-to-br from-blue-700 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+          Robot Trading<br />Otomatis Stockity
+        </span>
       </motion.h1>
 
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.65, delay: 0.2, ease: EASE_OUT }}
-        className="text-[#6b6058] text-base sm:text-[17px] leading-relaxed mb-8 max-w-lg"
+        className="text-zinc-500 text-base sm:text-[17px] leading-relaxed mb-9 max-w-lg"
       >
-        <strong className="text-[#1a1612] font-semibold">STC AutoTrade</strong>{" "}
+        <strong className="text-zinc-900 font-semibold">STC AutoTrade</strong>{" "}
         (StcAutoTrade / StockAutoTrade) terhubung langsung ke akun Stockity.id Anda dan
-        mengeksekusi strategi secara otomatis, konsisten, dan bebas bias emosional — 24 jam non-stop.
+        mengeksekusi strategi secara otomatis — 24 jam non-stop, bebas emosi.
       </motion.p>
 
       <motion.div
@@ -156,26 +141,26 @@ export function HeroHeading({ apkPath }: { apkPath: string }) {
         transition={{ duration: 0.65, delay: 0.3, ease: EASE_OUT }}
         className="flex flex-col gap-3"
       >
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-wrap gap-3">
           <a
             href={apkPath}
             download
-            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline shadow-lg shadow-black/10"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-zinc-900 text-white text-sm font-semibold rounded-xl hover:bg-zinc-700 transition-colors no-underline shadow-sm"
           >
-            <DownloadSimple weight="bold" size={18} /> Download Aplikasi Android
+            <DownloadSimple weight="bold" size={17} /> Download Aplikasi Android
           </a>
           <a
             href="https://stcautotradepro.id"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3.5 border border-[#3b82f6]/35 bg-[#eff6ff] text-[#1d4ed8] text-sm font-semibold rounded-xl hover:bg-[#dbeafe] transition-all hover:-translate-y-0.5 active:translate-y-0 no-underline"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-zinc-200 text-zinc-700 text-sm font-semibold rounded-xl hover:border-zinc-300 hover:bg-zinc-50 transition-all no-underline"
           >
             <GlobeHemisphereWest weight="duotone" size={16} /> Buka Versi Web
           </a>
         </div>
         <a
           href="#cara-kerja"
-          className="inline-flex items-center gap-1.5 text-sm text-[#1a1612]/40 hover:text-[#1a1612] transition-colors no-underline group w-fit"
+          className="inline-flex items-center gap-1.5 text-sm text-zinc-400 hover:text-zinc-700 transition-colors no-underline group w-fit"
         >
           Pelajari Cara Kerja
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256" fill="currentColor" className="transition-transform group-hover:translate-y-0.5" aria-hidden="true">
@@ -187,16 +172,34 @@ export function HeroHeading({ apkPath }: { apkPath: string }) {
   );
 }
 
+export function HeroStatBar() {
+  const stats = [
+    { n: "6",    l: "Mode Strategi" },
+    { n: "2",    l: "Platform" },
+    { n: "24/7", l: "Bot Aktif" },
+    { n: "4.9★", l: "Rating Pengguna" },
+  ];
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.65, delay: 0.45 }}
+      className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-y sm:divide-y-0 divide-zinc-100 border border-zinc-100 rounded-2xl overflow-hidden mt-14 max-w-2xl bg-white shadow-sm"
+    >
+      {stats.map((s) => (
+        <div key={s.l} className="py-5 px-4 text-center hover:bg-zinc-50 transition-colors">
+          <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-blue-600 leading-none mb-1.5">
+            {s.n}
+          </div>
+          <div className="text-[11px] text-zinc-400 leading-tight">{s.l}</div>
+        </div>
+      ))}
+    </motion.div>
+  );
+}
+
+/* @deprecated — kept for backwards compatibility */
 export function HeroPhoneFloat({ children }: { children: React.ReactNode }) {
-  /**
-   * @deprecated Tidak lagi dipakai di page.tsx sejak perbaikan LCP.
-   * page.tsx kini menggunakan CSS `.animate-float` & `.animate-fade-up`
-   * langsung pada div pembungkus PhoneImage, sehingga PhoneImage tetap
-   * di-render sebagai Server Component dan preload gambar LCP berfungsi.
-   *
-   * Ekspor ini dipertahankan untuk kompatibilitas mundur jika ada halaman
-   * lain yang masih mengimpornya. Hapus setelah semua halaman dimigrasi.
-   */
   return (
     <motion.div
       initial={{ opacity: 0, x: 40, scale: 0.96 }}
@@ -214,52 +217,26 @@ export function HeroPhoneFloat({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function HeroStatBar() {
-  const stats = [
-    { n: "6",    l: "Mode Strategi" },
-    { n: "2",    l: "Platform (APK & Web)" },
-    { n: "24/7", l: "Bot Aktif" },
-    { n: "4.9★", l: "Rating Pengguna" },
-  ];
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.65, delay: 0.45 }}
-      className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-y sm:divide-y-0 divide-[rgba(26,22,18,0.08)] border border-[rgba(26,22,18,0.09)] rounded-2xl overflow-hidden mt-14 max-w-2xl shadow-sm"
-    >
-      {stats.map((s) => (
-        <div key={s.l} className="py-5 px-4 bg-white text-center hover:bg-[#f0f7ff] transition-colors">
-          <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-[#1d4ed8] leading-none mb-1.5">
-            {s.n}
-          </div>
-          <div className="text-[11px] text-[#1a1612]/35 leading-tight">{s.l}</div>
-        </div>
-      ))}
-    </motion.div>
-  );
-}
-
-/* ── FAQ accordion item (butuh useState + framer) ──────────────── */
+/* ── FAQ accordion item ────────────────────────────────────────── */
 
 export function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   const id = `faq-${q.replace(/\s+/g, "-").toLowerCase().slice(0, 30)}`;
   return (
-    <div className="border-b border-[rgba(26,22,18,0.08)]">
+    <div className="border-b border-zinc-100">
       <button
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls={id}
         className="w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer"
       >
-        <span className="text-[15px] font-semibold text-[#1a1612]">{q}</span>
+        <span className="text-[15px] font-semibold text-zinc-900">{q}</span>
         <motion.span
           animate={{ rotate: open ? 45 : 0 }}
-          transition={{ duration: 0.22, ease: "easeOut" }}
-          className="w-6 h-6 rounded-full border border-[rgba(26,22,18,0.18)] flex items-center justify-center flex-shrink-0 text-[#1a1612]/50 font-light text-lg leading-none"
+          transition={{ duration: 0.2, ease: "easeOut" }}
+          className="w-6 h-6 rounded-full border border-zinc-200 flex items-center justify-center flex-shrink-0 text-zinc-400"
         >
-          <Plus weight="bold" size={14} />
+          <Plus weight="bold" size={13} />
         </motion.span>
       </button>
       <AnimatePresence initial={false}>
@@ -270,10 +247,10 @@ export function FAQItem({ q, a }: { q: string; a: string }) {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: EASE_OUT }}
+            transition={{ duration: 0.28, ease: EASE_OUT }}
             className="overflow-hidden"
           >
-            <p className="pb-5 text-[14px] text-[#6b6058] leading-relaxed">{a}</p>
+            <p className="pb-5 text-[14px] text-zinc-500 leading-relaxed">{a}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -281,7 +258,7 @@ export function FAQItem({ q, a }: { q: string; a: string }) {
   );
 }
 
-/* ── "Hambatan Trader" section cards ───────────────────────────── */
+/* ── "Hambatan Trader" section ─────────────────────────────────── */
 
 const HAMBATAN = [
   { Icon: Eye,      t: "Tidak bisa pantau pasar terus-menerus", d: "Peluang muncul kapan saja. Tanpa alat bantu, momen terbaik terlewat saat Anda sibuk atau beristirahat." },
@@ -290,21 +267,69 @@ const HAMBATAN = [
   { Icon: Warning,  t: "Tidak ada disiplin manajemen modal",     d: "Tanpa stop loss tegas, trader membiarkan kerugian membesar dengan harapan harga akan berbalik sendiri." },
 ];
 
-export function HambatanSection({ apkPath }: { apkPath: string }) {
+export function HambatanSection({ apkPath: _apkPath }: { apkPath: string }) {
   return (
     <StaggerView className="flex flex-col gap-3">
       {HAMBATAN.map((item) => (
         <FadeItem key={item.t}>
-          <div className="flex gap-4 p-5 bg-[#f8fafc] border border-[rgba(26,22,18,0.08)] rounded-xl hover:border-[rgba(26,22,18,0.16)] hover:bg-[#f0f7ff] hover:-translate-y-0.5 hover:shadow-md hover:shadow-black/[0.04] transition-all">
-            <item.Icon weight="duotone" size={28} className="text-[#3b82f6] mt-0.5 flex-shrink-0" />
+          <div className="flex gap-4 p-5 bg-white border border-zinc-100 rounded-xl hover:border-zinc-200 hover:shadow-sm hover:-translate-y-0.5 transition-all">
+            <item.Icon weight="duotone" size={26} className="text-blue-600 mt-0.5 flex-shrink-0" />
             <div>
-              <p className="text-[15px] font-semibold mb-1.5 text-[#1a1612]">{item.t}</p>
-              <p className="text-[13px] text-[#6b6058] leading-relaxed">{item.d}</p>
+              <p className="text-[15px] font-semibold mb-1.5 text-zinc-900">{item.t}</p>
+              <p className="text-[13px] text-zinc-500 leading-relaxed">{item.d}</p>
             </div>
           </div>
         </FadeItem>
       ))}
     </StaggerView>
+  );
+}
+
+/* ── CountUp animated number ───────────────────────────────────── */
+
+export function CountUp({
+  to,
+  suffix = "",
+  prefix = "",
+  decimals = 0,
+  label,
+  className = "",
+}: {
+  to: number;
+  suffix?: string;
+  prefix?: string;
+  decimals?: number;
+  label: string;
+  className?: string;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    if (!inView) return;
+    const duration = 1600;
+    let startTime: number | null = null;
+    const tick = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = eased * to;
+      setValue(decimals > 0
+        ? Math.round(current * 10 ** decimals) / 10 ** decimals
+        : Math.round(current));
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, [inView, to, decimals]);
+
+  return (
+    <div ref={ref} className={className}>
+      <div className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl text-zinc-900 leading-none mb-2 tracking-tight">
+        {prefix}{decimals > 0 ? value.toFixed(decimals) : value.toLocaleString("id-ID")}{suffix}
+      </div>
+      <p className="text-sm text-zinc-500">{label}</p>
+    </div>
   );
 }
 
@@ -323,11 +348,11 @@ export function RiskCards() {
     <StaggerView className="flex flex-col gap-3">
       {RISKS.map((r) => (
         <FadeItem key={r.title}>
-          <div className="flex gap-4 p-5 bg-white border border-[rgba(26,22,18,0.08)] rounded-xl hover:border-[rgba(26,22,18,0.16)] hover:shadow-md hover:shadow-black/[0.04] hover:-translate-y-0.5 transition-all">
-            <r.icon weight="duotone" size={28} className="text-[#3b82f6] mt-0.5 flex-shrink-0" />
+          <div className="flex gap-4 p-5 bg-white border border-zinc-100 rounded-xl hover:border-zinc-200 hover:shadow-sm hover:-translate-y-0.5 transition-all">
+            <r.icon weight="duotone" size={26} className="text-blue-600 mt-0.5 flex-shrink-0" />
             <div>
-              <p className="text-sm font-semibold mb-1.5 text-[#1a1612]">{r.title}</p>
-              <p className="text-[13px] text-[#6b6058] leading-relaxed">{r.desc}</p>
+              <p className="text-sm font-semibold mb-1 text-zinc-900">{r.title}</p>
+              <p className="text-[13px] text-zinc-500 leading-relaxed">{r.desc}</p>
             </div>
           </div>
         </FadeItem>
