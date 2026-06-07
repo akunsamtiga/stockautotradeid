@@ -1,4 +1,4 @@
-/**
+﻿/**
  * app/artikel/robot-trading-ios-iphone/page.tsx
  *
  * Target keyword:
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     publishedTime: "2025-06-01T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.png", width: 1200, height: 630, alt: "Robot Trading iPhone Stockity — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Robot Trading iPhone Stockity — STC AutoTrade" }],
   },
 };
 
@@ -57,10 +57,10 @@ const articleSchema = {
   headline: "Robot Trading iPhone Stockity: Auto Trade di iOS Tanpa Instalasi 2026",
   description: "Panduan menggunakan robot trading Stockity di iPhone dan iPad via versi web STC AutoTrade — tanpa instalasi, fitur lengkap, kompatibel Safari.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
-  publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" } },
+  publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2025-06-01",
   dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.png",
+  image: "https://stcautotrade.id/og-image.webp",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/robot-trading-ios-iphone" },
   keywords: "robot trading iphone stockity, auto trade stockity ios, bot trading stockity iphone",
 };
@@ -165,7 +165,7 @@ export default function RobotTradingIphonePage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.png" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <div className="flex items-center gap-2">

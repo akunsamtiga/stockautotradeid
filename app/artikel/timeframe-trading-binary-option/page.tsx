@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.png", width: 1200, height: 630, alt: "Timeframe STC AutoTrade — Fastrade 1m 5m 15m 30m 1h" }],
+    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Timeframe STC AutoTrade — Fastrade 1m 5m 15m 30m 1h" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Timeframe di STC AutoTrade: Fastrade 1m-1h, Signal 60-300 detik 2026",
     description:
       "Timeframe 1m-1h hanya di mode Fastrade. Signal mode pakai duration 60-300 detik. AI Signal, Indicator, Momentum tidak ada pilihan timeframe.",
-    images: ["https://stcautotrade.id/og-image.png"],
+    images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
 
@@ -51,7 +51,7 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "STC AutoTrade",
-    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
+    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" },
   },
   mainEntityOfPage: {
     "@type": "WebPage",

@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import PhoneImage from "@/components/PhoneImage";
 import { FadeUp, StaggerView, FadeItem, FAQItem, CountUp } from "@/components/AnimatedSections";
 import { HeroBadge, HeroHeading, HeroStatBar, HambatanSection, RiskCards } from "@/components/ClientAnimations";
@@ -77,6 +77,34 @@ const schemaBreadcrumb = {
   ],
 };
 
+const schemaSoftwareApp = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "STC AutoTrade",
+  alternateName: ["StcAutoTrade", "StockAutoTrade", "Robot Stockity", "Auto Stockity"],
+  description: "Bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android dan versi web. Fitur: 6 mode strategi, stop loss & stop profit otomatis, martingale terkelola, riwayat trading lengkap.",
+  url: BASE_URL,
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Android, Web",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "IDR",
+    availability: "https://schema.org/InStock",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    ratingCount: "1200",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  author: { "@type": "Organization", name: "STC AutoTrade", url: BASE_URL },
+  downloadUrl: `${BASE_URL}/StcAutoTrade.apk`,
+  softwareVersion: "4.4",
+  screenshot: `${BASE_URL}/og-image.webp`,
+};
+
 /* ── Page ─────────────────────────────────────────────────────────── */
 
 export default function Home() {
@@ -84,6 +112,7 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQPage) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaSoftwareApp) }} />
 
       <div className="bg-white text-zinc-900 font-[family-name:var(--font-dm-sans)]">
 
@@ -99,7 +128,7 @@ export default function Home() {
         <nav aria-label="Navigasi utama STC AutoTrade" className="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-xl border-b border-zinc-100">
           <div className="max-w-5xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.png" alt="Logo STC AutoTrade" width={26} height={26} className="rounded-lg" />
+              <Image src="/logo.webp" alt="Logo STC AutoTrade" width={26} height={26} className="rounded-lg" />
               <span className="text-sm font-semibold text-zinc-900">STC AutoTrade</span>
             </a>
             <div className="flex items-center gap-0.5">
@@ -135,7 +164,7 @@ export default function Home() {
                 <div className="animate-fade-up animate-delay-300 flex justify-center lg:justify-end">
                   <div className="animate-float">
                     <PhoneImage
-                      src="/gambar1.jpeg"
+                      src="/gambar1.webp"
                       alt="Tampilan layar utama aplikasi STC AutoTrade menampilkan mode AI Signal aktif di akun Stockity.id"
                       label="STC AutoTrade · AI Signal"
                       priority
@@ -332,7 +361,7 @@ export default function Home() {
                 <div className="lg:sticky lg:top-24 flex flex-col items-center">
                   <FadeUp>
                     <PhoneImage
-                      src="/gambar2.jpeg"
+                      src="/gambar2.webp"
                       alt="Layar pengaturan manajemen risiko STC AutoTrade menampilkan stop loss otomatis dan konfigurasi martingale"
                       label="Stop Loss & Martingale"
                     />
@@ -406,7 +435,7 @@ export default function Home() {
 
                   <FadeUp delay={0.15} className="flex justify-center lg:justify-end">
                     <PhoneImage
-                      src="/gambar3.jpeg"
+                      src="/gambar3.webp"
                       alt="Tampilan mode demo STC AutoTrade menampilkan riwayat order dan statistik profit/loss dengan data pasar nyata"
                       label="Dashboard Trading"
                     />
@@ -495,7 +524,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <div className="flex items-center gap-2 mb-1.5">
-                <Image src="/logo.png" alt="Logo STC AutoTrade" width={22} height={22} className="rounded-md" />
+                <Image src="/logo.webp" alt="Logo STC AutoTrade" width={22} height={22} className="rounded-md" />
                 <span className="text-sm font-medium text-zinc-500">STC AutoTrade</span>
               </div>
               <p className="text-[11px] text-zinc-400">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>

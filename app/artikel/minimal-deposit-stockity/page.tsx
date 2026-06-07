@@ -1,4 +1,4 @@
-/**
+﻿/**
  * app/artikel/minimal-deposit-stockity/page.tsx
  *
  * Target keyword:
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.png",
+        url: "https://stcautotrade.id/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Minimal Deposit Stockity — Panduan 2026",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Minimal Deposit Stockity: Minimum Order & Modal Aman 2026",
     description: "Minimum order Rp 14.000 di STC AutoTrade — simulasi modal, martingale, dan tips aman.",
-    images: ["https://stcautotrade.id/og-image.png"],
+    images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
 
@@ -66,7 +66,7 @@ const articleSchema = {
   headline: "Minimal Deposit Stockity: Minimum Order & Modal Aman Trading Bot 2026",
   description:
     "Panduan minimum nominal order di STC AutoTrade (Rp 14.000), simulasi martingale, dan rekomendasi modal berdasarkan profil risiko.",
-  image: "https://stcautotrade.id/og-image.png",
+  image: "https://stcautotrade.id/og-image.webp",
   datePublished: "2025-05-21",
   dateModified: "2026-06-07",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },

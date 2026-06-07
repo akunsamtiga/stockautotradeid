@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
       "STC AutoTrade (StockAutoTrade) — 6 mode strategi, stop loss otomatis, AI signal & copy trading. APK Android & versi web. Gratis untuk member.",
     images: [
       {
-        url: `${BASE_URL}/og-image.png`,
+        url: `${BASE_URL}/og-image.webp`,
         width: 1200,
         height: 630,
         alt: "STC AutoTrade — Robot Trading Otomatis Stockity.id",
@@ -115,7 +115,7 @@ export const metadata: Metadata = {
     title: "STC AutoTrade — Robot Trading Otomatis Stockity.id",
     description:
       "6 strategi trading otomatis, stop loss & profit, AI signal. APK Android & versi web (stcautotradepro.id). Gratis untuk member.",
-    images: [`${BASE_URL}/og-image.png`],
+    images: [`${BASE_URL}/og-image.webp`],
   },
 
   /**
@@ -199,7 +199,7 @@ const schemaApp = {
   ],
   screenshot: {
     "@type": "ImageObject",
-    url: `${BASE_URL}/screenshot.png`,
+    url: `${BASE_URL}/screenshot.webp`,
     width: 1080,
     height: 1920,
     caption: "Layar utama STC AutoTrade — mode AI Signal aktif di Stockity.id",
@@ -235,7 +235,7 @@ const schemaOrg = {
   url: BASE_URL,
   logo: {
     "@type": "ImageObject",
-    url: `${BASE_URL}/logo.png`,
+    url: `${BASE_URL}/logo.webp`,
     width: 512,
     height: 512,
   },

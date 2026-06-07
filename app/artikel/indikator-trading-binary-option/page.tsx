@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.png", width: 1200, height: 630, alt: "Mode Indicator STC AutoTrade — SMA EMA RSI" }],
+    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Mode Indicator STC AutoTrade — SMA EMA RSI" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Indikator di STC AutoTrade: SMA, EMA, RSI 2026",
     description:
       "Mode Indicator STC AutoTrade v4.4 — hanya SMA, EMA, RSI. Setting period, sensitivity, overbought/oversold untuk bot otomatis.",
-    images: ["https://stcautotrade.id/og-image.png"],
+    images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
 
@@ -51,7 +51,7 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "STC AutoTrade",
-    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
+    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" },
   },
   mainEntityOfPage: {
     "@type": "WebPage",

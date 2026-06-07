@@ -1,4 +1,4 @@
-/**
+﻿/**
  * app/faq/page.tsx
  * Halaman FAQ lengkap STC AutoTrade — Server Component
  * Dioptimalkan untuk SEO: h1, h2 per kategori, breadcrumb, structured data
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://stcautotrade.id/og-image.png",
+        url: "https://stcautotrade.id/og-image.webp",
         width: 1200,
         height: 630,
         alt: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
     description:
       "Jawaban lengkap: cara instal, versi web, keamanan akun, modal minimum, dan cara kerja STC AutoTrade.",
-    images: ["https://stcautotrade.id/og-image.png"],
+    images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
 
@@ -207,7 +207,7 @@ export default function FAQPage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.png" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <Link

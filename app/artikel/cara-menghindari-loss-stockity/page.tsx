@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.png", width: 1200, height: 630, alt: "Manajemen Risiko STC AutoTrade — Stop Loss Always Signal" }],
+    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Manajemen Risiko STC AutoTrade — Stop Loss Always Signal" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cara Menghindari Loss di STC AutoTrade: SL Harian & Always Signal 2026",
     description:
       "Stop Loss harian otomatis, Stop Profit, Always Signal recovery martingale, Demo account, dan History page di STC AutoTrade untuk kelola risiko.",
-    images: ["https://stcautotrade.id/og-image.png"],
+    images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
 
@@ -52,7 +52,7 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "STC AutoTrade",
-    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
+    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" },
   },
   mainEntityOfPage: {
     "@type": "WebPage",

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * app/artikel/page.tsx
  *
  * Halaman indeks artikel STC AutoTrade — Server Component murni.
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${BASE_URL}/og-image.png`,
+        url: `${BASE_URL}/og-image.webp`,
         width: 1200,
         height: 630,
         alt: "Artikel STC AutoTrade — Panduan Robot Trading Stockity",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Artikel STC AutoTrade — Panduan Robot Trading Stockity",
     description:
       "Panduan robot trading Stockity: daftar akun, setting bot, strategi profit, modal minimum, dan review keamanan.",
-    images: [`${BASE_URL}/og-image.png`],
+    images: [`${BASE_URL}/og-image.webp`],
   },
 };
 
@@ -397,7 +397,7 @@ export default function ArtikelPage() {
           <div className="max-w-6xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline group">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Logo STC AutoTrade"
                 width={28}
                 height={28}
@@ -624,7 +624,7 @@ export default function ArtikelPage() {
             <div>
               <div className="flex items-center gap-2.5 mb-1.5">
                 <Image
-                  src="/logo.png"
+                  src="/logo.webp"
                   alt="Logo STC AutoTrade"
                   width={24}
                   height={24}

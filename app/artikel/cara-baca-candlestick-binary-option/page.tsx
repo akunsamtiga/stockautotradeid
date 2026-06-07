@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.png", width: 1200, height: 630, alt: "4 Pola Candlestick Mode Momentum STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "4 Pola Candlestick Mode Momentum STC AutoTrade" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "4 Pola Mode Momentum STC AutoTrade: CandleSabit, Doji, BBSARBreak",
     description:
       "Mode Momentum STC AutoTrade mendeteksi 4 pola: CandleSabit, DojiTerjepit, DojiPembatalan, BBSARBreak. Bisa enable/disable per pola.",
-    images: ["https://stcautotrade.id/og-image.png"],
+    images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
 
@@ -52,7 +52,7 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "STC AutoTrade",
-    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.png" },
+    logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" },
   },
   mainEntityOfPage: {
     "@type": "WebPage",

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * app/artikel/robot-trading-stockity/page.tsx
  * Artikel SEO — "Robot Trading Stockity" & keyword turunan
  *
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.png",
+        url: "https://stcautotrade.id/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Robot Trading Stockity — STC AutoTrade",
@@ -79,12 +79,12 @@ const articleSchema = {
     name: "STC AutoTrade",
     logo: {
       "@type": "ImageObject",
-      url: "https://stcautotrade.id/logo.png",
+      url: "https://stcautotrade.id/logo.webp",
     },
   },
   datePublished: "2025-05-21",
   dateModified: "2026-05-21",
-  image: "https://stcautotrade.id/og-image.png",
+  image: "https://stcautotrade.id/og-image.webp",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/robot-trading-stockity",
@@ -267,7 +267,7 @@ export default function RobotTradingStockityPage() {
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="STC AutoTrade"
                 width={28}
                 height={28}

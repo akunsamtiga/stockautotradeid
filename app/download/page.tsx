@@ -1,4 +1,4 @@
-/**
+﻿/**
  * app/download/page.tsx
  * Halaman download khusus STC AutoTrade — Server Component
  * Menarget keyword: "download stcautotrade apk", "cara instal stockautotrade android", dll.
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://stcautotrade.id/og-image.png",
+        url: "https://stcautotrade.id/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Download STC AutoTrade — APK Android & Versi Web Robot Trading Stockity",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Download STC AutoTrade APK & Versi Web — Robot Trading Stockity Gratis",
     description:
       "Download STC AutoTrade APK Android atau buka versi web di browser. Gratis untuk member.",
-    images: ["https://stcautotrade.id/og-image.png"],
+    images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
 
@@ -105,7 +105,7 @@ const softwareDownloadSchema = {
   ],
   screenshot: {
     "@type": "ImageObject",
-    url: "https://stcautotrade.id/screenshot.png",
+    url: "https://stcautotrade.id/screenshot.webp",
     width: 1080,
     height: 1920,
   },
@@ -157,7 +157,7 @@ export default function DownloadPage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.png" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <div className="flex items-center gap-2">
@@ -447,7 +447,7 @@ export default function DownloadPage() {
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <div className="flex items-center gap-2 mb-1.5">
-                <Image src="/logo.png" alt="STC AutoTrade" width={20} height={20} className="rounded-[4px]" />
+                <Image src="/logo.webp" alt="STC AutoTrade" width={20} height={20} className="rounded-[4px]" />
                 <span className="text-[12px] font-medium text-[#1a1612]/50">STC AutoTrade</span>
               </div>
               <p className="text-[11px] text-[#1a1612]/25">
